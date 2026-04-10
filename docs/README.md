@@ -30,6 +30,10 @@ utility directions.
   the still-missing ones such as `OpenXR-Switcher`, `OpenVR-Display-Devices`,
   `LighthouseManager`, and `OpenVR-SpaceCalibrator2`.
 
+- `vr-projects-wave-5-osc-tracking-tools.md`  
+  Niche utility wave focused on OSC bridges, tracked-device markers,
+  marker-based tracking, Lighthouse setup helpers, and battery micro-tools.
+
 ## Original Reality Window docs
 
 - `overlay-vr-mvp-spec.md`  

@@ -104,6 +104,7 @@ Start here:
 - `docs/vr-projects-master-index.md`
 - `docs/vr-projects-wave-3-utilities.md`
 - `docs/vr-projects-wave-4-gap-fill.md`
+- `docs/vr-projects-wave-5-osc-tracking-tools.md`
 
 Original Reality Window and passthrough research:
 

@@ -12,6 +12,7 @@ This file complements:
 - `vrperfkit-reuse-plan.md`
 - `vr-projects-wave-3-utilities.md`
 - `vr-projects-wave-4-gap-fill.md`
+- `vr-projects-wave-5-osc-tracking-tools.md`
 
 ## How to use this index
 
@@ -24,6 +25,9 @@ This file complements:
 - Use `vr-projects-wave-4-gap-fill.md` for later gap-filling passes that map a
   submitted project list against what is already covered and add the missing
   repositories.
+- Use `vr-projects-wave-5-osc-tracking-tools.md` for later niche waves around
+  OSC bridges, device markers, marker tracking, room tools, and battery
+  utilities.
 - Treat each project as one of:
   - `code donor`
   - `architecture reference`
