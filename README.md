@@ -119,6 +119,7 @@ Landscape and reuse research:
 - `docs/vr-utilities-repo-landscape.md`
 - `docs/openxr-steamvr-passthrough-reuse-plan.md`
 - `docs/alvr-reuse-plan.md`
+- `docs/openvr-advancedsettings-reuse-plan.md`
 - `docs/vrperfkit-reuse-plan.md`
 - `docs/external-repos-reuse-plan.md`
 

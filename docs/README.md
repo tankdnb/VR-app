@@ -57,6 +57,7 @@ utility directions.
 - `vrperfkit-reuse-plan.md`
 - `alvr-reuse-plan.md`
 - `openxr-steamvr-passthrough-reuse-plan.md`
+- `openvr-advancedsettings-reuse-plan.md`
 
 These files summarize what is reusable, what is only architectural inspiration,
 and where the sharp edges are.
