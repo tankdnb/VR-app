@@ -25,6 +25,11 @@ utility directions.
   services, accessibility utilities, lighthouse managers, and VR automation
   tooling.
 
+- `vr-projects-wave-4-gap-fill.md`  
+  Gap-fill wave that maps already covered projects from a later list and adds
+  the still-missing ones such as `OpenXR-Switcher`, `OpenVR-Display-Devices`,
+  `LighthouseManager`, and `OpenVR-SpaceCalibrator2`.
+
 ## Original Reality Window docs
 
 - `overlay-vr-mvp-spec.md`  

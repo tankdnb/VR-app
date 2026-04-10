@@ -11,6 +11,7 @@ This file complements:
 - `alvr-reuse-plan.md`
 - `vrperfkit-reuse-plan.md`
 - `vr-projects-wave-3-utilities.md`
+- `vr-projects-wave-4-gap-fill.md`
 
 ## How to use this index
 
@@ -20,6 +21,9 @@ This file complements:
   projects that were not yet documented in `VR.app`.
 - Use `vr-projects-wave-3-utilities.md` for the next wave centered on utility
   apps, service tools, runtime switchers, and accessibility-focused overlays.
+- Use `vr-projects-wave-4-gap-fill.md` for later gap-filling passes that map a
+  submitted project list against what is already covered and add the missing
+  repositories.
 - Treat each project as one of:
   - `code donor`
   - `architecture reference`
