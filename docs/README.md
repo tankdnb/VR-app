@@ -1,87 +1,71 @@
 # Documentation Index
 
-This folder contains both product-facing plans and technical research gathered
-while exploring VR overlays, passthrough, OpenXR/OpenVR integration, and future
-utility directions.
+The documentation is now organized into stable categories instead of a flat
+list of unrelated markdown files.
 
-## Research synthesis
+## 1. Foundation
 
-- `research/landscape/README.md`  
-  Entry point for documents that group repositories by overlap families and
-  track what still needs deeper study.
+- `foundation/README.md`
+- `foundation/platform-foundation.md`
+- `foundation/public-roadmap.md`
 
-- `research/landscape/project-families.md`  
-  Logical overlap map for the repository landscape: runtime tools, overlay
-  suites, tracker bridges, Lighthouse managers, battery/device monitors,
-  accessibility tools, driver learning paths, and vendor enhancement tooling.
+Use this section for:
 
-- `research/landscape/not-yet-studied-deeply.md`  
-  Prioritized backlog of repositories and families that are either missing from
-  `VR.app` or still only lightly covered.
+- repository purpose;
+- product direction;
+- reusable platform assumptions.
 
-## Foundation docs
+## 2. Experiments
 
-- `platform-foundation.md`  
-  Repository charter, reusable capabilities, and design principles.
+- `experiments/README.md`
+- `experiments/reality-window/README.md`
 
-- `public-roadmap.md`  
-  Recommended roadmap for turning this repository into a family of VR utility
-  applications.
+Use this section for:
 
-- `vr-utilities-repo-landscape.md`  
-  Consolidated landscape of public VR utility repositories worth learning from.
+- original passthrough and reality-window work;
+- feasibility notes;
+- hardware-specific experiments;
+- dead ends that still carry reusable engineering lessons.
 
-- `vr-projects-master-index.md`  
-  Combined index of already tracked projects plus an additional research wave of
-  useful VR repositories.
+## 3. Research
 
-- `vr-projects-wave-3-utilities.md`  
-  Additional wave focused on OpenXR layer tools, runtime switchers, overlay
-  services, accessibility utilities, lighthouse managers, and VR automation
-  tooling.
+- `research/README.md`
 
-- `vr-projects-wave-4-gap-fill.md`  
-  Gap-fill wave that maps already covered projects from a later list and adds
-  the still-missing ones such as `OpenXR-Switcher`, `OpenVR-Display-Devices`,
-  `LighthouseManager`, and `OpenVR-SpaceCalibrator2`.
+### Landscape and synthesis
 
-- `vr-projects-wave-5-osc-tracking-tools.md`  
-  Niche utility wave focused on OSC bridges, tracked-device markers,
-  marker-based tracking, Lighthouse setup helpers, and battery micro-tools.
+- `research/landscape/README.md`
+- `research/landscape/vr-utilities-repo-landscape.md`
+- `research/landscape/vr-projects-master-index.md`
+- `research/landscape/vr-projects-wave-3-utilities.md`
+- `research/landscape/vr-projects-wave-4-gap-fill.md`
+- `research/landscape/vr-projects-wave-5-osc-tracking-tools.md`
+- `research/landscape/vr-projects-wave-6-driver-bridges.md`
+- `research/landscape/vr-projects-wave-7-depth-pass.md`
+- `research/landscape/project-families.md`
+- `research/landscape/not-yet-studied-deeply.md`
 
-- `vr-projects-wave-6-driver-bridges.md`  
-  Driver-focused wave covering vendor enhancement tooling, virtual trackers,
-  remote tracking, custom hardware bridges, and micro desktop helpers.
+### Canonical registry
 
-- `vr-projects-wave-7-depth-pass.md`  
-  Follow-up depth pass on under-documented repositories, with stronger
-  implementation notes for early overlay, helper, passthrough, metrics, and
-  creator-tool projects.
+- `research/catalog/README.md`
+- `research/catalog/project-registry.md`
 
-## Original Reality Window docs
+### Research program
 
-- `overlay-vr-mvp-spec.md`  
-  Initial MVP spec for the camera-backed overlay window concept.
+- `research/program/README.md`
+- `research/program/repository-restructuring-plan.md`
+- `research/program/restructuring-backlog.md`
+- `research/program/study-method.md`
 
-- `current-feasibility-status.md`  
-  Current engineering status across desktop OpenVR and PICO/OpenXR paths.
+### Reuse plans
 
-- `pico-openxr-camera-path.md`  
-  Findings from official PICO/OpenXR extension probing.
+- `research/reuse/README.md`
+- `research/reuse/external-repos-reuse-plan.md`
+- `research/reuse/vrperfkit-reuse-plan.md`
+- `research/reuse/alvr-reuse-plan.md`
+- `research/reuse/openxr-steamvr-passthrough-reuse-plan.md`
+- `research/reuse/openvr-advancedsettings-reuse-plan.md`
 
-- `pico-connect-constraint.md`  
-  Why `Pico Connect` coexistence became a hard product requirement.
+### Templates
 
-- `pico-connect-passthrough-spike.md`  
-  Notes for testing passthrough coexistence during active streaming.
-
-## Reuse and research docs
-
-- `external-repos-reuse-plan.md`
-- `vrperfkit-reuse-plan.md`
-- `alvr-reuse-plan.md`
-- `openxr-steamvr-passthrough-reuse-plan.md`
-- `openvr-advancedsettings-reuse-plan.md`
-
-These files summarize what is reusable, what is only architectural inspiration,
-and where the sharp edges are.
+- `research/templates/README.md`
+- `research/templates/project-study-template.md`

@@ -6,12 +6,13 @@
 
 This file complements:
 
-- `research/landscape/project-families.md`
-- `research/landscape/not-yet-studied-deeply.md`
+- `project-families.md`
+- `not-yet-studied-deeply.md`
+- `../catalog/project-registry.md`
 - `vr-utilities-repo-landscape.md`
-- `openxr-steamvr-passthrough-reuse-plan.md`
-- `alvr-reuse-plan.md`
-- `vrperfkit-reuse-plan.md`
+- `../reuse/openxr-steamvr-passthrough-reuse-plan.md`
+- `../reuse/alvr-reuse-plan.md`
+- `../reuse/vrperfkit-reuse-plan.md`
 - `vr-projects-wave-3-utilities.md`
 - `vr-projects-wave-4-gap-fill.md`
 - `vr-projects-wave-5-osc-tracking-tools.md`
@@ -22,10 +23,12 @@ This file complements:
 
 - Use `vr-utilities-repo-landscape.md` for the first big wave of projects
   already reviewed in this repository.
-- Use `research/landscape/project-families.md` when you want to reason about
+- Use `project-families.md` when you want to reason about
   `logical overlap` and cluster repositories into families rather than browse a
   flat list.
-- Use `research/landscape/not-yet-studied-deeply.md` as the backlog for the
+- Use `../catalog/project-registry.md` as the canonical grouped registry of
+  tracked repositories.
+- Use `not-yet-studied-deeply.md` as the backlog for the
   next code-level and architecture-level research passes.
 - Use this file as the combined index plus the second wave of additional
   projects that were not yet documented in `VR.app`.

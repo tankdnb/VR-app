@@ -20,3 +20,7 @@ Use these files when you want to understand:
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR.app` or only
   lightly covered so far, with suggested next inspection angles.
+
+- the canonical grouped registry lives in `../catalog/project-registry.md`.
+
+- the restructuring plan and backlog live in `../program/`.

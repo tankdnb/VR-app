@@ -242,6 +242,92 @@ This family supports a future `vendor enhancement` research direction:
 - keep vendor runtime intact
 - expose extra features through utility-side APIs
 
+## Family 10: Compatibility layers and runtime translation
+
+These projects sit between incompatible or competing runtime ecosystems and are
+valuable for understanding translation, emulation, and compatibility shims.
+
+| Project | Status | Notes |
+|---|---|---|
+| `QuestCraftPlusPlus/OpenComposite` | Already studied | Main OpenVR-to-OpenXR compatibility reference |
+| `Supreeeme/xrizer` | Already studied | Alternate OpenVR-on-OpenXR direction |
+| `LibreVR/Revive` | Already studied | Compatibility layer between Oculus stack and OpenVR/OpenXR |
+| `alvr-org/ALVR` | Already studied | Streaming stack, but also useful for runtime compatibility patterns |
+
+### Consolidation note
+
+This family matters less as a direct product target and more as a source of:
+
+- translation-layer architecture
+- runtime compatibility patterns
+- install and registration models
+
+## Family 11: Performance, rendering, and post-process tooling
+
+This family is about image processing, foveation, scaling, and rendering-side
+instrumentation rather than overlays or device control.
+
+| Project | Status | Notes |
+|---|---|---|
+| `fholger/vrperfkit` | Already studied | Main donor for D3D11 post-process patterns |
+| `fholger/openvr_fsr` | Already studied | Earlier, smaller reference for the same lineage |
+| `RavenSystem/VRPerfKit_RSF` | Partially studied | Practical fork/variant with extended features |
+| `CamelCaseName/OpenVRPerfKit` | Partially studied | Additional evolution path in the same family |
+| `Granther/foveated-rendering` | Partially studied | Eye-tracked/foveated experimentation branch |
+| `mbucchia/Quad-Views-Foveated` | Partially studied | Important OpenXR eye-tracked/foveation reference |
+| `mbucchia/OpenXR-Eye-Trackers` | Partially studied | Useful eye-gaze integration reference |
+| `retroluxfilm/reshade-vrtoolkit` | Partially studied | Shader-pipeline and image-adjustment reference |
+| `zhukovv/upscale-injection` | Partially studied | Generic D3D11 injection and upscaling reference |
+
+### Consolidation note
+
+This family should feed:
+
+- GPU-side processing ideas
+- future texture-path upgrades
+- foveation and eye-tracking experimentation
+
+## Family 12: Passthrough, reality layers, and camera experiments
+
+This family is directly relevant to the original `Reality Window` concept, even
+though not all projects are practical product donors for current target
+hardware.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Rectus/openxr-steamvr-passthrough` | Already studied | Closest PC/SteamVR architectural analogue to the original idea |
+| `zhangxuelei86/WMR-Passthrough` | Already studied | OpenXR API-layer plus camera-service pattern |
+| `Danealor/VRPassthrough` | Already studied | Lightweight USB-camera passthrough utility path |
+| `jangxx/LeapOVRPassthrough` | Already studied | Gesture-triggered passthrough UX reference |
+
+### Consolidation note
+
+This family is now best treated as:
+
+- `research and experimentation`
+- `external camera / scoped passthrough` inspiration
+
+rather than a guaranteed production direction.
+
+## Family 13: Creator tools, capture, metrics, and workflow utilities
+
+These projects are more about recording, inspection, workflow support, and
+creator-facing XR use than about simple end-user overlays.
+
+| Project | Status | Notes |
+|---|---|---|
+| `OpenKneeboard/OpenKneeboard` | Already studied | Strong simulator and workflow-oriented overlay reference |
+| `xrtlab/clovr` | Already studied | Session capture and research-tooling reference |
+| `ethanporcaro/tracking-toolkit` | Already studied | Creator-facing OpenXR recording and Blender integration |
+| `Nyabsi/openvr-metrics` | Already studied | Strong metrics + control overlay product reference |
+| `fredemmott/XRFrameTools` | Already studied | OpenXR frame-loop metrics reference |
+| `peacepenguin/Virtual-Display-Driver` | Already studied | Infrastructure for desktop and workflow scenarios |
+
+### Consolidation note
+
+This family supports a separate `creator and diagnostics` branch inside
+`VR.app`, not just consumer-facing overlays.
+
 ## Recommended synthesis path for `VR.app`
 
 The next useful step is not another long unsorted list.

@@ -52,9 +52,9 @@ spikes/
 
 docs/
   README.md                  docs index
-  platform-foundation.md     repository charter and reusable capabilities
-  public-roadmap.md          recommended product roadmap for future utilities
-  *.md                       research, findings, and reuse plans
+  foundation/                stable platform and roadmap docs
+  experiments/               feasibility notes and original passthrough track
+  research/                  landscape, reuse plans, registry, and templates
 ```
 
 ## Desktop app commands
@@ -99,33 +99,37 @@ dotnet run --project .\src\VRRealityWindow.App -- overlay --duration-seconds 20
 Start here:
 
 - `docs/README.md`
+- `docs/foundation/platform-foundation.md`
+- `docs/foundation/public-roadmap.md`
+- `docs/research/README.md`
 - `docs/research/landscape/project-families.md`
+- `docs/research/catalog/project-registry.md`
 - `docs/research/landscape/not-yet-studied-deeply.md`
-- `docs/platform-foundation.md`
-- `docs/public-roadmap.md`
-- `docs/vr-projects-master-index.md`
-- `docs/vr-projects-wave-3-utilities.md`
-- `docs/vr-projects-wave-4-gap-fill.md`
-- `docs/vr-projects-wave-5-osc-tracking-tools.md`
-- `docs/vr-projects-wave-6-driver-bridges.md`
-- `docs/vr-projects-wave-7-depth-pass.md`
+- `docs/research/program/repository-restructuring-plan.md`
+- `docs/research/program/restructuring-backlog.md`
+- `docs/research/landscape/vr-projects-master-index.md`
+- `docs/research/landscape/vr-projects-wave-3-utilities.md`
+- `docs/research/landscape/vr-projects-wave-4-gap-fill.md`
+- `docs/research/landscape/vr-projects-wave-5-osc-tracking-tools.md`
+- `docs/research/landscape/vr-projects-wave-6-driver-bridges.md`
+- `docs/research/landscape/vr-projects-wave-7-depth-pass.md`
 
 Original Reality Window and passthrough research:
 
-- `docs/overlay-vr-mvp-spec.md`
-- `docs/current-feasibility-status.md`
-- `docs/pico-openxr-camera-path.md`
-- `docs/pico-connect-constraint.md`
-- `docs/pico-connect-passthrough-spike.md`
+- `docs/experiments/reality-window/overlay-vr-mvp-spec.md`
+- `docs/experiments/reality-window/current-feasibility-status.md`
+- `docs/experiments/reality-window/pico-openxr-camera-path.md`
+- `docs/experiments/reality-window/pico-connect-constraint.md`
+- `docs/experiments/reality-window/pico-connect-passthrough-spike.md`
 
 Landscape and reuse research:
 
-- `docs/vr-utilities-repo-landscape.md`
-- `docs/openxr-steamvr-passthrough-reuse-plan.md`
-- `docs/alvr-reuse-plan.md`
-- `docs/openvr-advancedsettings-reuse-plan.md`
-- `docs/vrperfkit-reuse-plan.md`
-- `docs/external-repos-reuse-plan.md`
+- `docs/research/landscape/vr-utilities-repo-landscape.md`
+- `docs/research/reuse/openxr-steamvr-passthrough-reuse-plan.md`
+- `docs/research/reuse/alvr-reuse-plan.md`
+- `docs/research/reuse/openvr-advancedsettings-reuse-plan.md`
+- `docs/research/reuse/vrperfkit-reuse-plan.md`
+- `docs/research/reuse/external-repos-reuse-plan.md`
 
 ## Notes on licensing
 
