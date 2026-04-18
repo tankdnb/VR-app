@@ -1,172 +1,172 @@
-# vrperfkit Reuse Plan
+﻿# vrperfkit Reuse Plan
 
 ## Purpose
 
-Этот документ фиксирует, какие части `vrperfkit` стоит использовать в `VR Reality Window MVP`, а какие не подходят из-за другой архитектуры проекта.
+Р­С‚РѕС‚ РґРѕРєСѓРјРµРЅС‚ С„РёРєСЃРёСЂСѓРµС‚, РєР°РєРёРµ С‡Р°СЃС‚Рё `vrperfkit` СЃС‚РѕРёС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РІ `VR Reality Window MVP`, Р° РєР°РєРёРµ РЅРµ РїРѕРґС…РѕРґСЏС‚ РёР·-Р·Р° РґСЂСѓРіРѕР№ Р°СЂС…РёС‚РµРєС‚СѓСЂС‹ РїСЂРѕРµРєС‚Р°.
 
-Источник анализа: локальный клон `vrperfkit` в `C:\Users\Username\Documents\VR.app\.tmp\vrperfkit`.
+РСЃС‚РѕС‡РЅРёРє Р°РЅР°Р»РёР·Р°: Р»РѕРєР°Р»СЊРЅС‹Р№ РєР»РѕРЅ `vrperfkit` РІ `C:\Users\Username\Documents\VR.app\.tmp\vrperfkit`.
 
 ## Short Summary
 
-`vrperfkit` полезен нам как donor-репозиторий для:
+`vrperfkit` РїРѕР»РµР·РµРЅ РЅР°Рј РєР°Рє donor-СЂРµРїРѕР·РёС‚РѕСЂРёР№ РґР»СЏ:
 
 - `D3D11` post-processing;
 - upscaling and sharpening;
-- части OpenVR math;
-- утилит для работы с GPU resources.
+- С‡Р°СЃС‚Рё OpenVR math;
+- СѓС‚РёР»РёС‚ РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ GPU resources.
 
-`vrperfkit` не подходит как основа приложения, потому что он сделан как:
+`vrperfkit` РЅРµ РїРѕРґС…РѕРґРёС‚ РєР°Рє РѕСЃРЅРѕРІР° РїСЂРёР»РѕР¶РµРЅРёСЏ, РїРѕС‚РѕРјСѓ С‡С‚Рѕ РѕРЅ СЃРґРµР»Р°РЅ РєР°Рє:
 
 - `DLL proxy`;
-- `hook/injector` в чужой процесс;
-- модификатор submit path уже существующей VR-игры.
+- `hook/injector` РІ С‡СѓР¶РѕР№ РїСЂРѕС†РµСЃСЃ;
+- РјРѕРґРёС„РёРєР°С‚РѕСЂ submit path СѓР¶Рµ СЃСѓС‰РµСЃС‚РІСѓСЋС‰РµР№ VR-РёРіСЂС‹.
 
-Наше приложение другое:
+РќР°С€Рµ РїСЂРёР»РѕР¶РµРЅРёРµ РґСЂСѓРіРѕРµ:
 
 - standalone companion app;
-- свой overlay lifecycle;
-- свой camera provider;
-- не встраивается в игру и не перехватывает `IVRCompositor::Submit`.
+- СЃРІРѕР№ overlay lifecycle;
+- СЃРІРѕР№ camera provider;
+- РЅРµ РІСЃС‚СЂР°РёРІР°РµС‚СЃСЏ РІ РёРіСЂСѓ Рё РЅРµ РїРµСЂРµС…РІР°С‚С‹РІР°РµС‚ `IVRCompositor::Submit`.
 
 ## Phase 1
 
-Использовать только после перехода нашего overlay runtime с `SetOverlayRaw` на `D3D11 texture` pipeline.
+РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ С‚РѕР»СЊРєРѕ РїРѕСЃР»Рµ РїРµСЂРµС…РѕРґР° РЅР°С€РµРіРѕ overlay runtime СЃ `SetOverlayRaw` РЅР° `D3D11 texture` pipeline.
 
 ### 1. D3D11 helper layer
 
-Файлы:
+Р¤Р°Р№Р»С‹:
 
-- [d3d11_helper.h](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/d3d11/d3d11_helper.h)
-- [d3d11_helper.cpp](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/d3d11/d3d11_helper.cpp)
+- `d3d11_helper.h`
+- `d3d11_helper.cpp`
 
-Что взять:
+Р§С‚Рѕ РІР·СЏС‚СЊ:
 
-- создание `ShaderResourceView`;
-- создание `UnorderedAccessView`;
-- создание `resolve texture`;
-- создание `post-process texture`;
+- СЃРѕР·РґР°РЅРёРµ `ShaderResourceView`;
+- СЃРѕР·РґР°РЅРёРµ `UnorderedAccessView`;
+- СЃРѕР·РґР°РЅРёРµ `resolve texture`;
+- СЃРѕР·РґР°РЅРёРµ `post-process texture`;
 - `StoreD3D11State` / `RestoreD3D11State`.
 
-Почему это полезно:
+РџРѕС‡РµРјСѓ СЌС‚Рѕ РїРѕР»РµР·РЅРѕ:
 
-- если камера начнет приходить как `D3D11 texture` или мы сами перейдем на `TextureType_DirectX`, нам нужен аккуратный GPU-side post-process pipeline;
-- state save/restore особенно полезен, если начнем делать compute/pixel shader pass перед отправкой texture в overlay.
+- РµСЃР»Рё РєР°РјРµСЂР° РЅР°С‡РЅРµС‚ РїСЂРёС…РѕРґРёС‚СЊ РєР°Рє `D3D11 texture` РёР»Рё РјС‹ СЃР°РјРё РїРµСЂРµР№РґРµРј РЅР° `TextureType_DirectX`, РЅР°Рј РЅСѓР¶РµРЅ Р°РєРєСѓСЂР°С‚РЅС‹Р№ GPU-side post-process pipeline;
+- state save/restore РѕСЃРѕР±РµРЅРЅРѕ РїРѕР»РµР·РµРЅ, РµСЃР»Рё РЅР°С‡РЅРµРј РґРµР»Р°С‚СЊ compute/pixel shader pass РїРµСЂРµРґ РѕС‚РїСЂР°РІРєРѕР№ texture РІ overlay.
 
-Как использовать у нас:
+РљР°Рє РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ Сѓ РЅР°СЃ:
 
-- создать модуль `VRRealityWindow.D3D11`;
-- завернуть helper-функции в наш `OverlayTextureProcessor`;
-- не переносить MinHook/injector зависимости.
+- СЃРѕР·РґР°С‚СЊ РјРѕРґСѓР»СЊ `VRRealityWindow.D3D11`;
+- Р·Р°РІРµСЂРЅСѓС‚СЊ helper-С„СѓРЅРєС†РёРё РІ РЅР°С€ `OverlayTextureProcessor`;
+- РЅРµ РїРµСЂРµРЅРѕСЃРёС‚СЊ MinHook/injector Р·Р°РІРёСЃРёРјРѕСЃС‚Рё.
 
 ### 2. CAS / FSR / NIS upscalers
 
-Файлы:
+Р¤Р°Р№Р»С‹:
 
-- [d3d11_post_processor.cpp](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/d3d11/d3d11_post_processor.cpp)
-- [d3d11_post_processor.h](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/d3d11/d3d11_post_processor.h)
-- [d3d11_cas_upscaler.cpp](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/d3d11/d3d11_cas_upscaler.cpp)
-- [d3d11_fsr_upscaler.cpp](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/d3d11/d3d11_fsr_upscaler.cpp)
-- [d3d11_nis_upscaler.cpp](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/d3d11/d3d11_nis_upscaler.cpp)
-- [cas.sharpen.hlsl](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/cas/cas.sharpen.hlsl)
-- [fsr_easu.hlsl](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/fsr/fsr_easu.hlsl)
-- [NIS_Upscale.hlsl](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/nis/NIS_Upscale.hlsl)
+- `d3d11_post_processor.cpp`
+- `d3d11_post_processor.h`
+- `d3d11_cas_upscaler.cpp`
+- `d3d11_fsr_upscaler.cpp`
+- `d3d11_nis_upscaler.cpp`
+- `cas.sharpen.hlsl`
+- `fsr_easu.hlsl`
+- `NIS_Upscale.hlsl`
 
-Что взять:
+Р§С‚Рѕ РІР·СЏС‚СЊ:
 
-- саму идею модульного post-process chain;
-- `CAS` как самый вероятный первый кандидат;
-- позже `FSR/NIS` для масштабирования feed при lower internal resolution.
+- СЃР°РјСѓ РёРґРµСЋ РјРѕРґСѓР»СЊРЅРѕРіРѕ post-process chain;
+- `CAS` РєР°Рє СЃР°РјС‹Р№ РІРµСЂРѕСЏС‚РЅС‹Р№ РїРµСЂРІС‹Р№ РєР°РЅРґРёРґР°С‚;
+- РїРѕР·Р¶Рµ `FSR/NIS` РґР»СЏ РјР°СЃС€С‚Р°Р±РёСЂРѕРІР°РЅРёСЏ feed РїСЂРё lower internal resolution.
 
-Почему это полезно:
+РџРѕС‡РµРјСѓ СЌС‚Рѕ РїРѕР»РµР·РЅРѕ:
 
-- наш camera feed, скорее всего, не всегда будет идеального разрешения;
-- sharpening и upscale могут сильно улучшить читаемость клавиатуры, телефона и мелких объектов в overlay;
-- это один из немногих реально ценных performance/quality апгрейдов для продукта.
+- РЅР°С€ camera feed, СЃРєРѕСЂРµРµ РІСЃРµРіРѕ, РЅРµ РІСЃРµРіРґР° Р±СѓРґРµС‚ РёРґРµР°Р»СЊРЅРѕРіРѕ СЂР°Р·СЂРµС€РµРЅРёСЏ;
+- sharpening Рё upscale РјРѕРіСѓС‚ СЃРёР»СЊРЅРѕ СѓР»СѓС‡С€РёС‚СЊ С‡РёС‚Р°РµРјРѕСЃС‚СЊ РєР»Р°РІРёР°С‚СѓСЂС‹, С‚РµР»РµС„РѕРЅР° Рё РјРµР»РєРёС… РѕР±СЉРµРєС‚РѕРІ РІ overlay;
+- СЌС‚Рѕ РѕРґРёРЅ РёР· РЅРµРјРЅРѕРіРёС… СЂРµР°Р»СЊРЅРѕ С†РµРЅРЅС‹С… performance/quality Р°РїРіСЂРµР№РґРѕРІ РґР»СЏ РїСЂРѕРґСѓРєС‚Р°.
 
-Рекомендация:
+Р РµРєРѕРјРµРЅРґР°С†РёСЏ:
 
-- первым портировать `CAS`, потому что он проще и полезен даже без upscale;
-- `FSR/NIS` включать только когда у нас появится texture-based renderer и понятная метрика качества.
+- РїРµСЂРІС‹Рј РїРѕСЂС‚РёСЂРѕРІР°С‚СЊ `CAS`, РїРѕС‚РѕРјСѓ С‡С‚Рѕ РѕРЅ РїСЂРѕС‰Рµ Рё РїРѕР»РµР·РµРЅ РґР°Р¶Рµ Р±РµР· upscale;
+- `FSR/NIS` РІРєР»СЋС‡Р°С‚СЊ С‚РѕР»СЊРєРѕ РєРѕРіРґР° Сѓ РЅР°СЃ РїРѕСЏРІРёС‚СЃСЏ texture-based renderer Рё РїРѕРЅСЏС‚РЅР°СЏ РјРµС‚СЂРёРєР° РєР°С‡РµСЃС‚РІР°.
 
 ### 3. GPU profiling pattern
 
-Файл:
+Р¤Р°Р№Р»:
 
-- [d3d11_post_processor.cpp](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/d3d11/d3d11_post_processor.cpp)
+- `d3d11_post_processor.cpp`
 
-Что взять:
+Р§С‚Рѕ РІР·СЏС‚СЊ:
 
-- timestamp/disjoint query pattern для оценки GPU стоимости пост-обработки.
+- timestamp/disjoint query pattern РґР»СЏ РѕС†РµРЅРєРё GPU СЃС‚РѕРёРјРѕСЃС‚Рё РїРѕСЃС‚-РѕР±СЂР°Р±РѕС‚РєРё.
 
-Почему это полезно:
+РџРѕС‡РµРјСѓ СЌС‚Рѕ РїРѕР»РµР·РЅРѕ:
 
-- у нас продукт performance-sensitive;
-- нам нужен честный ответ, сколько стоит sharpening/upscale до отправки overlay.
+- Сѓ РЅР°СЃ РїСЂРѕРґСѓРєС‚ performance-sensitive;
+- РЅР°Рј РЅСѓР¶РµРЅ С‡РµСЃС‚РЅС‹Р№ РѕС‚РІРµС‚, СЃРєРѕР»СЊРєРѕ СЃС‚РѕРёС‚ sharpening/upscale РґРѕ РѕС‚РїСЂР°РІРєРё overlay.
 
-Как использовать у нас:
+РљР°Рє РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ Сѓ РЅР°СЃ:
 
-- встроить как debug-only instrumentation;
-- не переносить весь `debugMode` как есть, а адаптировать под наши diagnostics.
+- РІСЃС‚СЂРѕРёС‚СЊ РєР°Рє debug-only instrumentation;
+- РЅРµ РїРµСЂРµРЅРѕСЃРёС‚СЊ РІРµСЃСЊ `debugMode` РєР°Рє РµСЃС‚СЊ, Р° Р°РґР°РїС‚РёСЂРѕРІР°С‚СЊ РїРѕРґ РЅР°С€Рё diagnostics.
 
 ## Phase 2
 
-Полезно, но не для первого технического доказательства.
+РџРѕР»РµР·РЅРѕ, РЅРѕ РЅРµ РґР»СЏ РїРµСЂРІРѕРіРѕ С‚РµС…РЅРёС‡РµСЃРєРѕРіРѕ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІР°.
 
 ### 4. OpenVR projection center math
 
-Файл:
+Р¤Р°Р№Р»:
 
-- [openvr_manager.cpp](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/openvr/openvr_manager.cpp)
+- `openvr_manager.cpp`
 
-Что взять:
+Р§С‚Рѕ РІР·СЏС‚СЊ:
 
 - `CalculateProjectionCenters`;
-- использование `GetProjectionRaw`;
-- поправку на canted displays.
+- РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ `GetProjectionRaw`;
+- РїРѕРїСЂР°РІРєСѓ РЅР° canted displays.
 
-Почему это полезно:
+РџРѕС‡РµРјСѓ СЌС‚Рѕ РїРѕР»РµР·РЅРѕ:
 
-- если мы захотим сделать lens-aware crop;
-- если появится radial blur/mask/sharpen;
-- если захотим более умную обработку под разные headset optics.
+- РµСЃР»Рё РјС‹ Р·Р°С…РѕС‚РёРј СЃРґРµР»Р°С‚СЊ lens-aware crop;
+- РµСЃР»Рё РїРѕСЏРІРёС‚СЃСЏ radial blur/mask/sharpen;
+- РµСЃР»Рё Р·Р°С…РѕС‚РёРј Р±РѕР»РµРµ СѓРјРЅСѓСЋ РѕР±СЂР°Р±РѕС‚РєСѓ РїРѕРґ СЂР°Р·РЅС‹Рµ headset optics.
 
-Почему не сейчас:
+РџРѕС‡РµРјСѓ РЅРµ СЃРµР№С‡Р°СЃ:
 
-- наш текущий MVP рендерит простое окно в реальность;
-- сейчас нам сначала нужно доказать доступ к real camera feed, а не идеальную optical correctness.
+- РЅР°С€ С‚РµРєСѓС‰РёР№ MVP СЂРµРЅРґРµСЂРёС‚ РїСЂРѕСЃС‚РѕРµ РѕРєРЅРѕ РІ СЂРµР°Р»СЊРЅРѕСЃС‚СЊ;
+- СЃРµР№С‡Р°СЃ РЅР°Рј СЃРЅР°С‡Р°Р»Р° РЅСѓР¶РЅРѕ РґРѕРєР°Р·Р°С‚СЊ РґРѕСЃС‚СѓРї Рє real camera feed, Р° РЅРµ РёРґРµР°Р»СЊРЅСѓСЋ optical correctness.
 
 ### 5. Resolution scaling heuristics
 
-Файл:
+Р¤Р°Р№Р»:
 
-- [resolution_scaling.h](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/resolution_scaling.h)
+- `resolution_scaling.h`
 
-Что взять:
+Р§С‚Рѕ РІР·СЏС‚СЊ:
 
-- простую логику расчета `input/output resolution`;
-- выравнивание размеров до четных значений.
+- РїСЂРѕСЃС‚СѓСЋ Р»РѕРіРёРєСѓ СЂР°СЃС‡РµС‚Р° `input/output resolution`;
+- РІС‹СЂР°РІРЅРёРІР°РЅРёРµ СЂР°Р·РјРµСЂРѕРІ РґРѕ С‡РµС‚РЅС‹С… Р·РЅР°С‡РµРЅРёР№.
 
-Почему это полезно:
+РџРѕС‡РµРјСѓ СЌС‚Рѕ РїРѕР»РµР·РЅРѕ:
 
-- если мы добавим internal processing resolution;
-- это поможет избежать лишних артефактов в upscaler/shader path.
+- РµСЃР»Рё РјС‹ РґРѕР±Р°РІРёРј internal processing resolution;
+- СЌС‚Рѕ РїРѕРјРѕР¶РµС‚ РёР·Р±РµР¶Р°С‚СЊ Р»РёС€РЅРёС… Р°СЂС‚РµС„Р°РєС‚РѕРІ РІ upscaler/shader path.
 
 ### 6. Config design ideas
 
-Файлы:
+Р¤Р°Р№Р»С‹:
 
-- [config.h](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/config.h)
-- [config.cpp](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/config.cpp)
+- `config.h`
+- `config.cpp`
 
-Что взять:
+Р§С‚Рѕ РІР·СЏС‚СЊ:
 
-- группировку настроек по feature blocks;
+- РіСЂСѓРїРїРёСЂРѕРІРєСѓ РЅР°СЃС‚СЂРѕРµРє РїРѕ feature blocks;
 - parse/validate/defaults pattern;
-- печать активной конфигурации в лог.
+- РїРµС‡Р°С‚СЊ Р°РєС‚РёРІРЅРѕР№ РєРѕРЅС„РёРіСѓСЂР°С†РёРё РІ Р»РѕРі.
 
-Почему это полезно:
+РџРѕС‡РµРјСѓ СЌС‚Рѕ РїРѕР»РµР·РЅРѕ:
 
-- у нас уже есть JSON settings, но когда добавятся post-process фичи, удобно будет держать их отдельным блоком:
+- Сѓ РЅР°СЃ СѓР¶Рµ РµСЃС‚СЊ JSON settings, РЅРѕ РєРѕРіРґР° РґРѕР±Р°РІСЏС‚СЃСЏ post-process С„РёС‡Рё, СѓРґРѕР±РЅРѕ Р±СѓРґРµС‚ РґРµСЂР¶Р°С‚СЊ РёС… РѕС‚РґРµР»СЊРЅС‹Рј Р±Р»РѕРєРѕРј:
   - `postprocess`
   - `sharpening`
   - `upscaling`
@@ -174,143 +174,144 @@
 
 ### 7. Output capture for diagnostics
 
-Файл:
+Р¤Р°Р№Р»:
 
-- [d3d11_post_processor.cpp](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/d3d11/d3d11_post_processor.cpp)
+- `d3d11_post_processor.cpp`
 
-Что взять:
+Р§С‚Рѕ РІР·СЏС‚СЊ:
 
-- идею сохранения промежуточного или итогового output texture.
+- РёРґРµСЋ СЃРѕС…СЂР°РЅРµРЅРёСЏ РїСЂРѕРјРµР¶СѓС‚РѕС‡РЅРѕРіРѕ РёР»Рё РёС‚РѕРіРѕРІРѕРіРѕ output texture.
 
-Почему это полезно:
+РџРѕС‡РµРјСѓ СЌС‚Рѕ РїРѕР»РµР·РЅРѕ:
 
-- это очень поможет при дебаге качества camera feed;
-- удобно сравнивать raw frame, cropped frame, sharpened frame.
+- СЌС‚Рѕ РѕС‡РµРЅСЊ РїРѕРјРѕР¶РµС‚ РїСЂРё РґРµР±Р°РіРµ РєР°С‡РµСЃС‚РІР° camera feed;
+- СѓРґРѕР±РЅРѕ СЃСЂР°РІРЅРёРІР°С‚СЊ raw frame, cropped frame, sharpened frame.
 
 ## Never
 
-Эти части не стоит переносить в наш проект как основу.
+Р­С‚Рё С‡Р°СЃС‚Рё РЅРµ СЃС‚РѕРёС‚ РїРµСЂРµРЅРѕСЃРёС‚СЊ РІ РЅР°С€ РїСЂРѕРµРєС‚ РєР°Рє РѕСЃРЅРѕРІСѓ.
 
 ### 8. OpenVR submit hooks
 
-Файлы:
+Р¤Р°Р№Р»С‹:
 
-- [openvr_hooks.cpp](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/openvr/openvr_hooks.cpp)
-- [openvr_hooks.h](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/openvr/openvr_hooks.h)
+- `openvr_hooks.cpp`
+- `openvr_hooks.h`
 
-Почему не брать:
+РџРѕС‡РµРјСѓ РЅРµ Р±СЂР°С‚СЊ:
 
-- они хукают `IVRCompositor::Submit`, `WaitGetPoses`, `VRClientCoreFactory`;
-- это нужно для модификации чужой игры изнутри;
-- нам не нужно вмешиваться в render path игры, чтобы показать собственный overlay.
+- РѕРЅРё С…СѓРєР°СЋС‚ `IVRCompositor::Submit`, `WaitGetPoses`, `VRClientCoreFactory`;
+- СЌС‚Рѕ РЅСѓР¶РЅРѕ РґР»СЏ РјРѕРґРёС„РёРєР°С†РёРё С‡СѓР¶РѕР№ РёРіСЂС‹ РёР·РЅСѓС‚СЂРё;
+- РЅР°Рј РЅРµ РЅСѓР¶РЅРѕ РІРјРµС€РёРІР°С‚СЊСЃСЏ РІ render path РёРіСЂС‹, С‡С‚РѕР±С‹ РїРѕРєР°Р·Р°С‚СЊ СЃРѕР±СЃС‚РІРµРЅРЅС‹Р№ overlay.
 
-Риск:
+Р РёСЃРє:
 
-- сильно усложняет поддержку;
-- добавляет хрупкость по версиям интерфейсов OpenVR;
-- создает лишние точки отказа.
+- СЃРёР»СЊРЅРѕ СѓСЃР»РѕР¶РЅСЏРµС‚ РїРѕРґРґРµСЂР¶РєСѓ;
+- РґРѕР±Р°РІР»СЏРµС‚ С…СЂСѓРїРєРѕСЃС‚СЊ РїРѕ РІРµСЂСЃРёСЏРј РёРЅС‚РµСЂС„РµР№СЃРѕРІ OpenVR;
+- СЃРѕР·РґР°РµС‚ Р»РёС€РЅРёРµ С‚РѕС‡РєРё РѕС‚РєР°Р·Р°.
 
 ### 9. Proxy DLL architecture
 
-Файлы:
+Р¤Р°Р№Р»С‹:
 
-- [proxy/openvr.cpp](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/proxy/openvr.cpp)
-- [proxy/dxgi.cpp](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/proxy/dxgi.cpp)
-- [proxy/d3d11.cpp](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/proxy/d3d11.cpp)
-- [dllmain.cpp](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/dllmain.cpp)
+- `proxy/openvr.cpp`
+- `proxy/dxgi.cpp`
+- `proxy/d3d11.cpp`
+- `dllmain.cpp`
 
-Почему не брать:
+РџРѕС‡РµРјСѓ РЅРµ Р±СЂР°С‚СЊ:
 
-- это вся модель "подсунуть DLL рядом с игрой";
-- она не соответствует нашему продукту;
-- companion app должен жить как отдельный процесс с явным lifecycle.
+- СЌС‚Рѕ РІСЃСЏ РјРѕРґРµР»СЊ "РїРѕРґСЃСѓРЅСѓС‚СЊ DLL СЂСЏРґРѕРј СЃ РёРіСЂРѕР№";
+- РѕРЅР° РЅРµ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ РЅР°С€РµРјСѓ РїСЂРѕРґСѓРєС‚Сѓ;
+- companion app РґРѕР»Р¶РµРЅ Р¶РёС‚СЊ РєР°Рє РѕС‚РґРµР»СЊРЅС‹Р№ РїСЂРѕС†РµСЃСЃ СЃ СЏРІРЅС‹Рј lifecycle.
 
 ### 10. Generic hook framework
 
-Файлы:
+Р¤Р°Р№Р»С‹:
 
-- [hooks.h](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/hooks.h)
-- [hooks.cpp](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/hooks.cpp)
+- `hooks.h`
+- `hooks.cpp`
 
-Почему не брать:
+РџРѕС‡РµРјСѓ РЅРµ Р±СЂР°С‚СЊ:
 
-- MinHook нам не нужен для текущего продукта;
-- если мы идем в standalone overlay app, hook-based integration только увеличит технический долг.
+- MinHook РЅР°Рј РЅРµ РЅСѓР¶РµРЅ РґР»СЏ С‚РµРєСѓС‰РµРіРѕ РїСЂРѕРґСѓРєС‚Р°;
+- РµСЃР»Рё РјС‹ РёРґРµРј РІ standalone overlay app, hook-based integration С‚РѕР»СЊРєРѕ СѓРІРµР»РёС‡РёС‚ С‚РµС…РЅРёС‡РµСЃРєРёР№ РґРѕР»Рі.
 
 ### 11. Oculus-specific injection path
 
-Файлы:
+Р¤Р°Р№Р»С‹:
 
-- [oculus_hooks.cpp](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/oculus/oculus_hooks.cpp)
-- [oculus_manager.cpp](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/oculus/oculus_manager.cpp)
+- `oculus_hooks.cpp`
+- `oculus_manager.cpp`
 
-Почему не брать:
+РџРѕС‡РµРјСѓ РЅРµ Р±СЂР°С‚СЊ:
 
-- это другая runtime-стратегия;
-- она не приближает нас к показу tracked camera feed в OpenVR overlay.
+- СЌС‚Рѕ РґСЂСѓРіР°СЏ runtime-СЃС‚СЂР°С‚РµРіРёСЏ;
+- РѕРЅР° РЅРµ РїСЂРёР±Р»РёР¶Р°РµС‚ РЅР°СЃ Рє РїРѕРєР°Р·Сѓ tracked camera feed РІ OpenVR overlay.
 
 ### 12. DXVK / Vulkan patch path
 
-Файлы:
+Р¤Р°Р№Р»С‹:
 
-- [openvr_manager.cpp](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/openvr/openvr_manager.cpp)
+- `openvr_manager.cpp`
 
-Почему не брать сейчас:
+РџРѕС‡РµРјСѓ РЅРµ Р±СЂР°С‚СЊ СЃРµР№С‡Р°СЃ:
 
-- это сложная совместимость ради перехвата чужих game textures;
-- для MVP overlay app это просто не по критическому пути.
+- СЌС‚Рѕ СЃР»РѕР¶РЅР°СЏ СЃРѕРІРјРµСЃС‚РёРјРѕСЃС‚СЊ СЂР°РґРё РїРµСЂРµС…РІР°С‚Р° С‡СѓР¶РёС… game textures;
+- РґР»СЏ MVP overlay app СЌС‚Рѕ РїСЂРѕСЃС‚Рѕ РЅРµ РїРѕ РєСЂРёС‚РёС‡РµСЃРєРѕРјСѓ РїСѓС‚Рё.
 
 ## Optional Later
 
 ### 13. NVIDIA Variable Rate Shading
 
-Файлы:
+Р¤Р°Р№Р»С‹:
 
-- [d3d11_variable_rate_shading.cpp](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/d3d11/d3d11_variable_rate_shading.cpp)
-- [d3d11_variable_rate_shading.h](C:/Users/Username/Documents/VR.app/.tmp/vrperfkit/src/d3d11/d3d11_variable_rate_shading.h)
+- `d3d11_variable_rate_shading.cpp`
+- `d3d11_variable_rate_shading.h`
 
-Статус:
+РЎС‚Р°С‚СѓСЃ:
 
-- не `Phase 1`;
-- не `Never`;
-- только как дальняя опция.
+- РЅРµ `Phase 1`;
+- РЅРµ `Never`;
+- С‚РѕР»СЊРєРѕ РєР°Рє РґР°Р»СЊРЅСЏСЏ РѕРїС†РёСЏ.
 
-Почему:
+РџРѕС‡РµРјСѓ:
 
 - NVIDIA-only;
-- завязано на `NVAPI`;
-- польза выше для тяжелого stereo render path, чем для нашего небольшого overlay;
-- может стать полезным только если overlay эволюционирует в более дорогую real-time post-process поверхность.
+- Р·Р°РІСЏР·Р°РЅРѕ РЅР° `NVAPI`;
+- РїРѕР»СЊР·Р° РІС‹С€Рµ РґР»СЏ С‚СЏР¶РµР»РѕРіРѕ stereo render path, С‡РµРј РґР»СЏ РЅР°С€РµРіРѕ РЅРµР±РѕР»СЊС€РѕРіРѕ overlay;
+- РјРѕР¶РµС‚ СЃС‚Р°С‚СЊ РїРѕР»РµР·РЅС‹Рј С‚РѕР»СЊРєРѕ РµСЃР»Рё overlay СЌРІРѕР»СЋС†РёРѕРЅРёСЂСѓРµС‚ РІ Р±РѕР»РµРµ РґРѕСЂРѕРіСѓСЋ real-time post-process РїРѕРІРµСЂС…РЅРѕСЃС‚СЊ.
 
 ## Recommended Integration Order
 
-1. Не переносить ничего из hook/proxy архитектуры.
-2. Сначала закончить наш standalone `camera probe + texture overlay` путь.
-3. Когда появится нативный `D3D11 texture` path, портировать:
+1. РќРµ РїРµСЂРµРЅРѕСЃРёС‚СЊ РЅРёС‡РµРіРѕ РёР· hook/proxy Р°СЂС…РёС‚РµРєС‚СѓСЂС‹.
+2. РЎРЅР°С‡Р°Р»Р° Р·Р°РєРѕРЅС‡РёС‚СЊ РЅР°С€ standalone `camera probe + texture overlay` РїСѓС‚СЊ.
+3. РљРѕРіРґР° РїРѕСЏРІРёС‚СЃСЏ РЅР°С‚РёРІРЅС‹Р№ `D3D11 texture` path, РїРѕСЂС‚РёСЂРѕРІР°С‚СЊ:
    - `d3d11_helper`
    - `CAS`
    - GPU profiling queries
-4. После этого, если будет реальная польза:
+4. РџРѕСЃР»Рµ СЌС‚РѕРіРѕ, РµСЃР»Рё Р±СѓРґРµС‚ СЂРµР°Р»СЊРЅР°СЏ РїРѕР»СЊР·Р°:
    - `FSR/NIS`
    - projection center math
    - output capture
 
 ## Final Recommendation
 
-Из `vrperfkit` стоит использовать:
+РР· `vrperfkit` СЃС‚РѕРёС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ:
 
-- идеи;
-- шейдеры;
+- РёРґРµРё;
+- С€РµР№РґРµСЂС‹;
 - D3D11 helper code;
 - post-process architecture.
 
-Из `vrperfkit` не стоит использовать:
+РР· `vrperfkit` РЅРµ СЃС‚РѕРёС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ:
 
-- способ встраивания;
+- СЃРїРѕСЃРѕР± РІСЃС‚СЂР°РёРІР°РЅРёСЏ;
 - hook/proxy runtime;
-- всю модель "мод для игры".
+- РІСЃСЋ РјРѕРґРµР»СЊ "РјРѕРґ РґР»СЏ РёРіСЂС‹".
 
-Если коротко:
+Р•СЃР»Рё РєРѕСЂРѕС‚РєРѕ:
 
 - `reuse selected rendering tech`
 - `do not reuse product architecture`
+

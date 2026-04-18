@@ -1,4 +1,4 @@
-# OpenVR-AdvancedSettings Reuse Plan
+﻿# OpenVR-AdvancedSettings Reuse Plan
 
 - Date: `2026-04-10`
 - Source repository:
@@ -63,7 +63,7 @@ The repo has dedicated tab controllers for major areas:
 
 This is visible in:
 
-- [.tmp/OpenVR-AdvancedSettings/src/tabcontrollers](C:/Users/Username/Documents/VR.app/.tmp/OpenVR-AdvancedSettings/src/tabcontrollers)
+- `.tmp/OpenVR-AdvancedSettings/src/tabcontrollers`
 
 What to apply in `VR.app`:
 
@@ -107,8 +107,8 @@ Its binding system includes:
 
 Primary source:
 
-- [.tmp/OpenVR-AdvancedSettings/docs/SteamVRInputGuide.md](C:/Users/Username/Documents/VR.app/.tmp/OpenVR-AdvancedSettings/docs/SteamVRInputGuide.md)
-- [.tmp/OpenVR-AdvancedSettings/docs/keyboard_input_guide.md](C:/Users/Username/Documents/VR.app/.tmp/OpenVR-AdvancedSettings/docs/keyboard_input_guide.md)
+- `.tmp/OpenVR-AdvancedSettings/docs/SteamVRInputGuide.md`
+- `.tmp/OpenVR-AdvancedSettings/docs/keyboard_input_guide.md`
 
 What to apply in `VR.app`:
 
@@ -125,8 +125,8 @@ moves away from ad-hoc string keys.
 
 Primary sources:
 
-- [.tmp/OpenVR-AdvancedSettings/docs/specs/Settings-API.md](C:/Users/Username/Documents/VR.app/.tmp/OpenVR-AdvancedSettings/docs/specs/Settings-API.md)
-- [.tmp/OpenVR-AdvancedSettings/docs/specs/Settings-Object-API.md](C:/Users/Username/Documents/VR.app/.tmp/OpenVR-AdvancedSettings/docs/specs/Settings-Object-API.md)
+- `.tmp/OpenVR-AdvancedSettings/docs/specs/Settings-API.md`
+- `.tmp/OpenVR-AdvancedSettings/docs/specs/Settings-Object-API.md`
 
 What is valuable:
 
@@ -152,7 +152,7 @@ singletons and then treats them as globally accessible utility modules.
 
 Primary source:
 
-- [.tmp/OpenVR-AdvancedSettings/src/overlaycontroller.cpp](C:/Users/Username/Documents/VR.app/.tmp/OpenVR-AdvancedSettings/src/overlaycontroller.cpp)
+- `.tmp/OpenVR-AdvancedSettings/src/overlaycontroller.cpp`
 
 What to apply in `VR.app`:
 
@@ -174,7 +174,7 @@ It includes things like:
 
 Primary source:
 
-- [.tmp/OpenVR-AdvancedSettings/src/tabcontrollers/UtilitiesTabController.h](C:/Users/Username/Documents/VR.app/.tmp/OpenVR-AdvancedSettings/src/tabcontrollers/UtilitiesTabController.h)
+- `.tmp/OpenVR-AdvancedSettings/src/tabcontrollers/UtilitiesTabController.h`
 
 What to apply in `VR.app`:
 
@@ -193,7 +193,7 @@ and compositor frame stats such as presented/dropped/reprojected frames.
 
 Primary source:
 
-- [.tmp/OpenVR-AdvancedSettings/src/tabcontrollers/StatisticsTabController.h](C:/Users/Username/Documents/VR.app/.tmp/OpenVR-AdvancedSettings/src/tabcontrollers/StatisticsTabController.h)
+- `.tmp/OpenVR-AdvancedSettings/src/tabcontrollers/StatisticsTabController.h`
 
 What to apply in `VR.app`:
 
@@ -217,7 +217,7 @@ This is a strong reference for a future `VR.app metrics` feature set.
 
 Primary source:
 
-- [.tmp/OpenVR-AdvancedSettings/src/tabcontrollers/SteamVRTabController.h](C:/Users/Username/Documents/VR.app/.tmp/OpenVR-AdvancedSettings/src/tabcontrollers/SteamVRTabController.h)
+- `.tmp/OpenVR-AdvancedSettings/src/tabcontrollers/SteamVRTabController.h`
 
 What to apply in `VR.app`:
 
@@ -305,3 +305,4 @@ entire `VR.app` research base because it proves that:
 If `DesktopPlus` is the best reference for desktop windows in VR, then
 `OpenVR-AdvancedSettings` is one of the best references for a broad
 SteamVR utility platform.
+

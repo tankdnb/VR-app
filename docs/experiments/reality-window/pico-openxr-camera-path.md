@@ -1,4 +1,4 @@
-# PICO OpenXR Camera Path
+﻿# PICO OpenXR Camera Path
 
 - Date: `2026-04-09`
 - Goal: clarify which official `PICO/OpenXR` path can actually satisfy the product requirement of showing real camera imagery inside our own window.
@@ -113,9 +113,10 @@ to something closer to:
 
 This repository now includes an on-device extension probe scaffold:
 
-- [PicoOpenXrExtensionProbe](C:/Users/Username/Documents/VR.app/spikes/PicoOpenXrExtensionProbe/README.md)
+- [PicoOpenXrExtensionProbe](../../../spikes/PicoOpenXrExtensionProbe/README.md)
 
 That probe does not capture camera frames yet. It now answers two decisive questions:
 
 - does the official Android loader path really work on-device?
 - which actual extensions does the headset runtime advertise for camera/passthrough/MR?
+

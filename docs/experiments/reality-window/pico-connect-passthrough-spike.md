@@ -1,4 +1,4 @@
-# PICO Connect Passthrough Spike
+﻿# PICO Connect Passthrough Spike
 
 - Date: `2026-04-09`
 - Target headset: `PICO 4 Pro`
@@ -44,7 +44,7 @@ The missing answer is:
 
 Latest built APK:
 
-- [app-debug.apk](C:/Users/Username/Documents/VR.app/spikes/PicoOpenXrExtensionProbe/app/build/outputs/apk/debug/app-debug.apk)
+- Local build output: `spikes/PicoOpenXrExtensionProbe/app/build/outputs/apk/debug/app-debug.apk`
 
 ## Expected evaluation pattern
 
@@ -93,3 +93,4 @@ That is now the baseline to compare against when you run the same app manually i
 
 - failure in both modes:
   even standalone passthrough session creation is not yet good enough on this path.
+

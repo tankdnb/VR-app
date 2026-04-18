@@ -1,4 +1,4 @@
-# PICO OpenXR Passthrough Probe
+﻿# PICO OpenXR Passthrough Probe
 
 This spike has moved beyond simple extension enumeration.
 
@@ -119,4 +119,5 @@ This spike vendors official Khronos OpenXR headers:
 - `app/src/main/cpp/third_party/openxr/openxr.h`
 - `app/src/main/cpp/third_party/openxr/openxr_platform_defines.h`
 
-See [THIRD_PARTY_NOTICES.md](C:/Users/Username/Documents/VR.app/spikes/PicoOpenXrExtensionProbe/THIRD_PARTY_NOTICES.md).
+See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+

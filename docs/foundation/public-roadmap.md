@@ -2,8 +2,12 @@
 
 ## Goal
 
-Turn this repository into a practical base for multiple VR utilities while
-keeping the original passthrough research documented and reusable.
+Grow this repository as both:
+
+- a practical base for multiple VR utilities
+- a public knowledge base for VR utility development
+
+while keeping the original passthrough research documented and reusable.
 
 ## Phase 1: Utility Overlay Base
 
@@ -70,8 +74,13 @@ If the goal is to ship something useful quickly, the strongest order is:
 
 ## Success criteria for the repository
 
+- The repository is clearly understandable as a knowledge base, not just one
+  app.
 - New tools share one runtime foundation instead of starting from scratch.
 - Research findings stay documented and discoverable.
+- Reusable methods and implementation patterns keep growing over time.
+- Russian-speaking users can understand the project through dedicated public
+  entry points.
 - Public contributors can understand what is production-ready versus
   experimental.
 - Each new utility can be built as a focused layer on top of the same base.

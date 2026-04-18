@@ -1,43 +1,66 @@
 # VR.app
 
-`VR.app` is a foundation repository for building practical VR utilities,
-overlays, diagnostics tools, and experimental runtime integrations.
+English | [Русский](README.ru.md)
 
-The project started as a `Reality Window` MVP for showing camera-backed
-real-world content inside VR. That original direction produced useful code,
-research, and clear technical findings, even though the `Pico Connect +
-onboard-camera passthrough` path did not prove viable for the target headset.
+`VR.app` is a public `knowledge repository`, `pattern library`, and `working
+base` for building VR utilities, overlays, diagnostics tools, tracking helpers,
+and experimental XR integrations.
 
-Instead of throwing that work away, this repository now serves as the shared
-base for future VR tools.
+This repo is no longer best described as one standalone VR app.
+
+It started from a `Reality Window` prototype, but it has grown into something
+more useful: a curated place where we collect studied repositories, reusable
+methods, implementation patterns, prototype code, and research workflows for
+future VR tools.
+
+## What this repository is
+
+`VR.app` combines three layers:
+
+1. `Knowledge repository`
+   - studied public VR-related repositories
+   - extracted implementation methods
+   - overlap families and research waves
+   - backlog-driven discovery and deep-pass workflow
+2. `Working foundation`
+   - reusable `OpenVR` prototype code in `C# / .NET 8`
+   - shared runtime and processing abstractions
+   - spike apps and helper scripts
+3. `Experiment archive`
+   - passthrough and camera experiments
+   - feasibility notes
+   - dead ends that still produced useful engineering knowledge
+
+## Who this repository is for
+
+- VR developers looking for implementation references
+- people building utilities, overlays, dashboards, and VR power-user tools
+- researchers comparing public VR projects and extracting methods
+- contributors who want to add new repositories in a structured way
+- Russian-speaking users who need an additional entry point in Russian
 
 ## What this repository contains
 
-- A working `OpenVR` companion overlay prototype in `C# / .NET 8`
-- Reusable abstractions for camera sources and frame processing
-- A `PICO/OpenXR` spike app used to probe passthrough and extension support
-- Research notes on SteamVR, OpenXR, overlays, passthrough, performance, and
-  VR utility products
+- a canonical registry of tracked VR repositories
+- reusable methods and product patterns for VR utility development
+- landscape docs grouped by families and research waves
+- a working `OpenVR` companion overlay prototype
+- `PICO/OpenXR` spike apps and feasibility research
+- helper scripts for repeatable GitHub research passes
 
-## Current status
+## Current identity of the project
 
-What is already proven:
+The most accurate way to describe `VR.app` today is:
 
-- Desktop `OpenVR` overlays work on the target setup
-- World-locked and hand-locked overlay behavior is viable
-- A reusable frame-processing pipeline is in place
-- `PICO` OpenXR runtime probing works on-device
+- `knowledge repository for VR utility development`
+- `curated research base for VR tools and overlays`
+- `pattern library plus working prototypes`
 
-What is not proven:
+What it should not promise:
 
-- `Pico Connect` access to the headset's onboard camera feed
-- A production passthrough path that works during active PCVR streaming
-
-Current product direction:
-
-- Treat this repo as a base for `VR utility overlays`, `wrist dashboards`,
-  `desktop/reference windows`, `metrics tools`, `tracking helpers`, and other
-  VR power-user utilities
+- one finished end-user product
+- universal passthrough support
+- production-ready support for every runtime and headset
 
 ## Repository layout
 
@@ -55,10 +78,35 @@ scripts/
 
 docs/
   README.md                  docs index
+  README.ru.md               docs index in Russian
   foundation/                stable platform and roadmap docs
   experiments/               feasibility notes and original passthrough track
   research/                  landscape, reuse plans, registry, and templates
 ```
+
+## Repository entry points
+
+Start here:
+
+- `README.ru.md` for the Russian-language overview
+- `docs/README.md` for the English documentation index
+- `docs/README.ru.md` for the Russian documentation index
+- `docs/foundation/repository-positioning.md` for the public-facing repository
+  identity
+- `docs/research/methods/vr-utility-methods-catalog.md` for reusable methods
+- `docs/research/catalog/project-registry.md` for the canonical tracked-project
+  list
+
+## Working code and prototypes
+
+The repository still includes real code and experiments.
+
+The main code foundation currently includes:
+
+- `OpenVR` overlay prototype code
+- reusable camera/source abstractions
+- frame-processing pipeline building blocks
+- `PICO/OpenXR` probing experiments
 
 ## Desktop app commands
 
@@ -88,20 +136,22 @@ dotnet run --project .\src\VRRealityWindow.App -- overlay --duration-seconds 20
 - JSON settings and experiment configuration
 - `PicoOpenXrExtensionProbe` for Android/OpenXR capability discovery
 
-## Best next products from this foundation
+## Best next outputs from this repository
 
-- `VR Utility Overlay Suite`
-- `Wrist Dashboard / quick actions panel`
-- `Reference windows for work in VR`
-- `VR diagnostics and device metrics`
-- `Tracking / calibration helpers`
-- `External-camera reality tools`
+- new VR utilities built on top of the existing foundation
+- structured deep-pass research waves
+- reusable methods for overlay, OpenXR layer, tracker bridge, and diagnostics
+- contribution-ready public knowledge for other VR developers
 
 ## Documentation map
 
 Start here:
 
+- `README.ru.md`
 - `docs/README.md`
+- `docs/README.ru.md`
+- `docs/foundation/repository-positioning.md`
+- `docs/foundation/repository-positioning-backlog.md`
 - `docs/foundation/platform-foundation.md`
 - `docs/foundation/public-roadmap.md`
 - `docs/research/README.md`

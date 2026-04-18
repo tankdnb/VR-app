@@ -1,9 +1,10 @@
-# Documentation Index
+# Индекс Документации
 
-[Русский](README.ru.md)
+[English](README.md) | Русский
 
-The documentation is now organized into stable categories instead of a flat
-list of unrelated markdown files.
+Документация в `VR.app` организована не как плоский набор markdown-файлов, а
+как структурированная база знаний по VR-утилитам, VR-инструментам и reusable
+implementation patterns.
 
 ## 1. Foundation
 
@@ -13,23 +14,23 @@ list of unrelated markdown files.
 - `foundation/platform-foundation.md`
 - `foundation/public-roadmap.md`
 
-Use this section for:
+Используй этот раздел для:
 
-- repository purpose;
-- product direction;
-- reusable platform assumptions.
+- понимания, чем является репозиторий публично;
+- общей цели проекта;
+- product direction и platform assumptions.
 
 ## 2. Experiments
 
 - `experiments/README.md`
 - `experiments/reality-window/README.md`
 
-Use this section for:
+Используй этот раздел для:
 
-- original passthrough and reality-window work;
+- исходной passthrough-ветки;
 - feasibility notes;
-- hardware-specific experiments;
-- dead ends that still carry reusable engineering lessons.
+- hardware-specific экспериментов;
+- тупиковых, но полезных инженерных выводов.
 
 ## 3. Research
 

@@ -2,8 +2,8 @@
 
 ## Purpose
 
-`VR.app` is a reusable foundation for building VR utility software instead of a
-single one-off prototype.
+`VR.app` is a public knowledge repository and reusable foundation for VR
+utility development, not a single one-off prototype.
 
 The repository keeps the original `Reality Window` work, but now treats it as a
 technical seed that produced:
@@ -11,15 +11,16 @@ technical seed that produced:
 - a working overlay runtime path;
 - reusable camera and processing abstractions;
 - a PICO/OpenXR probing workflow;
-- a large body of architecture and product research.
+- a large body of architecture, product, and repository research.
 
 ## Core design principles
 
-1. Build reusable infrastructure before niche UX.
-2. Keep runtime-specific integration isolated behind clear interfaces.
-3. Favor practical utility tools that can ship on current hardware.
-4. Preserve experiments and findings, even when a product hypothesis fails.
-5. Design around overlays, diagnostics, and control surfaces first.
+1. Preserve and structure knowledge, not only code.
+2. Build reusable infrastructure before niche UX.
+3. Keep runtime-specific integration isolated behind clear interfaces.
+4. Favor practical utility tools that can ship on current hardware.
+5. Preserve experiments and findings, even when a product hypothesis fails.
+6. Design around overlays, diagnostics, and control surfaces first.
 
 ## Reusable capabilities already in repo
 
@@ -45,7 +46,13 @@ technical seed that produced:
 
 ## What this repo should become
 
-The foundation is best suited for a family of utilities such as:
+The repository is best suited to become:
+
+- a durable knowledge base for VR utility development;
+- a pattern library for overlays, bridges, diagnostics, and helpers;
+- a working prototype foundation for future VR tools.
+
+The most natural utility directions inside that frame are:
 
 - wrist dashboards
 - quick action panels
@@ -59,6 +66,7 @@ The foundation is best suited for a family of utilities such as:
 
 Right now the repository should not promise:
 
+- that it is one finished application;
 - universal passthrough access across all headsets
 - raw camera access from `Pico Connect`
 - production-ready mixed reality

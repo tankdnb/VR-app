@@ -1,4 +1,4 @@
-# Local Source Cache Workflow
+﻿# Local Source Cache Workflow
 
 - Date: `2026-04-18`
 - Goal: define how `VR.app` should download GitHub repositories for code-level
@@ -43,7 +43,7 @@ Use a `local-only source cache`:
 
 Use:
 
-- [Sync-GitHubResearchSources.ps1](C:/Users/Username/Documents/VR.app/scripts/research/Sync-GitHubResearchSources.ps1)
+- [Sync-GitHubResearchSources.ps1](../../../scripts/research/Sync-GitHubResearchSources.ps1)
 
 Examples:
 
@@ -89,3 +89,4 @@ For that status, we should have:
 - extracted implementation notes;
 - updated family placement;
 - updated method or product impact where relevant.
+
