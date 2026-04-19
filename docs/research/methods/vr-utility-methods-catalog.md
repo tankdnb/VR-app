@@ -1443,6 +1443,142 @@ Use this document when designing a new module or utility and ask:
   gaze-layer research, vendor enhancement paths, and future eye-tracking bridge
   experiments.
 
+## Method 81: Runtime-side XR utility platform split across desktop host, landing-space app, and API layer
+
+- What it is:
+  a broader XR utility platform divides responsibilities between a desktop host,
+  a runtime-adjacent app or landing space, and an API layer that adapts data or
+  behavior at the runtime boundary.
+- Good for:
+  service-heavy XR utilities, runtime augmentation, companion spaces,
+  transport-to-runtime adaptation, and platform-shaped diagnostic tools.
+- Why it matters:
+  it keeps orchestration, UX, and runtime adaptation from collapsing into one
+  hard-to-maintain binary.
+- Strong references:
+  `clearxr-server`.
+- Best fit for `VR-apps-lab`:
+  larger runtime-side tools that need both desktop control surfaces and
+  runtime-level adaptation.
+
+## Method 82: Plugin-manifest overlay platform with Electron control shell and native overlay interop
+
+- What it is:
+  a desktop application hosts overlays through native interop while a plugin
+  system, manifest model, and persistence layer manage feature growth.
+- Good for:
+  monitor surfaces, dashboard suites, modular overlay platforms, domain-specific
+  utility shells, and plugin-driven XR tooling.
+- Why it matters:
+  it turns a one-off overlay app into a reusable platform with install,
+  update, and persistence semantics.
+- Strong references:
+  `vrkit-platform`.
+- Best fit for `VR-apps-lab`:
+  future overlay platforms that may need extensibility beyond one utility.
+
+## Method 83: IPC command surface that spawns synthetic controllers and trackers
+
+- What it is:
+  an OpenVR driver exposes a narrow command-oriented IPC contract so external
+  processes can create controllers or trackers and update their pose or input
+  state.
+- Good for:
+  controller emulation, external sensor bridges, custom input devices, rapid
+  prototyping, and thin language bindings on top of a driver.
+- Why it matters:
+  it makes `external process -> synthetic SteamVR device` a reusable platform
+  boundary instead of a one-off hardcoded bridge.
+- Strong references:
+  `Yet-Another-OpenVR-IPC-Driver`, `Simple-OpenVR-Bridge-Driver`.
+- Best fit for `VR-apps-lab`:
+  driver bridges, custom-device experiments, and controller-emulation helpers.
+
+## Method 84: Gesture-configurable hand-tracking bridge that emulates full controllers
+
+- What it is:
+  a hand-tracking tool maps gesture states into controller semantics through a
+  lightweight gesture config and a dedicated SteamVR-facing input profile.
+- Good for:
+  optical hand tracking, controllerless interaction experiments, accessibility
+  fallbacks, and hand-to-controller compatibility layers.
+- Why it matters:
+  it separates `gesture meaning` from `SteamVR controller contract`, which
+  makes the emulation model easier to adapt or replace.
+- Strong references:
+  `Quest-Link-Hand-Tracking`.
+- Best fit for `VR-apps-lab`:
+  hand-tracking adaptation experiments and controllerless interaction research.
+
+## Method 85: CI-friendly SteamVR manifest linter with disableable warning gates
+
+- What it is:
+  a focused validator checks SteamVR action metadata, rejects malformed JSON,
+  and treats expected issues as explicit warnings that can be disabled one by
+  one.
+- Good for:
+  CI, preflight validation, action-manifest authoring, regression checks, and
+  small workflow helpers.
+- Why it matters:
+  it moves fragile SteamVR metadata problems from runtime debugging into a
+  reproducible validation step.
+- Strong references:
+  `SteamVR-ActionsManifestValidator`.
+- Best fit for `VR-apps-lab`:
+  doctor tools, preflight helpers, and contributor-facing validation scripts.
+
+## Method 86: Mirror-texture feedback daemon that continuously rewrites runtime settings
+
+- What it is:
+  a background helper samples compositor or mirror-texture output, derives one
+  live metric from it, and continuously rewrites one runtime setting in
+  response.
+- Good for:
+  adaptive brightness, scene-dependent quality helpers, dynamic comfort
+  settings, and runtime feedback experiments driven by live rendered output.
+- Why it matters:
+  it creates a reusable pattern for `observe compositor output -> apply focused
+  environment adjustment`.
+- Strong references:
+  `SteamVRAdaptiveBrightness`.
+- Best fit for `VR-apps-lab`:
+  environment helpers, runtime feedback experiments, and narrow adaptive
+  utilities.
+
+## Method 87: Offscreen-browser overlay toolkit with JS interop and dual dashboard/in-game surfaces
+
+- What it is:
+  a reusable overlay toolkit renders a browser offscreen, maps it to VR
+  overlay textures, and exposes keyboard, messaging, and JS interop helpers for
+  both dashboard and in-game surfaces.
+- Good for:
+  web-driven control panels, browser-backed overlays, companion-app UIs, rich
+  dashboard surfaces, and rapid UI experimentation.
+- Why it matters:
+  it turns `browser UI in VR` into a reusable construction method instead of a
+  one-off product implementation.
+- Strong references:
+  `SteamVR-Webkit`, `SteamVR-WebApps`.
+- Best fit for `VR-apps-lab`:
+  browser-backed overlay experiments and reusable VR UI host layers.
+
+## Method 88: Settings-driven overlay suite with reusable overlay instances and persistence sync
+
+- What it is:
+  one overlay shell instantiates multiple overlay types from saved settings and
+  keeps each instance synchronized through reusable persistence and lifecycle
+  helpers.
+- Good for:
+  dashboard suites, overlay bundles, user-configurable utility collections,
+  reusable scene-based overlay frameworks, and multi-surface helper apps.
+- Why it matters:
+  it separates `overlay content` from `overlay lifecycle and persistence`,
+  which is one of the clearest ways to scale a VR utility suite.
+- Strong references:
+  `ovr-utils-dashboard`.
+- Best fit for `VR-apps-lab`:
+  overlay suite architecture and multi-tool host foundations.
+
 ## Recommended usage inside `VR-apps-lab`
 
 When a new utility idea appears:

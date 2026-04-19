@@ -54,8 +54,8 @@ This family is already converging into the future `OpenXR Doctor` direction.
 | `Ybalrid/OpenXR-Runtime-Manager` | Already studied | Small WPF runtime switcher built around registry reads plus well-known manifest probes |
 | `PlutoVR/OpenXR-OverlayLayer-1` | Already studied | Remote overlay client plus API-layer experiment using shared-memory RPC |
 | `pembem22/etvr-openxr-layer` | Already studied | Android-side implicit API layer that adapts OSC eye-tracking data into OpenXR gaze surfaces |
-| `clear-xr/clearxr-server` | Partially studied | Larger runtime-side service host whose registration and API-layer slices are stronger than the whole platform as a direct donor |
-| `vrkit-platform/vrkit-platform` | Not studied deeply | Still needs a cleaner future pass because the current public snapshot is too broad and scope-shifted |
+| `clear-xr/clearxr-server` | Already studied | Runtime-side platform split across desktop streamer, landing-space app, and action-rewriting OpenXR API layer |
+| `vrkit-platform/vrkit-platform` | Partially studied | Electron or native-interop utility platform with strong plugin and overlay-manager slices, but still broad and scope-shifted |
 
 ### Consolidation note
 
@@ -79,7 +79,7 @@ notification behavior.
 | `BOLL7708/OpenVR2WS` | Already studied | Broader runtime I/O and settings bridge |
 | `I5UCC/SteaMeeter` | Already studied | Dashboard bridge into an external audio/control system |
 | `I5UCC/ParameterSaveStates` | Not studied deeply | Related automation/control-surface family node |
-| `hai-vr/h-view` | Partially studied | Rich control-surface host with desktop parity, OSCQuery tooling, and a strong overlay slice |
+| `hai-vr/h-view` | Already studied | Desktop-plus-overlay utility host with OSCQuery tooling, hardware views, and strong overlay-management slices |
 | `MeroFune/GOpy` | Not studied deeply | Additional control/integration utility candidate |
 
 ### Consolidation note
@@ -200,7 +200,7 @@ by runtime or operating system.
 | `wayvr` | Already studied | Low-overhead desktop/app-launching view |
 | `rrkpp/SpotifyOverlay` | Already studied | Qt dashboard micro-utility rendered offscreen into OpenVR |
 | `Hotrian/OpenVRTwitchChat` | Already studied | Twitch-specific chat overlay with threaded service layer and profile persistence |
-| `CrispyPin/ovr-utils` | Partially studied | GitHub snapshot is stale and moved off-platform |
+| `CrispyPin/ovr-utils` | Partially studied | GitHub snapshot is now mostly a relocation stub, but the lineage still matters for the suite family |
 | `mittorn/ovr-utils-dashboard` | Already studied | Godot overlay shell with settings-driven overlay instances and reusable add-ons |
 | `artumino/SteamVR_HUDCenter` | Already studied | C# overlay helper and notification library with WinForms or WPF rasterization into VR |
 | `LapisGit/LapisOverlay` | Already studied | In-progress overlay-first host with dashboard, wrist surface, and media sidecar split |
@@ -260,6 +260,9 @@ knowledge needed for `device-side tooling`.
 | `ValveSoftware/openvr` tutorial/sample code | Already studied | Foundational reference |
 | `ChristophHaag/SteamVR-OpenHMD` | Already studied | OpenHMD hardware bridge into SteamVR/OpenVR |
 | `mm0zct/Oculus_Touch_Steam_Link` | Already studied | Mixed-VR controller, tracker, and sensor bridge driver |
+| `kodowiec/Yet-Another-OpenVR-IPC-Driver` | Already studied | Named-pipe or Unix-socket bridge driver that spawns synthetic trackers and controllers from external commands |
+| `bdub1011/Quest-Link-Hand-Tracking` | Partially studied | Gesture-configurable Quest hand-tracking to SteamVR controller-emulation path whose current public source is thin |
+| `mSparks43/PSVR-SteamVR-openHMD` | Not studied deeply | PSVR-specific Linux/OpenHMD comparison node for the mixed-VR bridge family |
 | `SlimeVR/SlimeVR-OpenVR-Driver` | Already studied | Modern tracker bridge driver with external service transport |
 | `oleuzop/VirtualSteamVRDriver` | Already studied | Virtual HMD driver for no-headset development and testing |
 | `finallyfunctional/openvr-driver-example` | Already studied | Beginner-friendly controller/input-emulation driver tutorial |
@@ -426,7 +429,7 @@ not only how finished utility products behave.
 | Project | Status | Notes |
 |---|---|---|
 | `sh-akira/VROverlay` | Already studied | Unity/OpenVR overlay sample with VR UI pointer plumbing |
-| `BenWoodford/SteamVR-Webkit` | Already studied | Browser-backed overlay toolkit with JS interop |
+| `BenWoodford/SteamVR-Webkit` | Already studied | Browser-backed overlay toolkit with JS interop and dual dashboard/in-game surfaces |
 | `BenWoodford/OVROverlayManager` | Already studied | Tiny Unity helper that turns render textures and OpenVR events into reusable overlay projectors |
 | `beniwtv/vr-streaming-overlay` | Already studied | Godot multi-overlay shell with widget/config split |
 | `Nyabsi/steamvr_overlay_vulkan` | Already studied | Modern Vulkan/ImGui overlay template |
@@ -437,8 +440,8 @@ not only how finished utility products behave.
 | `Martin-Oehler/SteamVR-WebApps` | Already studied | Web-app-driven overlay wrappers that demonstrate the thinnest `browser -> dashboard` shell |
 | `LapisGit/LapisOverlay` | Already studied | Unity overlay host with dashboard, wrist-surface, and sidecar-fed media panel pattern |
 | `KainosSoftwareLtd/VRSceneOverlay` | Already studied | Unity scene-overlay scaffold with tracked helpers and Leap-oriented augmentation |
-| `hai-vr/h-view` | Partially studied | Modern overlay-first utility host with ImGui rendering, desktop parity, and action-manifest-driven overlay management |
-| `vrkit-platform/vrkit-platform` | Not studied deeply | OpenXR monitor/overlay platform worth deeper inspection |
+| `hai-vr/h-view` | Already studied | Modern overlay-first utility host with ImGui rendering, desktop parity, and action-manifest-driven overlay management |
+| `vrkit-platform/vrkit-platform` | Partially studied | OpenXR monitor/overlay platform with plugin-manager and native-interop signals that still deserves a narrower future pass |
 | `LunarG/OpenXR-Overlays-UE4-Plugin` | Already studied | Tiny Unreal-side reference for injecting `XR_EXTX_overlay` session-create info |
 | `mbucchia/_ARCHIVE_OverXR` | Fork / variant only | Current GitHub state is an archive shell with little code to inspect |
 
@@ -471,8 +474,8 @@ interaction, distortion, or overlay-heavy workflows.
 | `sencercoltu/steamvr-undistort` | Already studied | Lens distortion adjustment tool for custom optics |
 | `elvissteinjr/SteamVR-VoidScene` | Already studied | Minimal scene app to lower baseline cost for overlay use |
 | `shieldmeidunn/SteamVRNullFlipper` | Already studied | Tiny backup-aware helper for flipping SteamVR into null-driver mode |
-| `Virus-vr/SteamVRAdaptiveBrightness` | Already studied | Mirror-texture analysis helper that continuously rewrites SteamVR brightness |
-| `username223/SteamVR-ActionsManifestValidator` | Already studied | CLI manifest validator for SteamVR input/action metadata |
+| `Virus-vr/SteamVRAdaptiveBrightness` | Already studied | Mirror-texture feedback daemon that continuously rewrites SteamVR brightness |
+| `username223/SteamVR-ActionsManifestValidator` | Already studied | CI-friendly manifest linter with explicit warning gates and duplicate-key rejection |
 | `Erimelowo/Lighthouse-Scale-Fix` | Already studied | Backup-safe one-shot patcher for lighthouse scale configuration |
 | `DavidRisch/steamvr_utils` | Already studied | Linux helper collection with a SteamVR lifecycle daemon, base-station power control, and audio switching |
 

@@ -55,6 +55,7 @@ Primary docs:
 - `../landscape/vr-projects-wave-17-openxr-runtime-managers-layers-and-service-hosts.md`
 - `../landscape/vr-projects-wave-21-openxr-provider-stacks-gaze-layers-and-runtime-side-utility-platforms.md`
 - `../landscape/vr-projects-wave-25-headsetless-qa-runtimes-null-driver-helpers-and-virtual-device-simulators.md`
+- `../landscape/vr-projects-wave-36-runtime-service-hosts-openxr-utility-platforms-and-layer-doctoring.md`
 - `../landscape/project-families.md`
 
 - `mbucchia/OpenXR-Toolkit` - `Already studied`
@@ -77,9 +78,9 @@ Primary docs:
 - `LunarG/OpenXR-OverlayLayer` - `Already studied`
 - `PlutoVR/OpenXR-OverlayLayer-1` - `Already studied`
 - `Ybalrid/OpenXR-Runtime-Manager` - `Already studied`
-- `clear-xr/clearxr-server` - `Partially studied`
+- `clear-xr/clearxr-server` - `Already studied`
 - `pembem22/etvr-openxr-layer` - `Already studied`
-- `vrkit-platform/vrkit-platform` - `Not studied deeply`
+- `vrkit-platform/vrkit-platform` - `Partially studied`
 - `LunarG/OpenXR-Overlays-UE4-Plugin` - `Already studied`
 - `mbucchia/_ARCHIVE_OverXR` - `Fork / variant only`
 - `mbucchia/Quad-Views-Foveated` - `Already studied`
@@ -109,6 +110,7 @@ Primary docs:
 - `../landscape/vr-projects-foundational-waves-1-7-retro-normalization.md`
 - `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
+- `../landscape/vr-projects-wave-39-overlay-host-lineage-dashboard-shells-and-browser-backed-surfaces.md`
 
 - `glenimp617/DesktopXR` - `Already studied`
 - `elvissteinjr/DesktopPlus` - `Already studied`
@@ -142,6 +144,7 @@ Primary docs:
 - `../landscape/vr-projects-wave-3-utilities.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/vr-projects-foundational-waves-1-7-retro-normalization.md`
+- `../landscape/vr-projects-wave-39-overlay-host-lineage-dashboard-shells-and-browser-backed-surfaces.md`
 - `../landscape/project-families.md`
 
 - `BOLL7708/OpenVROverlayPipe` - `Already studied`
@@ -152,7 +155,7 @@ Primary docs:
 - `Raphiiko/OyasumiVR` - `Already studied`
 - `I5UCC/SteaMeeter` - `Already studied`
 - `I5UCC/ParameterSaveStates` - `Not studied deeply`
-- `hai-vr/h-view` - `Partially studied`
+- `hai-vr/h-view` - `Already studied`
 - `MeroFune/GOpy` - `Not studied deeply`
 
 ## 6. Lighthouse managers, room state, and device power control
@@ -318,6 +321,7 @@ Primary docs:
 - `../landscape/vr-projects-wave-19-vendor-mods-repurposed-output-bridges-and-alternative-hardware-paths.md`
 - `../landscape/vr-projects-wave-23-glove-platforms-poser-stacks-and-nonstandard-hardware-bridge-drivers.md`
 - `../landscape/vr-projects-wave-26-vendor-ipc-ecosystems-glasses-bridges-and-official-stack-enhancement-tools.md`
+- `../landscape/vr-projects-wave-37-mixed-vr-controller-bridges-driver-side-input-emulation-and-hand-tracking-adaptation.md`
 - `../landscape/not-yet-studied-deeply.md`
 
 - `BnuuySolutions/PSVR2Toolkit` - `Already studied`
@@ -326,6 +330,9 @@ Primary docs:
 - `tabithamoon/ResonitePSVR2` - `Already studied`
 - `ChristophHaag/SteamVR-OpenHMD` - `Already studied`
 - `mm0zct/Oculus_Touch_Steam_Link` - `Already studied`
+- `kodowiec/Yet-Another-OpenVR-IPC-Driver` - `Already studied`
+- `bdub1011/Quest-Link-Hand-Tracking` - `Partially studied`
+- `mSparks43/PSVR-SteamVR-openHMD` - `Not studied deeply`
 - `oleuzop/VirtualSteamVRDriver` - `Already studied`
 - `finallyfunctional/openvr-driver-example` - `Already studied`
 - `SecondReality/VirtualControllerDriver` - `Already studied`
@@ -368,6 +375,7 @@ Primary docs:
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/vr-projects-wave-16-device-monitors-pose-exporters-and-environment-helpers.md`
 - `../landscape/vr-projects-wave-25-headsetless-qa-runtimes-null-driver-helpers-and-virtual-device-simulators.md`
+- `../landscape/vr-projects-wave-38-steamvr-validation-patchers-and-environment-hygiene-micro-tools.md`
 - `../landscape/project-families.md`
 
 - `BnuuySolutions/OculusKiller` - `Already studied`
@@ -393,6 +401,7 @@ Primary docs:
 - `../landscape/vr-projects-wave-8-github-source-pass.md`
 - `../landscape/vr-projects-foundational-waves-1-7-retro-normalization.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
+- `../landscape/vr-projects-wave-39-overlay-host-lineage-dashboard-shells-and-browser-backed-surfaces.md`
 - `../landscape/project-families.md`
 
 - `sh-akira/VROverlay` - `Already studied`

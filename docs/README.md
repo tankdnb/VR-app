@@ -75,6 +75,10 @@ Use this section for:
 - `research/landscape/vr-projects-wave-33-alternative-openxr-runtimes-and-special-display-paths.md`
 - `research/landscape/vr-projects-wave-34-tracked-device-geometry-cad-and-auxiliary-tracker-tooling.md`
 - `research/landscape/vr-projects-wave-35-expressive-tracking-and-avatar-facing-input-bridges.md`
+- `research/landscape/vr-projects-wave-36-runtime-service-hosts-openxr-utility-platforms-and-layer-doctoring.md`
+- `research/landscape/vr-projects-wave-37-mixed-vr-controller-bridges-driver-side-input-emulation-and-hand-tracking-adaptation.md`
+- `research/landscape/vr-projects-wave-38-steamvr-validation-patchers-and-environment-hygiene-micro-tools.md`
+- `research/landscape/vr-projects-wave-39-overlay-host-lineage-dashboard-shells-and-browser-backed-surfaces.md`
 - `research/landscape/project-families.md`
 - `research/landscape/not-yet-studied-deeply.md`
 
@@ -158,6 +162,14 @@ Use this section for:
 - `research/program/github-research-wave-34-backlog.md`
 - `research/program/github-research-wave-35-plan.md`
 - `research/program/github-research-wave-35-backlog.md`
+- `research/program/github-research-wave-36-plan.md`
+- `research/program/github-research-wave-36-backlog.md`
+- `research/program/github-research-wave-37-plan.md`
+- `research/program/github-research-wave-37-backlog.md`
+- `research/program/github-research-wave-38-plan.md`
+- `research/program/github-research-wave-38-backlog.md`
+- `research/program/github-research-wave-39-plan.md`
+- `research/program/github-research-wave-39-backlog.md`
 - `research/program/foundational-waves-1-7-retro-normalization-plan.md`
 - `research/program/foundational-waves-1-7-retro-normalization-backlog.md`
 

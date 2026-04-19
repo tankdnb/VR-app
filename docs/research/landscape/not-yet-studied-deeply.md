@@ -22,12 +22,12 @@ implementation details.
 
 ## Priority batch A
 
-These are the strongest next candidates.
+These are the strongest next candidates after the latest runtime, bridge, and
+overlay-host waves.
 
 | Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
-| `clear-xr/clearxr-server` | Partially studied | Runtime-side service host that mixes UI shell, registration helpers, streaming orchestration, and an OpenXR API layer | High | High | Keep the next pass narrow: runtime registration, layer boundaries, and service ownership instead of the full streaming platform |
-| `hai-vr/h-view` | Partially studied | Overlay-first utility host with desktop parity, ImGui rendering, and broader OSCQuery or hardware-tooling scope | High | High | Inspect the non-overlay boundaries next: OSCQuery, hardware inventory, OCR, external-service integration, and true product scope |
+| `vrkit-platform/vrkit-platform` | Partially studied | Domain-specific overlay/runtime platform with plugin-manager and native-interop signals, but still broad and scope-shifted | High | High | Keep the next pass narrow: plugin manifests, native overlay interop, and real OpenXR boundaries instead of the whole product shell |
 | `puresoul/Barebone` | Partially studied | HMD-relative synthetic Vive controllers driven by XInput | High | Medium | Driver/helper-app split, offset persistence, and long-term maintainability of the repo cluster |
 | `krazysh01/VirtualDesktop-OpenVR-Trackers` | Partially studied | Product direction suggests body-state-to-tracker bridging, but the current public snapshot looks much thinner than expected | Medium | Medium | Re-check only if the public repo grows a real data-ingress surface or visible tracker-role mapping logic |
 | `Sharrnah/whispering` | Partially studied | Broad local speech platform where VR is one consumer among OSC, websocket, TTS, and plugin outputs | High | High | Narrow the next pass to plugin boundaries, overlay-facing surfaces, and which slices matter most for future VR utility work |
@@ -53,7 +53,6 @@ deeply`.
 | Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
 | `Nexz/turncountervr` | Not studied deeply | Rotation/cable-awareness overlay variant | Low | Medium | Counter logic, world-space placement, comfort framing |
-| `vrkit-platform/vrkit-platform` | Not studied deeply | Domain-specific OpenXR overlay platform with plugin-manifest and monitor-surface signals | High | High | Narrow the pass to plugin manifests, overlay component model, and actual OpenXR layer or runtime boundaries |
 | `Denwa/vive-wireless-info-overlay` | Not studied deeply | Device-specific thermal micro-overlay with very focused user value | Low | Medium | Revisit only if fuller source appears; the product framing is clearer than the current donor surface |
 | `mbucchia/_ARCHIVE_OverXR` | Fork / variant only | Archive shell pointing to a once-promising overlay compatibility idea | Low | Medium | Whether useful code exists in releases, tags, or external mirrors |
 
@@ -90,7 +89,7 @@ should remain visible as the next honest follow-ups from the older corpus.
 
 | Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
-| `CrispyPin/ovr-utils` | Partially studied | Early utility-suite lineage whose GitHub mirror no longer contains the real implementation source | Low-Medium | Medium | Follow the current non-GitHub upstream, determine whether the live code still matters, and compare it with `ovr-utils-dashboard` plus `openvr_widgets` |
+| `CrispyPin/ovr-utils` | Partially studied | Historical utility-suite lineage whose GitHub repo is now mostly a relocation stub | Low-Medium | Medium | Follow the current non-GitHub upstream only if a dedicated recovery pass is worthwhile, and compare the lineage with `ovr-utils-dashboard` plus `openvr_widgets` |
 
 ## Priority batch H: Wave 14 follow-up candidates
 
@@ -149,6 +148,18 @@ as honest follow-up nodes instead of being over-promoted immediately.
 | `ebadier/ViveTrackers` | Not studied deeply | Unity-side consumer library for Vive tracker hardware that may clarify the `hardware consumer` side of tracker tooling | Medium | Medium | Inspect API surface, data model, and whether it teaches more than the existing tracker-helper nodes |
 | `takana-v/quest_steamvr_fbt_tool` | Not studied deeply | Quest-derived body-state export path aimed at avatar-facing consumers | Medium | Medium | Compare export model and consumer assumptions with `Baballonia`, `VRCThumbParamsOSC`, and other avatar-facing bridges |
 
+## Priority batch M: Waves 36-39 surfaced follow-up candidates
+
+These were surfaced while deepening broader OpenXR utility platforms,
+mixed-VR controller bridges, workflow micro-tools, and overlay-host lineage,
+but they were intentionally kept as honest follow-up nodes instead of being
+over-promoted immediately.
+
+| Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `bdub1011/Quest-Link-Hand-Tracking` | Partially studied | Gesture-configurable Quest hand tracking mapped to SteamVR controller semantics | Low-Medium | Medium-high | Revisit only if the public driver source grows beyond the current thin placeholder snapshot |
+| `mSparks43/PSVR-SteamVR-openHMD` | Not studied deeply | PSVR-specific Linux/OpenHMD bridge variant that could clarify how far the mixed-VR bridge family extends outside the mainline donors | Medium | Medium | Inspect the exact PSVR adaptations, packaging model, and overlap with `SteamVR-OpenHMD` before promoting it further |
+
 ## Family-level gaps that now deserve deeper passes
 
 These are larger than a single repo and should guide the next research wave.
@@ -178,17 +189,21 @@ These are larger than a single repo and should guide the next research wave.
   `clearxr-server`, `vrkit-platform`, `openxr-explorer`,
   `OpenXR-API-Layers-GUI`
 - Why it matters:
-  the repo now has many small OpenXR tools, but it still needs a stronger pass
-  on the larger `runtime utility platform` end of that family.
+  Wave 36 clarified the family considerably, but the repo still needs a
+  narrower follow-up on the broadest platform node, especially
+  `vrkit-platform`, so the donor picture does not collapse back into a generic
+  `runtime tools` bucket.
 
 ### 4. `Mixed-VR controller and tracker bridges`
 
 - Main entries:
   `Oculus_Touch_Steam_Link`, `SteamVR-OpenHMD`,
-  `SlimeVR-OpenVR-Driver`, `VirtualDesktop-OpenVR-Trackers`
+  `Yet-Another-OpenVR-IPC-Driver`, `Quest-Link-Hand-Tracking`,
+  `VirtualDesktop-OpenVR-Trackers`
 - Why it matters:
-  this remains one of the richest zones for turning foreign runtimes, services,
-  or hardware stacks into usable SteamVR devices.
+  Wave 37 made the mainline donors much clearer, but the family still benefits
+  from future comparison between strong bridges, thin hand-emulation repos, and
+  hardware-specific variants.
 
 ### 5. `Low-level driver tutorial and custom-device plumbing`
 
@@ -234,28 +249,27 @@ These are larger than a single repo and should guide the next research wave.
   `SteamVR-ActionsManifestValidator`, `Lighthouse-Scale-Fix`,
   `SteamVRAdaptiveBrightness`, `steamvr-exconfig`, `WFOVFix`
 - Why it matters:
-  these small tools solve real setup pain with unusually good effort-to-value
-  ratios and still deserve a cleaner synthesis pass.
+  Wave 38 clarified the core donor patterns, and the remaining value now lies
+  more in productization and comparison than in basic discovery.
 
 ### 10. `Historical utility-suite recovery`
 
 - Main entries:
   `ovr-utils`, `ovr-utils-dashboard`, `openvr_widgets`
 - Why it matters:
-  the repository still has one partly unresolved branch where the live code
-  moved off GitHub and the public donor picture needs cleanup.
+  Wave 39 made the lineage much clearer, but one partly unresolved branch still
+  exists because the live `ovr-utils` code moved off GitHub and the public
+  donor picture is still partly archival.
 
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
 
 1. `VirtualMotionTracker and broader OSC export family`
-2. `Overlay implementation references and overlay-first hosts`
-3. `Runtime-side service hosts and broader OpenXR utility platforms`
-4. `Mixed-VR controller and tracker bridges`
-5. `Low-level driver tutorial and custom-device plumbing`
-6. `Virtual display and repurposed output workflows`
-7. `Vision-based hand and body tracking bridges`
-8. `PSVR2-specific OpenXR eye-tracking and calibration follow-up`
-9. `Validation and workflow micro-utilities`
-10. `Historical utility-suite recovery`
+2. `Low-level driver tutorial and custom-device plumbing`
+3. `Virtual display and repurposed output workflows`
+4. `Vision-based hand and body tracking bridges`
+5. `PSVR2-specific OpenXR eye-tracking and calibration follow-up`
+6. `Runtime-side service hosts and broader OpenXR utility platforms`
+7. `Mixed-VR controller and tracker bridges`
+8. `Historical utility-suite recovery`

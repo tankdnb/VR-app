@@ -47,6 +47,10 @@ This file complements:
 - `vr-projects-wave-33-alternative-openxr-runtimes-and-special-display-paths.md`
 - `vr-projects-wave-34-tracked-device-geometry-cad-and-auxiliary-tracker-tooling.md`
 - `vr-projects-wave-35-expressive-tracking-and-avatar-facing-input-bridges.md`
+- `vr-projects-wave-36-runtime-service-hosts-openxr-utility-platforms-and-layer-doctoring.md`
+- `vr-projects-wave-37-mixed-vr-controller-bridges-driver-side-input-emulation-and-hand-tracking-adaptation.md`
+- `vr-projects-wave-38-steamvr-validation-patchers-and-environment-hygiene-micro-tools.md`
+- `vr-projects-wave-39-overlay-host-lineage-dashboard-shells-and-browser-backed-surfaces.md`
 
 ## How to use this index
 
@@ -162,6 +166,18 @@ This file complements:
 - Use `vr-projects-wave-35-expressive-tracking-and-avatar-facing-input-bridges.md`
   for the next wave centered on expressive tracking, face and eye input, and
   avatar-facing input bridges.
+- Use `vr-projects-wave-36-runtime-service-hosts-openxr-utility-platforms-and-layer-doctoring.md`
+  for the next wave centered on runtime-side service hosts, broader OpenXR
+  utility platforms, and layer-doctoring patterns.
+- Use `vr-projects-wave-37-mixed-vr-controller-bridges-driver-side-input-emulation-and-hand-tracking-adaptation.md`
+  for the next wave centered on mixed-VR controller bridges,
+  driver-side input emulation, and hand-tracking adaptation.
+- Use `vr-projects-wave-38-steamvr-validation-patchers-and-environment-hygiene-micro-tools.md`
+  for the next wave centered on SteamVR validation helpers, backup-safe
+  patchers, and environment-hygiene micro-tools.
+- Use `vr-projects-wave-39-overlay-host-lineage-dashboard-shells-and-browser-backed-surfaces.md`
+  for the next wave centered on overlay host lineage, dashboard shells, and
+  browser-backed overlay construction.
 - Treat each project as one of:
   - `code donor`
   - `architecture reference`

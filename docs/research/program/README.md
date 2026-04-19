@@ -231,3 +231,31 @@ repeatable way.
 
 - `github-research-wave-35-backlog.md`
   Executed backlog for the Wave 35 pass.
+
+- `github-research-wave-36-plan.md`
+  Wave 36 research plan focused on runtime-side service hosts, broader OpenXR
+  utility platforms, and layer diagnostics or fixers.
+
+- `github-research-wave-36-backlog.md`
+  Executed backlog for the Wave 36 pass.
+
+- `github-research-wave-37-plan.md`
+  Wave 37 research plan focused on mixed-VR controller bridges, driver-side
+  input emulation, and hand-tracking adaptation.
+
+- `github-research-wave-37-backlog.md`
+  Executed backlog for the Wave 37 pass.
+
+- `github-research-wave-38-plan.md`
+  Wave 38 research plan focused on SteamVR validation helpers, config
+  patchers, and environment-hygiene micro-tools.
+
+- `github-research-wave-38-backlog.md`
+  Executed backlog for the Wave 38 pass.
+
+- `github-research-wave-39-plan.md`
+  Wave 39 research plan focused on overlay host lineage, dashboard shells, and
+  browser-backed overlay surfaces.
+
+- `github-research-wave-39-backlog.md`
+  Executed backlog for the Wave 39 pass.

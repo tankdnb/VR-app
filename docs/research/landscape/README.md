@@ -140,6 +140,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on expressive tracking, face and eye
   input, and avatar-facing input bridges.
 
+- `vr-projects-wave-36-runtime-service-hosts-openxr-utility-platforms-and-layer-doctoring.md`
+  Next GitHub discovery wave focused on runtime-side service hosts, broader
+  OpenXR utility platforms, and layer-doctoring patterns.
+
+- `vr-projects-wave-37-mixed-vr-controller-bridges-driver-side-input-emulation-and-hand-tracking-adaptation.md`
+  Next GitHub discovery wave focused on mixed-VR controller bridges,
+  driver-side input emulation, and hand-tracking adaptation.
+
+- `vr-projects-wave-38-steamvr-validation-patchers-and-environment-hygiene-micro-tools.md`
+  Next GitHub discovery wave focused on SteamVR validation helpers,
+  backup-safe patchers, and environment-hygiene micro-tools.
+
+- `vr-projects-wave-39-overlay-host-lineage-dashboard-shells-and-browser-backed-surfaces.md`
+  Next GitHub discovery wave focused on overlay host lineage, dashboard
+  shells, and browser-backed overlay construction.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.
