@@ -657,6 +657,122 @@ Use this document when designing a new module or utility and ask:
   experimental overlay concepts, scene-overlay labs, and tracker-aware utility
   prototypes.
 
+## Method 35: State-transition device watcher with multi-channel alerts
+
+- What it is:
+  a background helper watches device properties over time and reacts when a
+  state changes in a meaningful way, instead of only displaying a raw snapshot.
+- Good for:
+  charging warnings, device-health alerts, reconnect hints, and narrow
+  background utilities with desktop or in-headset notifications.
+- Why it matters:
+  many practical VR device tools become useful only when they detect
+  `something changed`, not when they merely print current numbers.
+- Strong references:
+  `openvr-battery-monitoring`, `vive-wireless-info-overlay`.
+- Best fit for `VR-apps-lab`:
+  device-health watchers and narrow status helpers.
+
+## Method 36: Pose inventory snapshot exporter
+
+- What it is:
+  a utility captures the current runtime pose inventory and turns it into a
+  reusable artifact such as an `FBX`, scene snapshot, or creator-side data
+  export.
+- Good for:
+  avatar fitting, previs, creator tools, diagnostics, room-state capture, and
+  device-layout inspection.
+- Why it matters:
+  it turns volatile live runtime state into something the user can reuse,
+  compare, or import elsewhere.
+- Strong references:
+  `openvr-device-positions`.
+- Best fit for `VR-apps-lab`:
+  creator utilities, diagnostics, and export helpers.
+
+## Method 37: Remote overlay session via API layer plus out-of-process client
+
+- What it is:
+  an OpenXR API layer owns the interception and session injection, while a
+  separate process supplies the overlay content and drives the remote session.
+- Good for:
+  cross-app overlays, experimental runtime-level composition, and research into
+  layer-host coordination.
+- Why it matters:
+  this is fundamentally different from a companion overlay app because the
+  overlay exists inside an unaware host application's runtime path.
+- Strong references:
+  `OpenXR-OverlayLayer`, `OpenXR-OverlayLayer-1`.
+- Best fit for `VR-apps-lab`:
+  advanced OpenXR layer research and future runtime-level utility experiments.
+
+## Method 38: Registry-plus-probe runtime switcher
+
+- What it is:
+  a runtime manager reads the official registry state or manifest state, then
+  supplements it with well-known path probes and optional runtime-specific
+  discovery helpers.
+- Good for:
+  OpenXR runtime switching, manifest inspection, setup diagnostics, and
+  developer-facing runtime hygiene tools.
+- Why it matters:
+  real user setups are often messier than the ideal registry state, so a useful
+  switcher needs both official discovery and pragmatic probing.
+- Strong references:
+  `OpenXR-Runtime-Manager`, `xr-picker`, `openxr-explorer`.
+- Best fit for `VR-apps-lab`:
+  `OpenXR Doctor` and runtime management helpers.
+
+## Method 39: Protocol-adapter OpenXR layer for foreign sensor data
+
+- What it is:
+  an OpenXR API layer ingests data from an external service or protocol and
+  presents it as a runtime-facing extension, action state, or tracked signal.
+- Good for:
+  eye tracking, controller fixes, vendor-specific bridges, and runtime-level
+  experiments where a new SteamVR driver would be the wrong boundary.
+- Why it matters:
+  sometimes the cleanest adaptation surface is `protocol -> OpenXR layer`, not
+  `protocol -> new driver`.
+- Strong references:
+  `etvr-openxr-layer`, `clearxr-layer`.
+- Best fit for `VR-apps-lab`:
+  advanced runtime adaptation and experimental extension bridges.
+
+## Method 40: Multi-transport custom-device provider with sidecar control surface
+
+- What it is:
+  an OpenVR driver owns one or more tracked devices, but discovery,
+  configuration, calibration, or user-facing controls live in a separate helper
+  process, overlay, or desktop app.
+- Good for:
+  DIY hardware, gloves, nonstandard controllers, repurposed glasses, and
+  complex setups that need multiple transport backends.
+- Why it matters:
+  it keeps the SteamVR driver small enough to stay stable while moving the
+  messy operational logic into a more flexible sidecar.
+- Strong references:
+  `opengloves-driver`, `GlassVr`.
+- Best fit for `VR-apps-lab`:
+  future custom-device platforms and bridge-heavy hardware tools.
+
+## Method 41: Vendor-driver wrapper with proxy hooks and local IPC
+
+- What it is:
+  a shim loads the original vendor driver, proxies or hooks selected internal
+  surfaces, and exposes extra capabilities through a local IPC or developer API
+  layer.
+- Good for:
+  optional vendor feature unlocks, developer APIs, haptics upgrades, eye
+  tracking access, and non-destructive enhancement layers.
+- Why it matters:
+  this is the cleanest path when replacing the vendor stack would be too risky
+  or too expensive.
+- Strong references:
+  `PSVR2Toolkit`.
+- Best fit for `VR-apps-lab`:
+  vendor-enhancement research and carefully-scoped official-stack extensions.
+
 ## Recommended usage inside `VR-apps-lab`
 
 When a new utility idea appears:

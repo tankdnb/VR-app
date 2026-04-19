@@ -59,6 +59,22 @@ Use these files when you want to understand:
   micro-overlays, web or scene overlay scaffolds, and engine-side overlay
   integration.
 
+- `vr-projects-wave-16-device-monitors-pose-exporters-and-environment-helpers.md`
+  Next GitHub discovery wave focused on device monitors, battery watchers,
+  pose exporters, and SteamVR environment-side helpers.
+
+- `vr-projects-wave-17-openxr-runtime-managers-layers-and-service-hosts.md`
+  Next GitHub discovery wave focused on OpenXR runtime managers, experimental
+  API layers, and runtime-side service hosts.
+
+- `vr-projects-wave-18-driver-learning-paths-and-repurposed-display-bridges.md`
+  Next GitHub discovery wave focused on driver learning paths, custom-device
+  providers, and repurposed-display bridges.
+
+- `vr-projects-wave-19-vendor-mods-repurposed-output-bridges-and-alternative-hardware-paths.md`
+  Next GitHub discovery wave focused on vendor enhancement tooling,
+  repurposed-output bridges, and alternative hardware paths.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

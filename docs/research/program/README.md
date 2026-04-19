@@ -90,3 +90,31 @@ repeatable way.
 
 - `github-research-wave-15-backlog.md`
   Executed backlog for the Wave 15 pass.
+
+- `github-research-wave-16-plan.md`
+  Wave 16 research plan focused on device monitors, pose exporters, and
+  SteamVR environment-side helpers.
+
+- `github-research-wave-16-backlog.md`
+  Executed backlog for the Wave 16 pass.
+
+- `github-research-wave-17-plan.md`
+  Wave 17 research plan focused on OpenXR runtime managers, experimental API
+  layers, and runtime-side service hosts.
+
+- `github-research-wave-17-backlog.md`
+  Executed backlog for the Wave 17 pass.
+
+- `github-research-wave-18-plan.md`
+  Wave 18 research plan focused on driver learning paths, custom-device
+  providers, and repurposed-display bridges.
+
+- `github-research-wave-18-backlog.md`
+  Executed backlog for the Wave 18 pass.
+
+- `github-research-wave-19-plan.md`
+  Wave 19 research plan focused on vendor enhancement tooling,
+  repurposed-output bridges, and alternative hardware paths.
+
+- `github-research-wave-19-backlog.md`
+  Executed backlog for the Wave 19 pass.

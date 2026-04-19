@@ -55,6 +55,10 @@ Use this section for:
 - `research/landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
 - `research/landscape/vr-projects-wave-14-tracker-ingress-osc-egress-and-role-binding-utilities.md`
 - `research/landscape/vr-projects-wave-15-overlay-hosts-and-scaffolds.md`
+- `research/landscape/vr-projects-wave-16-device-monitors-pose-exporters-and-environment-helpers.md`
+- `research/landscape/vr-projects-wave-17-openxr-runtime-managers-layers-and-service-hosts.md`
+- `research/landscape/vr-projects-wave-18-driver-learning-paths-and-repurposed-display-bridges.md`
+- `research/landscape/vr-projects-wave-19-vendor-mods-repurposed-output-bridges-and-alternative-hardware-paths.md`
 - `research/landscape/project-families.md`
 - `research/landscape/not-yet-studied-deeply.md`
 
@@ -98,6 +102,14 @@ Use this section for:
 - `research/program/github-research-wave-14-backlog.md`
 - `research/program/github-research-wave-15-plan.md`
 - `research/program/github-research-wave-15-backlog.md`
+- `research/program/github-research-wave-16-plan.md`
+- `research/program/github-research-wave-16-backlog.md`
+- `research/program/github-research-wave-17-plan.md`
+- `research/program/github-research-wave-17-backlog.md`
+- `research/program/github-research-wave-18-plan.md`
+- `research/program/github-research-wave-18-backlog.md`
+- `research/program/github-research-wave-19-plan.md`
+- `research/program/github-research-wave-19-backlog.md`
 - `research/program/foundational-waves-1-7-retro-normalization-plan.md`
 - `research/program/foundational-waves-1-7-retro-normalization-backlog.md`
 

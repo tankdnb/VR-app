@@ -106,6 +106,10 @@ docs/
 - [Wave 13 research](docs/research/landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md)
 - [Wave 14 research](docs/research/landscape/vr-projects-wave-14-tracker-ingress-osc-egress-and-role-binding-utilities.md)
 - [Wave 15 research](docs/research/landscape/vr-projects-wave-15-overlay-hosts-and-scaffolds.md)
+- [Wave 16 research](docs/research/landscape/vr-projects-wave-16-device-monitors-pose-exporters-and-environment-helpers.md)
+- [Wave 17 research](docs/research/landscape/vr-projects-wave-17-openxr-runtime-managers-layers-and-service-hosts.md)
+- [Wave 18 research](docs/research/landscape/vr-projects-wave-18-driver-learning-paths-and-repurposed-display-bridges.md)
+- [Wave 19 research](docs/research/landscape/vr-projects-wave-19-vendor-mods-repurposed-output-bridges-and-alternative-hardware-paths.md)
 
 ## Главная идея репозитория
 

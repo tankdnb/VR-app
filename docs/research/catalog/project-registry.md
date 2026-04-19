@@ -51,6 +51,7 @@ Primary docs:
 - `../landscape/vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
+- `../landscape/vr-projects-wave-17-openxr-runtime-managers-layers-and-service-hosts.md`
 - `../landscape/project-families.md`
 
 - `mbucchia/OpenXR-Toolkit` - `Already studied`
@@ -69,10 +70,10 @@ Primary docs:
 - `Jabbah/OpenXR-Layer-OBSMirror` - `Already studied`
 - `maluoi/openxr-explorer` - `Already studied`
 - `LunarG/OpenXR-OverlayLayer` - `Already studied`
-- `PlutoVR/OpenXR-OverlayLayer-1` - `Not studied deeply`
-- `Ybalrid/OpenXR-Runtime-Manager` - `Not studied deeply`
-- `clear-xr/clearxr-server` - `Not studied deeply`
-- `pembem22/etvr-openxr-layer` - `Not studied deeply`
+- `PlutoVR/OpenXR-OverlayLayer-1` - `Already studied`
+- `Ybalrid/OpenXR-Runtime-Manager` - `Already studied`
+- `clear-xr/clearxr-server` - `Partially studied`
+- `pembem22/etvr-openxr-layer` - `Already studied`
 - `vrkit-platform/vrkit-platform` - `Not studied deeply`
 - `LunarG/OpenXR-Overlays-UE4-Plugin` - `Already studied`
 - `mbucchia/_ARCHIVE_OverXR` - `Fork / variant only`
@@ -174,16 +175,17 @@ Primary docs:
 - `../landscape/project-families.md`
 - `../landscape/vr-projects-wave-7-depth-pass.md`
 - `../landscape/vr-projects-foundational-waves-1-7-retro-normalization.md`
+- `../landscape/vr-projects-wave-16-device-monitors-pose-exporters-and-environment-helpers.md`
 
 - `OVRTools/OpenVRDeviceBattery` - `Already studied`
 - `zeroae/VRBattery` - `Already studied`
 - `copperpixel/steamvrbattery` - `Already studied`
 - `Black4Blade/SteamVR-Devices-Battery-Status` - `Already studied`
-- `KaftanOS/SteamVR-Battery-Checker` - `Not studied deeply`
+- `KaftanOS/SteamVR-Battery-Checker` - `Already studied`
 - `Denwa/vive-wireless-info-overlay` - `Not studied deeply`
 - `rhaamo/OpenVR-Display-Devices` - `Already studied`
-- `jangxx/openvr-battery-monitoring` - `Not studied deeply`
-- `mutr/openvr_battery_monitor` - `Not studied deeply`
+- `jangxx/openvr-battery-monitoring` - `Already studied`
+- `mutr/openvr_battery_monitor` - `Already studied`
 
 ## 8. Virtual trackers, OSC bridges, WebSocket bridges, and input export
 
@@ -295,6 +297,8 @@ Primary docs:
 - `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 - `../landscape/vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
 - `../landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
+- `../landscape/vr-projects-wave-18-driver-learning-paths-and-repurposed-display-bridges.md`
+- `../landscape/vr-projects-wave-19-vendor-mods-repurposed-output-bridges-and-alternative-hardware-paths.md`
 - `../landscape/not-yet-studied-deeply.md`
 
 - `BnuuySolutions/PSVR2Toolkit` - `Partially studied`
@@ -305,7 +309,7 @@ Primary docs:
 - `SecondReality/VirtualControllerDriver` - `Already studied`
 - `oneup03/VRto3D` - `Already studied`
 - `ValveSoftware/driver_hydra` - `Already studied`
-- `alatnet/OpenPSVR` - `Partially studied`
+- `alatnet/OpenPSVR` - `Already studied`
 - `r57zone/OpenVR-driver-for-DIY` - `Already studied`
 - `gpsnmeajp/SegsVRControllerDriverSample` - `Already studied`
 - `puresoul/Barebone` - `Partially studied`
@@ -316,17 +320,17 @@ Primary docs:
 - `Nordskog/HandOfLesser` - `Partially studied`
 - `NovaAshwolfDev/HandCameraDriver` - `Partially studied`
 - `OpenDisplayXR/OpenDisplayXR-VDD` - `Not studied deeply`
-- `verncat/RayNeo-Air-3S-Pro-OpenVR` - `Not studied deeply`
+- `verncat/RayNeo-Air-3S-Pro-OpenVR` - `Partially studied`
 - `LucidVR/opengloves-driver` - `Partially studied`
 - `HoboVR-Labs/hobo_vr` - `Partially studied`
 - `r57zone/OpenVR-ArduinoHMD` - `Partially studied`
 - `DaniXmir/GlassVr` - `Partially studied`
-- `terminal29/Simple-OpenVR-Driver-Tutorial` - `Partially studied`
+- `terminal29/Simple-OpenVR-Driver-Tutorial` - `Already studied`
 - `Copprhead/hotas-vr-controller` - `Partially studied`
 - `SophiaH67/soph_wireless` - `Partially studied`
 - `SophiaH67/soph_wireless_transmitter` - `Partially studied`
 - `r57zone/OpenVR-OpenTrack` - `Already studied`
-- `TrueOpenVR/SteamVR-TrueOpenVR` - `Not studied deeply`
+- `TrueOpenVR/SteamVR-TrueOpenVR` - `Partially studied`
 - `matzman666/OpenVR-InputEmulator` - `Already studied`
 - `Erimelowo/OpenVR-InputEmulator-Fixed` - `Already studied`
 - `wirelessdreamer/OpenVR-InputEmulator` - `Already studied`
@@ -340,6 +344,7 @@ Primary docs:
 - `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 - `../landscape/vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
+- `../landscape/vr-projects-wave-16-device-monitors-pose-exporters-and-environment-helpers.md`
 - `../landscape/project-families.md`
 
 - `BnuuySolutions/OculusKiller` - `Already studied`
@@ -355,7 +360,7 @@ Primary docs:
 - `Virus-vr/SteamVRAdaptiveBrightness` - `Already studied`
 - `username223/SteamVR-ActionsManifestValidator` - `Already studied`
 - `Erimelowo/Lighthouse-Scale-Fix` - `Already studied`
-- `DavidRisch/steamvr_utils` - `Not studied deeply`
+- `DavidRisch/steamvr_utils` - `Already studied`
 
 ## 15. Overlay implementation references and templates
 
@@ -385,6 +390,7 @@ Primary docs:
 - `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 - `../landscape/vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
+- `../landscape/vr-projects-wave-16-device-monitors-pose-exporters-and-environment-helpers.md`
 
 - `baffler/OBS-OpenVR-Input-Plugin` - `Already studied`
 - `ValveSoftware/virtual_display` - `Already studied`
@@ -396,7 +402,7 @@ Primary docs:
 - `fredemmott/XRFrameTools` - `Already studied`
 - `peacepenguin/Virtual-Display-Driver` - `Already studied`
 - `ValveSoftware/OpenXR-Canonical-Pose-Tool` - `Already studied`
-- `MuffinTastic/openvr-device-positions` - `Not studied deeply`
+- `MuffinTastic/openvr-device-positions` - `Already studied`
 
 ## 17. Accessibility, assistive HUDs, and comfort tools
 

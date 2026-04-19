@@ -1,6 +1,6 @@
 # VR Projects Master Index
 
-- Date: `2026-04-18`
+- Date: `2026-04-19`
 - Goal: maintain a single index of VR-related GitHub projects that are useful as
   references, code donors, or product inspiration for `VR-apps-lab`.
 
@@ -27,6 +27,10 @@ This file complements:
 - `vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
 - `vr-projects-wave-14-tracker-ingress-osc-egress-and-role-binding-utilities.md`
 - `vr-projects-wave-15-overlay-hosts-and-scaffolds.md`
+- `vr-projects-wave-16-device-monitors-pose-exporters-and-environment-helpers.md`
+- `vr-projects-wave-17-openxr-runtime-managers-layers-and-service-hosts.md`
+- `vr-projects-wave-18-driver-learning-paths-and-repurposed-display-bridges.md`
+- `vr-projects-wave-19-vendor-mods-repurposed-output-bridges-and-alternative-hardware-paths.md`
 
 ## How to use this index
 
@@ -81,6 +85,18 @@ This file complements:
 - Use `vr-projects-wave-15-overlay-hosts-and-scaffolds.md` for the next wave
   centered on overlay-first utility hosts, HUD micro-overlays, web or scene
   overlay scaffolds, and engine-side overlay integration.
+- Use `vr-projects-wave-16-device-monitors-pose-exporters-and-environment-helpers.md`
+  for the next wave centered on device monitors, pose exporters, and
+  environment-side SteamVR helpers.
+- Use `vr-projects-wave-17-openxr-runtime-managers-layers-and-service-hosts.md`
+  for the next wave centered on OpenXR runtime managers, API layers, and
+  runtime-side service hosts.
+- Use `vr-projects-wave-18-driver-learning-paths-and-repurposed-display-bridges.md`
+  for the next wave centered on driver learning paths, custom-device providers,
+  and repurposed-display bridges.
+- Use `vr-projects-wave-19-vendor-mods-repurposed-output-bridges-and-alternative-hardware-paths.md`
+  for the next wave centered on vendor mods, repurposed output bridges, and
+  alternative hardware paths.
 - Treat each project as one of:
   - `code donor`
   - `architecture reference`

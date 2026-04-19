@@ -49,9 +49,11 @@ This family is already converging into the future `OpenXR Doctor` direction.
 | `mbucchia/OpenXR-Layer-Template` | Already studied | Bootstrap template for future layer work |
 | `Jabbah/OpenXR-Layer-OBSMirror` | Already studied | Practical example of a layer built from a template |
 | `maluoi/openxr-explorer` | Already studied | Strongest single reference for `OpenXR doctor/runtime inspector` |
-| `Ybalrid/OpenXR-Runtime-Manager` | Not studied deeply | Additional runtime-manager variant for comparison |
-| `pembem22/etvr-openxr-layer` | Not studied deeply | Niche OpenXR layer worth comparing with diagnostics/layer family |
-| `clear-xr/clearxr-server` | Not studied deeply | Candidate runtime-side service node to inspect later |
+| `Ybalrid/OpenXR-Runtime-Manager` | Already studied | Small WPF runtime switcher built around registry reads plus well-known manifest probes |
+| `PlutoVR/OpenXR-OverlayLayer-1` | Already studied | Remote overlay client plus API-layer experiment using shared-memory RPC |
+| `pembem22/etvr-openxr-layer` | Already studied | Android-side implicit API layer that adapts OSC eye-tracking data into OpenXR gaze surfaces |
+| `clear-xr/clearxr-server` | Partially studied | Larger runtime-side service host whose registration and API-layer slices are stronger than the whole platform as a direct donor |
+| `vrkit-platform/vrkit-platform` | Not studied deeply | Still needs a cleaner future pass because the current public snapshot is too broad and scope-shifted |
 
 ### Consolidation note
 
@@ -125,9 +127,9 @@ panel, and logging utility.
 | `rhaamo/OpenVR-Display-Devices` | Already studied | Broader device inventory view |
 | `copperpixel/steamvrbattery` | Already studied | Minimal CLI property-polling battery monitor |
 | `Denwa/vive-wireless-info-overlay` | Not studied deeply | Source-light wireless-temperature micro-overlay whose product framing is stronger than its visible code donor value |
-| `KaftanOS/SteamVR-Battery-Checker` | Not studied deeply | Charging-state micro-tool worth comparison |
-| `jangxx/openvr-battery-monitoring` | Not studied deeply | Likely useful for notifications/logging behavior |
-| `mutr/openvr_battery_monitor` | Not studied deeply | Another narrow monitoring variant worth comparing |
+| `KaftanOS/SteamVR-Battery-Checker` | Already studied | Tiny one-shot Python battery inspector with almost no product baggage |
+| `jangxx/openvr-battery-monitoring` | Already studied | Tray watcher that reacts to charging-state changes and can notify through desktop or OVRT channels |
+| `mutr/openvr_battery_monitor` | Already studied | Background battery exporter that writes per-device telemetry to InfluxDB |
 
 ### Consolidation note
 
@@ -153,7 +155,7 @@ external data into `SteamVR/OpenVR devices`, `pose streams`, or `OSC events`.
 | `ju1ce/Simple-OpenVR-Bridge-Driver` | Already studied | Named-pipe bridge-driver skeleton with explicit tracker lifecycle, timing sync, and pose readback helpers |
 | `3NekoSystem/OpenVR-Tracker-Websocket-Driver` | Fork / variant only | Simpler JSON/WebSocket fork on `8082` that trims the broader local-service ambitions of the main WebSocket line |
 | `v0xie/OpenVR-Tracker-Websocket-Driver` | Fork / variant only | Near-mirror of the John-Dean line with the same local web page, HTTPS helpers, and device-state echo surfaces |
-| `krazysh01/VirtualDesktop-OpenVR-Trackers` | Partially studied | Body-state bridge from an external ecosystem |
+| `krazysh01/VirtualDesktop-OpenVR-Trackers` | Partially studied | Tracker-bridge signal from an external ecosystem whose current public snapshot still looks thinner than expected |
 | `Greendayle/SteamVR_To_OSC` | Already studied | SteamVR to OSC bridge |
 | `ZekkVRC/OpenVR2OSC` | Already studied | VRChat-oriented input bridge |
 | `BarakChamo/OpenVR-OSC` | Already studied | Minimal OpenVR pose-to-OSC exporter built around `triad_openvr` and OSC bundles |
@@ -248,7 +250,7 @@ knowledge needed for `device-side tooling`.
 
 | Project | Status | Notes |
 |---|---|---|
-| `terminal29/Simple-OpenVR-Driver-Tutorial` | Partially studied | Important learning-path repo |
+| `terminal29/Simple-OpenVR-Driver-Tutorial` | Already studied | Best current public learning-path repo for sample-like OpenVR driver structure |
 | `ValveSoftware/openvr` tutorial/sample code | Already studied | Foundational reference |
 | `ChristophHaag/SteamVR-OpenHMD` | Already studied | OpenHMD hardware bridge into SteamVR/OpenVR |
 | `mm0zct/Oculus_Touch_Steam_Link` | Already studied | Mixed-VR controller, tracker, and sensor bridge driver |
@@ -258,7 +260,7 @@ knowledge needed for `device-side tooling`.
 | `SecondReality/VirtualControllerDriver` | Already studied | Tiny synthetic controller driver for mixed-reality workflows |
 | `oneup03/VRto3D` | Already studied | Productized stereo-display and AR-glasses driver that heavily reshapes SteamVR behavior |
 | `ValveSoftware/driver_hydra` | Already studied | Official peripheral bridge driver with controller realignment and calibration monitor |
-| `alatnet/OpenPSVR` | Partially studied | Full PSVR HMD/display driver with sensor fusion, display component, and watchdog split |
+| `alatnet/OpenPSVR` | Already studied | Full PSVR HMD/display driver with monitor detection, power control, display component, and IMU-based tracking |
 | `r57zone/OpenVR-driver-for-DIY` | Already studied | Keyboard-driven DIY null-HMD plus controller path built close to the stock sample |
 | `gpsnmeajp/SegsVRControllerDriverSample` | Already studied | Controller-driver sample with a shared-memory helper client and JSON payloads |
 | `puresoul/Barebone` | Partially studied | XInput-driven synthetic Vive controller path anchored relative to the HMD |
@@ -266,12 +268,12 @@ knowledge needed for `device-side tooling`.
 | `mdovgialo/SteamVR-Glove` | Already studied | Arduino glove proof of concept piggybacking on existing Vive controller tracking |
 | `openvrmc/OpenVR-MotionCompensation` | Partially studied | Pose-rewrite driver with shared library and in-VR dashboard configuration |
 | `OpenDisplayXR/OpenDisplayXR-VDD` | Not studied deeply | Sparse but relevant signal for a simulated OpenVR/OpenXR virtual hardware path |
-| `verncat/RayNeo-Air-3S-Pro-OpenVR` | Not studied deeply | Early AR-glasses/OpenVR bridge signal that currently looks more like SDK scaffolding |
+| `verncat/RayNeo-Air-3S-Pro-OpenVR` | Partially studied | SDK-first RayNeo glasses bridge whose current OpenVR driver is still a stub but already shows EDID and IMU plumbing |
 | `LucidVR/opengloves-driver` | Partially studied | Hand-specific custom device path |
 | `r57zone/OpenVR-ArduinoHMD` | Partially studied | DIY HMD and config-driven setup |
 | `DaniXmir/GlassVr` | Partially studied | XR/AR glasses bridge and emulation |
 | `Copprhead/hotas-vr-controller` | Partially studied | Domain-specific cockpit/device bridge |
-| `TrueOpenVR/SteamVR-TrueOpenVR` | Not studied deeply | Candidate for a later driver pass |
+| `TrueOpenVR/SteamVR-TrueOpenVR` | Partially studied | Sample-derived bridge that feeds SteamVR from an external TrueOpenVR DLL surface |
 | `HoboVR-Labs/hobo_vr` | Partially studied | Driver prototyping and external poser model |
 
 ### Consolidation note
@@ -389,6 +391,7 @@ creator-facing XR use than about simple end-user overlays.
 | `fredemmott/XRFrameTools` | Already studied | OpenXR frame-loop metrics reference |
 | `peacepenguin/Virtual-Display-Driver` | Already studied | Infrastructure for desktop and workflow scenarios |
 | `ValveSoftware/OpenXR-Canonical-Pose-Tool` | Already studied | Runtime-vendor pose validation and canonical-pose comparison tool |
+| `MuffinTastic/openvr-device-positions` | Already studied | Creator-side pose inventory exporter with dashboard overlay and FBX output path |
 
 ### Consolidation note
 
@@ -456,7 +459,7 @@ interaction, distortion, or overlay-heavy workflows.
 | `Virus-vr/SteamVRAdaptiveBrightness` | Already studied | Mirror-texture analysis helper that continuously rewrites SteamVR brightness |
 | `username223/SteamVR-ActionsManifestValidator` | Already studied | CLI manifest validator for SteamVR input/action metadata |
 | `Erimelowo/Lighthouse-Scale-Fix` | Already studied | Backup-safe one-shot patcher for lighthouse scale configuration |
-| `DavidRisch/steamvr_utils` | Not studied deeply | Linux SteamVR helper collection worth future comparison |
+| `DavidRisch/steamvr_utils` | Already studied | Linux helper collection with a SteamVR lifecycle daemon, base-station power control, and audio switching |
 
 ### Consolidation note
 

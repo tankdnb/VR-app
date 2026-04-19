@@ -200,6 +200,14 @@ Start here:
 - `docs/research/program/github-research-wave-14-backlog.md`
 - `docs/research/program/github-research-wave-15-plan.md`
 - `docs/research/program/github-research-wave-15-backlog.md`
+- `docs/research/program/github-research-wave-16-plan.md`
+- `docs/research/program/github-research-wave-16-backlog.md`
+- `docs/research/program/github-research-wave-17-plan.md`
+- `docs/research/program/github-research-wave-17-backlog.md`
+- `docs/research/program/github-research-wave-18-plan.md`
+- `docs/research/program/github-research-wave-18-backlog.md`
+- `docs/research/program/github-research-wave-19-plan.md`
+- `docs/research/program/github-research-wave-19-backlog.md`
 - `docs/research/landscape/vr-projects-master-index.md`
 - `docs/research/landscape/vr-projects-wave-3-utilities.md`
 - `docs/research/landscape/vr-projects-wave-4-gap-fill.md`
@@ -214,6 +222,10 @@ Start here:
 - `docs/research/landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
 - `docs/research/landscape/vr-projects-wave-14-tracker-ingress-osc-egress-and-role-binding-utilities.md`
 - `docs/research/landscape/vr-projects-wave-15-overlay-hosts-and-scaffolds.md`
+- `docs/research/landscape/vr-projects-wave-16-device-monitors-pose-exporters-and-environment-helpers.md`
+- `docs/research/landscape/vr-projects-wave-17-openxr-runtime-managers-layers-and-service-hosts.md`
+- `docs/research/landscape/vr-projects-wave-18-driver-learning-paths-and-repurposed-display-bridges.md`
+- `docs/research/landscape/vr-projects-wave-19-vendor-mods-repurposed-output-bridges-and-alternative-hardware-paths.md`
 
 Original Reality Window and passthrough research:
 
