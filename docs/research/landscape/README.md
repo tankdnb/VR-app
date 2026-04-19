@@ -91,6 +91,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on glove platforms, poser stacks, and
   nonstandard hardware bridge drivers.
 
+- `vr-projects-wave-24-accessibility-captions-and-assistive-overlay-utilities.md`
+  Next GitHub discovery wave focused on accessibility captions,
+  assistive speech surfaces, and micro-HUD accessibility utilities.
+
+- `vr-projects-wave-25-headsetless-qa-runtimes-null-driver-helpers-and-virtual-device-simulators.md`
+  Next GitHub discovery wave focused on headsetless QA runtimes, null-driver
+  helpers, and virtual device simulators.
+
+- `vr-projects-wave-26-vendor-ipc-ecosystems-glasses-bridges-and-official-stack-enhancement-tools.md`
+  Next GitHub discovery wave focused on vendor IPC ecosystems, glasses
+  bridges, and official-stack enhancement tools.
+
+- `vr-projects-wave-27-motion-compensation-calibration-overlays-and-spatial-alignment-tools.md`
+  Next GitHub discovery wave focused on motion compensation, calibration
+  overlays, and spatial alignment tools.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

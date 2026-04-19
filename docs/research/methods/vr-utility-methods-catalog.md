@@ -893,6 +893,185 @@ Use this document when designing a new module or utility and ask:
   physical workflow tools, attachment experiments, and niche controller
   adaptation utilities.
 
+## Method 49: Local speech-recognition sidecar feeding a native VR overlay
+
+- What it is:
+  speech recognition runs in a local service or sidecar, while a separate VR
+  surface subscribes to caption messages and owns the visual presentation.
+- Good for:
+  accessibility captions, language tools, communication helpers, and
+  experimental assistive overlays.
+- Why it matters:
+  it keeps the heavy speech stack separate from the render loop and lets the
+  overlay stay simple.
+- Strong references:
+  `live-captions-vr`, `OpenVRCaptions`.
+- Best fit for `VR-apps-lab`:
+  accessibility tools and caption-oriented overlay experiments.
+
+## Method 50: Multi-output local transcription utility with VR overlay as one consumer
+
+- What it is:
+  a local speech host performs transcription once, then routes the result to
+  one or more consumers such as a SteamVR overlay, OSC client, browser page, or
+  host-app integration.
+- Good for:
+  speech-to-text utilities, social VR helpers, accessibility hubs, and
+  lightweight automation surfaces.
+- Why it matters:
+  the reusable core is the transcription service, not any one target surface.
+- Strong references:
+  `VRCTextboxSTT`, `UniversalVR-CC`.
+- Best fit for `VR-apps-lab`:
+  future local STT hosts and mixed-output assistive tools.
+
+## Method 51: Null-driver config swapper with backup-safe mode toggling
+
+- What it is:
+  a tiny utility snapshots or preserves relevant settings, flips SteamVR into a
+  null-driver or no-HMD configuration, and can restore the previous state.
+- Good for:
+  headsetless QA, no-HMD bring-up, graphics-path testing, and low-friction dev
+  workflows.
+- Why it matters:
+  turning a fragile manual edit into a repeatable mode switch has outsized
+  value for development ergonomics.
+- Strong references:
+  `SteamVRNullFlipper`, `SteamVRNoHeadset`.
+- Best fit for `VR-apps-lab`:
+  headsetless workflow helpers and SteamVR environment micro-tools.
+
+## Method 52: Automation-friendly simulator runtime with shared core plus GUI or API controllers
+
+- What it is:
+  a simulator runtime exposes one core control layer, while desktop GUI tools,
+  scripts, or automation clients all talk to the same underlying simulator API.
+- Good for:
+  XR QA sandboxes, scripted runtime testing, fake-hardware bring-up, and
+  developer tooling.
+- Why it matters:
+  it scales much better than one-off debug UIs because the simulator becomes a
+  reusable platform boundary.
+- Strong references:
+  `OpenXR-Simulator`, `ox-sim-driver`.
+- Best fit for `VR-apps-lab`:
+  future scriptable QA runtimes and runtime-bring-up tools.
+
+## Method 53: SDK-first device bridge with a separated dedicated driver repo
+
+- What it is:
+  a device family exposes transport and capability logic through a public SDK or
+  API layer first, while the runtime-specific driver lives as a thinner
+  downstream bridge.
+- Good for:
+  glasses bridges, custom displays, hardware SDKs, and device families that may
+  target several runtime integrations over time.
+- Why it matters:
+  it keeps hardware-specific logic from being trapped inside one runtime plugin.
+- Strong references:
+  `RayNeo-Air-3S-Pro-OpenVR`, `RayNeo-Air-3S-Pro-OpenVR-Driver`.
+- Best fit for `VR-apps-lab`:
+  custom-device platforms and repurposed-output research.
+
+## Method 54: Vendor enhancement ecosystem built around local IPC and downstream consumers
+
+- What it is:
+  a vendor-wrapper layer exposes extra capabilities through a local IPC or
+  developer API, and smaller downstream repos consume that contract for
+  app-specific features or utilities.
+- Good for:
+  eye-tracking access, haptics extensions, trigger tuning, and non-destructive
+  augmentation of official stacks.
+- Why it matters:
+  the ecosystem value is in the contract and the downstream consumers, not only
+  in the main wrapper itself.
+- Strong references:
+  `PSVR2Toolkit`.
+- Best fit for `VR-apps-lab`:
+  vendor-enhancement research and local developer-API experiments.
+
+## Method 55: Consumer-specific module over vendor IPC
+
+- What it is:
+  a small adapter consumes a broader vendor IPC contract and maps only the
+  target-app semantics that matter for one host ecosystem.
+- Good for:
+  engine mods, avatar tracking adapters, and host-specific feature bridges.
+- Why it matters:
+  it keeps the vendor integration generic while allowing small downstream
+  specializations to move quickly.
+- Strong references:
+  `PSVR2Toolkit.VRCFT`, `ResonitePSVR2`.
+- Best fit for `VR-apps-lab`:
+  downstream module design and ecosystem-aware utility contracts.
+
+## Method 56: Config micro-tool over vendor IPC
+
+- What it is:
+  a narrow desktop utility talks to a vendor IPC contract to expose one
+  high-value configuration flow with little extra product baggage.
+- Good for:
+  trigger tuning, haptics presets, calibration helpers, and other small control
+  surfaces.
+- Why it matters:
+  many of the best vendor utilities should stay small and focused rather than
+  being folded into one giant shell.
+- Strong references:
+  `PSVR2ToolkitTriggerConfig`.
+- Best fit for `VR-apps-lab`:
+  focused companion apps and single-purpose tuning tools.
+
+## Method 57: Driver-side pose rewrite with shared library and overlay configuration
+
+- What it is:
+  a driver hooks or intercepts pose flow, applies correction logic, and exposes
+  its configuration through a shared library plus an overlay or dashboard
+  control surface.
+- Good for:
+  motion compensation, pose manipulation, experimental alignment tools, and
+  runtime-side correction research.
+- Why it matters:
+  it combines low-level correction power with a user-facing configuration path.
+- Strong references:
+  `OpenVR-MotionCompensation`.
+- Best fit for `VR-apps-lab`:
+  advanced alignment utilities and pose-rewrite experiments.
+
+## Method 58: Continuous calibration overlay layered on top of a one-shot alignment baseline
+
+- What it is:
+  a calibration tool keeps the standard point-sequence and initial solve, but
+  then adds metrics, persistence, and live correction logic for ongoing
+  alignment.
+- Good for:
+  mixed-tracking workflows, long sessions, unstable spaces, and evolving sensor
+  alignment.
+- Why it matters:
+  the real product value is often the continuous correction layer, not only the
+  initial calibration solve.
+- Strong references:
+  `OpenVR-SpaceCalibrator2`, `OpenVR-SpaceCalibrator`.
+- Best fit for `VR-apps-lab`:
+  future calibration helpers and alignment UX research.
+
+## Method 59: Pose capture to reconstruction pipeline for spatial alignment experiments
+
+- What it is:
+  a runtime capture tool records images and tracked poses, then feeds them into
+  an offline reconstruction or mapping pipeline to produce alignment-friendly
+  spatial artifacts.
+- Good for:
+  room mapping, scene reconstruction, spatial diagnostics, and environment
+  alignment experiments.
+- Why it matters:
+  some alignment problems are solved better by better capture artifacts than by
+  yet another live overlay.
+- Strong references:
+  `openvr-room-mapping`.
+- Best fit for `VR-apps-lab`:
+  spatial diagnostics, room-scan experiments, and calibration-adjacent capture
+  tools.
+
 ## Recommended usage inside `VR-apps-lab`
 
 When a new utility idea appears:

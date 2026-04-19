@@ -35,6 +35,10 @@ This file complements:
 - `vr-projects-wave-21-openxr-provider-stacks-gaze-layers-and-runtime-side-utility-platforms.md`
 - `vr-projects-wave-22-vision-tracking-hosts-camera-full-body-bridges-and-hand-input-sidecars.md`
 - `vr-projects-wave-23-glove-platforms-poser-stacks-and-nonstandard-hardware-bridge-drivers.md`
+- `vr-projects-wave-24-accessibility-captions-and-assistive-overlay-utilities.md`
+- `vr-projects-wave-25-headsetless-qa-runtimes-null-driver-helpers-and-virtual-device-simulators.md`
+- `vr-projects-wave-26-vendor-ipc-ecosystems-glasses-bridges-and-official-stack-enhancement-tools.md`
+- `vr-projects-wave-27-motion-compensation-calibration-overlays-and-spatial-alignment-tools.md`
 
 ## How to use this index
 
@@ -113,6 +117,18 @@ This file complements:
 - Use `vr-projects-wave-23-glove-platforms-poser-stacks-and-nonstandard-hardware-bridge-drivers.md`
   for the next wave centered on glove platforms, poser stacks, and nonstandard
   hardware bridge drivers.
+- Use `vr-projects-wave-24-accessibility-captions-and-assistive-overlay-utilities.md`
+  for the next wave centered on accessibility captions, assistive speech
+  surfaces, and micro-HUD accessibility utilities.
+- Use `vr-projects-wave-25-headsetless-qa-runtimes-null-driver-helpers-and-virtual-device-simulators.md`
+  for the next wave centered on headsetless QA runtimes, null-driver helpers,
+  and virtual device simulators.
+- Use `vr-projects-wave-26-vendor-ipc-ecosystems-glasses-bridges-and-official-stack-enhancement-tools.md`
+  for the next wave centered on vendor IPC ecosystems, glasses bridges, and
+  official-stack enhancement tools.
+- Use `vr-projects-wave-27-motion-compensation-calibration-overlays-and-spatial-alignment-tools.md`
+  for the next wave centered on motion compensation, calibration overlays, and
+  spatial alignment tools.
 - Treat each project as one of:
   - `code donor`
   - `architecture reference`

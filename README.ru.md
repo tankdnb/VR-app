@@ -114,6 +114,10 @@ docs/
 - [Wave 21 research](docs/research/landscape/vr-projects-wave-21-openxr-provider-stacks-gaze-layers-and-runtime-side-utility-platforms.md)
 - [Wave 22 research](docs/research/landscape/vr-projects-wave-22-vision-tracking-hosts-camera-full-body-bridges-and-hand-input-sidecars.md)
 - [Wave 23 research](docs/research/landscape/vr-projects-wave-23-glove-platforms-poser-stacks-and-nonstandard-hardware-bridge-drivers.md)
+- [Wave 24 research](docs/research/landscape/vr-projects-wave-24-accessibility-captions-and-assistive-overlay-utilities.md)
+- [Wave 25 research](docs/research/landscape/vr-projects-wave-25-headsetless-qa-runtimes-null-driver-helpers-and-virtual-device-simulators.md)
+- [Wave 26 research](docs/research/landscape/vr-projects-wave-26-vendor-ipc-ecosystems-glasses-bridges-and-official-stack-enhancement-tools.md)
+- [Wave 27 research](docs/research/landscape/vr-projects-wave-27-motion-compensation-calibration-overlays-and-spatial-alignment-tools.md)
 
 ## Главная идея репозитория
 

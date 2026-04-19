@@ -63,6 +63,10 @@ Use this section for:
 - `research/landscape/vr-projects-wave-21-openxr-provider-stacks-gaze-layers-and-runtime-side-utility-platforms.md`
 - `research/landscape/vr-projects-wave-22-vision-tracking-hosts-camera-full-body-bridges-and-hand-input-sidecars.md`
 - `research/landscape/vr-projects-wave-23-glove-platforms-poser-stacks-and-nonstandard-hardware-bridge-drivers.md`
+- `research/landscape/vr-projects-wave-24-accessibility-captions-and-assistive-overlay-utilities.md`
+- `research/landscape/vr-projects-wave-25-headsetless-qa-runtimes-null-driver-helpers-and-virtual-device-simulators.md`
+- `research/landscape/vr-projects-wave-26-vendor-ipc-ecosystems-glasses-bridges-and-official-stack-enhancement-tools.md`
+- `research/landscape/vr-projects-wave-27-motion-compensation-calibration-overlays-and-spatial-alignment-tools.md`
 - `research/landscape/project-families.md`
 - `research/landscape/not-yet-studied-deeply.md`
 
@@ -122,6 +126,14 @@ Use this section for:
 - `research/program/github-research-wave-22-backlog.md`
 - `research/program/github-research-wave-23-plan.md`
 - `research/program/github-research-wave-23-backlog.md`
+- `research/program/github-research-wave-24-plan.md`
+- `research/program/github-research-wave-24-backlog.md`
+- `research/program/github-research-wave-25-plan.md`
+- `research/program/github-research-wave-25-backlog.md`
+- `research/program/github-research-wave-26-plan.md`
+- `research/program/github-research-wave-26-backlog.md`
+- `research/program/github-research-wave-27-plan.md`
+- `research/program/github-research-wave-27-backlog.md`
 - `research/program/foundational-waves-1-7-retro-normalization-plan.md`
 - `research/program/foundational-waves-1-7-retro-normalization-backlog.md`
 

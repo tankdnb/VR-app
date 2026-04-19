@@ -37,6 +37,8 @@ This family is already converging into the future `OpenXR Doctor` direction.
 | `KhronosGroup/OpenXR-Inventory` | Already studied | Structured capability matrix for runtime and middleware support |
 | `rpavlik/xr-picker` | Already studied | Clean core/GUI split for runtime picking and manifest inspection |
 | `elliotttate/OpenXR-Simulator` | Already studied | Headsetless runtime and runtime-registration reference |
+| `ox-runtime/ox-sim-driver` | Already studied | Automation-friendly simulator runtime with shared core plus GUI and programmatic control paths |
+| `davidrios/openxr-device-simulator` | Not studied deeply | Thin but relevant Rust runtime-simulator signal that still needs a clearer public pass |
 | `mbucchia/OpenXR-Vk-D3D12` | Already studied | Graphics API adapter layer bridging Vulkan/OpenGL apps into D3D12-only runtime paths |
 | `mbucchia/VirtualDesktop-OpenXR` | Already studied | Full runtime implementation reference with registration, settings watch, and precompositor paths |
 | `fredemmott/OpenXR-API-Layers-GUI` | Already studied | Strongest layer diagnostics and enable/disable UX reference |
@@ -221,13 +223,15 @@ individual project entries. The real overlap axes are:
 
 ## Family 7: Accessibility overlays and assistive HUDs
 
-This family is present in the repo, but not yet treated as a first-class
-product direction.
+This family is now clearly large enough to be treated as a first-class product
+direction.
 
 | Project | Status | Notes |
 |---|---|---|
 | `Vinventive/live-captions-vr` | Already studied | Speech-to-text overlay reference |
 | `MochiDoesVR/OpenVRCaptions` | Already studied | C#/SteamVR captions reference |
+| `ctobin1114/UniversalVR-CC` | Already studied | Browser-first closed-caption surface meant to be pulled into VR through another host |
+| `gt0777/VRCLiveCaptionsMod` | Already studied | App-internal live-captions path built around a VRChat voice hook |
 | `matzman666/OpenVR-MicrophoneControl` | Already studied | Dashboard mute/PTT overlay with OS audio integration |
 | `Beyley/eepyxr` | Already studied | OpenXR overlay utility framed around comfort/sleep use |
 | `rrazgriz/VRCMicOverlay` | Already studied | Minimal HMD-relative mic-state overlay with OSC/audio hooks |
@@ -268,13 +272,14 @@ knowledge needed for `device-side tooling`.
 | `puresoul/Barebone` | Partially studied | XInput-driven synthetic Vive controller path anchored relative to the HMD |
 | `mmorselli/Joy2OpenVR` | Already studied | DirectInput-to-InputEmulator sidecar for unusual physical controllers |
 | `mdovgialo/SteamVR-Glove` | Already studied | Arduino glove proof of concept piggybacking on existing Vive controller tracking |
-| `openvrmc/OpenVR-MotionCompensation` | Partially studied | Pose-rewrite driver with shared library and in-VR dashboard configuration |
+| `openvrmc/OpenVR-MotionCompensation` | Already studied | Pose-rewrite driver with shared library and in-VR dashboard configuration |
 | `OpenDisplayXR/OpenDisplayXR-VDD` | Not studied deeply | Sparse but relevant signal for a simulated OpenVR/OpenXR virtual hardware path |
-| `verncat/RayNeo-Air-3S-Pro-OpenVR` | Partially studied | SDK-first RayNeo glasses bridge whose current OpenVR driver is still a stub but already shows EDID and IMU plumbing |
+| `verncat/RayNeo-Air-3S-Pro-OpenVR` | Already studied | SDK-first RayNeo glasses bridge whose transport and API layer now sit cleanly beside a dedicated driver repo |
+| `verncat/RayNeo-Air-3S-Pro-OpenVR-Driver` | Already studied | Dedicated RayNeo OpenVR driver repo with bindings, prelauncher, and clearer device-provider split |
 | `LucidVR/opengloves-driver` | Already studied | Hand-specific custom device path with driver, service, and overlay split |
 | `LucidVR/lucidgloves` | Already studied | Matching firmware and hardware ecosystem for the same glove family |
 | `r57zone/OpenVR-ArduinoHMD` | Partially studied | DIY HMD and config-driven setup |
-| `DaniXmir/GlassVr` | Partially studied | XR/AR glasses bridge and emulation |
+| `DaniXmir/GlassVr` | Already studied | XR/AR glasses bridge with Python sidecar, headset/controller/tracker emulation, and hand-simulation path |
 | `Copprhead/hotas-vr-controller` | Already studied | Domain-specific cockpit/device bridge with config-driven offsets and hook-based clicks |
 | `TrueOpenVR/SteamVR-TrueOpenVR` | Partially studied | Sample-derived bridge that feeds SteamVR from an external TrueOpenVR DLL surface |
 | `HoboVR-Labs/hobo_vr` | Already studied | Driver prototyping stack with an explicit external poser protocol and language bindings |
@@ -298,7 +303,10 @@ vendor stacks instead of replacing them.
 
 | Project | Status | Notes |
 |---|---|---|
-| `BnuuySolutions/PSVR2Toolkit` | Partially studied | Vendor-driver wrapper with versioned IPC for gaze data and trigger-effect control |
+| `BnuuySolutions/PSVR2Toolkit` | Already studied | Vendor-driver wrapper with versioned IPC for gaze data and trigger-effect control |
+| `BnuuySolutions/PSVR2Toolkit.VRCFT` | Already studied | Downstream consumer module that maps toolkit IPC into VRCFaceTracking semantics |
+| `s-ilent/PSVR2ToolkitTriggerConfig` | Already studied | Focused desktop trigger-config utility layered over the toolkit IPC contract |
+| `tabithamoon/ResonitePSVR2` | Already studied | Engine-specific eye-tracking bridge that consumes the toolkit IPC surface |
 | `PSVR2-related forks/variants` | Not studied deeply | Worth mapping later if this branch expands |
 
 ### Consolidation note
@@ -368,7 +376,7 @@ hardware.
 | `zhangxuelei86/WMR-Passthrough` | Already studied | OpenXR API-layer plus camera-service pattern |
 | `Danealor/VRPassthrough` | Already studied | Lightweight USB-camera passthrough utility path |
 | `jangxx/LeapOVRPassthrough` | Already studied | Gesture-triggered passthrough UX reference |
-| `alexander-clarke/openvr-room-mapping` | Not studied deeply | Possible room-scan and environment-capture comparison node |
+| `alexander-clarke/openvr-room-mapping` | Already studied | Pose-plus-image capture pipeline that sits between environment reconstruction and alignment research |
 
 ### Consolidation note
 
@@ -462,6 +470,7 @@ interaction, distortion, or overlay-heavy workflows.
 | `W-Drew/SteamVR-Toggle` | Already studied | Tray utility that toggles SteamVR by renaming install path |
 | `sencercoltu/steamvr-undistort` | Already studied | Lens distortion adjustment tool for custom optics |
 | `elvissteinjr/SteamVR-VoidScene` | Already studied | Minimal scene app to lower baseline cost for overlay use |
+| `shieldmeidunn/SteamVRNullFlipper` | Already studied | Tiny backup-aware helper for flipping SteamVR into null-driver mode |
 | `Virus-vr/SteamVRAdaptiveBrightness` | Already studied | Mirror-texture analysis helper that continuously rewrites SteamVR brightness |
 | `username223/SteamVR-ActionsManifestValidator` | Already studied | CLI manifest validator for SteamVR input/action metadata |
 | `Erimelowo/Lighthouse-Scale-Fix` | Already studied | Backup-safe one-shot patcher for lighthouse scale configuration |
@@ -492,8 +501,10 @@ different tracking spaces, poses, or sensors aligned enough to remain usable.
 | `Stavdel/OpenVR-SpaceCalibrator` | Already studied | Fork line preserved mainly for historical comparison |
 | `Marshall-vak/OpenVR-SpaceCalibrator2` | Already studied | Continuous-calibration extension of the SpaceCalibrator idea |
 | `BuzzteeBear/OpenXR-MotionCompensation` | Already studied | OpenXR-side motion compensation and calibration flow |
-| `openvrmc/OpenVR-MotionCompensation` | Partially studied | Driver-side pose rewrite plus dashboard configuration path |
+| `openvrmc/OpenVR-MotionCompensation` | Already studied | Driver-side pose rewrite plus dashboard configuration path |
 | `RedHawk989/EyeTrackVR-OpenVR-Calibration-Overlay` | Already studied | Minimal overlay-first 9-point eye-tracking calibration surface |
+| `alexander-clarke/openvr-room-mapping` | Already studied | Spatial capture and reconstruction path that overlaps with alignment and room-space research |
+| `tobexeon/PSVR2EyeTrackingCalibration` | Not studied deeply | Real-time PSVR2 eye-calibration client that currently depends on a custom toolkit fork |
 
 ### Consolidation note
 
@@ -505,6 +516,7 @@ or a new driver, but a better `alignment UX`:
 - persistent offsets
 - continuous correction
 - pose-rewrite layers and drivers
+- capture-driven alignment artifacts
 
 ## Family 16: Vision-based tracking, hand-input bridges, and headsetless camera runtimes
 
@@ -522,7 +534,7 @@ controller stacks.
 | `KinectToVR/Amethyst` | Already studied | Plugin-based body-tracking host with device plugins and service-endpoint contracts |
 | `ju1ce/Mediapipe-VR-Fullbody-Tracking` | Already studied | Single-camera body tracking with switchable SteamVR-driver and VRChat OSC backends plus Quest-friendly WebUI |
 | `Wunder-Wulfe/NVIDIA-BodyTracking` | Already studied | GPU-assisted camera body-tracking driver with overlay-assisted alignment and dense tracker-role configuration |
-| `chnoblouch/aethervr` | Partially studied | Webcam-driven custom OpenXR runtime with a Python tracker connected over local TCP |
+| `chnoblouch/aethervr` | Already studied | Webcam-driven custom OpenXR runtime with a Python tracker connected over local TCP |
 | `MasonSakai/VR-AI-Full-Body-Tracking` | Not studied deeply | Camera FBT comparison node still partly anchored in an InputEmulator-era transition |
 
 ### Consolidation note

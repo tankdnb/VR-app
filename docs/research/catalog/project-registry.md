@@ -54,6 +54,7 @@ Primary docs:
 - `../landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
 - `../landscape/vr-projects-wave-17-openxr-runtime-managers-layers-and-service-hosts.md`
 - `../landscape/vr-projects-wave-21-openxr-provider-stacks-gaze-layers-and-runtime-side-utility-platforms.md`
+- `../landscape/vr-projects-wave-25-headsetless-qa-runtimes-null-driver-helpers-and-virtual-device-simulators.md`
 - `../landscape/project-families.md`
 
 - `mbucchia/OpenXR-Toolkit` - `Already studied`
@@ -62,7 +63,9 @@ Primary docs:
 - `KhronosGroup/OpenXR-Inventory` - `Already studied`
 - `rpavlik/xr-picker` - `Already studied`
 - `elliotttate/OpenXR-Simulator` - `Already studied`
-- `chnoblouch/aethervr` - `Partially studied`
+- `davidrios/openxr-device-simulator` - `Not studied deeply`
+- `ox-runtime/ox-sim-driver` - `Already studied`
+- `chnoblouch/aethervr` - `Already studied`
 - `fredemmott/OpenXR-API-Layers-GUI` - `Already studied`
 - `WaGi-Coding/OpenXR-Runtime-Switcher` - `Already studied`
 - `UniStuttgart-VISUS/OpenXR-Runtime-Switcher` - `Already studied`
@@ -241,6 +244,7 @@ Primary docs:
 - `../landscape/vr-utilities-repo-landscape.md`
 - `../landscape/vr-projects-wave-4-gap-fill.md`
 - `../landscape/vr-projects-foundational-waves-1-7-retro-normalization.md`
+- `../landscape/vr-projects-wave-27-motion-compensation-calibration-overlays-and-spatial-alignment-tools.md`
 - `../landscape/project-families.md`
 - `../landscape/not-yet-studied-deeply.md`
 
@@ -248,7 +252,9 @@ Primary docs:
 - `Stavdel/OpenVR-SpaceCalibrator` - `Already studied`
 - `Marshall-vak/OpenVR-SpaceCalibrator2` - `Already studied`
 - `BuzzteeBear/OpenXR-MotionCompensation` - `Already studied`
+- `openvrmc/OpenVR-MotionCompensation` - `Already studied`
 - `RedHawk989/EyeTrackVR-OpenVR-Calibration-Overlay` - `Already studied`
+- `tobexeon/PSVR2EyeTrackingCalibration` - `Not studied deeply`
 
 ## 10. Marker-based, camera-based, and low-cost full-body paths
 
@@ -274,13 +280,14 @@ Primary docs:
 - `../reuse/openxr-steamvr-passthrough-reuse-plan.md`
 - `../landscape/vr-utilities-repo-landscape.md`
 - `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
+- `../landscape/vr-projects-wave-27-motion-compensation-calibration-overlays-and-spatial-alignment-tools.md`
 - `../landscape/project-families.md`
 
 - `Rectus/openxr-steamvr-passthrough` - `Already studied`
 - `zhangxuelei86/WMR-Passthrough` - `Already studied`
 - `Danealor/VRPassthrough` - `Already studied`
 - `jangxx/LeapOVRPassthrough` - `Already studied`
-- `alexander-clarke/openvr-room-mapping` - `Not studied deeply`
+- `alexander-clarke/openvr-room-mapping` - `Already studied`
 
 ## 12. Performance, image processing, and rendering mods
 
@@ -310,9 +317,13 @@ Primary docs:
 - `../landscape/vr-projects-wave-18-driver-learning-paths-and-repurposed-display-bridges.md`
 - `../landscape/vr-projects-wave-19-vendor-mods-repurposed-output-bridges-and-alternative-hardware-paths.md`
 - `../landscape/vr-projects-wave-23-glove-platforms-poser-stacks-and-nonstandard-hardware-bridge-drivers.md`
+- `../landscape/vr-projects-wave-26-vendor-ipc-ecosystems-glasses-bridges-and-official-stack-enhancement-tools.md`
 - `../landscape/not-yet-studied-deeply.md`
 
-- `BnuuySolutions/PSVR2Toolkit` - `Partially studied`
+- `BnuuySolutions/PSVR2Toolkit` - `Already studied`
+- `BnuuySolutions/PSVR2Toolkit.VRCFT` - `Already studied`
+- `s-ilent/PSVR2ToolkitTriggerConfig` - `Already studied`
+- `tabithamoon/ResonitePSVR2` - `Already studied`
 - `ChristophHaag/SteamVR-OpenHMD` - `Already studied`
 - `mm0zct/Oculus_Touch_Steam_Link` - `Already studied`
 - `oleuzop/VirtualSteamVRDriver` - `Already studied`
@@ -327,17 +338,17 @@ Primary docs:
 - `puresoul/Barebone` - `Partially studied`
 - `mmorselli/Joy2OpenVR` - `Already studied`
 - `mdovgialo/SteamVR-Glove` - `Already studied`
-- `openvrmc/OpenVR-MotionCompensation` - `Partially studied`
 - `ultraleap/driver_ultraleap` - `Already studied`
 - `Nordskog/HandOfLesser` - `Already studied`
 - `NovaAshwolfDev/HandCameraDriver` - `Already studied`
 - `OpenDisplayXR/OpenDisplayXR-VDD` - `Not studied deeply`
-- `verncat/RayNeo-Air-3S-Pro-OpenVR` - `Partially studied`
+- `verncat/RayNeo-Air-3S-Pro-OpenVR` - `Already studied`
+- `verncat/RayNeo-Air-3S-Pro-OpenVR-Driver` - `Already studied`
 - `LucidVR/opengloves-driver` - `Already studied`
 - `LucidVR/lucidgloves` - `Already studied`
 - `HoboVR-Labs/hobo_vr` - `Already studied`
 - `r57zone/OpenVR-ArduinoHMD` - `Partially studied`
-- `DaniXmir/GlassVr` - `Partially studied`
+- `DaniXmir/GlassVr` - `Already studied`
 - `terminal29/Simple-OpenVR-Driver-Tutorial` - `Already studied`
 - `Copprhead/hotas-vr-controller` - `Already studied`
 - `r57zone/OpenVR-OpenTrack` - `Already studied`
@@ -356,6 +367,7 @@ Primary docs:
 - `../landscape/vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/vr-projects-wave-16-device-monitors-pose-exporters-and-environment-helpers.md`
+- `../landscape/vr-projects-wave-25-headsetless-qa-runtimes-null-driver-helpers-and-virtual-device-simulators.md`
 - `../landscape/project-families.md`
 
 - `BnuuySolutions/OculusKiller` - `Already studied`
@@ -368,6 +380,7 @@ Primary docs:
 - `sencercoltu/steamvr-undistort` - `Already studied`
 - `W-Drew/SteamVR-Toggle` - `Already studied`
 - `elvissteinjr/SteamVR-VoidScene` - `Already studied`
+- `shieldmeidunn/SteamVRNullFlipper` - `Already studied`
 - `Virus-vr/SteamVRAdaptiveBrightness` - `Already studied`
 - `username223/SteamVR-ActionsManifestValidator` - `Already studied`
 - `Erimelowo/Lighthouse-Scale-Fix` - `Already studied`
@@ -423,10 +436,13 @@ Primary docs:
 - `../landscape/vr-projects-wave-3-utilities.md`
 - `../landscape/vr-projects-wave-8-github-source-pass.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
+- `../landscape/vr-projects-wave-24-accessibility-captions-and-assistive-overlay-utilities.md`
 
 - `Beyley/eepyxr` - `Already studied`
 - `Vinventive/live-captions-vr` - `Already studied`
 - `MochiDoesVR/OpenVRCaptions` - `Already studied`
+- `ctobin1114/UniversalVR-CC` - `Already studied`
+- `gt0777/VRCLiveCaptionsMod` - `Already studied`
 - `matzman666/OpenVR-MicrophoneControl` - `Already studied`
 - `rrazgriz/VRCMicOverlay` - `Already studied`
 - `I5UCC/VRCTextboxSTT` - `Already studied`

@@ -146,3 +146,31 @@ repeatable way.
 
 - `github-research-wave-23-backlog.md`
   Executed backlog for the Wave 23 pass.
+
+- `github-research-wave-24-plan.md`
+  Wave 24 research plan focused on accessibility captions, assistive speech
+  surfaces, and micro-HUD accessibility utilities.
+
+- `github-research-wave-24-backlog.md`
+  Executed backlog for the Wave 24 pass.
+
+- `github-research-wave-25-plan.md`
+  Wave 25 research plan focused on headsetless QA runtimes, null-driver
+  helpers, and virtual device simulators.
+
+- `github-research-wave-25-backlog.md`
+  Executed backlog for the Wave 25 pass.
+
+- `github-research-wave-26-plan.md`
+  Wave 26 research plan focused on vendor IPC ecosystems, glasses bridges, and
+  official-stack enhancement tools.
+
+- `github-research-wave-26-backlog.md`
+  Executed backlog for the Wave 26 pass.
+
+- `github-research-wave-27-plan.md`
+  Wave 27 research plan focused on motion compensation, calibration overlays,
+  and spatial alignment tools.
+
+- `github-research-wave-27-backlog.md`
+  Executed backlog for the Wave 27 pass.
