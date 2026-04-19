@@ -252,6 +252,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on specialized effect overlays,
   visibility shaping, and passthrough cutout surfaces.
 
+- `vr-projects-wave-64-openxr-sample-apps-rendering-baselines-and-bring-up-references.md`
+  Next GitHub discovery wave focused on OpenXR sample apps,
+  rendering baselines, and bring-up references.
+
+- `vr-projects-wave-65-openxr-language-bindings-generator-backed-wrappers-and-sdk-facades.md`
+  Next GitHub discovery wave focused on OpenXR language bindings,
+  generator-backed wrappers, and SDK facades.
+
+- `vr-projects-wave-66-openvr-language-bindings-managed-wrappers-and-scripting-access-layers.md`
+  Next GitHub discovery wave focused on OpenVR language bindings,
+  managed wrappers, and scripting access layers.
+
+- `vr-projects-wave-67-openvr-tracking-export-recording-and-robotics-bridge-tooling.md`
+  Next GitHub discovery wave focused on OpenVR tracking export,
+  recording, and robotics bridge tooling.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

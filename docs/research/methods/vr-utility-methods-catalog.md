@@ -2734,6 +2734,188 @@ Use this document when designing a new module or utility and ask:
 - Best fit for `VR-apps-lab`:
   comfort overlays, visibility-shaping tools, and specialized effect surfaces.
 
+## Method 158: Single-file OpenXR bootstrap with explicit extension filtering and graphics bring-up
+
+- What it is:
+  a compact sample keeps instance creation, extension filtering, graphics
+  requirements, swapchains, action sets, and the frame loop visible in one
+  place instead of spreading them across a larger framework.
+- Good for:
+  bring-up references, low-level debugging, first OpenXR utilities, and
+  comparing graphics-backend setup paths.
+- Why it matters:
+  it provides an honest `minimum viable OpenXR app` donor that future tools can
+  learn from without reverse-engineering a large sample suite.
+- Strong references:
+  `OpenXRSamples`.
+- Best fit for `VR-apps-lab`:
+  OpenXR bring-up notes and runtime-facing graphics prototypes.
+
+## Method 159: Structured OpenXR app split into context, headset, controllers, mirror view, and renderer
+
+- What it is:
+  an OpenXR sample app separates runtime and graphics bring-up, headset frame
+  lifecycle, controller bindings and spaces, mirror output, and rendering into
+  explicit modules.
+- Good for:
+  reusable XR app scaffolds, diagnostics tools, sample-based prototypes, and
+  future utility apps that should stay engine-light.
+- Why it matters:
+  it shows a stronger middle ground between a one-file tutorial and a full
+  engine integration.
+- Strong references:
+  `openxr-vulkan-example`.
+- Best fit for `VR-apps-lab`:
+  structured OpenXR sample architecture and future utility-app scaffolds.
+
+## Method 160: Shared OpenXR utility core reused across many tiny feature samples
+
+- What it is:
+  a repo centralizes loader, session, and common utility flow in one shared
+  OpenXR layer while keeping feature demos small and specific.
+- Good for:
+  sample suites, experimental branches, feature spikes, and codebases that need
+  many XR experiments over one stable runtime baseline.
+- Why it matters:
+  it prevents `feature sample sprawl` from forcing every experiment to
+  reimplement XR bring-up from scratch.
+- Strong references:
+  `android_openxr_gles`.
+- Best fit for `VR-apps-lab`:
+  shared XR utility layers and feature-sample comparison work.
+
+## Method 161: Safe and raw OpenXR binding stack generated from the Khronos registry
+
+- What it is:
+  a binding project keeps a low-level raw layer close to the native API while
+  exposing a safer or more ergonomic wrapper layer above it.
+- Good for:
+  new XR tooling stacks, language bindings, wrapper libraries, and runtimes
+  that need both power-user and ergonomic entry points.
+- Why it matters:
+  it separates `native API fidelity` from `ergonomic host-language use` instead
+  of forcing one compromise surface.
+- Strong references:
+  `openxrs`.
+- Best fit for `VR-apps-lab`:
+  future XR binding experiments and language-level tool foundations.
+
+## Method 162: Build-integrated binding generator that adapts API naming to host-language conventions
+
+- What it is:
+  wrapper code is generated during the build rather than only pre-shipped, and
+  the emitted surface is adapted to the naming and idioms of the target
+  language.
+- Good for:
+  bindings, SDK facades, language-specific toolchains, and repos where the
+  generator should stay a visible part of maintenance.
+- Why it matters:
+  it keeps code generation honest and reproducible while still producing a
+  host-language-friendly API.
+- Strong references:
+  `openxr-zig`.
+- Best fit for `VR-apps-lab`:
+  future wrapper-generation experiments and host-language adaptation notes.
+
+## Method 163: Packaged Python OpenXR facade over generated raw calls with optional API-layer insertion
+
+- What it is:
+  generated raw calls are wrapped in a more Pythonic layer, loader handling is
+  packaged for the host OS, and optional tooling exists to insert a Python-side
+  API layer into the OpenXR flow.
+- Good for:
+  scripting-heavy XR tools, automation, rapid experiments, and lightweight
+  inspection utilities.
+- Why it matters:
+  it shows that a scripting language can still participate in serious
+  runtime-level XR work rather than only calling into finished apps.
+- Strong references:
+  `pyopenxr`.
+- Best fit for `VR-apps-lab`:
+  scripting-first XR tooling and rapid OpenXR experiments.
+
+## Method 164: OpenVR runtime facade that separates one-time context initialization from subsystem handles
+
+- What it is:
+  a wrapper initializes OpenVR once, then exposes typed handles or subsystems
+  such as compositor, system, or chaperone through explicit runtime-owned
+  objects.
+- Good for:
+  wrappers, language bindings, experiments, and utility code that should avoid
+  global runtime confusion.
+- Why it matters:
+  it makes runtime ownership clear and reduces wrapper ambiguity around
+  `who owns OpenVR state`.
+- Strong references:
+  `rust-openvr`.
+- Best fit for `VR-apps-lab`:
+  OpenVR wrapper notes and runtime-facing tool foundations.
+
+## Method 165: Object-oriented OpenVR wrapper with heartbeat-based draw, input, and update loops
+
+- What it is:
+  a higher-level OpenVR facade centralizes runtime lifecycle and exposes
+  repeating draw, input, and update phases as explicit wrapper concepts rather
+  than leaving every app to rediscover them.
+- Good for:
+  managed-language utility hosts, runtime-facing app frameworks, and broader
+  OpenVR-based tool shells.
+- Why it matters:
+  it turns `OpenVR app structure` into a reusable architecture pattern instead
+  of a project-specific convention.
+- Strong references:
+  `OpenVR.NET`.
+- Best fit for `VR-apps-lab`:
+  managed OpenVR hosts and higher-level runtime façade experiments.
+
+## Method 166: OpenVR tracking-export bridge with pluggable publishers for ROS, WebSocket, file, or other consumers
+
+- What it is:
+  one tracking host owns OpenVR collection while separate publisher modules
+  relay the resulting data into ROS, WebSocket, files, or other consumers.
+- Good for:
+  robotics bridges, diagnostics exporters, multi-consumer tracking tools, and
+  runtime-side telemetry services.
+- Why it matters:
+  it keeps `tracking collection` separate from `transport choice`, which makes
+  future extensions much easier.
+- Strong references:
+  `openvr_ros_bridge`.
+- Best fit for `VR-apps-lab`:
+  tracker-export services and modular telemetry helpers.
+
+## Method 167: OpenVR pose recorder and replayer that serializes device metadata and motion timelines
+
+- What it is:
+  a runtime tool records device properties and timed pose or input samples into
+  a structured format, then replays them through another OpenVR-facing layer.
+- Good for:
+  reproducible debugging, playback harnesses, regression scenarios, simulated
+  tracking, and test fixtures around motion data.
+- Why it matters:
+  it turns transient runtime behavior into reusable artifacts for later
+  debugging or comparison.
+- Strong references:
+  `openvr-input-recorder`.
+- Best fit for `VR-apps-lab`:
+  tracking capture, replay harnesses, and motion-debug tooling.
+
+## Method 168: Native VR consumer for ROS or robotics topics with both world-space data and HMD-relative overlays
+
+- What it is:
+  a VR app consumes robotics topics directly and presents them as point clouds,
+  markers, transforms, images, or UI surfaces inside VR.
+- Good for:
+  robotics visualization, operator workspaces, inspection tools, and XR clients
+  for external simulation or sensing systems.
+- Why it matters:
+  it shows the other half of the bridge pattern: not just exporting VR data
+  outward, but pulling external runtime data into VR as a native client.
+- Strong references:
+  `vrviz`.
+- Best fit for `VR-apps-lab`:
+  robotics-facing XR clients and external-data visualization tools.
+
 ## Recommended usage inside `VR-apps-lab`
 
 When a new utility idea appears:

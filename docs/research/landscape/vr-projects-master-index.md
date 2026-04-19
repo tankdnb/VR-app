@@ -72,6 +72,10 @@ This file complements:
 - `vr-projects-wave-61-managed-language-overlay-starters-uitoolkit-templates-and-higher-level-scaffolds.md`
 - `vr-projects-wave-62-desktop-adjacent-companion-overlays-phone-bridges-and-media-or-text-control-surfaces.md`
 - `vr-projects-wave-63-specialized-effect-overlays-visibility-shaping-and-passthrough-cutout-surfaces.md`
+- `vr-projects-wave-64-openxr-sample-apps-rendering-baselines-and-bring-up-references.md`
+- `vr-projects-wave-65-openxr-language-bindings-generator-backed-wrappers-and-sdk-facades.md`
+- `vr-projects-wave-66-openvr-language-bindings-managed-wrappers-and-scripting-access-layers.md`
+- `vr-projects-wave-67-openvr-tracking-export-recording-and-robotics-bridge-tooling.md`
 
 ## How to use this index
 
@@ -259,6 +263,30 @@ This file complements:
 - Use `vr-projects-wave-59-embodied-locomotion-overlays-live-tuning-surfaces-and-external-device-control-panels.md`
   for the next wave centered on embodied locomotion overlays,
   live tuning surfaces, and external-device control panels.
+- Use `vr-projects-wave-60-code-first-overlay-scaffolds-projection-samples-and-window-to-texture-baselines.md`
+  for the next wave centered on code-first overlay scaffolds,
+  projection samples, and window-to-texture baselines.
+- Use `vr-projects-wave-61-managed-language-overlay-starters-uitoolkit-templates-and-higher-level-scaffolds.md`
+  for the next wave centered on managed-language overlay starters,
+  `UIToolkit` templates, and higher-level scaffolds.
+- Use `vr-projects-wave-62-desktop-adjacent-companion-overlays-phone-bridges-and-media-or-text-control-surfaces.md`
+  for the next wave centered on desktop-adjacent companion overlays,
+  phone bridges, and media or text control surfaces.
+- Use `vr-projects-wave-63-specialized-effect-overlays-visibility-shaping-and-passthrough-cutout-surfaces.md`
+  for the next wave centered on specialized effect overlays,
+  visibility shaping, and passthrough cutout surfaces.
+- Use `vr-projects-wave-64-openxr-sample-apps-rendering-baselines-and-bring-up-references.md`
+  for the next wave centered on OpenXR sample apps, rendering baselines, and
+  bring-up references.
+- Use `vr-projects-wave-65-openxr-language-bindings-generator-backed-wrappers-and-sdk-facades.md`
+  for the next wave centered on OpenXR language bindings,
+  generator-backed wrappers, and SDK facades.
+- Use `vr-projects-wave-66-openvr-language-bindings-managed-wrappers-and-scripting-access-layers.md`
+  for the next wave centered on OpenVR language bindings,
+  managed wrappers, and scripting access layers.
+- Use `vr-projects-wave-67-openvr-tracking-export-recording-and-robotics-bridge-tooling.md`
+  for the next wave centered on OpenVR tracking export, recording, and
+  robotics bridge tooling.
 - Treat each project as one of:
   - `code donor`
   - `architecture reference`

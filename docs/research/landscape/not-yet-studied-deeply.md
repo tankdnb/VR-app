@@ -508,6 +508,46 @@ These are larger than a single repo and should guide the next research wave.
   product family with reuse value for comfort, passthrough cutouts, and visual
   masking.
 
+### 29. `OpenXR sample-app bring-up references and rendering baselines`
+
+- Main entries:
+  `OpenXRSamples`, `openxr-vulkan-example`, `wgpu-openxr-example`,
+  `android_openxr_gles`, `openxr-simple-example`, `OpenXR-Samples`
+- Why it matters:
+  the latest pass made it clear that `OpenXR bring-up references` are a
+  reusable donor family of their own, spanning one-file lower bounds,
+  structured sample apps, desktop-to-XR migration paths, and shared-core sample
+  suites.
+
+### 30. `OpenXR language bindings and wrapper-generation systems`
+
+- Main entries:
+  `openxrs`, `pyopenxr`, `OpenXR.NET`, `openxr-zig`, `openxr.py`, `rlOpenXR`
+- Why it matters:
+  the repo now has a distinct donor branch for `how OpenXR gets wrapped`,
+  including safe-plus-raw stacks, generated scripting facades, managed-language
+  emitters, and build-integrated wrapper generation.
+
+### 31. `OpenVR language bindings and runtime facades`
+
+- Main entries:
+  `rust-openvr`, `pyopenvr`, `openvr-go`, `node-openvr`, `OpenVR.NET`,
+  `java openvr`
+- Why it matters:
+  the latest pass made it clear that `OpenVR access layers` are not just thin
+  interop trivia; they are reusable donor families for typed wrappers,
+  scripting surfaces, runtime bridges, and richer managed-language facades.
+
+### 32. `OpenVR tracking export, record-replay, and robotics integration`
+
+- Main entries:
+  `OpenVR-Tracking-Example`, `openvr_ros`, `openvr_ros_bridge`,
+  `openvr_ros2_tracker`, `openvr-input-recorder`, `vrviz`, `vrpn-openvr`
+- Why it matters:
+  tracking export is now clearly broader than `send poses somewhere`; it
+  includes pluggable publishers, record-replay harnesses, and VR-native
+  consumers for robotics topics.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -540,3 +580,7 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 26. `Managed-language overlay starters and Unity event-bridge scaffolds`
 27. `Desktop-adjacent companion overlays and phone or media control surfaces`
 28. `Specialized effect overlays and visibility-shaping comfort surfaces`
+29. `OpenXR sample-app bring-up references and rendering baselines`
+30. `OpenXR language bindings and wrapper-generation systems`
+31. `OpenVR language bindings and runtime facades`
+32. `OpenVR tracking export, record-replay, and robotics integration`

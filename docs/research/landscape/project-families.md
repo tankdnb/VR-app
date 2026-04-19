@@ -1312,6 +1312,131 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - visibility-shaping comfort tools
 - passthrough cutout editors and spatial masking surfaces
 
+## Family 43: OpenXR sample apps, rendering baselines, and bring-up references
+
+This family covers repositories where the main value is not a finished product,
+but a clear worked answer to `how OpenXR app bring-up is structured`.
+
+| Project | Status | Notes |
+|---|---|---|
+| `maluoi/OpenXRSamples` | Already studied | Strong one-file `D3D11` bootstrap donor with explicit extension filtering, swapchains, and action spaces |
+| `janhsimon/openxr-vulkan-example` | Already studied | Structured sample-app split across context, headset, controllers, mirror view, and renderer |
+| `philpax/wgpu-openxr-example` | Already studied | Staged `desktop -> XR` bring-up donor over `OpenXR + Vulkan + wgpu` |
+| `terryky/android_openxr_gles` | Already studied | Shared OpenXR utility core reused across several Android feature samples |
+| `KHeresy/openxr-simple-example` | Already studied | Compact SDL/OpenGL lower-bound sample for minimal bring-up comparisons |
+| `jherico/OpenXR-Samples` | Not studied deeply | Useful historical comparison node, but less compelling than the mainline donors in this pass |
+
+### Consolidation note
+
+This family matters because `OpenXR sample code` is not one generic donor pool.
+It now splits into:
+
+- single-file bootstraps
+- structured non-engine sample apps
+- desktop-first migration paths
+- shared-core sample suites
+- minimal graphics lower bounds
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- OpenXR bring-up references
+- runtime-facing rendering baselines
+- reusable sample-app architecture notes
+
+## Family 44: OpenXR language bindings, generator-backed wrappers, and SDK facades
+
+This family covers repositories where the interesting lesson is how OpenXR is
+generated, wrapped, or adapted into another host language while preserving the
+runtime-facing API model.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Ralith/openxrs` | Already studied | Layered `safe + raw` Rust OpenXR stack with real usage examples |
+| `cmbruns/pyopenxr` | Already studied | Registry-driven Python bindings with higher-level helpers and optional API-layer tooling |
+| `EvergineTeam/OpenXR.NET` | Already studied | `.NET` binding emitter generated from `xr.xml` with explicit native-library resolution |
+| `s-ol/openxr-zig` | Already studied | Zig wrapper that integrates OpenXR code generation directly into the build |
+| `drypy/openxr.py` | Not studied deeply | Thin comparison node for Python-side OpenXR access rather than the mainline donor here |
+| `FireFlyForLife/rlOpenXR` | Not studied deeply | Wrapper experiment that is more app-facing than binding-system-focused |
+
+### Consolidation note
+
+This family matters because `OpenXR bindings` now split more cleanly into:
+
+- layered raw plus ergonomic stacks
+- generator-backed scripting facades
+- registry-driven managed-language emitters
+- build-integrated host-language wrappers
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- OpenXR binding strategies for future tools
+- registry-driven code generation notes
+- host-language adaptation patterns for XR APIs
+
+## Family 45: OpenVR language bindings, managed wrappers, and scripting access layers
+
+This family covers repositories where the interesting lesson is how OpenVR is
+wrapped into another language or runtime while keeping initialization,
+subsystem access, and interface ownership understandable.
+
+| Project | Status | Notes |
+|---|---|---|
+| `rust-openvr/rust-openvr` | Already studied | Typed OpenVR wrapper with explicit context ownership and subsystem handles |
+| `cmbruns/pyopenvr` | Already studied | Generated `ctypes` binding surface with a large scripting-oriented sample set |
+| `tbogdala/openvr-go` | Already studied | `cgo` bridge over raw OpenVR interfaces, adapted into Go-friendly wrappers |
+| `node-xr/node-openvr` | Already studied | Native Node addon that exposes runtime and system calls into JavaScript |
+| `Flutterish/OpenVR.NET` | Already studied | Object-oriented `.NET` facade over runtime, draw, input, update, and manifest operations |
+| `java-graphics/openvr` | Not studied deeply | Comparison node for JVM-side access rather than a stronger donor than the shortlisted repos |
+| `matinas/openvrsimplexamples` | Not studied deeply | Sample-first comparison node, useful for lineage but thin as a wrapper donor |
+
+### Consolidation note
+
+This family matters because `OpenVR access layers` are no longer one vague
+category. They now split into:
+
+- typed wrappers
+- scripting-first binding stacks
+- bridges into other host runtimes
+- broader object-oriented runtime facades
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- OpenVR wrappers for fast experimentation
+- managed-language runtime facades
+- integration patterns that bridge native VR APIs into other ecosystems
+
+## Family 46: OpenVR tracking export, recording, and robotics bridge tooling
+
+This family covers repositories where the main value is not tracking as an end
+user feature, but what happens when SteamVR tracking is exported, replayed, or
+consumed by other systems.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Omnifinity/OpenVR-Tracking-Example` | Already studied | Small lower-bound donor for background tracking collection |
+| `sharif1093/openvr_ros` | Already studied | Thin SteamVR-to-ROS pose bridge with separate `tf` rebroadcast helper |
+| `personalrobotics/openvr_ros_bridge` | Already studied | Modular export host with multiple publishers, status UI, and transport choices |
+| `qeftser/openvr_ros2_tracker` | Already studied | Minimal `ROS2` tracker bridge with parameterized topic and visualization flow |
+| `lebek/openvr-input-recorder` | Already studied | Record and replay harness that serializes device metadata and timed samples |
+| `RViMLab/vrviz` | Already studied | VR-native consumer of robotics topics such as point clouds, markers, and transforms |
+| `zhouhs88/vrpn-openvr` | Not studied deeply | Useful comparison node for `VRPN` export, but thinner than the mainline donors here |
+
+### Consolidation note
+
+This family matters because `tracking export` now splits more cleanly into:
+
+- simple tracking collectors
+- thin ROS bridges
+- modular multi-publisher export hosts
+- record and replay harnesses
+- VR-native robotics consumers
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- pluggable tracking-export services
+- motion recording and replay harnesses
+- robotics-facing XR integration patterns
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

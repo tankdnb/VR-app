@@ -837,6 +837,64 @@ Primary docs:
 - `RedHawk989/OpenVR-Windows-Activation` - `Already studied`
 - `emymin/EmyOverlay` - `Not studied deeply`
 
+## 43. OpenXR sample apps, rendering baselines, and bring-up references
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-64-openxr-sample-apps-rendering-baselines-and-bring-up-references.md`
+- `../landscape/project-families.md`
+
+- `maluoi/OpenXRSamples` - `Already studied`
+- `janhsimon/openxr-vulkan-example` - `Already studied`
+- `philpax/wgpu-openxr-example` - `Already studied`
+- `terryky/android_openxr_gles` - `Already studied`
+- `KHeresy/openxr-simple-example` - `Already studied`
+- `jherico/OpenXR-Samples` - `Not studied deeply`
+
+## 44. OpenXR language bindings, generator-backed wrappers, and SDK facades
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-65-openxr-language-bindings-generator-backed-wrappers-and-sdk-facades.md`
+- `../landscape/project-families.md`
+
+- `Ralith/openxrs` - `Already studied`
+- `cmbruns/pyopenxr` - `Already studied`
+- `EvergineTeam/OpenXR.NET` - `Already studied`
+- `s-ol/openxr-zig` - `Already studied`
+- `drypy/openxr.py` - `Not studied deeply`
+- `FireFlyForLife/rlOpenXR` - `Not studied deeply`
+
+## 45. OpenVR language bindings, managed wrappers, and scripting access layers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-66-openvr-language-bindings-managed-wrappers-and-scripting-access-layers.md`
+- `../landscape/project-families.md`
+
+- `rust-openvr/rust-openvr` - `Already studied`
+- `cmbruns/pyopenvr` - `Already studied`
+- `tbogdala/openvr-go` - `Already studied`
+- `node-xr/node-openvr` - `Already studied`
+- `Flutterish/OpenVR.NET` - `Already studied`
+- `java-graphics/openvr` - `Not studied deeply`
+- `matinas/openvrsimplexamples` - `Not studied deeply`
+
+## 46. OpenVR tracking export, recording, and robotics bridge tooling
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-67-openvr-tracking-export-recording-and-robotics-bridge-tooling.md`
+- `../landscape/project-families.md`
+
+- `Omnifinity/OpenVR-Tracking-Example` - `Already studied`
+- `sharif1093/openvr_ros` - `Already studied`
+- `personalrobotics/openvr_ros_bridge` - `Already studied`
+- `qeftser/openvr_ros2_tracker` - `Already studied`
+- `lebek/openvr-input-recorder` - `Already studied`
+- `RViMLab/vrviz` - `Already studied`
+- `zhouhs88/vrpn-openvr` - `Not studied deeply`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

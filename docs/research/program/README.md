@@ -427,3 +427,31 @@ repeatable way.
 
 - `github-research-wave-63-backlog.md`
   Executed backlog for the Wave 63 pass.
+
+- `github-research-wave-64-plan.md`
+  Wave 64 research plan focused on OpenXR sample apps,
+  rendering baselines, and bring-up references.
+
+- `github-research-wave-64-backlog.md`
+  Executed backlog for the Wave 64 pass.
+
+- `github-research-wave-65-plan.md`
+  Wave 65 research plan focused on OpenXR language bindings,
+  generator-backed wrappers, and SDK facades.
+
+- `github-research-wave-65-backlog.md`
+  Executed backlog for the Wave 65 pass.
+
+- `github-research-wave-66-plan.md`
+  Wave 66 research plan focused on OpenVR language bindings,
+  managed wrappers, and scripting access layers.
+
+- `github-research-wave-66-backlog.md`
+  Executed backlog for the Wave 66 pass.
+
+- `github-research-wave-67-plan.md`
+  Wave 67 research plan focused on OpenVR tracking export,
+  recording, and robotics bridge tooling.
+
+- `github-research-wave-67-backlog.md`
+  Executed backlog for the Wave 67 pass.

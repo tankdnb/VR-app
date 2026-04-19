@@ -153,3 +153,11 @@ bridges, device managers, and experimental XR workflows.
 119. `landscape/vr-projects-wave-62-desktop-adjacent-companion-overlays-phone-bridges-and-media-or-text-control-surfaces.md`
 120. `program/github-research-wave-63-plan.md`
 121. `landscape/vr-projects-wave-63-specialized-effect-overlays-visibility-shaping-and-passthrough-cutout-surfaces.md`
+122. `program/github-research-wave-64-plan.md`
+123. `landscape/vr-projects-wave-64-openxr-sample-apps-rendering-baselines-and-bring-up-references.md`
+124. `program/github-research-wave-65-plan.md`
+125. `landscape/vr-projects-wave-65-openxr-language-bindings-generator-backed-wrappers-and-sdk-facades.md`
+126. `program/github-research-wave-66-plan.md`
+127. `landscape/vr-projects-wave-66-openvr-language-bindings-managed-wrappers-and-scripting-access-layers.md`
+128. `program/github-research-wave-67-plan.md`
+129. `landscape/vr-projects-wave-67-openvr-tracking-export-recording-and-robotics-bridge-tooling.md`
