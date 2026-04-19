@@ -118,3 +118,31 @@ repeatable way.
 
 - `github-research-wave-19-backlog.md`
   Executed backlog for the Wave 19 pass.
+
+- `github-research-wave-20-plan.md`
+  Wave 20 research plan focused on performance mods, runtime-aware graphics
+  injection, and VR sweet-spot shader bundles.
+
+- `github-research-wave-20-backlog.md`
+  Executed backlog for the Wave 20 pass.
+
+- `github-research-wave-21-plan.md`
+  Wave 21 research plan focused on OpenXR provider stacks, gaze API layers,
+  and runtime-side utility platforms.
+
+- `github-research-wave-21-backlog.md`
+  Executed backlog for the Wave 21 pass.
+
+- `github-research-wave-22-plan.md`
+  Wave 22 research plan focused on vision tracking hosts, camera full-body
+  bridges, and hand-input sidecar stacks.
+
+- `github-research-wave-22-backlog.md`
+  Executed backlog for the Wave 22 pass.
+
+- `github-research-wave-23-plan.md`
+  Wave 23 research plan focused on glove platforms, poser stacks, and
+  nonstandard hardware bridge drivers.
+
+- `github-research-wave-23-backlog.md`
+  Executed backlog for the Wave 23 pass.

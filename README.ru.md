@@ -110,6 +110,10 @@ docs/
 - [Wave 17 research](docs/research/landscape/vr-projects-wave-17-openxr-runtime-managers-layers-and-service-hosts.md)
 - [Wave 18 research](docs/research/landscape/vr-projects-wave-18-driver-learning-paths-and-repurposed-display-bridges.md)
 - [Wave 19 research](docs/research/landscape/vr-projects-wave-19-vendor-mods-repurposed-output-bridges-and-alternative-hardware-paths.md)
+- [Wave 20 research](docs/research/landscape/vr-projects-wave-20-performance-mods-graphics-injection-and-vr-sweet-spot-shaders.md)
+- [Wave 21 research](docs/research/landscape/vr-projects-wave-21-openxr-provider-stacks-gaze-layers-and-runtime-side-utility-platforms.md)
+- [Wave 22 research](docs/research/landscape/vr-projects-wave-22-vision-tracking-hosts-camera-full-body-bridges-and-hand-input-sidecars.md)
+- [Wave 23 research](docs/research/landscape/vr-projects-wave-23-glove-platforms-poser-stacks-and-nonstandard-hardware-bridge-drivers.md)
 
 ## Главная идея репозитория
 

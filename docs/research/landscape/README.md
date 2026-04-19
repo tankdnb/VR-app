@@ -75,6 +75,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on vendor enhancement tooling,
   repurposed-output bridges, and alternative hardware paths.
 
+- `vr-projects-wave-20-performance-mods-graphics-injection-and-vr-sweet-spot-shaders.md`
+  Next GitHub discovery wave focused on performance mods,
+  runtime-aware graphics injection, and VR sweet-spot shader bundles.
+
+- `vr-projects-wave-21-openxr-provider-stacks-gaze-layers-and-runtime-side-utility-platforms.md`
+  Next GitHub discovery wave focused on OpenXR provider stacks, gaze API
+  layers, and runtime-side utility platforms.
+
+- `vr-projects-wave-22-vision-tracking-hosts-camera-full-body-bridges-and-hand-input-sidecars.md`
+  Next GitHub discovery wave focused on vision tracking hosts,
+  camera full-body bridges, and hand-input sidecar stacks.
+
+- `vr-projects-wave-23-glove-platforms-poser-stacks-and-nonstandard-hardware-bridge-drivers.md`
+  Next GitHub discovery wave focused on glove platforms, poser stacks, and
+  nonstandard hardware bridge drivers.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

@@ -28,12 +28,13 @@ Primary docs:
 - `../landscape/vr-utilities-repo-landscape.md`
 - `../landscape/project-families.md`
 - `../landscape/vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
+- `../landscape/vr-projects-wave-21-openxr-provider-stacks-gaze-layers-and-runtime-side-utility-platforms.md`
 
 - `ValveSoftware/openvr` - `Already studied`
 - `ValveSoftware/steamvr_unity_plugin` - `Already studied`
 - `ValveSoftware/unity-xr-plugin` - `Already studied`
 - `KhronosGroup/OpenXR-SDK-Source` - `Already studied`
-- `1runeberg/OpenXRProvider` - `Partially studied`
+- `1runeberg/OpenXRProvider` - `Already studied`
 - `mbucchia/OpenXR-Layer-Template` - `Already studied`
 - `Ybalrid/OpenXR-API-Layer-Template` - `Already studied`
 - `StereoKit/StereoKit` - `Already studied`
@@ -52,6 +53,7 @@ Primary docs:
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
 - `../landscape/vr-projects-wave-17-openxr-runtime-managers-layers-and-service-hosts.md`
+- `../landscape/vr-projects-wave-21-openxr-provider-stacks-gaze-layers-and-runtime-side-utility-platforms.md`
 - `../landscape/project-families.md`
 
 - `mbucchia/OpenXR-Toolkit` - `Already studied`
@@ -77,19 +79,22 @@ Primary docs:
 - `vrkit-platform/vrkit-platform` - `Not studied deeply`
 - `LunarG/OpenXR-Overlays-UE4-Plugin` - `Already studied`
 - `mbucchia/_ARCHIVE_OverXR` - `Fork / variant only`
-- `mbucchia/Quad-Views-Foveated` - `Partially studied`
-- `mbucchia/OpenXR-Eye-Trackers` - `Partially studied`
+- `mbucchia/Quad-Views-Foveated` - `Already studied`
+- `mbucchia/OpenXR-Eye-Trackers` - `Already studied`
 
 ## 3. Compatibility layers and runtime translation
 
 Primary docs:
 
 - `../landscape/vr-utilities-repo-landscape.md`
+- `../landscape/vr-projects-wave-23-glove-platforms-poser-stacks-and-nonstandard-hardware-bridge-drivers.md`
 
 - `Supreeeme/xrizer` - `Already studied`
 - `QuestCraftPlusPlus/OpenComposite` - `Already studied`
 - `LibreVR/Revive` - `Already studied`
 - `alvr-org/ALVR` - `Already studied`
+- `OSVR/SteamVR-OSVR` - `Already studied`
+- `terminal29/OSVR-SteamVR-Bridge` - `Already studied`
 
 ## 4. Desktop overlays, dashboards, and in-VR utility surfaces
 
@@ -198,6 +203,7 @@ Primary docs:
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
 - `../landscape/vr-projects-wave-14-tracker-ingress-osc-egress-and-role-binding-utilities.md`
+- `../landscape/vr-projects-wave-23-glove-platforms-poser-stacks-and-nonstandard-hardware-bridge-drivers.md`
 - `../landscape/project-families.md`
 
 - `Timocop/PSMoveServiceEx-VMT` - `Already studied`
@@ -209,6 +215,8 @@ Primary docs:
 - `3NekoSystem/OpenVR-Tracker-Websocket-Driver` - `Fork / variant only`
 - `v0xie/OpenVR-Tracker-Websocket-Driver` - `Fork / variant only`
 - `krazysh01/VirtualDesktop-OpenVR-Trackers` - `Partially studied`
+- `SophiaH67/soph_wireless` - `Already studied`
+- `SophiaH67/soph_wireless_transmitter` - `Already studied`
 - `Greendayle/SteamVR_To_OSC` - `Already studied`
 - `ZekkVRC/OpenVR2OSC` - `Already studied`
 - `BarakChamo/OpenVR-OSC` - `Already studied`
@@ -248,14 +256,15 @@ Primary docs:
 
 - `../landscape/vr-projects-wave-5-osc-tracking-tools.md`
 - `../landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
+- `../landscape/vr-projects-wave-22-vision-tracking-hosts-camera-full-body-bridges-and-hand-input-sidecars.md`
 
 - `terminal29/VRUco` - `Already studied`
 - `GoLez28/Aruco-TagTracking-VR` - `Already studied`
 - `ju1ce/April-Tag-VR-FullBody-Tracker` - `Already studied`
-- `KinectToVR/KinectToVR` - `Partially studied`
-- `KinectToVR/Amethyst` - `Partially studied`
-- `ju1ce/Mediapipe-VR-Fullbody-Tracking` - `Partially studied`
-- `Wunder-Wulfe/NVIDIA-BodyTracking` - `Partially studied`
+- `KinectToVR/KinectToVR` - `Already studied`
+- `KinectToVR/Amethyst` - `Already studied`
+- `ju1ce/Mediapipe-VR-Fullbody-Tracking` - `Already studied`
+- `Wunder-Wulfe/NVIDIA-BodyTracking` - `Already studied`
 - `MasonSakai/VR-AI-Full-Body-Tracking` - `Not studied deeply`
 
 ## 11. Passthrough, camera, and reality tools
@@ -279,14 +288,15 @@ Primary docs:
 
 - `../reuse/vrperfkit-reuse-plan.md`
 - `../reuse/external-repos-reuse-plan.md`
+- `../landscape/vr-projects-wave-20-performance-mods-graphics-injection-and-vr-sweet-spot-shaders.md`
 
 - `fholger/vrperfkit` - `Already studied`
 - `fholger/openvr_fsr` - `Already studied`
-- `RavenSystem/VRPerfKit_RSF` - `Partially studied`
-- `CamelCaseName/OpenVRPerfKit` - `Partially studied`
-- `Granther/foveated-rendering` - `Partially studied`
-- `retroluxfilm/reshade-vrtoolkit` - `Partially studied`
-- `zhukovv/upscale-injection` - `Partially studied`
+- `RavenSystem/VRPerfKit_RSF` - `Already studied`
+- `CamelCaseName/OpenVRPerfKit` - `Already studied`
+- `Granther/foveated-rendering` - `Already studied`
+- `retroluxfilm/reshade-vrtoolkit` - `Already studied`
+- `zhukovv/upscale-injection` - `Already studied`
 
 ## 13. Vendor enhancement, custom hardware, and driver plumbing
 
@@ -299,6 +309,7 @@ Primary docs:
 - `../landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
 - `../landscape/vr-projects-wave-18-driver-learning-paths-and-repurposed-display-bridges.md`
 - `../landscape/vr-projects-wave-19-vendor-mods-repurposed-output-bridges-and-alternative-hardware-paths.md`
+- `../landscape/vr-projects-wave-23-glove-platforms-poser-stacks-and-nonstandard-hardware-bridge-drivers.md`
 - `../landscape/not-yet-studied-deeply.md`
 
 - `BnuuySolutions/PSVR2Toolkit` - `Partially studied`
@@ -309,6 +320,7 @@ Primary docs:
 - `SecondReality/VirtualControllerDriver` - `Already studied`
 - `oneup03/VRto3D` - `Already studied`
 - `ValveSoftware/driver_hydra` - `Already studied`
+- `r57zone/Razer-Hydra-SteamVR-driver` - `Already studied`
 - `alatnet/OpenPSVR` - `Already studied`
 - `r57zone/OpenVR-driver-for-DIY` - `Already studied`
 - `gpsnmeajp/SegsVRControllerDriverSample` - `Already studied`
@@ -317,18 +329,17 @@ Primary docs:
 - `mdovgialo/SteamVR-Glove` - `Already studied`
 - `openvrmc/OpenVR-MotionCompensation` - `Partially studied`
 - `ultraleap/driver_ultraleap` - `Already studied`
-- `Nordskog/HandOfLesser` - `Partially studied`
-- `NovaAshwolfDev/HandCameraDriver` - `Partially studied`
+- `Nordskog/HandOfLesser` - `Already studied`
+- `NovaAshwolfDev/HandCameraDriver` - `Already studied`
 - `OpenDisplayXR/OpenDisplayXR-VDD` - `Not studied deeply`
 - `verncat/RayNeo-Air-3S-Pro-OpenVR` - `Partially studied`
-- `LucidVR/opengloves-driver` - `Partially studied`
-- `HoboVR-Labs/hobo_vr` - `Partially studied`
+- `LucidVR/opengloves-driver` - `Already studied`
+- `LucidVR/lucidgloves` - `Already studied`
+- `HoboVR-Labs/hobo_vr` - `Already studied`
 - `r57zone/OpenVR-ArduinoHMD` - `Partially studied`
 - `DaniXmir/GlassVr` - `Partially studied`
 - `terminal29/Simple-OpenVR-Driver-Tutorial` - `Already studied`
-- `Copprhead/hotas-vr-controller` - `Partially studied`
-- `SophiaH67/soph_wireless` - `Partially studied`
-- `SophiaH67/soph_wireless_transmitter` - `Partially studied`
+- `Copprhead/hotas-vr-controller` - `Already studied`
 - `r57zone/OpenVR-OpenTrack` - `Already studied`
 - `TrueOpenVR/SteamVR-TrueOpenVR` - `Partially studied`
 - `matzman666/OpenVR-InputEmulator` - `Already studied`

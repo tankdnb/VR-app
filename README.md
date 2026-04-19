@@ -208,6 +208,14 @@ Start here:
 - `docs/research/program/github-research-wave-18-backlog.md`
 - `docs/research/program/github-research-wave-19-plan.md`
 - `docs/research/program/github-research-wave-19-backlog.md`
+- `docs/research/program/github-research-wave-20-plan.md`
+- `docs/research/program/github-research-wave-20-backlog.md`
+- `docs/research/program/github-research-wave-21-plan.md`
+- `docs/research/program/github-research-wave-21-backlog.md`
+- `docs/research/program/github-research-wave-22-plan.md`
+- `docs/research/program/github-research-wave-22-backlog.md`
+- `docs/research/program/github-research-wave-23-plan.md`
+- `docs/research/program/github-research-wave-23-backlog.md`
 - `docs/research/landscape/vr-projects-master-index.md`
 - `docs/research/landscape/vr-projects-wave-3-utilities.md`
 - `docs/research/landscape/vr-projects-wave-4-gap-fill.md`
@@ -226,6 +234,10 @@ Start here:
 - `docs/research/landscape/vr-projects-wave-17-openxr-runtime-managers-layers-and-service-hosts.md`
 - `docs/research/landscape/vr-projects-wave-18-driver-learning-paths-and-repurposed-display-bridges.md`
 - `docs/research/landscape/vr-projects-wave-19-vendor-mods-repurposed-output-bridges-and-alternative-hardware-paths.md`
+- `docs/research/landscape/vr-projects-wave-20-performance-mods-graphics-injection-and-vr-sweet-spot-shaders.md`
+- `docs/research/landscape/vr-projects-wave-21-openxr-provider-stacks-gaze-layers-and-runtime-side-utility-platforms.md`
+- `docs/research/landscape/vr-projects-wave-22-vision-tracking-hosts-camera-full-body-bridges-and-hand-input-sidecars.md`
+- `docs/research/landscape/vr-projects-wave-23-glove-platforms-poser-stacks-and-nonstandard-hardware-bridge-drivers.md`
 
 Original Reality Window and passthrough research:
 

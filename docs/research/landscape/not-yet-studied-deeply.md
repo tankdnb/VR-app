@@ -27,7 +27,6 @@ These are the strongest next candidates.
 | Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
 | `BnuuySolutions/PSVR2Toolkit` | Partially studied | Vendor-enhancement layer over an official headset stack | High | High | Vendor update fragility, developer API usage, hook boundaries, and the practical limits of the non-commercial feature set |
-| `LucidVR/opengloves-driver` | Partially studied | Hand-specific custom device integration with multiple transports | High | Medium | Serial/named-pipe/Bluetooth transport handling, device abstraction |
 | `DaniXmir/GlassVr` | Partially studied | Bridge non-VR glasses hardware into SteamVR via emulation | High | High | Headset/controller/tracker emulation boundaries, hand-tracking path |
 | `clear-xr/clearxr-server` | Partially studied | Runtime-side service host that mixes UI shell, registration helpers, streaming orchestration, and an OpenXR API layer | High | High | Keep the next pass narrow: runtime registration, layer boundaries, and service ownership instead of the full streaming platform |
 | `verncat/RayNeo-Air-3S-Pro-OpenVR` | Partially studied | SDK-first glasses bridge whose driver still trails behind the transport layer | Medium-High | Medium-High | Dedicated driver repo maturity, IMU-to-pose handling, and how far the OpenVR path moves beyond the current stub |
@@ -84,7 +83,6 @@ These were surfaced or only partially exhausted during the Wave 11 source pass.
 
 | Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
-| `1runeberg/OpenXRProvider` | Partially studied | Library plus sandbox wrapper around raw OpenXR bring-up | High | Medium | Input profiles, extension wrappers, sandbox render loop, and where the wrapper surface stops abstracting raw OpenXR |
 | `OpenDisplayXR/OpenDisplayXR-VDD` | Not studied deeply | Simulated OpenVR/OpenXR virtual hardware driver path | Medium | Medium | Wait for stronger source/docs, then compare with `virtual_display`, `Virtual-Display-Driver`, and `VRto3D` |
 
 ## Priority batch G: Wave 12 follow-up candidates
@@ -102,13 +100,7 @@ These were surfaced or only partially exhausted during the Wave 13 source pass.
 
 | Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
-| `KinectToVR/Amethyst` | Partially studied | Plugin-based tracking platform with separate device and service contracts | High | High | `plugin_OpenVR`, `plugin_OSC`, calibration-state sharing, and settings-daemon boundaries |
-| `Nordskog/HandOfLesser` | Partially studied | OpenXR hand-tracking bridge into SteamVR and VRChat with structured packet transport | High | High | Controller-hooking mode, packet synchronization, body-tracker branch, and offset persistence |
-| `Wunder-Wulfe/NVIDIA-BodyTracking` | Partially studied | GPU-assisted camera body tracking with overlay-assisted alignment and tracker-role scaling | High | High | Overlay flow, confidence thresholds, virtual base station role, and smoothing/interpolation tradeoffs |
 | `chnoblouch/aethervr` | Partially studied | Webcam-driven custom OpenXR runtime with a Python tracker and local TCP protocol | High | High | Banjo runtime internals, pose prediction, graphics-path limits, and practical QA use |
-| `KinectToVR/KinectToVR` | Partially studied | Legacy calibration-heavy full-body tracking stack that predates the plugin-platform rewrite | Medium | High | Actual SteamVR output boundary, dependency sprawl, and intentional deltas versus `Amethyst` |
-| `ju1ce/Mediapipe-VR-Fullbody-Tracking` | Partially studied | Single-camera tracking with a switchable SteamVR-driver / VRChat OSC backend and Quest WebUI | High | High | Driver protocol assumptions, WebUI reuse potential, and comparison with `NVIDIA-BodyTracking` cleanup logic |
-| `NovaAshwolfDev/HandCameraDriver` | Partially studied | Minimal webcam-hand-tracking driver shell that exposes a sidecar-plus-driver split | Low-Medium | Medium | Whether any maintained fork exists, and whether the current repo contains a real socket path beyond the docs |
 | `MasonSakai/VR-AI-Full-Body-Tracking` | Not studied deeply | Camera FBT path that still carries InputEmulator-era assumptions while aiming at a cleaner driver rewrite | Medium | Medium | Whether the rewrite lands, how much of the current repo is reusable, and how it compares with `Mediapipe-VR-Fullbody-Tracking` |
 
 ## Priority batch I: foundational retro-normalization follow-up candidates
@@ -129,6 +121,18 @@ honest follow-ups from the tracker-ingress and OSC-export family.
 |---|---|---|---|---|---|
 | `TheNexusAvenger/Enigma` | Not studied deeply | Consumer-side export of SteamVR tracker roles into a non-XR client with a companion plugin path | Medium | Medium | Clipboard and companion-plugin transport, tracker-role mapping, and whether the pattern generalizes beyond Roblox |
 | `ThatGuyThimo/leapmotion-osc` | Not studied deeply | Finger-only OSC export that complements SteamVR hand-tracking stacks | Medium | Medium | Avatar parameter model, OSC send cadence, and whether it teaches anything beyond `VRCThumbParamsOSC` |
+
+## Priority batch K: Waves 20-21 surfaced follow-up candidates
+
+These were surfaced while deepening the rendering-mod and OpenXR gaze-layer
+families, but they were intentionally kept out of the core shortlist until the
+stronger mainline donors were fully integrated.
+
+| Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `shieldmeidunn/SteamVRNullFlipper` | Not studied deeply | Null-driver and window-routing helper that may help headsetless graphics testing | Medium | Low-Medium | Confirm the actual graphics-hook and null-driver boundary, and decide whether it belongs closer to rendering mods or no-HMD workflow tooling |
+| `BattleAxeVR/PSVR2_OpenXR_Eye_Tracking` | Not studied deeply | PSVR2-specific OpenXR eye-tracking path that may overlap with broader gaze-layer tooling | Medium | Medium | Compare its backend assumptions, extension surface, and donor value against `OpenXR-Eye-Trackers` and `PSVR2Toolkit` |
+| `LordOfDragons/openxr_oscclient` | Not studied deeply | Thin OSC-to-OpenXR signal bridge hinting at a lighter runtime-side adaptation path | Medium | Medium | Inspect extension boundary, OSC transport model, and whether it complements or duplicates the broader OpenXR gaze-layer family |
 
 ## Family-level gaps that now deserve deeper passes
 

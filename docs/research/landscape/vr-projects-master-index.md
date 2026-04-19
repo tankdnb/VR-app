@@ -31,6 +31,10 @@ This file complements:
 - `vr-projects-wave-17-openxr-runtime-managers-layers-and-service-hosts.md`
 - `vr-projects-wave-18-driver-learning-paths-and-repurposed-display-bridges.md`
 - `vr-projects-wave-19-vendor-mods-repurposed-output-bridges-and-alternative-hardware-paths.md`
+- `vr-projects-wave-20-performance-mods-graphics-injection-and-vr-sweet-spot-shaders.md`
+- `vr-projects-wave-21-openxr-provider-stacks-gaze-layers-and-runtime-side-utility-platforms.md`
+- `vr-projects-wave-22-vision-tracking-hosts-camera-full-body-bridges-and-hand-input-sidecars.md`
+- `vr-projects-wave-23-glove-platforms-poser-stacks-and-nonstandard-hardware-bridge-drivers.md`
 
 ## How to use this index
 
@@ -97,6 +101,18 @@ This file complements:
 - Use `vr-projects-wave-19-vendor-mods-repurposed-output-bridges-and-alternative-hardware-paths.md`
   for the next wave centered on vendor mods, repurposed output bridges, and
   alternative hardware paths.
+- Use `vr-projects-wave-20-performance-mods-graphics-injection-and-vr-sweet-spot-shaders.md`
+  for the next wave centered on performance mods, runtime-aware graphics
+  injection, and VR sweet-spot shader bundles.
+- Use `vr-projects-wave-21-openxr-provider-stacks-gaze-layers-and-runtime-side-utility-platforms.md`
+  for the next wave centered on OpenXR provider stacks, gaze API layers, and
+  runtime-side utility platforms.
+- Use `vr-projects-wave-22-vision-tracking-hosts-camera-full-body-bridges-and-hand-input-sidecars.md`
+  for the next wave centered on vision tracking hosts, camera full-body
+  bridges, and hand-input sidecar stacks.
+- Use `vr-projects-wave-23-glove-platforms-poser-stacks-and-nonstandard-hardware-bridge-drivers.md`
+  for the next wave centered on glove platforms, poser stacks, and nonstandard
+  hardware bridge drivers.
 - Treat each project as one of:
   - `code donor`
   - `architecture reference`

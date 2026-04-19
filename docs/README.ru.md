@@ -60,6 +60,10 @@ implementation patterns.
 - `research/landscape/vr-projects-wave-17-openxr-runtime-managers-layers-and-service-hosts.md`
 - `research/landscape/vr-projects-wave-18-driver-learning-paths-and-repurposed-display-bridges.md`
 - `research/landscape/vr-projects-wave-19-vendor-mods-repurposed-output-bridges-and-alternative-hardware-paths.md`
+- `research/landscape/vr-projects-wave-20-performance-mods-graphics-injection-and-vr-sweet-spot-shaders.md`
+- `research/landscape/vr-projects-wave-21-openxr-provider-stacks-gaze-layers-and-runtime-side-utility-platforms.md`
+- `research/landscape/vr-projects-wave-22-vision-tracking-hosts-camera-full-body-bridges-and-hand-input-sidecars.md`
+- `research/landscape/vr-projects-wave-23-glove-platforms-poser-stacks-and-nonstandard-hardware-bridge-drivers.md`
 - `research/landscape/project-families.md`
 - `research/landscape/not-yet-studied-deeply.md`
 
@@ -111,6 +115,14 @@ implementation patterns.
 - `research/program/github-research-wave-18-backlog.md`
 - `research/program/github-research-wave-19-plan.md`
 - `research/program/github-research-wave-19-backlog.md`
+- `research/program/github-research-wave-20-plan.md`
+- `research/program/github-research-wave-20-backlog.md`
+- `research/program/github-research-wave-21-plan.md`
+- `research/program/github-research-wave-21-backlog.md`
+- `research/program/github-research-wave-22-plan.md`
+- `research/program/github-research-wave-22-backlog.md`
+- `research/program/github-research-wave-23-plan.md`
+- `research/program/github-research-wave-23-backlog.md`
 - `research/program/foundational-waves-1-7-retro-normalization-plan.md`
 - `research/program/foundational-waves-1-7-retro-normalization-backlog.md`
 

@@ -161,7 +161,7 @@ Use this document when designing a new module or utility and ask:
 - Strong references:
   `VirtualMotionTracker`, `PSMoveServiceEx-VMT`,
   `OpenVR-Tracker-Websocket-Driver`, `Simple-OpenVR-Bridge-Driver`,
-  `OpenVR-Driver`,
+  `OpenVR-Driver`, `soph_wireless`,
   `VirtualDesktop-OpenVR-Trackers`.
 - Best fit for `VR-apps-lab`:
   tracker bridge platform and experimentation tools.
@@ -735,7 +735,7 @@ Use this document when designing a new module or utility and ask:
   sometimes the cleanest adaptation surface is `protocol -> OpenXR layer`, not
   `protocol -> new driver`.
 - Strong references:
-  `etvr-openxr-layer`, `clearxr-layer`.
+  `etvr-openxr-layer`, `clearxr-layer`, `OpenXR-Eye-Trackers`.
 - Best fit for `VR-apps-lab`:
   advanced runtime adaptation and experimental extension bridges.
 
@@ -772,6 +772,126 @@ Use this document when designing a new module or utility and ask:
   `PSVR2Toolkit`.
 - Best fit for `VR-apps-lab`:
   vendor-enhancement research and carefully-scoped official-stack extensions.
+
+## Method 42: Runtime-aware DXGI proxy performance mod
+
+- What it is:
+  a drop-in `dxgi.dll` or graphics-proxy utility intercepts the rendering path,
+  forwards to the original graphics library when needed, and applies scaling,
+  foveation, or image-treatment logic through one runtime-aware config surface.
+- Good for:
+  VR performance helpers, render-scale utilities, compatibility-focused fork
+  lines, and graphics-path experiments that should stay outside the main app.
+- Why it matters:
+  this is a distinct construction method from overlays, API layers, or drivers;
+  the product boundary is the proxy DLL itself.
+- Strong references:
+  `vrperfkit`, `VRPerfKit_RSF`, `OpenVRPerfKit`.
+- Best fit for `VR-apps-lab`:
+  graphics-path utilities and rendering-side experimentation.
+
+## Method 43: Single-pass VR sweet-spot shader bundle
+
+- What it is:
+  a compact VR-focused shader pack groups several useful image treatments into
+  one coherent effect surface instead of exposing a loose pile of unrelated
+  post-process scripts.
+- Good for:
+  sharpening, color tuning, center-mask shaping, lightweight image cleanup, and
+  user-facing visual-comfort adjustments.
+- Why it matters:
+  sometimes the best donor is not a runtime or driver architecture, but a well
+  packaged `one strong visual toolkit` that matches VR needs.
+- Strong references:
+  `reshade-vrtoolkit`.
+- Best fit for `VR-apps-lab`:
+  rendering experiments and compact visual-adjustment modules.
+
+## Method 44: Plugin-host tracking platform with device and service endpoints
+
+- What it is:
+  a desktop host provides calibration, settings, lifecycle, and UX, while
+  swappable plugins represent tracking devices and output-side service
+  endpoints.
+- Good for:
+  modular tracking labs, alternative body-tracking platforms, mixed hardware
+  stacks, and future systems that need both input-device and output-service
+  variation.
+- Why it matters:
+  it scales much better than a monolithic tracking app when the family of
+  devices and outputs keeps growing.
+- Strong references:
+  `Amethyst`.
+- Best fit for `VR-apps-lab`:
+  future tracking-host experiments and research-oriented utility shells.
+
+## Method 45: Switchable CV tracking backend with web control surface
+
+- What it is:
+  one computer-vision tracking pipeline can target different downstream outputs
+  such as a SteamVR driver or an OSC consumer, while settings and calibration
+  are exposed through a lightweight web UI.
+- Good for:
+  Quest-friendly workflows, camera-based prototypes, thin companion tools, and
+  backend experiments where a heavy desktop host would be overkill.
+- Why it matters:
+  it keeps `pose estimation`, `output choice`, and `control surface` separated,
+  which makes camera-tracking utilities more reusable.
+- Strong references:
+  `Mediapipe-VR-Fullbody-Tracking`.
+- Best fit for `VR-apps-lab`:
+  camera-side utility prototypes and lightweight calibration/control surfaces.
+
+## Method 46: External driver protocol with language bindings and poser processes
+
+- What it is:
+  a SteamVR driver exposes an explicit contract so external processes, scripts,
+  or language bindings can act as device posers instead of hiding all ingress
+  inside one private daemon.
+- Good for:
+  experimentation, scripting, research harnesses, Linux-friendly tooling, and
+  custom hardware labs where the driver should stay small and stable.
+- Why it matters:
+  it turns the driver into a reusable platform boundary instead of a sealed
+  implementation detail.
+- Strong references:
+  `hobo_vr`.
+- Best fit for `VR-apps-lab`:
+  future bridge experiments, lab tooling, and scriptable device-ingress paths.
+
+## Method 47: Firmware-plus-driver co-designed custom device ecosystem
+
+- What it is:
+  a hardware repo and a runtime repo are designed as one system, with transport,
+  encoding, haptics, and driver expectations aligned across both sides.
+- Good for:
+  gloves, wearable controllers, DIY hardware families, and projects where one
+  driver repo alone hides too much of the real architecture.
+- Why it matters:
+  many of the strongest custom-device lessons live at the ecosystem level, not
+  just in the final SteamVR bridge.
+- Strong references:
+  `opengloves-driver`, `lucidgloves`.
+- Best fit for `VR-apps-lab`:
+  future custom-device platforms and donor analysis for hardware ecosystems.
+
+## Method 48: Tracked-controller relocation via config offsets and click interception
+
+- What it is:
+  a bridge keeps SteamVR tracking but reshapes the effective controller pose and
+  input semantics around a real physical object through offsets, hooks, and
+  supplemental click devices.
+- Good for:
+  cockpit hardware, tool handles, props, attachment-based experiments, and
+  narrow but high-value physical workflow utilities.
+- Why it matters:
+  this is a useful product pattern whenever the user's real hardware should
+  define the interaction model more than the stock VR controller shape.
+- Strong references:
+  `hotas-vr-controller`.
+- Best fit for `VR-apps-lab`:
+  physical workflow tools, attachment experiments, and niche controller
+  adaptation utilities.
 
 ## Recommended usage inside `VR-apps-lab`
 

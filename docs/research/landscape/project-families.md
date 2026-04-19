@@ -45,7 +45,7 @@ This family is already converging into the future `OpenXR Doctor` direction.
 | `ytdlder/OpenXR-Switcher` | Already studied | Runtime and layer toggling overlap |
 | `jonyrh/OXR_Switcher` | Already studied | Runtime manager UX variant with CLI angle |
 | `shiena/OpenXRRuntimeSelector` | Already studied | Engine-side runtime selection helper built around runtime providers and registry enumeration |
-| `1runeberg/OpenXRProvider` | Partially studied | Library plus sandbox wrapper around OpenXR core, render, and input bring-up |
+| `1runeberg/OpenXRProvider` | Already studied | Library plus sandbox wrapper around OpenXR core, render, and input bring-up |
 | `mbucchia/OpenXR-Layer-Template` | Already studied | Bootstrap template for future layer work |
 | `Jabbah/OpenXR-Layer-OBSMirror` | Already studied | Practical example of a layer built from a template |
 | `maluoi/openxr-explorer` | Already studied | Strongest single reference for `OpenXR doctor/runtime inspector` |
@@ -156,6 +156,8 @@ external data into `SteamVR/OpenVR devices`, `pose streams`, or `OSC events`.
 | `3NekoSystem/OpenVR-Tracker-Websocket-Driver` | Fork / variant only | Simpler JSON/WebSocket fork on `8082` that trims the broader local-service ambitions of the main WebSocket line |
 | `v0xie/OpenVR-Tracker-Websocket-Driver` | Fork / variant only | Near-mirror of the John-Dean line with the same local web page, HTTPS helpers, and device-state echo surfaces |
 | `krazysh01/VirtualDesktop-OpenVR-Trackers` | Partially studied | Tracker-bridge signal from an external ecosystem whose current public snapshot still looks thinner than expected |
+| `SophiaH67/soph_wireless` | Already studied | UDP relay driver that re-registers tracker state from another SteamVR instance |
+| `SophiaH67/soph_wireless_transmitter` | Already studied | Tiny paired sender utility that makes the relay packet contract explicit |
 | `Greendayle/SteamVR_To_OSC` | Already studied | SteamVR to OSC bridge |
 | `ZekkVRC/OpenVR2OSC` | Already studied | VRChat-oriented input bridge |
 | `BarakChamo/OpenVR-OSC` | Already studied | Minimal OpenVR pose-to-OSC exporter built around `triad_openvr` and OSC bundles |
@@ -269,12 +271,14 @@ knowledge needed for `device-side tooling`.
 | `openvrmc/OpenVR-MotionCompensation` | Partially studied | Pose-rewrite driver with shared library and in-VR dashboard configuration |
 | `OpenDisplayXR/OpenDisplayXR-VDD` | Not studied deeply | Sparse but relevant signal for a simulated OpenVR/OpenXR virtual hardware path |
 | `verncat/RayNeo-Air-3S-Pro-OpenVR` | Partially studied | SDK-first RayNeo glasses bridge whose current OpenVR driver is still a stub but already shows EDID and IMU plumbing |
-| `LucidVR/opengloves-driver` | Partially studied | Hand-specific custom device path |
+| `LucidVR/opengloves-driver` | Already studied | Hand-specific custom device path with driver, service, and overlay split |
+| `LucidVR/lucidgloves` | Already studied | Matching firmware and hardware ecosystem for the same glove family |
 | `r57zone/OpenVR-ArduinoHMD` | Partially studied | DIY HMD and config-driven setup |
 | `DaniXmir/GlassVr` | Partially studied | XR/AR glasses bridge and emulation |
-| `Copprhead/hotas-vr-controller` | Partially studied | Domain-specific cockpit/device bridge |
+| `Copprhead/hotas-vr-controller` | Already studied | Domain-specific cockpit/device bridge with config-driven offsets and hook-based clicks |
 | `TrueOpenVR/SteamVR-TrueOpenVR` | Partially studied | Sample-derived bridge that feeds SteamVR from an external TrueOpenVR DLL surface |
-| `HoboVR-Labs/hobo_vr` | Partially studied | Driver prototyping and external poser model |
+| `HoboVR-Labs/hobo_vr` | Already studied | Driver prototyping stack with an explicit external poser protocol and language bindings |
+| `r57zone/Razer-Hydra-SteamVR-driver` | Already studied | Legacy peripheral bridge with helper monitor and controller-role mapping |
 
 ### Consolidation note
 
@@ -316,6 +320,8 @@ valuable for understanding translation, emulation, and compatibility shims.
 | `Supreeeme/xrizer` | Already studied | Alternate OpenVR-on-OpenXR direction |
 | `LibreVR/Revive` | Already studied | Compatibility layer between Oculus stack and OpenVR/OpenXR |
 | `alvr-org/ALVR` | Already studied | Streaming stack, but also useful for runtime compatibility patterns |
+| `OSVR/SteamVR-OSVR` | Already studied | Foreign-framework compatibility driver that maps OSVR HMD and tracked-device surfaces into SteamVR |
+| `terminal29/OSVR-SteamVR-Bridge` | Already studied | Smaller alias-mapping comparison node for the same OSVR-to-SteamVR bridge family |
 
 ### Consolidation note
 
@@ -334,13 +340,13 @@ instrumentation rather than overlays or device control.
 |---|---|---|
 | `fholger/vrperfkit` | Already studied | Main donor for D3D11 post-process patterns |
 | `fholger/openvr_fsr` | Already studied | Earlier, smaller reference for the same lineage |
-| `RavenSystem/VRPerfKit_RSF` | Partially studied | Practical fork/variant with extended features |
-| `CamelCaseName/OpenVRPerfKit` | Partially studied | Additional evolution path in the same family |
-| `Granther/foveated-rendering` | Partially studied | Eye-tracked/foveated experimentation branch |
-| `mbucchia/Quad-Views-Foveated` | Partially studied | Important OpenXR eye-tracked/foveation reference |
-| `mbucchia/OpenXR-Eye-Trackers` | Partially studied | Useful eye-gaze integration reference |
-| `retroluxfilm/reshade-vrtoolkit` | Partially studied | Shader-pipeline and image-adjustment reference |
-| `zhukovv/upscale-injection` | Partially studied | Generic D3D11 injection and upscaling reference |
+| `RavenSystem/VRPerfKit_RSF` | Already studied | Practical `vrperfkit` continuation with dynamic modes, hidden radial mask control, and original-DLL chaining |
+| `CamelCaseName/OpenVRPerfKit` | Already studied | Backend-expanded fork line that pushes the same family toward `D3D12` and bundled `FSR2` |
+| `Granther/foveated-rendering` | Already studied | Dynamic focus-source experiment that currently leans on cursor-driven control more than mature gaze ingestion |
+| `mbucchia/Quad-Views-Foveated` | Already studied | Important OpenXR rendering-adaptation layer for quad views and foveation compatibility |
+| `mbucchia/OpenXR-Eye-Trackers` | Already studied | Multi-backend eye-gaze adaptation layer that normalizes several foreign sources into OpenXR gaze surfaces |
+| `retroluxfilm/reshade-vrtoolkit` | Already studied | VR-first shader bundle for sharpening, color treatment, and other image adjustments |
+| `zhukovv/upscale-injection` | Already studied | Generic D3D11 injection and upscaling donor for low-level hook mechanics |
 
 ### Consolidation note
 
@@ -510,12 +516,12 @@ controller stacks.
 | Project | Status | Notes |
 |---|---|---|
 | `ultraleap/driver_ultraleap` | Already studied | Mature hardware-service to SteamVR hand-driver path with optional elbow trackers and a `DebugRequest` external-input hook |
-| `Nordskog/HandOfLesser` | Partially studied | Quest/OpenXR hand-tracking bridge into SteamVR and VRChat with structured packets plus named-pipe and UDP transport |
-| `NovaAshwolfDev/HandCameraDriver` | Partially studied | Archived webcam-hand-tracking WIP with a Python-sidecar plus custom SteamVR driver split |
-| `KinectToVR/KinectToVR` | Partially studied | Legacy multi-process Kinect and PSMove full-body stack with heavy calibration and tracker-orientation math |
-| `KinectToVR/Amethyst` | Partially studied | Plugin-based body-tracking host with device plugins and service-endpoint contracts |
-| `ju1ce/Mediapipe-VR-Fullbody-Tracking` | Partially studied | Single-camera body tracking with switchable SteamVR-driver and VRChat OSC backends plus Quest-friendly WebUI |
-| `Wunder-Wulfe/NVIDIA-BodyTracking` | Partially studied | GPU-assisted camera body-tracking driver with overlay-assisted alignment and dense tracker-role configuration |
+| `Nordskog/HandOfLesser` | Already studied | Quest/OpenXR hand-tracking bridge into SteamVR and VRChat with structured packets plus named-pipe and UDP transport |
+| `NovaAshwolfDev/HandCameraDriver` | Already studied | Archived webcam-hand-tracking WIP with a Python-sidecar plus custom SteamVR driver split |
+| `KinectToVR/KinectToVR` | Already studied | Legacy multi-process Kinect and PSMove full-body stack with heavy calibration and tracker-orientation math |
+| `KinectToVR/Amethyst` | Already studied | Plugin-based body-tracking host with device plugins and service-endpoint contracts |
+| `ju1ce/Mediapipe-VR-Fullbody-Tracking` | Already studied | Single-camera body tracking with switchable SteamVR-driver and VRChat OSC backends plus Quest-friendly WebUI |
+| `Wunder-Wulfe/NVIDIA-BodyTracking` | Already studied | GPU-assisted camera body-tracking driver with overlay-assisted alignment and dense tracker-role configuration |
 | `chnoblouch/aethervr` | Partially studied | Webcam-driven custom OpenXR runtime with a Python tracker connected over local TCP |
 | `MasonSakai/VR-AI-Full-Body-Tracking` | Not studied deeply | Camera FBT comparison node still partly anchored in an InputEmulator-era transition |
 
