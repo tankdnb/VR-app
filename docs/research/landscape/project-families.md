@@ -761,6 +761,139 @@ would otherwise look unrelated:
 - vendor-specific gaze adaptation into standard XR surfaces
 - avatar-facing exports built on top of those richer inputs
 
+## Family 26: VRChat chatbox, STT, and text-surface sidecars
+
+This family covers utilities whose core job is to get text into VRChat through
+chatbox output, avatar parameter surfaces, or compact desktop-side text tools.
+
+| Project | Status | Notes |
+|---|---|---|
+| `BoiHanny/vrcosc-magicchatbox` | Partially studied | Broad modular chatbox composer that squeezes many live status modules into one bounded text surface |
+| `yum-food/TaSTT` | Already studied | STT-to-avatar text surface built around generated parameter grids and animator assets |
+| `cyberkitsune/vrc-osc-scripts` | Already studied | Small Python donors for rate-limited chatbox updates and narrow status helpers |
+| `nyakowint/xsoverlay-keyboard-osc` | Already studied | Harmony patch that reuses an existing overlay keyboard as VRChat chat input |
+| `I5UCC/VRCTextboxOSC` | Already studied | Thin textbox utility with focus hotkey, overflow trimming, and always-on-top behavior |
+| `Lioncat6/OSC-Chat-Tools` | Already studied | Product-rich monolithic status composer for chatbox-centered utility workflows |
+| `I5UCC/VRCTextboxSTT` | Already studied | Thin STT overlap node that keeps speech-to-text inside a focused textbox utility |
+
+### Consolidation note
+
+This family matters because `text workflows` in social VR are broader than one
+caption or subtitle app:
+
+- character-budgeted status composition
+- avatar text surfaces driven by parameter grids
+- patched overlay keyboards for in-VR text entry
+- thin textbox or STT micro-utilities
+- micro-script donors for one narrow text output
+
+It suggests a stronger product branch inside `VR-apps-lab` around:
+
+- chatbox-sidecar composition
+- speech-to-avatar text surfaces
+- text-entry helpers for overlay-first workflows
+
+## Family 27: Avatar-facing OSC companions, routers, and consumer automation sidecars
+
+This family covers tools where avatar parameters, headset telemetry, or
+VRChat-facing `OSC` become a desktop-service bus for routing, automation, or
+consumer actions.
+
+| Project | Status | Notes |
+|---|---|---|
+| `OscToys/OscGoesBrrr` | Partially studied | Broad Electron companion with typed IPC, diagnostics pages, and OSCQuery-aware services |
+| `valuef/VRCRouter` | Already studied | Config-driven OSC router with route presets, sidecar launch, and cleanup handling |
+| `Sergey004/Quest2-VRC` | Already studied | Plugin-based Quest telemetry host that fans device state into OSC and side integrations |
+| `I5UCC/VRCMeeter` | Already studied | Focused avatar-parameter bridge into Voicemeeter actions and profiles |
+| `I5UCC/VRCAvatarParameterSync` | Already studied | Snapshot and replay helper for selected avatar parameters across avatar changes |
+| `ZenithVal/OSCLeash` | Already studied | Config-driven avatar or physbone sidecar that turns state into control behavior |
+| `ZenithVal/OSCLock` | Already studied | Avatar-driven timer and Bluetooth-actuator workflow with a clear desktop safety surface |
+| `lenoobkinda/VRCOSCUtils` | Not studied deeply | Broader comparison node for mixed VRChat OSC helpers that is weaker than the mainline donors above |
+
+### Consolidation note
+
+This family matters because it turns `avatar-facing OSC` into a broader product
+branch than simple parameter export:
+
+- focused routers and sidecar launchers
+- plugin-based telemetry hosts
+- avatar parameter bridges into desktop services
+- parameter continuity helpers across avatar changes
+- consumer automation or actuator tools
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- OSC-aware desktop companion shells
+- avatar-state automation tools
+- headset telemetry hosts with modular consumers
+
+## Family 28: XR-glasses virtual displays, workspace shells, and spatial screen utilities
+
+This family covers repositories that treat special displays, XR glasses, or
+head-tracked screens as their main target instead of a conventional VR headset
+dashboard.
+
+| Project | Status | Notes |
+|---|---|---|
+| `wheaney/XRLinuxDriver` | Already studied | Base Linux XR-glasses driver with device backends and feature hooks |
+| `wheaney/breezy-desktop` | Partially studied | Broad workspace shell over the glasses driver with desktop-environment and Vulkan-mode split |
+| `wheaney/decky-XRGaming` | Already studied | SteamOS/Game Mode wrapper over the Breezy and XR driver stack |
+| `MolotovCherry/virtual-display-rs` | Already studied | User-session virtual-display service stack with named-pipe IPC and control layers |
+| `mgschwan/viture_virtual_display` | Already studied | Capture-to-head-tracked screen utility built around Viture IMU data |
+| `lc700x/desktop2stereo` | Partially studied | AI depth pipeline that turns ordinary desktop or video content into a stereoscopic screen workflow |
+| `peacepenguin/Virtual-Display-Driver` | Already studied | Generic Windows virtual-display comparison node without glasses-specific shell logic |
+
+### Consolidation note
+
+This family matters because `special-display workflows` now look like a real
+product branch rather than a pile of isolated driver experiments:
+
+- base hardware drivers for XR glasses
+- workspace shells layered on top
+- Game Mode or platform-native wrappers
+- user-session virtual-display services
+- head-tracked screen utilities
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- XR-glasses workspace shells
+- managed virtual-display service tooling
+- spatial screen helpers outside ordinary headset runtime flows
+
+## Family 29: Wearable haptics, tactile bridges, and avatar-driven feedback systems
+
+This family covers software and hardware stacks where avatar events, `OSC`, or
+other social-VR signals become tactile output on wearables or repurposed
+consumer hardware.
+
+| Project | Status | Notes |
+|---|---|---|
+| `OpenShock/ShockOSC` | Already studied | Configurable wearable-haptics router with grouped outputs, debug surfaces, and change-tracked OSC values |
+| `bhaptics/VRChatOSC` | Already studied | Unity-side avatar setup tooling for bHaptics-driven VRChat wearables |
+| `senseshift/senseshift-firmware` | Already studied | Firmware donor for a modular DIY tactile wearable platform |
+| `senseshift/senseshift-hardware` | Already studied | Hardware-reference donor paired with the SenseShift firmware ecosystem |
+| `Z4urce/VRC-Haptic-Pancake` | Already studied | Multi-transport bridge from VRChat or Resonite into haptic-style outputs |
+| `lebaston100/vrc-patpatpat` | Already studied | Sparse contact solver that expands limited avatar receivers into richer actuator placement |
+| `shadorki/vrc-owo-suit` | Already studied | Narrow OWO suit bridge with clear avatar contact authoring and intensity grouping |
+| `Python1320/vrcjoycon` | Already studied | Consumer-device bridge that repurposes Joy-Con rumble for avatar-facing tactile output |
+
+### Consolidation note
+
+This family matters because `wearable haptics` now has enough donor surface to
+split into clear layers:
+
+- avatar authoring and editor tooling
+- desktop bridge apps and hardware groups
+- sparse-contact solver logic
+- firmware and hardware reference stacks
+- narrow hardware-specific or consumer-device bridges
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- avatar-driven haptics routers
+- tactile solver experiments
+- DIY wearable platform references
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

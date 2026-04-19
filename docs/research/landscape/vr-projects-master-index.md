@@ -51,6 +51,10 @@ This file complements:
 - `vr-projects-wave-37-mixed-vr-controller-bridges-driver-side-input-emulation-and-hand-tracking-adaptation.md`
 - `vr-projects-wave-38-steamvr-validation-patchers-and-environment-hygiene-micro-tools.md`
 - `vr-projects-wave-39-overlay-host-lineage-dashboard-shells-and-browser-backed-surfaces.md`
+- `vr-projects-wave-40-vrchat-chatbox-stt-and-text-surface-sidecars.md`
+- `vr-projects-wave-41-avatar-facing-osc-companions-routers-and-consumer-automation.md`
+- `vr-projects-wave-42-xr-glasses-virtual-display-stacks-and-spatial-screen-utilities.md`
+- `vr-projects-wave-43-wearable-haptics-tactile-bridges-and-avatar-driven-feedback.md`
 
 ## How to use this index
 
@@ -178,6 +182,18 @@ This file complements:
 - Use `vr-projects-wave-39-overlay-host-lineage-dashboard-shells-and-browser-backed-surfaces.md`
   for the next wave centered on overlay host lineage, dashboard shells, and
   browser-backed overlay construction.
+- Use `vr-projects-wave-40-vrchat-chatbox-stt-and-text-surface-sidecars.md`
+  for the next wave centered on VRChat chatbox workflows,
+  speech-to-text sidecars, and avatar text-surface utilities.
+- Use `vr-projects-wave-41-avatar-facing-osc-companions-routers-and-consumer-automation.md`
+  for the next wave centered on avatar-facing OSC companions, routing
+  sidecars, and consumer automation utilities.
+- Use `vr-projects-wave-42-xr-glasses-virtual-display-stacks-and-spatial-screen-utilities.md`
+  for the next wave centered on XR-glasses virtual-display stacks,
+  workspace shells, and spatial screen utilities.
+- Use `vr-projects-wave-43-wearable-haptics-tactile-bridges-and-avatar-driven-feedback.md`
+  for the next wave centered on wearable haptics, tactile bridge sidecars, and
+  avatar-driven feedback systems.
 - Treat each project as one of:
   - `code donor`
   - `architecture reference`

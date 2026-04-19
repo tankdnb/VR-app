@@ -259,3 +259,31 @@ repeatable way.
 
 - `github-research-wave-39-backlog.md`
   Executed backlog for the Wave 39 pass.
+
+- `github-research-wave-40-plan.md`
+  Wave 40 research plan focused on VRChat chatbox workflows, speech-to-text
+  sidecars, and avatar text-surface utilities.
+
+- `github-research-wave-40-backlog.md`
+  Executed backlog for the Wave 40 pass.
+
+- `github-research-wave-41-plan.md`
+  Wave 41 research plan focused on avatar-facing OSC companions, routing
+  sidecars, and consumer automation utilities.
+
+- `github-research-wave-41-backlog.md`
+  Executed backlog for the Wave 41 pass.
+
+- `github-research-wave-42-plan.md`
+  Wave 42 research plan focused on XR-glasses virtual-display stacks,
+  workspace shells, and spatial screen utilities.
+
+- `github-research-wave-42-backlog.md`
+  Executed backlog for the Wave 42 pass.
+
+- `github-research-wave-43-plan.md`
+  Wave 43 research plan focused on wearable haptics, tactile bridge sidecars,
+  and avatar-driven feedback systems.
+
+- `github-research-wave-43-backlog.md`
+  Executed backlog for the Wave 43 pass.

@@ -567,6 +567,68 @@ Primary docs:
 - `BattleAxeVR/PSVR2_OpenXR_Eye_Tracking` - `Already studied`
 - `takana-v/quest_steamvr_fbt_tool` - `Not studied deeply`
 
+## 26. VRChat chatbox, STT, and text-surface sidecars
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-40-vrchat-chatbox-stt-and-text-surface-sidecars.md`
+- `../landscape/project-families.md`
+
+- `BoiHanny/vrcosc-magicchatbox` - `Partially studied`
+- `yum-food/TaSTT` - `Already studied`
+- `cyberkitsune/vrc-osc-scripts` - `Already studied`
+- `nyakowint/xsoverlay-keyboard-osc` - `Already studied`
+- `I5UCC/VRCTextboxOSC` - `Already studied`
+- `Lioncat6/OSC-Chat-Tools` - `Already studied`
+- `I5UCC/VRCTextboxSTT` - `Already studied`
+
+## 27. Avatar-facing OSC companions, routers, and consumer automation sidecars
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-41-avatar-facing-osc-companions-routers-and-consumer-automation.md`
+- `../landscape/project-families.md`
+
+- `OscToys/OscGoesBrrr` - `Partially studied`
+- `valuef/VRCRouter` - `Already studied`
+- `Sergey004/Quest2-VRC` - `Already studied`
+- `I5UCC/VRCMeeter` - `Already studied`
+- `I5UCC/VRCAvatarParameterSync` - `Already studied`
+- `ZenithVal/OSCLeash` - `Already studied`
+- `ZenithVal/OSCLock` - `Already studied`
+- `lenoobkinda/VRCOSCUtils` - `Not studied deeply`
+
+## 28. XR-glasses virtual displays, workspace shells, and spatial screen utilities
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-42-xr-glasses-virtual-display-stacks-and-spatial-screen-utilities.md`
+- `../landscape/project-families.md`
+
+- `wheaney/XRLinuxDriver` - `Already studied`
+- `wheaney/breezy-desktop` - `Partially studied`
+- `wheaney/decky-XRGaming` - `Already studied`
+- `MolotovCherry/virtual-display-rs` - `Already studied`
+- `mgschwan/viture_virtual_display` - `Already studied`
+- `lc700x/desktop2stereo` - `Partially studied`
+- `peacepenguin/Virtual-Display-Driver` - `Already studied`
+
+## 29. Wearable haptics, tactile bridges, and avatar-driven feedback systems
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-43-wearable-haptics-tactile-bridges-and-avatar-driven-feedback.md`
+- `../landscape/project-families.md`
+
+- `OpenShock/ShockOSC` - `Already studied`
+- `bhaptics/VRChatOSC` - `Already studied`
+- `senseshift/senseshift-firmware` - `Already studied`
+- `senseshift/senseshift-hardware` - `Already studied`
+- `Z4urce/VRC-Haptic-Pancake` - `Already studied`
+- `lebaston100/vrc-patpatpat` - `Already studied`
+- `shadorki/vrc-owo-suit` - `Already studied`
+- `Python1320/vrcjoycon` - `Already studied`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

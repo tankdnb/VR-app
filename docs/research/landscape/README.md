@@ -156,6 +156,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on overlay host lineage, dashboard
   shells, and browser-backed overlay construction.
 
+- `vr-projects-wave-40-vrchat-chatbox-stt-and-text-surface-sidecars.md`
+  Next GitHub discovery wave focused on VRChat chatbox workflows,
+  speech-to-text sidecars, and avatar text-surface utilities.
+
+- `vr-projects-wave-41-avatar-facing-osc-companions-routers-and-consumer-automation.md`
+  Next GitHub discovery wave focused on avatar-facing OSC companions, routing
+  sidecars, and consumer automation utilities.
+
+- `vr-projects-wave-42-xr-glasses-virtual-display-stacks-and-spatial-screen-utilities.md`
+  Next GitHub discovery wave focused on XR-glasses virtual-display stacks,
+  workspace shells, and spatial screen utilities.
+
+- `vr-projects-wave-43-wearable-haptics-tactile-bridges-and-avatar-driven-feedback.md`
+  Next GitHub discovery wave focused on wearable haptics, tactile bridge
+  sidecars, and avatar-driven feedback systems.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

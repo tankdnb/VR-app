@@ -1579,6 +1579,210 @@ Use this document when designing a new module or utility and ask:
 - Best fit for `VR-apps-lab`:
   overlay suite architecture and multi-tool host foundations.
 
+## Method 89: Character-budgeted chatbox composition over modular desktop status providers
+
+- What it is:
+  a desktop-side host polls multiple providers, formats their outputs into
+  compact fragments, then assembles one bounded text string for a small chatbox
+  or avatar-facing text surface.
+- Good for:
+  social VR chatbox tools, compact status dashboards, subtitle or now-playing
+  helpers, and any limited-character utility surface.
+- Why it matters:
+  it turns a tiny text budget into a reusable composition problem rather than a
+  pile of ad hoc string concatenation.
+- Strong references:
+  `vrcosc-magicchatbox`, `OSC-Chat-Tools`.
+- Best fit for `VR-apps-lab`:
+  chatbox sidecars, compact social-VR status tools, and small text-output
+  utilities.
+
+## Method 90: Generated avatar text surface over block-addressed OSC parameter pages
+
+- What it is:
+  a tool pages text across a grid of avatar parameters, then generates the
+  animator or asset scaffolding needed to render that text visibly on the
+  avatar.
+- Good for:
+  speech-to-avatar text, long-form avatar text surfaces, subtitle-like avatar
+  displays, and social-VR communication helpers.
+- Why it matters:
+  it separates `text rendering on avatar` from ordinary overlay or chatbox
+  surfaces and makes the asset burden manageable.
+- Strong references:
+  `TaSTT`.
+- Best fit for `VR-apps-lab`:
+  avatar-facing text surfaces and future speech-to-text utility experiments.
+
+## Method 91: Existing overlay keyboard patched into VRChat chatbox input
+
+- What it is:
+  a plugin augments an existing VR overlay keyboard or text-entry surface so it
+  can send into a chatbox or other external text endpoint.
+- Good for:
+  text entry in overlay-first workflows, micro-patches to existing utility
+  hosts, chatbox entry helpers, and retrofit-style integrations.
+- Why it matters:
+  it often costs less to patch an existing input surface than to build and own
+  a full keyboard stack.
+- Strong references:
+  `xsoverlay-keyboard-osc`, `VRCTextboxOSC`.
+- Best fit for `VR-apps-lab`:
+  overlay patch tools, text-entry helpers, and small retrofits over existing VR
+  UI hosts.
+
+## Method 92: Configuration-driven OSC router with companion-process lifecycle management
+
+- What it is:
+  a focused routing host loads route presets, optionally launches companion
+  tools, waits for a target VR app when needed, and handles cleanup on exit.
+- Good for:
+  sidecar suites, avatar-facing automation stacks, route-based OSC tools,
+  small desktop orchestrators, and service bundles around one VR workflow.
+- Why it matters:
+  it treats `transport routing plus tool lifecycle` as one reusable product
+  boundary instead of two unrelated scripts.
+- Strong references:
+  `VRCRouter`.
+- Best fit for `VR-apps-lab`:
+  small desktop orchestration shells and OSC-aware companion stacks.
+
+## Method 93: Plugin-based device telemetry host with modular consumers and OSC side effects
+
+- What it is:
+  a desktop host acquires headset or device telemetry, exposes plugin
+  boundaries for new consumers, and fans the data out through OSC or adjacent
+  desktop integrations.
+- Good for:
+  device monitors, headset telemetry utilities, RGB or media side effects,
+  modular consumer platforms, and broad desktop companion apps.
+- Why it matters:
+  it keeps acquisition, plugin logic, and consumer outputs from collapsing into
+  one hardware-specific app.
+- Strong references:
+  `Quest2-VRC`, `OscGoesBrrr`.
+- Best fit for `VR-apps-lab`:
+  telemetry hosts, device-sidecar platforms, and modular companion utilities.
+
+## Method 94: OSCQuery-aware avatar parameter bridge for desktop services, replay, and actuator control
+
+- What it is:
+  a utility discovers avatar parameters through OSCQuery, maps them into
+  desktop or hardware actions, and may also cache or replay parameter state
+  across context changes.
+- Good for:
+  audio-tool bridges, consumer automation tools, avatar-state persistence,
+  desktop hotkey or device control, and VRChat sidecars.
+- Why it matters:
+  it turns avatar parameters into a general-purpose automation bus while
+  preserving discovery and context continuity.
+- Strong references:
+  `VRCMeeter`, `VRCAvatarParameterSync`, `OSCLeash`, `OSCLock`.
+- Best fit for `VR-apps-lab`:
+  avatar-facing automation tools and parameter-aware companion services.
+
+## Method 95: XR-glasses platform split across base driver, workspace shell, and game-mode wrapper
+
+- What it is:
+  a special-display stack separates hardware driver duties from workspace UX,
+  then optionally wraps the whole platform in a Game Mode or platform-native
+  control shell.
+- Good for:
+  XR glasses, Linux workspace shells, platform-specific wrappers, special
+  displays, and future headset-adjacent desktop environments.
+- Why it matters:
+  it preserves clean ownership between `hardware access`, `workspace behavior`,
+  and `platform-native control surfaces`.
+- Strong references:
+  `XRLinuxDriver`, `breezy-desktop`, `decky-XRGaming`.
+- Best fit for `VR-apps-lab`:
+  XR-glasses research, special-display stacks, and workspace-shell concepts.
+
+## Method 96: User-session virtual display service coordinated through named-pipe IPC
+
+- What it is:
+  a virtual-display stack keeps driver installation separate from a
+  user-session service and exposes a structured IPC layer for control apps or
+  bindings.
+- Good for:
+  managed virtual displays, creator workflows, per-user display toggles,
+  desktop streaming helpers, and control-panel style utilities.
+- Why it matters:
+  it treats `virtual display` as a managed service surface rather than only a
+  one-time driver install.
+- Strong references:
+  `virtual-display-rs`.
+- Best fit for `VR-apps-lab`:
+  virtual-display service tools and desktop-side control hosts.
+
+## Method 97: Captured desktop or video content transformed into a head-tracked spatial screen
+
+- What it is:
+  a utility captures desktop or video content, optionally transforms it, then
+  stabilizes or presents it as a head-tracked screen on a special display.
+- Good for:
+  XR glasses, personal theater utilities, spatial screens, stereoscopic
+  desktop tools, and narrow creator or media workflows.
+- Why it matters:
+  it clarifies the difference between `screen utility` and `full XR runtime or
+  workspace shell`.
+- Strong references:
+  `viture_virtual_display`, `desktop2stereo`.
+- Best fit for `VR-apps-lab`:
+  spatial screen helpers and special-display utilities.
+
+## Method 98: Wearable-haptics bridge with grouped outputs and change-tracked OSC routing
+
+- What it is:
+  a desktop bridge groups wearable outputs, tracks only changed OSC or avatar
+  signals, and routes those changes into hardware behaviors with a usable
+  settings surface.
+- Good for:
+  wearable haptics, avatar-driven feedback, grouped actuator control, social-VR
+  hardware sidecars, and configurable tactile routers.
+- Why it matters:
+  it turns `avatar signal -> haptic hardware` into a reusable routing and
+  grouping problem rather than a pile of one-off device calls.
+- Strong references:
+  `ShockOSC`, `VRC-Haptic-Pancake`.
+- Best fit for `VR-apps-lab`:
+  tactile sidecars, wearable routers, and avatar-driven hardware tools.
+
+## Method 99: Sparse avatar contact solving into richer multi-actuator haptic placement
+
+- What it is:
+  a bridge observes a small set of avatar contact receivers, then solves or
+  infers richer actuator placement across more hardware endpoints than the input
+  authoring alone would suggest.
+- Good for:
+  haptic wearables, tactile solver experiments, sparse authoring workflows, and
+  richer avatar-driven feedback without dense setup everywhere.
+- Why it matters:
+  it makes `solver logic` the main donor surface instead of requiring direct
+  one-to-one mappings for every tactile event.
+- Strong references:
+  `vrc-patpatpat`.
+- Best fit for `VR-apps-lab`:
+  tactile inference experiments and avatar-driven haptic mapping research.
+
+## Method 100: DIY tactile wearable platform split across firmware and hardware-reference repos
+
+- What it is:
+  a wearable ecosystem keeps firmware and hardware-reference artifacts in
+  separate repos so the physical platform and the embedded software can evolve
+  together without collapsing into one opaque package.
+- Good for:
+  maker wearables, firmware-plus-PCB ecosystems, tactile hardware experiments,
+  and future donor lines that need both fabrication and embedded software
+  references.
+- Why it matters:
+  it makes `DIY hardware platform structure` explicit and reusable, not only the
+  final desktop bridge.
+- Strong references:
+  `senseshift-firmware`, `senseshift-hardware`.
+- Best fit for `VR-apps-lab`:
+  DIY tactile wearable research and broader custom-hardware donor systems.
+
 ## Recommended usage inside `VR-apps-lab`
 
 When a new utility idea appears:
