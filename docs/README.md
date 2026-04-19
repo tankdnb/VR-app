@@ -36,12 +36,18 @@ methods, reuse plans, and operating workflow.
 
 ### High-value entry points
 
+- `research/current-focus.md`
 - `research/catalog/project-registry.md`
 - `research/landscape/project-families.md`
 - `research/landscape/not-yet-studied-deeply.md`
 - `research/methods/vr-utility-methods-catalog.md`
 - `research/program/new-session-quickstart.md`
 - `research/program/research-operator-quick-reference.md`
+
+### Active refactor track
+
+- `research/program/documentation-navigation-refactoring-plan.md`
+- `research/program/documentation-navigation-refactoring-backlog.md`
 
 ## 3. Reuse plans
 
@@ -55,9 +61,9 @@ repos that still matter directly to the current foundation direction.
 
 1. `foundation/repository-positioning.md`
 2. `foundation/current-operating-context.md`
-3. `foundation/platform-foundation.md`
-4. `research/README.md`
-5. `research/methods/vr-utility-methods-catalog.md`
+3. `research/current-focus.md`
+4. `foundation/platform-foundation.md`
+5. `research/program/new-session-quickstart.md`
 6. `research/landscape/project-families.md`
 7. `research/catalog/project-registry.md`
 8. `research/landscape/not-yet-studied-deeply.md`

@@ -16,6 +16,13 @@ repeatable way.
 - `research-operator-quick-reference.md`  
   One-screen operational checklist for running the next GitHub research wave.
 
+- `documentation-navigation-refactoring-plan.md`
+  Dedicated refactor plan for reducing documentation sprawl, clarifying
+  canonical roles, and improving navigation.
+
+- `documentation-navigation-refactoring-backlog.md`
+  Execution backlog for the same documentation/navigation refactor block.
+
 - `repository-restructuring-plan.md`  
   The target information architecture for turning the repo into a scalable
   research base.

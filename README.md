@@ -29,18 +29,25 @@ This repository does not present itself as:
 
 ## Start here
 
-- [AGENTS.md](AGENTS.md)
+### Visitor path
+
 - [Documentation Index](docs/README.md)
 - [Русский индекс документации](docs/README.ru.md)
 - [Repository Positioning](docs/foundation/repository-positioning.md)
+- [Current Focus](docs/research/current-focus.md)
+- [Project Families](docs/research/landscape/project-families.md)
+- [Project Registry](docs/research/catalog/project-registry.md)
+
+### Contributor and operator path
+
 - [Current Operating Context](docs/foundation/current-operating-context.md)
 - [Platform Foundation](docs/foundation/platform-foundation.md)
 - [Research Docs](docs/research/README.md)
 - [Methods Catalog](docs/research/methods/vr-utility-methods-catalog.md)
-- [Project Families](docs/research/landscape/project-families.md)
-- [Project Registry](docs/research/catalog/project-registry.md)
 - [Not Yet Studied Deeply](docs/research/landscape/not-yet-studied-deeply.md)
 - [New Session Quickstart](docs/research/program/new-session-quickstart.md)
+- [Research Operator Quick Reference](docs/research/program/research-operator-quick-reference.md)
+- [AGENTS.md](AGENTS.md)
 
 ## Repository layout
 
@@ -72,9 +79,10 @@ affected example or tool path.
 
 ## Documentation map
 
-Use [docs/README.md](docs/README.md) as the main documentation index and
-[docs/research/README.md](docs/research/README.md) as the main entry point for
-the research system.
+Use [docs/README.md](docs/README.md) as the main documentation index,
+[docs/research/current-focus.md](docs/research/current-focus.md) for the short
+current-state view, and [docs/research/README.md](docs/research/README.md) for
+the broader research system.
 
 ## Notes on licensing
 

@@ -91,3 +91,16 @@ Stop future research from turning back into another unordered pile.
 - `Done` Keep family placement mandatory
 - `Done` Keep methods extraction mandatory
 - `Done` Keep cleanup of obsolete tracked residue part of repo hygiene
+
+## Epic G: Documentation and navigation refactor
+
+### Goal
+
+Keep `VR-apps-lab` readable and navigable as the corpus scales.
+
+### Tasks
+
+- `Done` Create a dedicated documentation/navigation refactor plan
+- `Done` Create a dedicated documentation/navigation refactor backlog
+- `In progress` Execute the quickstart, current-state, and archive-rationalization
+  tasks tracked in `documentation-navigation-refactoring-backlog.md`

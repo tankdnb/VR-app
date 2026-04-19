@@ -8,10 +8,11 @@
 Read:
 
 1. `docs/foundation/current-operating-context.md`
-2. `docs/research/program/new-session-quickstart.md`
-3. `docs/research/catalog/project-registry.md`
-4. `docs/research/landscape/project-families.md`
-5. `docs/research/landscape/not-yet-studied-deeply.md`
+2. `docs/research/current-focus.md`
+3. `docs/research/program/new-session-quickstart.md`
+4. `docs/research/catalog/project-registry.md`
+5. `docs/research/landscape/project-families.md`
+6. `docs/research/landscape/not-yet-studied-deeply.md`
 
 ## Research Workflow
 
@@ -32,6 +33,19 @@ Read:
 9. Place every repo into a logical family.
 10. Update repository docs.
 
+## Canonical roles
+
+- `project-registry.md`
+  source of truth for per-repository status.
+- `project-families.md`
+  synthesis, overlap, and family-level product direction.
+- `not-yet-studied-deeply.md`
+  active deep-study queue and follow-up ordering.
+- `vr-utility-methods-catalog.md`
+  extracted reusable implementation methods.
+- `current-focus.md`
+  short current-state view, not full archive history.
+
 ## Must-Update Files
 
 Update the relevant combination of:
@@ -42,6 +56,9 @@ Update the relevant combination of:
 - `docs/research/methods/vr-utility-methods-catalog.md`
 - one new wave document in `docs/research/landscape/`
 - one plan/backlog pair in `docs/research/program/`
+
+Update `docs/research/current-focus.md` only when the new wave materially
+changes the repository's active priorities or strongest donor clusters.
 
 ## Validation
 

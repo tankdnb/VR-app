@@ -27,40 +27,44 @@ Treat it as a combination of:
 The most common mistake is to look for a hidden main application instead of the
 canonical docs and research system.
 
-## Required reading order
+## 5-10 minute recovery route
 
-Read these in order:
+Do not start by reopening the entire research archive.
 
-1. `docs/foundation/repository-positioning.md`
-2. `docs/foundation/current-operating-context.md`
-3. `docs/foundation/platform-foundation.md`
-4. `docs/research/README.md`
-5. `docs/research/methods/vr-utility-methods-catalog.md`
-6. `docs/research/landscape/project-families.md`
-7. `docs/research/catalog/project-registry.md`
-8. `docs/research/landscape/not-yet-studied-deeply.md`
+Read these first:
 
-Then choose the branch of work:
+1. `docs/foundation/current-operating-context.md`
+2. `docs/research/current-focus.md`
+3. `docs/research/program/research-operator-quick-reference.md`
 
-- `research/discovery` if the task is to find new repositories
-- `research/landscape` if the task is to synthesize or deepen existing studies
-- `research/reuse` if the task is to extract donor patterns
-- `scripts/` if the task is to improve helper workflows
+Then branch by task:
 
-## Standard workflow for a new GitHub research wave
+- `new research wave`
+  read `docs/research/catalog/project-registry.md`,
+  `docs/research/landscape/project-families.md`, and
+  `docs/research/landscape/not-yet-studied-deeply.md`.
+- `deepen or synthesize an existing family`
+  read `docs/research/landscape/project-families.md`,
+  `docs/research/catalog/project-registry.md`, and the latest relevant wave
+  docs.
+- `product direction or future repo priorities`
+  read `docs/foundation/public-roadmap.md`,
+  `docs/research/current-focus.md`, and
+  `docs/research/methods/vr-utility-methods-catalog.md`.
+- `repo structure or documentation work`
+  read `docs/README.md`, `docs/research/README.md`, and the active
+  refactor-track docs in `docs/research/program/`.
 
-Follow this sequence:
+## If you need deeper archive history
 
-1. Search GitHub by family, not by random keywords only.
-2. Deduplicate against `project-registry.md`.
-3. Freeze a shortlist for the wave.
-4. Download source into local-only cache.
-5. Perform a code-level pass.
-6. Extract methods, product patterns, and reuse value.
-7. Update the registry, families, methods, and backlog.
-8. Add one canonical wave document plus plan and backlog.
+Only go deeper if the task really needs it:
 
-This prevents the repository from turning back into a flat pile of links.
+- `docs/research/README.md`
+  short route into the broader research system.
+- `docs/research/program/README.md`
+  chronological plan/backlog archive.
+- `docs/research/landscape/vr-projects-master-index.md`
+  archive-grade wave and synthesis index.
 
 ## Local-only data model
 
@@ -94,10 +98,11 @@ If a new session only receives a vague instruction like:
 
 then the safest next step is:
 
-1. inspect `not-yet-studied-deeply.md`
-2. inspect the latest `wave` documents
-3. choose one coherent family for the next wave
-4. continue using the standard wave process
+1. inspect `docs/research/current-focus.md`
+2. inspect `docs/research/landscape/not-yet-studied-deeply.md`
+3. inspect the latest relevant `wave` documents
+4. choose one coherent family for the next wave
+5. continue using the operator quick reference
 
 ## If the task is about product direction
 
@@ -105,5 +110,6 @@ If the session is choosing what the repository should prioritize next, start
 from:
 
 1. `docs/foundation/public-roadmap.md`
-2. `docs/research/landscape/project-families.md`
-3. `docs/research/methods/vr-utility-methods-catalog.md`
+2. `docs/research/current-focus.md`
+3. `docs/research/landscape/project-families.md`
+4. `docs/research/methods/vr-utility-methods-catalog.md`

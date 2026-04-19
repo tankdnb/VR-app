@@ -20,6 +20,11 @@ This keeps the backlog aligned with the existing wave documents and makes it
 easier to decide whether the next pass should focus on architecture, UX, or
 implementation details.
 
+- Use this file as the active deep-study and follow-up queue.
+- The status values shown here are copied from `../catalog/project-registry.md`
+  for queue context only.
+- For a shorter `what matters now` view, start with `../current-focus.md`.
+
 ## Priority batch A
 
 These are the strongest next candidates after the latest runtime, bridge, and
@@ -605,20 +610,6 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 13. `XR latency measurement and replay-analysis tooling`
 14. `Simulation telemetry overlays and motion-cueing sidecars`
 15. `Redirected walking and locomotion adaptation toolkits`
-16. `Context-aware overlay surfaces and specialized display shells`
-17. `Browser-backed overlay runtimes and web-tech UI hosts`
-18. `Linux overlay control shells and desktop-service panels`
-19. `Micro-overlays, timed status surfaces, and informational display helpers`
-20. `Embodied workflow overlays and external-device control panels`
-21. `Code-first overlay scaffolds and projection-overlay baselines`
-22. `Managed-language overlay starters and Unity event-bridge scaffolds`
-23. `Desktop-adjacent companion overlays and phone or media control surfaces`
-24. `Specialized effect overlays and visibility-shaping comfort surfaces`
-25. `OpenXR sample-app bring-up references and rendering baselines`
-26. `OpenXR language bindings and wrapper-generation systems`
-27. `OpenVR language bindings and runtime facades`
-28. `OpenVR tracking export, record-replay, and robotics integration`
-29. `VMT adapters, OSC action compilers, and skeletal validation utilities`
-30. `OpenXR platform shells, layer managers, and runtime inspection workbenches`
-31. `Mixed-VR controller bridges, hand emulation, and external-tracker interop`
-32. `OpenVR driver learning paths, synthetic devices, and remote-input ingress`
+
+For the longer-range family backlog beyond this shorter priority order, use the
+`Family-level gaps` section below.

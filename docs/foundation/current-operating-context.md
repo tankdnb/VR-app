@@ -74,5 +74,6 @@ If a future session is unsure how to proceed, start with:
 1. `docs/foundation/repository-positioning.md`
 2. `docs/foundation/platform-foundation.md`
 3. `docs/research/program/new-session-quickstart.md`
-4. `docs/research/landscape/project-families.md`
-5. `docs/research/catalog/project-registry.md`
+4. `docs/research/current-focus.md`
+5. `docs/research/landscape/project-families.md`
+6. `docs/research/catalog/project-registry.md`

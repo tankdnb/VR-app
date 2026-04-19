@@ -107,3 +107,16 @@ Whenever repository shape changes:
 1. update public entry points first
 2. keep registry, families, methods, and backlog aligned
 3. remove obsolete tracked artifacts instead of leaving them as silent residue
+
+## Active dedicated refactor block
+
+The broader restructuring work now has one narrower active track focused on:
+
+- documentation usability
+- navigation scale
+- canonical role separation
+
+Track that work in:
+
+- `documentation-navigation-refactoring-plan.md`
+- `documentation-navigation-refactoring-backlog.md`

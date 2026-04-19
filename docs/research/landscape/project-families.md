@@ -28,6 +28,13 @@ The next useful step is not more random expansion. It is `grouping`,
   valuable for comparison, but probably not worth a full standalone deep dive
   before the main upstream is understood.
 
+## Role note
+
+- Use this file for overlap, comparison, and family-level product direction.
+- The status labels shown here are mirrored for convenience.
+- `../catalog/project-registry.md` remains the canonical owner of per-repo
+  status.
+
 ## Family 1: OpenXR runtime switchers, inventories, and layer managers
 
 This family is already converging into the future `OpenXR Doctor` direction.

@@ -16,6 +16,9 @@
 ## How to use this file
 
 - Use this as the canonical "what is in scope" registry.
+- Treat this file as the single source of truth for per-repository study
+  status.
+- If status wording in another document differs, this file wins.
 - Use `../landscape/project-families.md` to understand family overlap.
 - Use `../landscape/not-yet-studied-deeply.md` for priority next passes.
 - Use `../program/study-method.md` and `../templates/project-study-template.md`
