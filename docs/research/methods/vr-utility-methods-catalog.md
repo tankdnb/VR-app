@@ -2419,6 +2419,151 @@ Use this document when designing a new module or utility and ask:
 - Best fit for `VR-apps-lab`:
   contextual micro-overlays and specialized awareness surfaces.
 
+## Method 139: Browser runtime overlay host with native backend, child app daemons, and local HTTP or IPC contracts
+
+- What it is:
+  a native `OpenVR` host owns handles, process launch, and texture transport
+  while browser-facing app surfaces live in child runtimes, daemons, or local
+  web apps.
+- Good for:
+  overlay runtime platforms, multi-app hosts, local web-driven utilities, and
+  overlays where the app logic should stay separate from the headset shell.
+- Why it matters:
+  it turns `overlay host` into a reusable runtime boundary instead of one more
+  monolithic utility app.
+- Strong references:
+  `ovrsalt`, `ovrly`.
+- Best fit for `VR-apps-lab`:
+  browser-backed overlay platforms and local-runtime host experiments.
+
+## Method 140: Offscreen desktop UI runtime mirrored directly into an OpenVR texture stream
+
+- What it is:
+  an offscreen browser or declarative desktop UI runtime renders frames that
+  are captured and submitted directly to an `OpenVR` overlay texture.
+- Good for:
+  `Electron` overlays, desktop-first tools with VR presence, fast UI
+  experimentation, and modern declarative interface stacks.
+- Why it matters:
+  it makes `desktop UI runtime -> VR overlay` a clear bridge pattern instead of
+  a one-off hack.
+- Strong references:
+  `electron-openvr`, `ComposeVR`, `Omni-Tune`.
+- Best fit for `VR-apps-lab`:
+  desktop-first companion tools and alternative overlay UI runtime experiments.
+
+## Method 141: Linux desktop or system-service overlay shell with a non-VR debug path and controller-mouse interaction
+
+- What it is:
+  a Linux overlay shell couples desktop capture or service panels with
+  controller-driven interaction and preserves a desktop-only mode for debugging
+  and iteration.
+- Good for:
+  Linux overlay shells, service-panel dashboards, device-routing tools, and
+  environments where in-headset debugging would be too slow.
+- Why it matters:
+  it treats `desktop fallback` as a first-class engineering pattern rather than
+  a temporary hack.
+- Strong references:
+  `OVR4X11`, `SVRLinuxTools`, `OpenVR_Audio_Manager`.
+- Best fit for `VR-apps-lab`:
+  Linux-side control shells and stateful routing or inventory overlays.
+
+## Method 142: Micro-overlay exposed as a tiny local HTTP or OSC control plane
+
+- What it is:
+  a very small overlay keeps its VR-side surface simple while exposing a local
+  `HTTP` or `OSC` endpoint that lets external tools drive state changes.
+- Good for:
+  comfort helpers, automation-friendly overlay widgets, one-value status
+  surfaces, and local integrations that do not need a full desktop app.
+- Why it matters:
+  it makes `micro-overlay plus local automation surface` a reusable product
+  pattern.
+- Strong references:
+  `OVRBrightnessAPI`.
+- Best fit for `VR-apps-lab`:
+  tiny comfort tools and easily scriptable overlay helpers.
+
+## Method 143: Plugin-fed informational surface with reusable providers and multiple output sinks
+
+- What it is:
+  data providers or plugins generate small contextual information while the
+  host can route the result to an in-headset overlay, chatbox, file, or other
+  output sink.
+- Good for:
+  status surfaces, workflow overlays, automation dashboards, and tools that
+  should serve more than one consumer at once.
+- Why it matters:
+  it avoids hardwiring `one informational surface = one output path`.
+- Strong references:
+  `VR-Slideshow-Overlay`.
+- Best fit for `VR-apps-lab`:
+  modular informational surfaces and multi-consumer helper tools.
+
+## Method 144: Timer-driven overlay that escalates from passive HUD to closeable notification and restart loop
+
+- What it is:
+  an overlay begins as a passive time or session surface, then transitions into
+  a stronger reminder or notification flow that supports dismissal or restart.
+- Good for:
+  break reminders, session hygiene tools, guided routines, and small behavior
+  nudges inside VR.
+- Why it matters:
+  it makes `status display` and `intervention loop` explicit stages of the same
+  product.
+- Strong references:
+  `VRSessionTimer`.
+- Best fit for `VR-apps-lab`:
+  session helpers, reminder overlays, and intervention-oriented micro-tools.
+
+## Method 145: Embodied locomotion overlay that maps gaze or tracker motion into avatar-control intent
+
+- What it is:
+  an overlay plus control stack turns body motion, tracker deltas, or gaze
+  inputs into locomotion or avatar-facing movement signals.
+- Good for:
+  controllerless locomotion, embodied exercise overlays, tracker-driven motion
+  helpers, and avatar-facing movement adapters.
+- Why it matters:
+  it treats the overlay as part of a bodily control loop rather than a passive
+  status display.
+- Strong references:
+  `bikeheadvr`.
+- Best fit for `VR-apps-lab`:
+  embodied-control experiments and movement-side helper tools.
+
+## Method 146: Desktop editor paired with a native VR helper over a framed streaming protocol
+
+- What it is:
+  a richer desktop editor owns profiles and editing UX while a smaller native
+  VR helper mirrors just the live tuning state into an overlay surface.
+- Good for:
+  tuning tools, profile editors, creator utilities, and any workflow where the
+  desktop should remain the main editing surface.
+- Why it matters:
+  it prevents `VR presence` from forcing the entire tool into the headset.
+- Strong references:
+  `Omni-Tune`.
+- Best fit for `VR-apps-lab`:
+  live tuning surfaces and desktop-first tools with in-headset feedback.
+
+## Method 147: External-device control overlay with persisted config, hand switching, and remote API fan-out
+
+- What it is:
+  a headset overlay controls remote devices through an API client while keeping
+  configuration, placement, and hand-specific behavior as explicit local state.
+- Good for:
+  networked accessory control, remote hardware panels, in-headset device UIs,
+  and overlays that must manage both local and remote state.
+- Why it matters:
+  it turns `overlay as remote-device control panel` into a reusable product and
+  architecture pattern.
+- Strong references:
+  `OVR-Shock`, `OpenShock/VROverlay`.
+- Best fit for `VR-apps-lab`:
+  remote-device overlays and external-accessory control surfaces.
+
 ## Recommended usage inside `VR-apps-lab`
 
 When a new utility idea appears:

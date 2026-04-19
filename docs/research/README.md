@@ -137,3 +137,11 @@ bridges, device managers, and experimental XR workflows.
 103. `landscape/vr-projects-wave-54-discord-voice-overlays-note-surfaces-and-context-status-micro-overlays.md`
 104. `program/github-research-wave-55-plan.md`
 105. `landscape/vr-projects-wave-55-creator-control-overlays-research-stations-and-specialized-companion-presence-surfaces.md`
+106. `program/github-research-wave-56-plan.md`
+107. `landscape/vr-projects-wave-56-browser-backed-overlay-runtimes-web-tech-hosts-and-ui-runtime-experiments.md`
+108. `program/github-research-wave-57-plan.md`
+109. `landscape/vr-projects-wave-57-linux-overlay-control-shells-desktop-service-panels-and-interaction-variants.md`
+110. `program/github-research-wave-58-plan.md`
+111. `landscape/vr-projects-wave-58-micro-overlays-timed-status-surfaces-and-plugin-fed-informational-display-helpers.md`
+112. `program/github-research-wave-59-plan.md`
+113. `landscape/vr-projects-wave-59-embodied-locomotion-overlays-live-tuning-surfaces-and-external-device-control-panels.md`

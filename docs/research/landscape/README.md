@@ -220,6 +220,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on creator control overlays, research
   stations, and specialized companion-presence surfaces.
 
+- `vr-projects-wave-56-browser-backed-overlay-runtimes-web-tech-hosts-and-ui-runtime-experiments.md`
+  Next GitHub discovery wave focused on browser-backed overlay runtimes,
+  web-tech hosts, and UI runtime experiments.
+
+- `vr-projects-wave-57-linux-overlay-control-shells-desktop-service-panels-and-interaction-variants.md`
+  Next GitHub discovery wave focused on Linux overlay control shells,
+  desktop-service panels, and interaction variants.
+
+- `vr-projects-wave-58-micro-overlays-timed-status-surfaces-and-plugin-fed-informational-display-helpers.md`
+  Next GitHub discovery wave focused on micro-overlays, timed status surfaces,
+  and plugin-fed informational display helpers.
+
+- `vr-projects-wave-59-embodied-locomotion-overlays-live-tuning-surfaces-and-external-device-control-panels.md`
+  Next GitHub discovery wave focused on embodied locomotion overlays,
+  live tuning surfaces, and external-device control panels.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

@@ -1081,6 +1081,123 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - embedded controller research with explicit safety surfaces
 - richer biosignal schemas instead of flat parameter bags
 
+## Family 35: Browser-backed overlay runtimes, web-tech hosts, and UI runtime experiments
+
+This family covers repositories where the interesting overlay boundary lives in
+the runtime split itself: native host, browser or web-facing app layer,
+offscreen UI renderer, or other declarative runtime that becomes the overlay
+surface.
+
+| Project | Status | Notes |
+|---|---|---|
+| `mekanoe/ovrsalt` | Already studied | Scrapped but unusually clear backend, runtime, and frontend split over shared buffers and process launch |
+| `mekanoe/electron-openvr` | Already studied | Minimal offscreen `Electron` window mirrored directly into an `OpenVR` texture |
+| `joshperry/ovrly` | Already studied | `CEF` overlay host with per-app daemons, local `HTTP`, and in-page native API hooks |
+| `ephemeral-laboratories/ComposeVR` | Already studied | `Compose Multiplatform` experiment that renders declarative UI into a tracked `OpenVR` overlay |
+
+### Consolidation note
+
+This family matters because `browser-backed overlays` are no longer one vague
+idea. They now split into distinct construction patterns:
+
+- native backend plus browser runtime
+- offscreen browser-window mirroring
+- browser host plus daemonized app model
+- non-browser declarative UI runtime experiments
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- overlay hosts that behave like local runtime platforms
+- desktop-first UI runtimes that mirror into VR
+- explicit `HTTP` or `IPC` contracts between overlay shell and app logic
+
+## Family 36: Linux overlay control shells, desktop-service panels, and interaction variants
+
+This family covers repositories where Linux desktop or service workflows are
+the main value, and where controller interaction plus desktop-side debug modes
+matter as much as the visible VR panel.
+
+| Project | Status | Notes |
+|---|---|---|
+| `galister/OVR4X11` | Already studied | Linux screen-control shell with `X11` capture, controller pointer logic, and on-overlay keyboard helpers |
+| `DrogonMar/SVRLinuxTools` | Already studied | `Qt` or KDE-style overlay shell hosting multiple desktop-service panels with a useful `--novr` mode |
+| `Dragon092/OpenVR_Audio_Manager` | Already studied | Focused `Qt` dashboard for HMD-aware audio routing and persisted device preferences |
+| `CrispyPin/sinpin-vr` | Not studied deeply | GitHub relocation stub that points to a moved Linux overlay project rather than exposing a useful code donor on GitHub today |
+
+### Consolidation note
+
+This family matters because `Linux overlay shells` expose several lessons that
+are easy to miss in Windows-heavy donor pools:
+
+- desktop capture plus controller-mouse interaction
+- service-panel hosts rather than one fixed tool
+- narrow device-manager overlays with explicit preference state
+- non-VR debug paths as a maintainability feature
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- Linux-side desktop-control overlays
+- service-panel shells with desktop fallback
+- stateful routing or inventory dashboards
+
+## Family 37: Micro-overlays, timed status surfaces, and plugin-fed informational display helpers
+
+This family covers repositories where the main value comes from one small
+overlay with one strong job: comfort control, timer state, informational feed,
+or a note surface rather than a broad dashboard host.
+
+| Project | Status | Notes |
+|---|---|---|
+| `R-VUt/OVRBrightnessAPI` | Already studied | Tiny comfort overlay exposed through local `HTTP` and `OSC` control planes |
+| `CorvinRyder/VR-Slideshow-Overlay` | Already studied | Provider-fed informational surface with multiple outputs including overlay, chatbox, and file |
+| `Podshot/VRSessionTimer` | Already studied | Timer overlay that escalates from passive HUD into notifications and restart loops |
+| `Yukiiro-Nite/notebook-vr-overlay` | Partially studied | Rough note-surface prototype with explicit overlay event plumbing but incomplete writing workflow |
+
+### Consolidation note
+
+This family matters because it makes `small overlays` much more structured:
+
+- tiny local-control-plane overlays
+- provider-fed informational surfaces
+- timed reminder or escalation overlays
+- rough note or writing lower-bound prototypes
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- automation-friendly micro-overlays
+- provider-driven status surfaces
+- reminder and intervention overlays
+- note or annotation overlays with explicit small state models
+
+## Family 38: Embodied locomotion overlays, live tuning surfaces, and external-device control panels
+
+This family covers repositories where the overlay is not just informational.
+It actively shapes movement, live tuning, or control of remote hardware.
+
+| Project | Status | Notes |
+|---|---|---|
+| `hiinaspace/bikeheadvr` | Already studied | Controllerless locomotion overlay that maps tracker motion and gaze interaction into avatar-facing movement intent |
+| `MartyDude20/Omni-Tune` | Already studied | Desktop profile editor mirrored into a live VR tuning surface through a native helper |
+| `OpenShock/OVR-Shock` | Already studied | Modern remote-device control overlay with persisted config, API client, and hand-aware interaction |
+| `OpenShock/VROverlay` | Partially studied | Older Unity lineage node for the same device-control branch |
+| `NewChromantics/PopExposeXr` | Not studied deeply | Thin follow-up node hinting at XR state exposure, but too sparse for mainline promotion |
+
+### Consolidation note
+
+This family matters because it separates several stronger `control-first`
+overlay answers from ordinary dashboard surfaces:
+
+- embodied locomotion overlays
+- desktop-first editor plus live VR tuning
+- remote-device control panels
+- lineage comparisons between older and newer overlay hosts
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- embodied-control surfaces
+- live tuning overlays for external rigs or movement systems
+- in-headset control panels for remote devices and networked accessories
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

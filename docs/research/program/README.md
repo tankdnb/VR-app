@@ -371,3 +371,31 @@ repeatable way.
 
 - `github-research-wave-55-backlog.md`
   Executed backlog for the Wave 55 pass.
+
+- `github-research-wave-56-plan.md`
+  Wave 56 research plan focused on browser-backed overlay runtimes, web-tech
+  hosts, and UI runtime experiments.
+
+- `github-research-wave-56-backlog.md`
+  Executed backlog for the Wave 56 pass.
+
+- `github-research-wave-57-plan.md`
+  Wave 57 research plan focused on Linux overlay control shells,
+  desktop-service panels, and interaction variants.
+
+- `github-research-wave-57-backlog.md`
+  Executed backlog for the Wave 57 pass.
+
+- `github-research-wave-58-plan.md`
+  Wave 58 research plan focused on micro-overlays, timed status surfaces, and
+  plugin-fed informational display helpers.
+
+- `github-research-wave-58-backlog.md`
+  Executed backlog for the Wave 58 pass.
+
+- `github-research-wave-59-plan.md`
+  Wave 59 research plan focused on embodied locomotion overlays, live tuning
+  surfaces, and external-device control panels.
+
+- `github-research-wave-59-backlog.md`
+  Executed backlog for the Wave 59 pass.

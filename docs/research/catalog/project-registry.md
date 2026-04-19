@@ -738,6 +738,55 @@ Primary docs:
 - `nullstalgia/OpenShock-ESP-Legacy` - `Already studied`
 - `ChilloutCharles/BrainFlowsIntoVRChat` - `Already studied`
 
+## 35. Browser-backed overlay runtimes, web-tech hosts, and UI runtime experiments
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-56-browser-backed-overlay-runtimes-web-tech-hosts-and-ui-runtime-experiments.md`
+- `../landscape/project-families.md`
+
+- `mekanoe/ovrsalt` - `Already studied`
+- `mekanoe/electron-openvr` - `Already studied`
+- `joshperry/ovrly` - `Already studied`
+- `ephemeral-laboratories/ComposeVR` - `Already studied`
+
+## 36. Linux overlay control shells, desktop-service panels, and interaction variants
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-57-linux-overlay-control-shells-desktop-service-panels-and-interaction-variants.md`
+- `../landscape/project-families.md`
+
+- `galister/OVR4X11` - `Already studied`
+- `DrogonMar/SVRLinuxTools` - `Already studied`
+- `Dragon092/OpenVR_Audio_Manager` - `Already studied`
+- `CrispyPin/sinpin-vr` - `Not studied deeply`
+
+## 37. Micro-overlays, timed status surfaces, and plugin-fed informational display helpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-58-micro-overlays-timed-status-surfaces-and-plugin-fed-informational-display-helpers.md`
+- `../landscape/project-families.md`
+
+- `R-VUt/OVRBrightnessAPI` - `Already studied`
+- `CorvinRyder/VR-Slideshow-Overlay` - `Already studied`
+- `Podshot/VRSessionTimer` - `Already studied`
+- `Yukiiro-Nite/notebook-vr-overlay` - `Partially studied`
+
+## 38. Embodied locomotion overlays, live tuning surfaces, and external-device control panels
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-59-embodied-locomotion-overlays-live-tuning-surfaces-and-external-device-control-panels.md`
+- `../landscape/project-families.md`
+
+- `hiinaspace/bikeheadvr` - `Already studied`
+- `MartyDude20/Omni-Tune` - `Already studied`
+- `OpenShock/OVR-Shock` - `Already studied`
+- `OpenShock/VROverlay` - `Partially studied`
+- `NewChromantics/PopExposeXr` - `Not studied deeply`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

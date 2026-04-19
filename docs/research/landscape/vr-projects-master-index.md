@@ -64,6 +64,10 @@ This file complements:
 - `vr-projects-wave-53-media-launcher-overlays-playback-surfaces-and-lightweight-in-headset-display-shells.md`
 - `vr-projects-wave-54-discord-voice-overlays-note-surfaces-and-context-status-micro-overlays.md`
 - `vr-projects-wave-55-creator-control-overlays-research-stations-and-specialized-companion-presence-surfaces.md`
+- `vr-projects-wave-56-browser-backed-overlay-runtimes-web-tech-hosts-and-ui-runtime-experiments.md`
+- `vr-projects-wave-57-linux-overlay-control-shells-desktop-service-panels-and-interaction-variants.md`
+- `vr-projects-wave-58-micro-overlays-timed-status-surfaces-and-plugin-fed-informational-display-helpers.md`
+- `vr-projects-wave-59-embodied-locomotion-overlays-live-tuning-surfaces-and-external-device-control-panels.md`
 
 ## How to use this index
 
@@ -239,6 +243,18 @@ This file complements:
 - Use `vr-projects-wave-55-creator-control-overlays-research-stations-and-specialized-companion-presence-surfaces.md`
   for the next wave centered on creator control overlays, research stations,
   and specialized companion-presence surfaces.
+- Use `vr-projects-wave-56-browser-backed-overlay-runtimes-web-tech-hosts-and-ui-runtime-experiments.md`
+  for the next wave centered on browser-backed overlay runtimes, web-tech
+  hosts, and UI runtime experiments.
+- Use `vr-projects-wave-57-linux-overlay-control-shells-desktop-service-panels-and-interaction-variants.md`
+  for the next wave centered on Linux overlay control shells,
+  desktop-service panels, and interaction variants.
+- Use `vr-projects-wave-58-micro-overlays-timed-status-surfaces-and-plugin-fed-informational-display-helpers.md`
+  for the next wave centered on micro-overlays, timed status surfaces, and
+  plugin-fed informational display helpers.
+- Use `vr-projects-wave-59-embodied-locomotion-overlays-live-tuning-surfaces-and-external-device-control-panels.md`
+  for the next wave centered on embodied locomotion overlays,
+  live tuning surfaces, and external-device control panels.
 - Treat each project as one of:
   - `code donor`
   - `architecture reference`

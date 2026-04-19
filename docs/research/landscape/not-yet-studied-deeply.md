@@ -206,9 +206,22 @@ over-promoted immediately.
 | Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
 | `Marlamin/VROverlayTest` | Not studied deeply | Extra-thin D3D11/OpenVR overlay scratchpad that might matter if a future pass needs a smaller Windows baseline than `SampleVRO` | Medium | Low-Medium | Compare exact texture-upload path and event handling against `SampleVRO`, `OpenVROverlay_imgui`, and `csharp-openvr-overlay-imgui` |
-| `ephemeral-laboratories/ComposeVR` | Not studied deeply | Jetpack Compose rendered into an OpenVR overlay, hinting at a different `UI runtime -> overlay texture` donor line | Medium-High | Medium | Inspect whether the prototype exposes a reusable `Compose-style UI bridge` or remains too experimental and one-off |
 | `beareogaming/BD-XSOverlay-notify` | Not studied deeply | Desktop plugin that pushes notifications into an existing overlay host over the official XSOverlay WebSocket contract | Medium | Medium | Inspect the exact WebSocket payload model and whether the `plugin -> host` split generalizes beyond Discord notifications |
 | `iigomaru/MPVR` | Partially studied | Very rough `libmpv inside OpenVR overlay` proof of concept that may still matter as a lower-bound media embed comparison node | Medium | Medium | Revisit only if a future pass needs a cleaner comparison between full `vr-video-player-overlay` style shells and direct media-engine embedding |
+
+## Priority batch R: Waves 56-59 surfaced follow-up candidates
+
+These were surfaced while deepening browser-backed overlay runtimes, Linux
+overlay shells, micro-overlays, and embodied-control surfaces, but they were
+intentionally kept as honest follow-up nodes instead of being over-promoted
+immediately.
+
+| Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `CrispyPin/sinpin-vr` | Not studied deeply | Linux overlay project whose GitHub repo is now mostly a relocation stub | Low-Medium | Medium | Follow the moved upstream only if a future Linux overlay recovery pass becomes worthwhile |
+| `Yukiiro-Nite/notebook-vr-overlay` | Partially studied | Rough note-surface overlay with explicit event plumbing but incomplete drawing or persistence flow | Medium | Medium | Revisit if a future pass needs deeper note persistence, drawing, or writing-state UX rather than just a lower-bound prototype |
+| `OpenShock/VROverlay` | Partially studied | Older Unity lineage for a stronger current remote-device control overlay branch | Medium | Medium-High | Revisit only if a future lineage pass needs a tighter comparison against `OVR-Shock` |
+| `NewChromantics/PopExposeXr` | Not studied deeply | Thin XR-state exposure concept that hints at a possible outward-facing bridge family | Medium | Medium | Inspect the networking contract and state-exposure model only if the public repo grows beyond its current sparse snapshot |
 
 ## Family-level gaps that now deserve deeper passes
 
@@ -228,12 +241,13 @@ These are larger than a single repo and should guide the next research wave.
 - Main entries:
   `VROverlay`, `SteamVR-Webkit`, `SteamVR_HUDCenter`, `SteamVR-WebApps`,
   `OVROverlayManager`, `LapisOverlay`, `h-view`, `VRSceneOverlay`,
-  `godot-openvr-overlay`, `csharp-openvr-overlay-imgui`, `SampleVRO`
+  `godot-openvr-overlay`, `csharp-openvr-overlay-imgui`, `SampleVRO`,
+  `ovrsalt`, `electron-openvr`, `ovrly`, `ComposeVR`
 - Why it matters:
   this remains the clearest place to compare `scene-overlay scaffolds`,
   `desktop UI rasterization bridges`, `overlay-first hosts`,
-  `engine-native projection overlays`, and `micro-overlay patches`
-  as distinct construction strategies.
+  `engine-native projection overlays`, `browser-backed overlay runtimes`,
+  and `micro-overlay patches` as distinct construction strategies.
 
 ### 3. `Runtime-side service hosts and broader OpenXR utility platforms`
 
@@ -409,6 +423,42 @@ These are larger than a single repo and should guide the next research wave.
   desktop mirrors at all, but narrow contextual surfaces with their own local
   state, control panel, study schema, collaborator view, or room anchor.
 
+### 21. `Browser-backed overlay runtimes and web-tech UI hosts`
+
+- Main entries:
+  `ovrsalt`, `electron-openvr`, `ovrly`, `ComposeVR`
+- Why it matters:
+  these repos now expose several distinct answers to `web or declarative UI as
+  overlay runtime`, from tiny frame-capture bridges to daemon-backed browser
+  hosts.
+
+### 22. `Linux overlay control shells and desktop-service panels`
+
+- Main entries:
+  `OVR4X11`, `SVRLinuxTools`, `OpenVR_Audio_Manager`
+- Why it matters:
+  Linux overlay tooling now has enough donor surface to justify its own follow-
+  up branch around service panels, controller-mouse interaction, and desktop
+  fallback modes.
+
+### 23. `Micro-overlays, timed status surfaces, and informational display helpers`
+
+- Main entries:
+  `OVRBrightnessAPI`, `VR-Slideshow-Overlay`, `VRSessionTimer`,
+  `notebook-vr-overlay`
+- Why it matters:
+  the latest pass made it clear that `small overlay with one strong value` is a
+  coherent donor family, not just a set of weak side projects.
+
+### 24. `Embodied workflow overlays and external-device control panels`
+
+- Main entries:
+  `bikeheadvr`, `Omni-Tune`, `OVR-Shock`, `OpenShock/VROverlay`
+- Why it matters:
+  these repos show that some overlay families are really `control surfaces`
+  over body motion, live tuning, or remote hardware rather than informational
+  panels.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -433,3 +483,7 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 18. `Simulation telemetry overlays and motion-cueing sidecars`
 19. `Redirected walking and locomotion adaptation toolkits`
 20. `Context-aware overlay surfaces and specialized display shells`
+21. `Browser-backed overlay runtimes and web-tech UI hosts`
+22. `Linux overlay control shells and desktop-service panels`
+23. `Micro-overlays, timed status surfaces, and informational display helpers`
+24. `Embodied workflow overlays and external-device control panels`
