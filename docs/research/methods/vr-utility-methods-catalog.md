@@ -1072,6 +1072,141 @@ Use this document when designing a new module or utility and ask:
   spatial diagnostics, room-scan experiments, and calibration-adjacent capture
   tools.
 
+## Method 60: Tracked physical keyboard with hand-proximity reveal and MR boundary visualization
+
+- What it is:
+  a VR typing surface is anchored to a runtime-tracked real keyboard, while the
+  app controls visibility, boundary rendering, and hand-near reveal behavior.
+- Good for:
+  mixed-reality desk setups, setup and login flows, configuration panels, and
+  utilities that benefit from real hardware typing instead of synthetic keys.
+- Why it matters:
+  when real hardware exists, the best UX is often not another floating keyboard
+  but a better `tracked-hardware wrapper`.
+- Strong references:
+  `Unity-TrackedKeyboard`, `XR-Keyboard`.
+- Best fit for `VR-apps-lab`:
+  desk-aware setup tools, MR configuration surfaces, and tracked-input
+  experiments.
+
+## Method 61: Non-native spatial keyboard with semantic layouts, validation surfaces, and event callbacks
+
+- What it is:
+  a reusable keyboard component exposes layout modes, validation or placeholder
+  surfaces, and host-facing events instead of forcing each app to own its own
+  text-entry logic.
+- Good for:
+  search fields, setup wizards, quick text entry, naming flows, and any tool
+  that needs small but structured user input inside XR.
+- Why it matters:
+  the reusable unit is not the key art but the `keyboard lifecycle contract`.
+- Strong references:
+  `MRTK-Keyboard`, `VRKeys`, `XR-Interaction-Toolkit-Examples`.
+- Best fit for `VR-apps-lab`:
+  utility-side text entry, setup UI, and keyboard components that can be shared
+  across future tools.
+
+## Method 62: Palm-up launcher that opens richer world-space panels at a separate popup anchor
+
+- What it is:
+  a small launcher appears on or near the hand, but the heavier content opens
+  at a detached popup anchor that is easier to read and interact with.
+- Good for:
+  quick actions, tool palettes, small dashboards, wrist or palm launchers, and
+  utilities that need fast access without making the hand itself too crowded.
+- Why it matters:
+  it separates `quick reveal` from `serious interaction`, which usually
+  produces a calmer VR menu UX.
+- Strong references:
+  `XRHandMenuSample`, `mr-example-meta-openxr`, `MixedRealityToolkit-Unity`.
+- Best fit for `VR-apps-lab`:
+  hand-first utility shells, launcher patterns, and compact control surfaces.
+
+## Method 63: Menu-archetype generator with radial, ring, and default templates plus editor-side modifiers
+
+- What it is:
+  menu behavior is packaged as reusable archetypes and creator tools, while a
+  separate modifier layer tunes style or behavior after generation.
+- Good for:
+  Unity-heavy toolkits, reusable UI kits, experiments that compare radial and
+  ring menus, and teams that want faster iteration on menu shape.
+- Why it matters:
+  it turns menus from one-off scene objects into reusable authoring assets.
+- Strong references:
+  `VRMenuDesigner`.
+- Best fit for `VR-apps-lab`:
+  internal XR UI kits, reusable menu scaffolds, and faster prototyping of menu
+  variants.
+
+## Method 64: Physicalized radial selection that materializes actual interactables into the hand
+
+- What it is:
+  a radial menu acts less like a command list and more like a temporary picker
+  that resolves into a real tool or interactable already attached to the user's
+  hand.
+- Good for:
+  tool selection, inventory wheels, controller-attached object pickers, and
+  workflows where the selected item should become immediately grabbable.
+- Why it matters:
+  it blurs the boundary between `menu` and `interaction`, which is often more
+  natural in VR than clicking a detached UI command.
+- Strong references:
+  `UnityXR-Physicalized-Radial-Menu`, `RadialMenuVR`.
+- Best fit for `VR-apps-lab`:
+  tool-palette experiments, radial pickers, and embodied command surfaces.
+
+## Method 65: XR UI interaction stack that extends EventSystem with ray, poke, and hand input
+
+- What it is:
+  a framework adapts the normal UI event system to XR by adding custom input
+  modules, raycasters, hand or poke interaction, and activation heuristics.
+- Good for:
+  world-space menus, panels, keyboards, toolkit-scale UI, and utilities that
+  want to reuse ordinary UI controls in XR.
+- Why it matters:
+  many future VR tools should extend a UI substrate instead of rebuilding every
+  control as a special case.
+- Strong references:
+  `ViveInputUtility-Unity`, `XR-Interaction-Toolkit-Examples`,
+  `MixedRealityToolkit-Unity`.
+- Best fit for `VR-apps-lab`:
+  shared UI infrastructure, framework selection, and future toolkit-oriented
+  prototypes.
+
+## Method 66: Teleoperation workspace with palm-menu control hub and live connection-state surfaces
+
+- What it is:
+  a VR workspace exposes remote-system control through palm menus, side panels,
+  and live status indicators rather than one flat generic dashboard.
+- Good for:
+  teleoperation, operations dashboards, remote procedure control, and control
+  rooms for external services or devices.
+- Why it matters:
+  workflow structure and state visibility often matter more than raw command
+  density in embodied control tools.
+- Strong references:
+  `unity_ros_teleoperation`, `ReachyTeleoperation`, `ros_reality`.
+- Best fit for `VR-apps-lab`:
+  control-room research, operator dashboards, and command-oriented utility
+  surfaces.
+
+## Method 67: Thin VR control frontend that streams controller state to an external robot or service process
+
+- What it is:
+  the VR app stays intentionally thin and exports controller pose or button
+  state to another process that owns the real business logic.
+- Good for:
+  robotics frontends, remote-system control, simulator input, and fast XR
+  command bridges.
+- Why it matters:
+  it keeps the VR layer simple and reusable when the real product logic lives
+  elsewhere.
+- Strong references:
+  `UR10_Teleop`.
+- Best fit for `VR-apps-lab`:
+  thin bridge apps, embodied input exporters, and sidecar-controlled workflow
+  tools.
+
 ## Recommended usage inside `VR-apps-lab`
 
 When a new utility idea appears:

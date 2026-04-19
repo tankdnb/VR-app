@@ -123,6 +123,18 @@ follow-up nodes instead of being over-promoted immediately.
 | `davidrios/openxr-device-simulator` | Not studied deeply | Rust-based runtime simulator that hints at a leaner fake-device path | Medium | Medium | Inspect the rest of the runtime surface, input model, and whether it grows into a stronger simulator comparison node |
 | `tobexeon/PSVR2EyeTrackingCalibration` | Not studied deeply | Real-time PSVR2 eye-calibration client with no runtime restart requirement | Medium | Medium | Separate the reusable calibration UX from the custom-fork dependency and compare it with broader PSVR2 eye-tracking work |
 
+## Priority batch K: Waves 28-31 surfaced follow-up candidates
+
+These were surfaced while deepening VR keyboard, menu, framework, and
+teleoperation families, but they were intentionally kept as honest follow-up
+nodes instead of being over-promoted immediately.
+
+| Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `MixedRealityToolkit/MixedRealityToolkit-Unity` | Not studied deeply | Current-generation continuation of the MRTK spatial-UI line, which may clarify how palm-menu, keyboard, and solver ideas evolved after the legacy repo | High | High | Inspect package split, successor UI primitives, and whether the modern line still exposes the same reusable menu and keyboard donors |
+| `nakama-lab/VR_Teleop_Interface` | Not studied deeply | Teleoperation stack whose architectural decomposition may matter more than any single widget | Medium | Medium-high | Inspect non-main branches, scene structure, and transport boundaries to see whether it is a better system-design donor than a UI donor |
+| `h2r/GHOST` | Not studied deeply | Visualization-rich teleoperation sidecar with point-cloud and gesture-control overlap | Medium | Medium-high | Inspect visualization pipeline, gesture boundary, and how tightly it couples to `ros_reality` |
+
 ## Family-level gaps that now deserve deeper passes
 
 These are larger than a single repo and should guide the next research wave.

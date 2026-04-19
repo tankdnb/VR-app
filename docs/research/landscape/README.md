@@ -107,6 +107,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on motion compensation, calibration
   overlays, and spatial alignment tools.
 
+- `vr-projects-wave-28-text-entry-tracked-keyboards-and-non-native-input-surfaces.md`
+  Next GitHub discovery wave focused on text entry, tracked keyboards, and
+  non-native input surfaces.
+
+- `vr-projects-wave-29-hand-palm-radial-and-quick-access-menus.md`
+  Next GitHub discovery wave focused on hand menus, palm menus, radial menus,
+  and quick-access VR surfaces.
+
+- `vr-projects-wave-30-spatial-ui-interaction-frameworks-and-input-stacks.md`
+  Next GitHub discovery wave focused on spatial UI interaction frameworks,
+  input stacks, and menu-enabling XR scaffolds.
+
+- `vr-projects-wave-31-teleoperation-workspaces-and-embodied-control-surfaces.md`
+  Next GitHub discovery wave focused on teleoperation workspaces, embodied
+  control surfaces, and VR command menus for external systems.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

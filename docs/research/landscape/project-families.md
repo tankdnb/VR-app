@@ -553,6 +553,103 @@ The strongest future product concepts suggested by this family are:
 - `driver/backend-agnostic tracking bridge`
 - `headsetless camera QA runtime`
 
+## Family 18: Text entry, tracked keyboards, and non-native input surfaces
+
+This family covers the UI surfaces that let a VR utility collect text or short
+commands without bouncing the user back to a desktop monitor.
+
+| Project | Status | Notes |
+|---|---|---|
+| `campfireunion/VRKeys` | Already studied | Focused drum-style keyboard with validation-aware lifecycle, layout switching, and hand-attached mallets |
+| `ultraleap/XR-Keyboard` | Already studied | Physical keyboard generator with prefab, manager, and keymap split |
+| `oculus-samples/Unity-TrackedKeyboard` | Already studied | Tracked hardware keyboard sample with hand-proximity reveal and MR desk context |
+| `Ayfel/MRTK-Keyboard` | Already studied | Semantic non-native keyboard with multiple layout modes and host-facing callbacks |
+| `RTUITLab/Oculus-HandTracking-Keyboard` | Already studied | Lightweight fingertip-driven hand-tracking keyboard experiment |
+
+### Consolidation note
+
+This family matters because `text entry` is one of the fastest ways a VR tool
+falls back to a desktop if the UX is not handled deliberately.
+
+It suggests a separate donor branch inside `VR-apps-lab`:
+
+- setup and configuration keyboards
+- overlay-side text entry
+- mixed-reality desk-aware typing
+- semantic non-native keyboard components
+
+## Family 19: Hand, palm, radial, and quick-access menus
+
+This family covers the fast-launch and quick-selection surfaces that make VR
+tools feel usable without a large persistent desktop metaphor.
+
+| Project | Status | Notes |
+|---|---|---|
+| `NovaUI-Unity/XRHandMenuSample` | Already studied | Palm-up launcher that opens richer panels at a detached popup anchor |
+| `Housz/VRMenuDesigner` | Already studied | Menu-archetype toolkit spanning default, radial, ring, and editor-side modifiers |
+| `Oyshoboy/RadialMenuVR` | Already studied | Minimal radial-selection donor with hover scaling and auto-hide |
+| `yusufalibrahim1994/UnityXR-Physicalized-Radial-Menu` | Already studied | Radial selection that resolves into real interactables in the hand |
+| `auroreRakoto/XR-UI-Prototype` | Already studied | Small menu-list to contextual secondary-panel comparison node |
+
+### Consolidation note
+
+This family points toward a strong `quick-access shell` branch inside
+`VR-apps-lab`:
+
+- palm launchers
+- radial selectors
+- contextual detail panels
+- menu archetypes that can be reused across utilities
+
+## Family 20: Spatial UI interaction frameworks and input stacks
+
+This family is less about one finished menu and more about the lower-level
+plumbing that makes ordinary UI surfaces usable in XR.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Unity-Technologies/XR-Interaction-Toolkit-Examples` | Already studied | Broad baseline for spatial keyboard, 2D UI, 3D UI, gaze, and toolkit-scale interaction samples |
+| `microsoft/MixedRealityToolkit-Unity` | Already studied | Legacy but still strong solver-driven hand-menu and prefab-UI donor |
+| `MixedRealityToolkit/MixedRealityToolkit-Unity` | Not studied deeply | Current-generation MRTK continuation that deserves its own later pass |
+| `ViveSoftware/ViveInputUtility-Unity` | Already studied | VR-aware 3D pointer and custom EventSystem input-module donor |
+| `Unity-Technologies/mr-example-meta-openxr` | Already studied | Modern Meta/OpenXR sample stack for hand-menu, gesture, and spatial-panel flows |
+
+### Consolidation note
+
+This family matters because many future `VR-apps-lab` tools will not need a new
+menu idea as much as they will need a clean `input and UI substrate`.
+
+It strengthens a framework-donor layer around:
+
+- UI EventSystem adaptation
+- ray, poke, and hand-input routing
+- palm and gesture gating
+- toolkit-side keyboard and panel scaffolds
+
+## Family 21: Teleoperation workspaces and embodied control surfaces
+
+This family covers VR applications that behave like control rooms, operator
+stations, or embodied dashboards for external systems.
+
+| Project | Status | Notes |
+|---|---|---|
+| `leggedrobotics/unity_ros_teleoperation` | Already studied | Palm-menu teleoperation shell with ROS-state surfaces and subsystem toggles |
+| `h2r/ros_reality` | Already studied | Semantic action-menu reference over a websocket bridge |
+| `elpis-lab/UR10_Teleop` | Already studied | Thin controller-pose exporter to an external robot-control process |
+| `pollen-robotics/ReachyTeleoperation` | Already studied | Strong staged teleoperation product with connection, mirror, and live-control rooms |
+| `nakama-lab/VR_Teleop_Interface` | Not studied deeply | Architectural comparison node for broader teleoperation interface decomposition |
+| `h2r/GHOST` | Not studied deeply | Adjacent visualization and gesture-control node worth later comparison |
+
+### Consolidation note
+
+This family matters because it shows a wider product branch than ordinary
+utility overlays:
+
+- VR control-room shells
+- side-panel and palm-menu command surfaces
+- staged setup-to-operation room flows
+- thin VR frontends that hand control to an external process
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

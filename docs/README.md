@@ -67,6 +67,10 @@ Use this section for:
 - `research/landscape/vr-projects-wave-25-headsetless-qa-runtimes-null-driver-helpers-and-virtual-device-simulators.md`
 - `research/landscape/vr-projects-wave-26-vendor-ipc-ecosystems-glasses-bridges-and-official-stack-enhancement-tools.md`
 - `research/landscape/vr-projects-wave-27-motion-compensation-calibration-overlays-and-spatial-alignment-tools.md`
+- `research/landscape/vr-projects-wave-28-text-entry-tracked-keyboards-and-non-native-input-surfaces.md`
+- `research/landscape/vr-projects-wave-29-hand-palm-radial-and-quick-access-menus.md`
+- `research/landscape/vr-projects-wave-30-spatial-ui-interaction-frameworks-and-input-stacks.md`
+- `research/landscape/vr-projects-wave-31-teleoperation-workspaces-and-embodied-control-surfaces.md`
 - `research/landscape/project-families.md`
 - `research/landscape/not-yet-studied-deeply.md`
 
@@ -134,6 +138,14 @@ Use this section for:
 - `research/program/github-research-wave-26-backlog.md`
 - `research/program/github-research-wave-27-plan.md`
 - `research/program/github-research-wave-27-backlog.md`
+- `research/program/github-research-wave-28-plan.md`
+- `research/program/github-research-wave-28-backlog.md`
+- `research/program/github-research-wave-29-plan.md`
+- `research/program/github-research-wave-29-backlog.md`
+- `research/program/github-research-wave-30-plan.md`
+- `research/program/github-research-wave-30-backlog.md`
+- `research/program/github-research-wave-31-plan.md`
+- `research/program/github-research-wave-31-backlog.md`
 - `research/program/foundational-waves-1-7-retro-normalization-plan.md`
 - `research/program/foundational-waves-1-7-retro-normalization-backlog.md`
 

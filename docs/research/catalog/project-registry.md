@@ -449,6 +449,63 @@ Primary docs:
 - `Otter-Co/TurnSignal` - `Already studied`
 - `Deryck2000/SteamVR_ClockOverlay_Public` - `Already studied`
 
+## 18. Text entry, tracked keyboards, and non-native input surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-28-text-entry-tracked-keyboards-and-non-native-input-surfaces.md`
+- `../landscape/vr-projects-wave-30-spatial-ui-interaction-frameworks-and-input-stacks.md`
+- `../landscape/project-families.md`
+
+- `campfireunion/VRKeys` - `Already studied`
+- `ultraleap/XR-Keyboard` - `Already studied`
+- `oculus-samples/Unity-TrackedKeyboard` - `Already studied`
+- `Ayfel/MRTK-Keyboard` - `Already studied`
+- `RTUITLab/Oculus-HandTracking-Keyboard` - `Already studied`
+
+## 19. Hand, palm, radial, and quick-access menus
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-29-hand-palm-radial-and-quick-access-menus.md`
+- `../landscape/vr-projects-wave-30-spatial-ui-interaction-frameworks-and-input-stacks.md`
+- `../landscape/project-families.md`
+
+- `NovaUI-Unity/XRHandMenuSample` - `Already studied`
+- `Housz/VRMenuDesigner` - `Already studied`
+- `Oyshoboy/RadialMenuVR` - `Already studied`
+- `yusufalibrahim1994/UnityXR-Physicalized-Radial-Menu` - `Already studied`
+- `auroreRakoto/XR-UI-Prototype` - `Already studied`
+
+## 20. Spatial UI interaction frameworks and input stacks
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-28-text-entry-tracked-keyboards-and-non-native-input-surfaces.md`
+- `../landscape/vr-projects-wave-29-hand-palm-radial-and-quick-access-menus.md`
+- `../landscape/vr-projects-wave-30-spatial-ui-interaction-frameworks-and-input-stacks.md`
+- `../landscape/project-families.md`
+
+- `Unity-Technologies/XR-Interaction-Toolkit-Examples` - `Already studied`
+- `microsoft/MixedRealityToolkit-Unity` - `Already studied`
+- `MixedRealityToolkit/MixedRealityToolkit-Unity` - `Not studied deeply`
+- `ViveSoftware/ViveInputUtility-Unity` - `Already studied`
+- `Unity-Technologies/mr-example-meta-openxr` - `Already studied`
+
+## 21. Teleoperation workspaces and embodied control surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-31-teleoperation-workspaces-and-embodied-control-surfaces.md`
+- `../landscape/project-families.md`
+
+- `leggedrobotics/unity_ros_teleoperation` - `Already studied`
+- `h2r/ros_reality` - `Already studied`
+- `elpis-lab/UR10_Teleop` - `Already studied`
+- `pollen-robotics/ReachyTeleoperation` - `Already studied`
+- `nakama-lab/VR_Teleop_Interface` - `Not studied deeply`
+- `h2r/GHOST` - `Not studied deeply`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

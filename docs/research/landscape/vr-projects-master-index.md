@@ -39,6 +39,10 @@ This file complements:
 - `vr-projects-wave-25-headsetless-qa-runtimes-null-driver-helpers-and-virtual-device-simulators.md`
 - `vr-projects-wave-26-vendor-ipc-ecosystems-glasses-bridges-and-official-stack-enhancement-tools.md`
 - `vr-projects-wave-27-motion-compensation-calibration-overlays-and-spatial-alignment-tools.md`
+- `vr-projects-wave-28-text-entry-tracked-keyboards-and-non-native-input-surfaces.md`
+- `vr-projects-wave-29-hand-palm-radial-and-quick-access-menus.md`
+- `vr-projects-wave-30-spatial-ui-interaction-frameworks-and-input-stacks.md`
+- `vr-projects-wave-31-teleoperation-workspaces-and-embodied-control-surfaces.md`
 
 ## How to use this index
 
@@ -129,6 +133,18 @@ This file complements:
 - Use `vr-projects-wave-27-motion-compensation-calibration-overlays-and-spatial-alignment-tools.md`
   for the next wave centered on motion compensation, calibration overlays, and
   spatial alignment tools.
+- Use `vr-projects-wave-28-text-entry-tracked-keyboards-and-non-native-input-surfaces.md`
+  for the next wave centered on text entry, tracked keyboards, and non-native
+  input surfaces.
+- Use `vr-projects-wave-29-hand-palm-radial-and-quick-access-menus.md` for the
+  next wave centered on hand menus, palm menus, radial menus, and quick-access
+  VR surfaces.
+- Use `vr-projects-wave-30-spatial-ui-interaction-frameworks-and-input-stacks.md`
+  for the next wave centered on spatial UI interaction frameworks, input
+  stacks, and menu-enabling XR scaffolds.
+- Use `vr-projects-wave-31-teleoperation-workspaces-and-embodied-control-surfaces.md`
+  for the next wave centered on teleoperation workspaces, embodied control
+  surfaces, and VR command menus for external systems.
 - Treat each project as one of:
   - `code donor`
   - `architecture reference`

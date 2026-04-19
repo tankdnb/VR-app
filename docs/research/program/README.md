@@ -174,3 +174,31 @@ repeatable way.
 
 - `github-research-wave-27-backlog.md`
   Executed backlog for the Wave 27 pass.
+
+- `github-research-wave-28-plan.md`
+  Wave 28 research plan focused on text entry, tracked keyboards, and
+  non-native input surfaces.
+
+- `github-research-wave-28-backlog.md`
+  Executed backlog for the Wave 28 pass.
+
+- `github-research-wave-29-plan.md`
+  Wave 29 research plan focused on hand menus, palm menus, radial menus, and
+  quick-access VR surfaces.
+
+- `github-research-wave-29-backlog.md`
+  Executed backlog for the Wave 29 pass.
+
+- `github-research-wave-30-plan.md`
+  Wave 30 research plan focused on spatial UI interaction frameworks, input
+  stacks, and menu-enabling XR scaffolds.
+
+- `github-research-wave-30-backlog.md`
+  Executed backlog for the Wave 30 pass.
+
+- `github-research-wave-31-plan.md`
+  Wave 31 research plan focused on teleoperation workspaces, embodied control
+  surfaces, and VR command menus for external systems.
+
+- `github-research-wave-31-backlog.md`
+  Executed backlog for the Wave 31 pass.

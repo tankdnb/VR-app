@@ -216,6 +216,22 @@ Start here:
 - `docs/research/program/github-research-wave-22-backlog.md`
 - `docs/research/program/github-research-wave-23-plan.md`
 - `docs/research/program/github-research-wave-23-backlog.md`
+- `docs/research/program/github-research-wave-24-plan.md`
+- `docs/research/program/github-research-wave-24-backlog.md`
+- `docs/research/program/github-research-wave-25-plan.md`
+- `docs/research/program/github-research-wave-25-backlog.md`
+- `docs/research/program/github-research-wave-26-plan.md`
+- `docs/research/program/github-research-wave-26-backlog.md`
+- `docs/research/program/github-research-wave-27-plan.md`
+- `docs/research/program/github-research-wave-27-backlog.md`
+- `docs/research/program/github-research-wave-28-plan.md`
+- `docs/research/program/github-research-wave-28-backlog.md`
+- `docs/research/program/github-research-wave-29-plan.md`
+- `docs/research/program/github-research-wave-29-backlog.md`
+- `docs/research/program/github-research-wave-30-plan.md`
+- `docs/research/program/github-research-wave-30-backlog.md`
+- `docs/research/program/github-research-wave-31-plan.md`
+- `docs/research/program/github-research-wave-31-backlog.md`
 - `docs/research/landscape/vr-projects-master-index.md`
 - `docs/research/landscape/vr-projects-wave-3-utilities.md`
 - `docs/research/landscape/vr-projects-wave-4-gap-fill.md`
@@ -238,6 +254,14 @@ Start here:
 - `docs/research/landscape/vr-projects-wave-21-openxr-provider-stacks-gaze-layers-and-runtime-side-utility-platforms.md`
 - `docs/research/landscape/vr-projects-wave-22-vision-tracking-hosts-camera-full-body-bridges-and-hand-input-sidecars.md`
 - `docs/research/landscape/vr-projects-wave-23-glove-platforms-poser-stacks-and-nonstandard-hardware-bridge-drivers.md`
+- `docs/research/landscape/vr-projects-wave-24-accessibility-captions-and-assistive-overlay-utilities.md`
+- `docs/research/landscape/vr-projects-wave-25-headsetless-qa-runtimes-null-driver-helpers-and-virtual-device-simulators.md`
+- `docs/research/landscape/vr-projects-wave-26-vendor-ipc-ecosystems-glasses-bridges-and-official-stack-enhancement-tools.md`
+- `docs/research/landscape/vr-projects-wave-27-motion-compensation-calibration-overlays-and-spatial-alignment-tools.md`
+- `docs/research/landscape/vr-projects-wave-28-text-entry-tracked-keyboards-and-non-native-input-surfaces.md`
+- `docs/research/landscape/vr-projects-wave-29-hand-palm-radial-and-quick-access-menus.md`
+- `docs/research/landscape/vr-projects-wave-30-spatial-ui-interaction-frameworks-and-input-stacks.md`
+- `docs/research/landscape/vr-projects-wave-31-teleoperation-workspaces-and-embodied-control-surfaces.md`
 
 Original Reality Window and passthrough research:
 
