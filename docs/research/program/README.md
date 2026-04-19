@@ -27,6 +27,13 @@ repeatable way.
   Operating method for studying a new repository and extracting useful VR
   utility patterns from it.
 
+- `foundational-waves-1-7-retro-normalization-plan.md`
+  Retro-normalization plan for bringing the pre-Wave-8 corpus up to the modern
+  research-wave standard.
+
+- `foundational-waves-1-7-retro-normalization-backlog.md`
+  Executed backlog for the same foundational normalization pass.
+
 - `github-research-wave-8-plan.md`  
   First serious post-restructure GitHub discovery wave with refined execution
   order.

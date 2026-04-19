@@ -26,13 +26,8 @@ These are the strongest next candidates.
 
 | Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
-| `BnuuySolutions/PSVR2Toolkit` | Partially studied | Vendor-enhancement layer over an official headset stack | Medium | High | IPC layout, developer API surface, driver patch boundaries |
-| `MuffinTastic/steamvr-exconfig` | Partially studied | Pre-launch SteamVR config utility with narrow focus | Medium | High | SteamVR settings model, disabled overlay/driver flow, restart assumptions |
-| `John-Dean/OpenVR-Tracker-Websocket-Driver` | Partially studied | WebSocket-native tracker spawning and pose exchange | High | High | Message protocol, tracker lifecycle, read/write API, driver/service split |
-| `surplex-io/OpenVR-Driver` | Partially studied | Alternative evolution of websocket tracker driver architecture | High | Medium | Delta versus upstream, protocol changes, maintainability improvements |
-| `gpsnmeajp/VirtualMotionTracker` | Partially studied | External pose and skeletal input into virtual SteamVR trackers | High | High | Driver-manager boundary, OSC transport, skeletal input path |
+| `BnuuySolutions/PSVR2Toolkit` | Partially studied | Vendor-enhancement layer over an official headset stack | High | High | Vendor update fragility, developer API usage, hook boundaries, and the practical limits of the non-commercial feature set |
 | `LucidVR/opengloves-driver` | Partially studied | Hand-specific custom device integration with multiple transports | High | Medium | Serial/named-pipe/Bluetooth transport handling, device abstraction |
-| `RedHawk989/EyeTrackVR-OpenVR-Calibration-Overlay` | Partially studied | Overlay-first calibration UX for eye tracking | Medium | High | 9-point flow, calibration state machine, input/feedback UX |
 | `DaniXmir/GlassVr` | Partially studied | Bridge non-VR glasses hardware into SteamVR via emulation | High | High | Headset/controller/tracker emulation boundaries, hand-tracking path |
 | `krazysh01/VirtualDesktop-OpenVR-Trackers` | Partially studied | Turn body-state data from another ecosystem into trackers | High | Medium | Data format, tracker role mapping, assumptions about upstream source |
 | `terminal29/Simple-OpenVR-Driver-Tutorial` | Partially studied | Clean learning path for driver architecture | High | Low | Minimal driver bootstrap, lifecycle, where real projects diverge |
@@ -47,6 +42,7 @@ main upstream or main family representative is understood.
 
 | Project | Why it matters | What to inspect next |
 |---|---|---|
+| `surplex-io/OpenVR-Driver` | Variant of the John-Dean WebSocket tracker-driver line | Revisit only if the fork diverges materially beyond tracker-role mapping or becomes the better-maintained branch |
 | `3NekoSystem/OpenVR-Tracker-Websocket-Driver` | Fork/variant in tracker-driver family | Compare protocol and maintenance differences from the main WebSocket driver line |
 | `v0xie/OpenVR-Tracker-Websocket-Driver` | Fork/variant in tracker-driver family | Determine whether it adds meaningful tracker or control features |
 | `mutr/openvr_battery_monitor` | Battery-monitor family comparison node | Check whether it focuses on overlay, tray, or logging behavior |
@@ -135,6 +131,15 @@ These were surfaced or only partially exhausted during the Wave 13 source pass.
 | `ju1ce/Simple-OpenVR-Bridge-Driver` | Not studied deeply | Generic bridge-driver ingress path for external programs and custom tracker feeds | High | Medium | Named-pipe or command transport, tracker lifecycle, and comparison with `VirtualMotionTracker` / WebSocket driver families |
 | `MasonSakai/VR-AI-Full-Body-Tracking` | Not studied deeply | Camera FBT path that still carries InputEmulator-era assumptions while aiming at a cleaner driver rewrite | Medium | Medium | Whether the rewrite lands, how much of the current repo is reusable, and how it compares with `Mediapipe-VR-Fullbody-Tracking` |
 
+## Priority batch I: foundational retro-normalization follow-up candidates
+
+These were clarified during the foundational `waves 1-7` normalization pass and
+should remain visible as the next honest follow-ups from the older corpus.
+
+| Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `CrispyPin/ovr-utils` | Partially studied | Early utility-suite lineage whose GitHub mirror no longer contains the real implementation source | Low-Medium | Medium | Follow the current non-GitHub upstream, determine whether the live code still matters, and compare it with `ovr-utils-dashboard` plus `openvr_widgets` |
+
 ## Family-level gaps that now deserve deeper passes
 
 These are larger than a single repo and should guide the next research wave.
@@ -148,7 +153,7 @@ These are larger than a single repo and should guide the next research wave.
 ### 2. `WebSocket-native tracker drivers`
 
 - Main entries:
-  `OpenVR-Tracker-Websocket-Driver`, `OpenVR-Driver`
+  `OpenVR-Tracker-Websocket-Driver`, `Simple-OpenVR-Bridge-Driver`
 - Why it matters:
   strongest path toward a future `Tracker Bridge Service`.
 
@@ -178,7 +183,7 @@ These are larger than a single repo and should guide the next research wave.
 ### 6. `Overlay implementation references and templates`
 
 - Main entries:
-  `VROverlay`, `SteamVR-Webkit`, `vr-streaming-overlay`,
+  `VROverlay`, `SteamVR-Webkit`, `OVROverlayManager`, `vr-streaming-overlay`,
   `steamvr_overlay_vulkan`, `VRSceneOverlay`
 - Why it matters:
   this is where `VR-apps-lab` can learn concrete overlay construction techniques

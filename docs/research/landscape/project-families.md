@@ -71,7 +71,7 @@ notification behavior.
 |---|---|---|
 | `BOLL7708/OpenVROverlayPipe` | Already studied | Best reference for `server-driven overlay creation` |
 | `jeppevinkel/OpenVRNotificationPipe` | Already studied | Focused notification pipe reference |
-| `WiiPlayer2/VnotifieR` | Partially studied | Same product family, useful as a comparison point |
+| `WiiPlayer2/VnotifieR` | Already studied | Local HTTP notification server with config-driven overlay placement and fade behavior |
 | `BOLL7708/OpenVR2WS` | Already studied | Broader runtime I/O and settings bridge |
 | `I5UCC/SteaMeeter` | Already studied | Dashboard bridge into an external audio/control system |
 | `I5UCC/ParameterSaveStates` | Not studied deeply | Related automation/control-surface family node |
@@ -120,7 +120,7 @@ panel, and logging utility.
 | Project | Status | Notes |
 |---|---|---|
 | `OVRTools/OpenVRDeviceBattery` | Already studied | Strong tray-app and background-helper reference |
-| `zeroae/VRBattery` | Partially studied | Good battery-only overlay/product reference |
+| `zeroae/VRBattery` | Already studied | Tiny Qt battery widget rendered into an OpenVR dashboard surface |
 | `Black4Blade/SteamVR-Devices-Battery-Status` | Already studied | Tiny battery micro-tool reference |
 | `rhaamo/OpenVR-Display-Devices` | Already studied | Broader device inventory view |
 | `copperpixel/steamvrbattery` | Already studied | Minimal CLI property-polling battery monitor |
@@ -147,9 +147,9 @@ external data into `SteamVR/OpenVR devices`, `pose streams`, or `OSC events`.
 | Project | Status | Notes |
 |---|---|---|
 | `Timocop/PSMoveServiceEx-VMT` | Already studied | Core virtual-tracker reference |
-| `gpsnmeajp/VirtualMotionTracker` | Partially studied | Likely central project in this family |
-| `John-Dean/OpenVR-Tracker-Websocket-Driver` | Partially studied | Strong WebSocket-native tracker-driver reference |
-| `surplex-io/OpenVR-Driver` | Partially studied | Alternative evolution of the same idea |
+| `gpsnmeajp/VirtualMotionTracker` | Already studied | Mature OSC tracker platform with manager/driver split and skeletal input support |
+| `John-Dean/OpenVR-Tracker-Websocket-Driver` | Already studied | Mainline WebSocket tracker-service driver with local HTTP test surface and pose echo |
+| `surplex-io/OpenVR-Driver` | Fork / variant only | Near-clone of the John-Dean line that mainly adds tracker-role mapping |
 | `ju1ce/Simple-OpenVR-Bridge-Driver` | Not studied deeply | Generic bridge-driver path with external program ingress and locomotion-side comparison value |
 | `3NekoSystem/OpenVR-Tracker-Websocket-Driver` | Not studied deeply | Variant/fork comparison target |
 | `v0xie/OpenVR-Tracker-Websocket-Driver` | Not studied deeply | Variant/fork comparison target |
@@ -190,7 +190,7 @@ by runtime or operating system.
 | `rrkpp/SpotifyOverlay` | Already studied | Qt dashboard micro-utility rendered offscreen into OpenVR |
 | `Hotrian/OpenVRTwitchChat` | Already studied | Twitch-specific chat overlay with threaded service layer and profile persistence |
 | `CrispyPin/ovr-utils` | Partially studied | GitHub snapshot is stale and moved off-platform |
-| `mittorn/ovr-utils-dashboard` | Partially studied | Useful dashboard-style variant |
+| `mittorn/ovr-utils-dashboard` | Already studied | Godot overlay shell with settings-driven overlay instances and reusable add-ons |
 | `artumino/SteamVR_HUDCenter` | Not studied deeply | Centered HUD micro-utility worth a later pass |
 | `LapisGit/LapisOverlay` | Not studied deeply | Multi-purpose overlay shell in progress |
 | `elvissteinjr/SteamVR-PrimaryDesktopOverlay` | Not studied deeply | Focused desktop-overlay sample from a strong maintainer |
@@ -285,7 +285,7 @@ vendor stacks instead of replacing them.
 
 | Project | Status | Notes |
 |---|---|---|
-| `BnuuySolutions/PSVR2Toolkit` | Partially studied | Strongest current vendor-enhancement reference |
+| `BnuuySolutions/PSVR2Toolkit` | Partially studied | Vendor-driver wrapper with versioned IPC for gaze data and trigger-effect control |
 | `PSVR2-related forks/variants` | Not studied deeply | Worth mapping later if this branch expands |
 
 ### Consolidation note
@@ -403,6 +403,7 @@ not only how finished utility products behave.
 |---|---|---|
 | `sh-akira/VROverlay` | Already studied | Unity/OpenVR overlay sample with VR UI pointer plumbing |
 | `BenWoodford/SteamVR-Webkit` | Already studied | Browser-backed overlay toolkit with JS interop |
+| `BenWoodford/OVROverlayManager` | Already studied | Tiny Unity helper that turns render textures and OpenVR events into reusable overlay projectors |
 | `beniwtv/vr-streaming-overlay` | Already studied | Godot multi-overlay shell with widget/config split |
 | `Nyabsi/steamvr_overlay_vulkan` | Already studied | Modern Vulkan/ImGui overlay template |
 | `Hotrian/HeadlessOverlayToolkit` | Already studied | Hidden-window and background-host overlay pattern in Unity |
@@ -430,7 +431,7 @@ interaction, distortion, or overlay-heavy workflows.
 
 | Project | Status | Notes |
 |---|---|---|
-| `MuffinTastic/steamvr-exconfig` | Partially studied | Pre-launch SteamVR config editor and cleanup helper |
+| `MuffinTastic/steamvr-exconfig` | Already studied | Backup-safe config patcher for disabling autolaunch apps and always-active drivers before startup |
 | `BnuuySolutions/OculusKiller` | Already studied | Vendor-shell replacement that redirects Oculus launch flow into SteamVR |
 | `username223/SteamVRNoHeadset` | Already studied | Null-driver and no-HMD recipe for SteamVR workflows |
 | `n1ckfg/ViveTrackerExample` | Already studied | Tracker-without-HMD workflow and tiny Unity helper |
@@ -458,6 +459,31 @@ This family points toward a separate `environment helper` track inside
 - vendor-shell redirects and focused config patchers
 - validation and lint micro-tools
 - backup-safe config patchers
+
+## Family 17: Calibration, motion compensation, and tracking alignment
+
+These projects are unified by one practical problem: helping the user keep
+different tracking spaces, poses, or sensors aligned enough to remain usable.
+
+| Project | Status | Notes |
+|---|---|---|
+| `pushrax/OpenVR-SpaceCalibrator` | Already studied | Foundational mixed-space calibration reference |
+| `Stavdel/OpenVR-SpaceCalibrator` | Already studied | Fork line preserved mainly for historical comparison |
+| `Marshall-vak/OpenVR-SpaceCalibrator2` | Already studied | Continuous-calibration extension of the SpaceCalibrator idea |
+| `BuzzteeBear/OpenXR-MotionCompensation` | Already studied | OpenXR-side motion compensation and calibration flow |
+| `openvrmc/OpenVR-MotionCompensation` | Partially studied | Driver-side pose rewrite plus dashboard configuration path |
+| `RedHawk989/EyeTrackVR-OpenVR-Calibration-Overlay` | Already studied | Minimal overlay-first 9-point eye-tracking calibration surface |
+
+### Consolidation note
+
+This family matters because the best tracking helper is often not a new sensor
+or a new driver, but a better `alignment UX`:
+
+- guided point sequences
+- overlay-first feedback
+- persistent offsets
+- continuous correction
+- pose-rewrite layers and drivers
 
 ## Family 16: Vision-based tracking, hand-input bridges, and headsetless camera runtimes
 

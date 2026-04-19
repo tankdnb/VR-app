@@ -532,6 +532,23 @@ Use this document when designing a new module or utility and ask:
   research harnesses, headsetless workflow docs, and advanced runtime
   experimentation.
 
+## Method 28: Overlay toolkit and prefab scaffolding
+
+- What it is:
+  a lightweight helper layer that wraps overlay creation, render-texture
+  submission, and pointer/input translation into reusable scene components or
+  plugin nodes rather than a full end-user utility product.
+- Good for:
+  rapid overlay prototyping, Unity or Godot experiments, internal labs, and
+  reusable host scaffolding for future utility suites.
+- Why it matters:
+  this is the shortest path between `raw overlay API` and `finished overlay
+  product`, and it keeps early UX experiments from turning into throwaway code.
+- Strong references:
+  `OVRLay`, `OVROverlayManager`, `openvr_widgets`, `ovr-utils-dashboard`.
+- Best fit for `VR-apps-lab`:
+  future overlay host abstractions and reusable prototype scaffolds.
+
 ## Recommended usage inside `VR-apps-lab`
 
 When a new utility idea appears:

@@ -15,6 +15,10 @@ Use these files when you want to understand:
 - `vr-projects-master-index.md`  
   Broad combined index of tracked and historically added waves.
 
+- `vr-projects-foundational-waves-1-7-retro-normalization.md`
+  Canonical repeat deep-pass that normalizes the foundational `waves 1-7`
+  corpus to the same standard used by the later GitHub waves.
+
 - `project-families.md`  
   Groups the currently tracked repositories by overlap family such as
   `runtime/layer tools`, `desktop overlays`, `tracker bridges`, and

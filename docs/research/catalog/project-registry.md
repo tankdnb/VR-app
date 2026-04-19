@@ -97,6 +97,7 @@ Primary docs:
 - `../landscape/vr-utilities-repo-landscape.md`
 - `../landscape/vr-projects-wave-3-utilities.md`
 - `../landscape/vr-projects-wave-7-depth-pass.md`
+- `../landscape/vr-projects-foundational-waves-1-7-retro-normalization.md`
 - `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 
@@ -113,9 +114,8 @@ Primary docs:
 - `rrkpp/SpotifyOverlay` - `Already studied`
 - `Hotrian/OpenVRTwitchChat` - `Already studied`
 - `CrispyPin/ovr-utils` - `Partially studied`
-- `mittorn/ovr-utils-dashboard` - `Partially studied`
+- `mittorn/ovr-utils-dashboard` - `Already studied`
 - `benotter/OVRLay` - `Already studied`
-- `BenWoodford/OVROverlayManager` - `Partially studied`
 - `SDraw/openvr_widgets` - `Already studied`
 - `artumino/SteamVR_HUDCenter` - `Not studied deeply`
 - `LapisGit/LapisOverlay` - `Not studied deeply`
@@ -132,11 +132,12 @@ Primary docs:
 
 - `../landscape/vr-projects-wave-3-utilities.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
+- `../landscape/vr-projects-foundational-waves-1-7-retro-normalization.md`
 - `../landscape/project-families.md`
 
 - `BOLL7708/OpenVROverlayPipe` - `Already studied`
 - `jeppevinkel/OpenVRNotificationPipe` - `Already studied`
-- `WiiPlayer2/VnotifieR` - `Partially studied`
+- `WiiPlayer2/VnotifieR` - `Already studied`
 - `BOLL7708/OpenVR2WS` - `Already studied`
 - `BOLL7708/OpenVR2Key` - `Already studied`
 - `Raphiiko/OyasumiVR` - `Already studied`
@@ -172,9 +173,10 @@ Primary docs:
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/project-families.md`
 - `../landscape/vr-projects-wave-7-depth-pass.md`
+- `../landscape/vr-projects-foundational-waves-1-7-retro-normalization.md`
 
 - `OVRTools/OpenVRDeviceBattery` - `Already studied`
-- `zeroae/VRBattery` - `Partially studied`
+- `zeroae/VRBattery` - `Already studied`
 - `copperpixel/steamvrbattery` - `Already studied`
 - `Black4Blade/SteamVR-Devices-Battery-Status` - `Already studied`
 - `KaftanOS/SteamVR-Battery-Checker` - `Not studied deeply`
@@ -189,6 +191,7 @@ Primary docs:
 
 - `../landscape/vr-projects-wave-5-osc-tracking-tools.md`
 - `../landscape/vr-projects-wave-6-driver-bridges.md`
+- `../landscape/vr-projects-foundational-waves-1-7-retro-normalization.md`
 - `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
@@ -196,9 +199,9 @@ Primary docs:
 
 - `Timocop/PSMoveServiceEx-VMT` - `Already studied`
 - `SlimeVR/SlimeVR-OpenVR-Driver` - `Already studied`
-- `gpsnmeajp/VirtualMotionTracker` - `Partially studied`
-- `John-Dean/OpenVR-Tracker-Websocket-Driver` - `Partially studied`
-- `surplex-io/OpenVR-Driver` - `Partially studied`
+- `gpsnmeajp/VirtualMotionTracker` - `Already studied`
+- `John-Dean/OpenVR-Tracker-Websocket-Driver` - `Already studied`
+- `surplex-io/OpenVR-Driver` - `Fork / variant only`
 - `ju1ce/Simple-OpenVR-Bridge-Driver` - `Not studied deeply`
 - `3NekoSystem/OpenVR-Tracker-Websocket-Driver` - `Not studied deeply`
 - `v0xie/OpenVR-Tracker-Websocket-Driver` - `Not studied deeply`
@@ -222,13 +225,15 @@ Primary docs:
 
 - `../landscape/vr-utilities-repo-landscape.md`
 - `../landscape/vr-projects-wave-4-gap-fill.md`
+- `../landscape/vr-projects-foundational-waves-1-7-retro-normalization.md`
+- `../landscape/project-families.md`
 - `../landscape/not-yet-studied-deeply.md`
 
 - `pushrax/OpenVR-SpaceCalibrator` - `Already studied`
 - `Stavdel/OpenVR-SpaceCalibrator` - `Already studied`
 - `Marshall-vak/OpenVR-SpaceCalibrator2` - `Already studied`
 - `BuzzteeBear/OpenXR-MotionCompensation` - `Already studied`
-- `RedHawk989/EyeTrackVR-OpenVR-Calibration-Overlay` - `Partially studied`
+- `RedHawk989/EyeTrackVR-OpenVR-Calibration-Overlay` - `Already studied`
 
 ## 10. Marker-based, camera-based, and low-cost full-body paths
 
@@ -281,6 +286,7 @@ Primary docs:
 Primary docs:
 
 - `../landscape/vr-projects-wave-6-driver-bridges.md`
+- `../landscape/vr-projects-foundational-waves-1-7-retro-normalization.md`
 - `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 - `../landscape/vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
 - `../landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
@@ -325,6 +331,7 @@ Primary docs:
 Primary docs:
 
 - `../landscape/vr-projects-wave-8-github-source-pass.md`
+- `../landscape/vr-projects-foundational-waves-1-7-retro-normalization.md`
 - `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 - `../landscape/vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
@@ -335,7 +342,7 @@ Primary docs:
 - `n1ckfg/ViveTrackerExample` - `Already studied`
 - `craftyinsomniac/WFOVFix` - `Already studied`
 - `BnuuySolutions/SteamVRLinuxFixes` - `Already studied`
-- `MuffinTastic/steamvr-exconfig` - `Partially studied`
+- `MuffinTastic/steamvr-exconfig` - `Already studied`
 - `simonowen/dashfix` - `Already studied`
 - `sencercoltu/steamvr-undistort` - `Already studied`
 - `W-Drew/SteamVR-Toggle` - `Already studied`
@@ -350,11 +357,13 @@ Primary docs:
 Primary docs:
 
 - `../landscape/vr-projects-wave-8-github-source-pass.md`
+- `../landscape/vr-projects-foundational-waves-1-7-retro-normalization.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/project-families.md`
 
 - `sh-akira/VROverlay` - `Already studied`
 - `BenWoodford/SteamVR-Webkit` - `Already studied`
+- `BenWoodford/OVROverlayManager` - `Already studied`
 - `beniwtv/vr-streaming-overlay` - `Already studied`
 - `Nyabsi/steamvr_overlay_vulkan` - `Already studied`
 - `Hotrian/HeadlessOverlayToolkit` - `Already studied`

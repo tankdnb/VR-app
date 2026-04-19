@@ -18,6 +18,7 @@ This file complements:
 - `vr-projects-wave-5-osc-tracking-tools.md`
 - `vr-projects-wave-6-driver-bridges.md`
 - `vr-projects-wave-7-depth-pass.md`
+- `vr-projects-foundational-waves-1-7-retro-normalization.md`
 - `vr-projects-wave-8-github-source-pass.md`
 - `vr-projects-wave-9-runtime-overlay-devtools.md`
 - `vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
@@ -51,6 +52,9 @@ This file complements:
   services.
 - Use `vr-projects-wave-7-depth-pass.md` for follow-up deep dives on projects
   that were previously tracked with relatively light coverage.
+- Use `vr-projects-foundational-waves-1-7-retro-normalization.md` for the
+  canonical repeat deep-pass that normalizes the foundational `waves 1-7`
+  corpus to the post-restructure standard used by later waves.
 - Use `vr-projects-wave-8-github-source-pass.md` for the first large
   post-restructure GitHub search wave driven by local source clones and
   code-level extraction.

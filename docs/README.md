@@ -46,6 +46,7 @@ Use this section for:
 - `research/landscape/vr-projects-wave-5-osc-tracking-tools.md`
 - `research/landscape/vr-projects-wave-6-driver-bridges.md`
 - `research/landscape/vr-projects-wave-7-depth-pass.md`
+- `research/landscape/vr-projects-foundational-waves-1-7-retro-normalization.md`
 - `research/landscape/vr-projects-wave-8-github-source-pass.md`
 - `research/landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `research/landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
@@ -91,6 +92,8 @@ Use this section for:
 - `research/program/github-research-wave-12-backlog.md`
 - `research/program/github-research-wave-13-plan.md`
 - `research/program/github-research-wave-13-backlog.md`
+- `research/program/foundational-waves-1-7-retro-normalization-plan.md`
+- `research/program/foundational-waves-1-7-retro-normalization-backlog.md`
 
 ### Reuse plans
 
