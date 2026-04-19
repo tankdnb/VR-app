@@ -37,6 +37,11 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on runtime adapters, virtual-display
   workflows, validation helpers, driver examples, and workflow micro-utilities.
 
+- `vr-projects-wave-12-synthetic-devices-input-emulation-and-diy-driver-paths.md`
+  Next GitHub discovery wave focused on synthetic devices,
+  input-emulation sidecars, DIY/custom-hardware drivers, and
+  motion-manipulation paths.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

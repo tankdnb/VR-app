@@ -1,6 +1,6 @@
 # Project Registry
 
-- Date: `2026-04-18`
+- Date: `2026-04-19`
 - Scope: canonical grouped registry of repositories currently tracked by
   `VR-apps-lab`
 - Purpose: make every tracked project discoverable through one file, with a
@@ -282,7 +282,16 @@ Primary docs:
 - `finallyfunctional/openvr-driver-example` - `Already studied`
 - `SecondReality/VirtualControllerDriver` - `Already studied`
 - `oneup03/VRto3D` - `Already studied`
+- `ValveSoftware/driver_hydra` - `Already studied`
+- `alatnet/OpenPSVR` - `Partially studied`
+- `r57zone/OpenVR-driver-for-DIY` - `Already studied`
+- `gpsnmeajp/SegsVRControllerDriverSample` - `Already studied`
+- `puresoul/Barebone` - `Partially studied`
+- `mmorselli/Joy2OpenVR` - `Already studied`
+- `mdovgialo/SteamVR-Glove` - `Already studied`
+- `openvrmc/OpenVR-MotionCompensation` - `Partially studied`
 - `OpenDisplayXR/OpenDisplayXR-VDD` - `Not studied deeply`
+- `verncat/RayNeo-Air-3S-Pro-OpenVR` - `Not studied deeply`
 - `LucidVR/opengloves-driver` - `Partially studied`
 - `HoboVR-Labs/hobo_vr` - `Partially studied`
 - `r57zone/OpenVR-ArduinoHMD` - `Partially studied`

@@ -54,3 +54,10 @@ repeatable way.
 
 - `github-research-wave-11-backlog.md`  
   Executed backlog for the Wave 11 pass.
+
+- `github-research-wave-12-plan.md`
+  Wave 12 research plan focused on synthetic devices, input-emulation
+  sidecars, DIY/custom-hardware drivers, and motion-manipulation paths.
+
+- `github-research-wave-12-backlog.md`
+  Executed backlog for the Wave 12 pass.

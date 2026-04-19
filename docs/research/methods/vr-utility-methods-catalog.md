@@ -1,6 +1,6 @@
 # VR Utility Methods Catalog
 
-- Date: `2026-04-18`
+- Date: `2026-04-19`
 - Purpose: extract reusable implementation methods and product patterns from the
   tracked VR repositories, so `VR-apps-lab` can grow around proven approaches rather
   than only around named projects.
@@ -330,16 +330,21 @@ Use this document when designing a new module or utility and ask:
 
 - What it is:
   integrate new device classes or experimental hardware into the VR stack using
-  OpenVR drivers and related plumbing.
+  OpenVR drivers, pose-rewrite layers, or input-emulation sidecars.
 - Good for:
-  gloves, glasses, Arduino HMDs, cockpit control bridges, distributed tracking.
+  gloves, glasses, Arduino HMDs, cockpit control bridges, distributed tracking,
+  legacy peripheral recovery, synthetic controllers, and simulator-linked pose
+  manipulation.
 - Why it matters:
   it is the main path for hardware experimentation in PCVR.
 - Strong references:
   `opengloves-driver`, `GlassVr`, `OpenVR-ArduinoHMD`,
   `hotas-vr-controller`, `hobo_vr`, `Simple-OpenVR-Driver-Tutorial`,
   `SteamVR-OpenHMD`, `Oculus_Touch_Steam_Link`,
-  `SlimeVR-OpenVR-Driver`, `VirtualSteamVRDriver`.
+  `SlimeVR-OpenVR-Driver`, `VirtualSteamVRDriver`, `driver_hydra`,
+  `OpenPSVR`, `OpenVR-driver-for-DIY`, `SegsVRControllerDriverSample`,
+  `Barebone`, `Joy2OpenVR`, `SteamVR-Glove`,
+  `OpenVR-MotionCompensation`.
 - Best fit for `VR-apps-lab`:
   advanced research and hardware bridge branch.
 

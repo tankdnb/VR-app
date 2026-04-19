@@ -1,6 +1,6 @@
 # Project Families
 
-- Date: `2026-04-18`
+- Date: `2026-04-19`
 - Goal: reorganize the `VR-apps-lab` research corpus around logical overlap
   families instead of a long flat list of repositories.
 
@@ -249,7 +249,16 @@ knowledge needed for `device-side tooling`.
 | `finallyfunctional/openvr-driver-example` | Already studied | Beginner-friendly controller/input-emulation driver tutorial |
 | `SecondReality/VirtualControllerDriver` | Already studied | Tiny synthetic controller driver for mixed-reality workflows |
 | `oneup03/VRto3D` | Already studied | Productized stereo-display and AR-glasses driver that heavily reshapes SteamVR behavior |
+| `ValveSoftware/driver_hydra` | Already studied | Official peripheral bridge driver with controller realignment and calibration monitor |
+| `alatnet/OpenPSVR` | Partially studied | Full PSVR HMD/display driver with sensor fusion, display component, and watchdog split |
+| `r57zone/OpenVR-driver-for-DIY` | Already studied | Keyboard-driven DIY null-HMD plus controller path built close to the stock sample |
+| `gpsnmeajp/SegsVRControllerDriverSample` | Already studied | Controller-driver sample with a shared-memory helper client and JSON payloads |
+| `puresoul/Barebone` | Partially studied | XInput-driven synthetic Vive controller path anchored relative to the HMD |
+| `mmorselli/Joy2OpenVR` | Already studied | DirectInput-to-InputEmulator sidecar for unusual physical controllers |
+| `mdovgialo/SteamVR-Glove` | Already studied | Arduino glove proof of concept piggybacking on existing Vive controller tracking |
+| `openvrmc/OpenVR-MotionCompensation` | Partially studied | Pose-rewrite driver with shared library and in-VR dashboard configuration |
 | `OpenDisplayXR/OpenDisplayXR-VDD` | Not studied deeply | Sparse but relevant signal for a simulated OpenVR/OpenXR virtual hardware path |
+| `verncat/RayNeo-Air-3S-Pro-OpenVR` | Not studied deeply | Early AR-glasses/OpenVR bridge signal that currently looks more like SDK scaffolding |
 | `LucidVR/opengloves-driver` | Partially studied | Hand-specific custom device path |
 | `r57zone/OpenVR-ArduinoHMD` | Partially studied | DIY HMD and config-driven setup |
 | `DaniXmir/GlassVr` | Partially studied | XR/AR glasses bridge and emulation |
@@ -263,6 +272,8 @@ This should eventually become a dedicated learning track in `VR-apps-lab`:
 
 - `driver tutorial`
 - `custom device plumbing`
+- `synthetic controller and input-emulation sidecars`
+- `pose rewriting and motion-manipulation drivers`
 - `domain-specific hardware bridges`
 - `virtual display and repurposed output drivers`
 

@@ -102,7 +102,7 @@ docs/
 - [Project families](docs/research/landscape/project-families.md)
 - [Project registry](docs/research/catalog/project-registry.md)
 - [Discovery intake pipeline](docs/research/discovery/intake-pipeline.md)
-- [Wave 11 research](docs/research/landscape/vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md)
+- [Wave 12 research](docs/research/landscape/vr-projects-wave-12-synthetic-devices-input-emulation-and-diy-driver-paths.md)
 
 ## Главная идея репозитория
 

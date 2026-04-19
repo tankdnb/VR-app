@@ -1,6 +1,6 @@
 # Not Yet Studied Deeply
 
-- Date: `2026-04-18`
+- Date: `2026-04-19`
 - Goal: keep a prioritized list of repositories that either:
   - are not yet represented in `VR-apps-lab`;
   - are only lightly covered;
@@ -107,6 +107,17 @@ These were surfaced or only partially exhausted during the Wave 11 source pass.
 |---|---|---|---|---|---|
 | `1runeberg/OpenXRProvider` | Partially studied | Library plus sandbox wrapper around raw OpenXR bring-up | High | Medium | Input profiles, extension wrappers, sandbox render loop, and where the wrapper surface stops abstracting raw OpenXR |
 | `OpenDisplayXR/OpenDisplayXR-VDD` | Not studied deeply | Simulated OpenVR/OpenXR virtual hardware driver path | Medium | Medium | Wait for stronger source/docs, then compare with `virtual_display`, `Virtual-Display-Driver`, and `VRto3D` |
+
+## Priority batch G: Wave 12 follow-up candidates
+
+These were surfaced or only partially exhausted during the Wave 12 source pass.
+
+| Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `alatnet/OpenPSVR` | Partially studied | Full PSVR HMD/display driver with embedded sensor fusion and SteamVR packaging | High | High | Controller path, camera ambitions, installer/register flow, and calibration quality |
+| `openvrmc/OpenVR-MotionCompensation` | Partially studied | Pose-rewrite driver with separate library and in-VR dashboard | High | High | Hook insertion points, calibration model, overlay/lib coordination, and comparison with OpenXR-side motion compensation |
+| `puresoul/Barebone` | Partially studied | HMD-relative synthetic Vive controllers driven by XInput | High | Medium | Driver/helper-app split, offset persistence, and long-term maintainability of the repo cluster |
+| `verncat/RayNeo-Air-3S-Pro-OpenVR` | Not studied deeply | Early AR-glasses/OpenVR bridge signal | Medium | Medium | Determine whether it grows into a true OpenVR driver path or stays as device SDK scaffolding |
 
 ## Family-level gaps that now deserve deeper passes
 
