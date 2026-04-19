@@ -45,6 +45,8 @@ bridges, device managers, and experimental XR workflows.
 11. `program/github-research-wave-11-plan.md`
 12. `program/github-research-wave-12-plan.md`
 13. `landscape/vr-projects-wave-12-synthetic-devices-input-emulation-and-diy-driver-paths.md`
-14. `discovery/local-source-cache-workflow.md`
-15. `discovery/intake-pipeline.md`
-16. `landscape/not-yet-studied-deeply.md`
+14. `program/github-research-wave-13-plan.md`
+15. `landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
+16. `discovery/local-source-cache-workflow.md`
+17. `discovery/intake-pipeline.md`
+18. `landscape/not-yet-studied-deeply.md`

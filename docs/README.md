@@ -51,6 +51,7 @@ Use this section for:
 - `research/landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 - `research/landscape/vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
 - `research/landscape/vr-projects-wave-12-synthetic-devices-input-emulation-and-diy-driver-paths.md`
+- `research/landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
 - `research/landscape/project-families.md`
 - `research/landscape/not-yet-studied-deeply.md`
 
@@ -88,6 +89,8 @@ Use this section for:
 - `research/program/github-research-wave-11-backlog.md`
 - `research/program/github-research-wave-12-plan.md`
 - `research/program/github-research-wave-12-backlog.md`
+- `research/program/github-research-wave-13-plan.md`
+- `research/program/github-research-wave-13-backlog.md`
 
 ### Reuse plans
 

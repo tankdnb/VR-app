@@ -50,6 +50,7 @@ Primary docs:
 - `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 - `../landscape/vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
+- `../landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
 - `../landscape/project-families.md`
 
 - `mbucchia/OpenXR-Toolkit` - `Already studied`
@@ -58,6 +59,7 @@ Primary docs:
 - `KhronosGroup/OpenXR-Inventory` - `Already studied`
 - `rpavlik/xr-picker` - `Already studied`
 - `elliotttate/OpenXR-Simulator` - `Already studied`
+- `chnoblouch/aethervr` - `Partially studied`
 - `fredemmott/OpenXR-API-Layers-GUI` - `Already studied`
 - `WaGi-Coding/OpenXR-Runtime-Switcher` - `Already studied`
 - `UniStuttgart-VISUS/OpenXR-Runtime-Switcher` - `Already studied`
@@ -189,6 +191,7 @@ Primary docs:
 - `../landscape/vr-projects-wave-6-driver-bridges.md`
 - `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
+- `../landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
 - `../landscape/project-families.md`
 
 - `Timocop/PSMoveServiceEx-VMT` - `Already studied`
@@ -196,6 +199,7 @@ Primary docs:
 - `gpsnmeajp/VirtualMotionTracker` - `Partially studied`
 - `John-Dean/OpenVR-Tracker-Websocket-Driver` - `Partially studied`
 - `surplex-io/OpenVR-Driver` - `Partially studied`
+- `ju1ce/Simple-OpenVR-Bridge-Driver` - `Not studied deeply`
 - `3NekoSystem/OpenVR-Tracker-Websocket-Driver` - `Not studied deeply`
 - `v0xie/OpenVR-Tracker-Websocket-Driver` - `Not studied deeply`
 - `krazysh01/VirtualDesktop-OpenVR-Trackers` - `Partially studied`
@@ -226,15 +230,21 @@ Primary docs:
 - `BuzzteeBear/OpenXR-MotionCompensation` - `Already studied`
 - `RedHawk989/EyeTrackVR-OpenVR-Calibration-Overlay` - `Partially studied`
 
-## 10. Marker-based tracking and low-cost full-body paths
+## 10. Marker-based, camera-based, and low-cost full-body paths
 
 Primary docs:
 
 - `../landscape/vr-projects-wave-5-osc-tracking-tools.md`
+- `../landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
 
 - `terminal29/VRUco` - `Already studied`
 - `GoLez28/Aruco-TagTracking-VR` - `Already studied`
 - `ju1ce/April-Tag-VR-FullBody-Tracker` - `Already studied`
+- `KinectToVR/KinectToVR` - `Partially studied`
+- `KinectToVR/Amethyst` - `Partially studied`
+- `ju1ce/Mediapipe-VR-Fullbody-Tracking` - `Partially studied`
+- `Wunder-Wulfe/NVIDIA-BodyTracking` - `Partially studied`
+- `MasonSakai/VR-AI-Full-Body-Tracking` - `Not studied deeply`
 
 ## 11. Passthrough, camera, and reality tools
 
@@ -273,6 +283,7 @@ Primary docs:
 - `../landscape/vr-projects-wave-6-driver-bridges.md`
 - `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 - `../landscape/vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
+- `../landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
 - `../landscape/not-yet-studied-deeply.md`
 
 - `BnuuySolutions/PSVR2Toolkit` - `Partially studied`
@@ -290,6 +301,9 @@ Primary docs:
 - `mmorselli/Joy2OpenVR` - `Already studied`
 - `mdovgialo/SteamVR-Glove` - `Already studied`
 - `openvrmc/OpenVR-MotionCompensation` - `Partially studied`
+- `ultraleap/driver_ultraleap` - `Already studied`
+- `Nordskog/HandOfLesser` - `Partially studied`
+- `NovaAshwolfDev/HandCameraDriver` - `Partially studied`
 - `OpenDisplayXR/OpenDisplayXR-VDD` - `Not studied deeply`
 - `verncat/RayNeo-Air-3S-Pro-OpenVR` - `Not studied deeply`
 - `LucidVR/opengloves-driver` - `Partially studied`

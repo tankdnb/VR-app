@@ -22,6 +22,8 @@ This file complements:
 - `vr-projects-wave-9-runtime-overlay-devtools.md`
 - `vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 - `vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
+- `vr-projects-wave-12-synthetic-devices-input-emulation-and-diy-driver-paths.md`
+- `vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
 
 ## How to use this index
 
@@ -61,6 +63,12 @@ This file complements:
 - Use `vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
   for the next wave centered on runtime adapters, virtual displays, validation
   helpers, driver examples, and workflow micro-utilities.
+- Use `vr-projects-wave-12-synthetic-devices-input-emulation-and-diy-driver-paths.md`
+  for the next wave centered on synthetic devices, input-emulation sidecars,
+  DIY/custom-hardware drivers, and motion-manipulation paths.
+- Use `vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
+  for the next wave centered on vision-based tracking, hand-input bridges, and
+  headsetless camera runtimes.
 - Treat each project as one of:
   - `code donor`
   - `architecture reference`

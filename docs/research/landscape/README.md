@@ -42,6 +42,10 @@ Use these files when you want to understand:
   input-emulation sidecars, DIY/custom-hardware drivers, and
   motion-manipulation paths.
 
+- `vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
+  Next GitHub discovery wave focused on vision-based tracking,
+  hand-input bridges, and headsetless camera runtimes.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

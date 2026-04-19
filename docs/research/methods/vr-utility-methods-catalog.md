@@ -479,6 +479,59 @@ Use this document when designing a new module or utility and ask:
 - Best fit for `VR-apps-lab`:
   tracker-bridge and driver-plumbing research.
 
+## Method 25: Vision-tracking sidecar with switchable backend
+
+- What it is:
+  a camera or CV pipeline estimates pose or gestures in a sidecar process and
+  can target more than one output backend such as a SteamVR driver, OSC, or a
+  lightweight bridge protocol.
+- Good for:
+  low-cost body tracking, webcam hand tracking, Quest-friendly calibration
+  flows, and experiments where the tracking frontend should stay decoupled from
+  the runtime output path.
+- Why it matters:
+  this method turns one fragile tracker experiment into a reusable pipeline with
+  multiple delivery targets.
+- Strong references:
+  `Mediapipe-VR-Fullbody-Tracking`, `HandCameraDriver`,
+  `NVIDIA-BodyTracking`.
+- Best fit for `VR-apps-lab`:
+  experimental tracking bridges and calibration-first prototypes.
+
+## Method 26: Plugin-based tracking host with service endpoints
+
+- What it is:
+  a host application defines contracts for `device plugins` and `service
+  endpoints`, then centralizes calibration, lifecycle, and settings UX while
+  letting diverse sensors and output targets plug into the same shell.
+- Good for:
+  alternative tracking ecosystems, modular device support, mixed output targets,
+  and long-lived desktop hosts that should survive beyond one sensor class.
+- Why it matters:
+  this is the cleanest architecture in the repo so far for turning a messy
+  tracking ecosystem into a coherent product platform.
+- Strong references:
+  `KinectToVR/Amethyst`.
+- Best fit for `VR-apps-lab`:
+  long-term tracking lab architecture and reusable bridge hosts.
+
+## Method 27: Headsetless camera runtime
+
+- What it is:
+  a custom OpenXR runtime pretends to be real XR hardware while a separate
+  tracker process feeds it camera-derived head and hand input.
+- Good for:
+  no-HMD QA, education, accessibility experiments, runtime debugging, and
+  fake-hardware bring-up without dedicated devices.
+- Why it matters:
+  this is qualitatively different from a null driver or simulator because it
+  owns actual runtime registration, swapchain flow, and runtime-side input.
+- Strong references:
+  `aethervr`, `OpenXR-Simulator`, `VirtualSteamVRDriver`.
+- Best fit for `VR-apps-lab`:
+  research harnesses, headsetless workflow docs, and advanced runtime
+  experimentation.
+
 ## Recommended usage inside `VR-apps-lab`
 
 When a new utility idea appears:

@@ -103,6 +103,7 @@ docs/
 - [Project registry](docs/research/catalog/project-registry.md)
 - [Discovery intake pipeline](docs/research/discovery/intake-pipeline.md)
 - [Wave 12 research](docs/research/landscape/vr-projects-wave-12-synthetic-devices-input-emulation-and-diy-driver-paths.md)
+- [Wave 13 research](docs/research/landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md)
 
 ## Главная идея репозитория
 

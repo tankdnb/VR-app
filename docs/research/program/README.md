@@ -61,3 +61,10 @@ repeatable way.
 
 - `github-research-wave-12-backlog.md`
   Executed backlog for the Wave 12 pass.
+
+- `github-research-wave-13-plan.md`
+  Wave 13 research plan focused on vision-based tracking, hand-input bridges,
+  and headsetless camera runtimes.
+
+- `github-research-wave-13-backlog.md`
+  Executed backlog for the Wave 13 pass.

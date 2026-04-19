@@ -119,6 +119,22 @@ These were surfaced or only partially exhausted during the Wave 12 source pass.
 | `puresoul/Barebone` | Partially studied | HMD-relative synthetic Vive controllers driven by XInput | High | Medium | Driver/helper-app split, offset persistence, and long-term maintainability of the repo cluster |
 | `verncat/RayNeo-Air-3S-Pro-OpenVR` | Not studied deeply | Early AR-glasses/OpenVR bridge signal | Medium | Medium | Determine whether it grows into a true OpenVR driver path or stays as device SDK scaffolding |
 
+## Priority batch H: Wave 13 follow-up candidates
+
+These were surfaced or only partially exhausted during the Wave 13 source pass.
+
+| Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `KinectToVR/Amethyst` | Partially studied | Plugin-based tracking platform with separate device and service contracts | High | High | `plugin_OpenVR`, `plugin_OSC`, calibration-state sharing, and settings-daemon boundaries |
+| `Nordskog/HandOfLesser` | Partially studied | OpenXR hand-tracking bridge into SteamVR and VRChat with structured packet transport | High | High | Controller-hooking mode, packet synchronization, body-tracker branch, and offset persistence |
+| `Wunder-Wulfe/NVIDIA-BodyTracking` | Partially studied | GPU-assisted camera body tracking with overlay-assisted alignment and tracker-role scaling | High | High | Overlay flow, confidence thresholds, virtual base station role, and smoothing/interpolation tradeoffs |
+| `chnoblouch/aethervr` | Partially studied | Webcam-driven custom OpenXR runtime with a Python tracker and local TCP protocol | High | High | Banjo runtime internals, pose prediction, graphics-path limits, and practical QA use |
+| `KinectToVR/KinectToVR` | Partially studied | Legacy calibration-heavy full-body tracking stack that predates the plugin-platform rewrite | Medium | High | Actual SteamVR output boundary, dependency sprawl, and intentional deltas versus `Amethyst` |
+| `ju1ce/Mediapipe-VR-Fullbody-Tracking` | Partially studied | Single-camera tracking with a switchable SteamVR-driver / VRChat OSC backend and Quest WebUI | High | High | Driver protocol assumptions, WebUI reuse potential, and comparison with `NVIDIA-BodyTracking` cleanup logic |
+| `NovaAshwolfDev/HandCameraDriver` | Partially studied | Minimal webcam-hand-tracking driver shell that exposes a sidecar-plus-driver split | Low-Medium | Medium | Whether any maintained fork exists, and whether the current repo contains a real socket path beyond the docs |
+| `ju1ce/Simple-OpenVR-Bridge-Driver` | Not studied deeply | Generic bridge-driver ingress path for external programs and custom tracker feeds | High | Medium | Named-pipe or command transport, tracker lifecycle, and comparison with `VirtualMotionTracker` / WebSocket driver families |
+| `MasonSakai/VR-AI-Full-Body-Tracking` | Not studied deeply | Camera FBT path that still carries InputEmulator-era assumptions while aiming at a cleaner driver rewrite | Medium | Medium | Whether the rewrite lands, how much of the current repo is reusable, and how it compares with `Mediapipe-VR-Fullbody-Tracking` |
+
 ## Family-level gaps that now deserve deeper passes
 
 These are larger than a single repo and should guide the next research wave.
@@ -221,6 +237,24 @@ These are larger than a single repo and should guide the next research wave.
   these tiny tools solve real setup and workflow pain without needing to grow
   into full dashboard suites.
 
+### 13. `Vision-based hand and body tracking bridges`
+
+- Main entries:
+  `driver_ultraleap`, `HandOfLesser`, `Mediapipe-VR-Fullbody-Tracking`,
+  `NVIDIA-BodyTracking`
+- Why it matters:
+  this is now a distinct architecture zone where cameras, vendor hand-tracking
+  services, or foreign runtimes become SteamVR hands, trackers, or fallback
+  body-input paths.
+
+### 14. `Headsetless camera runtimes and fake-hardware QA`
+
+- Main entries:
+  `aethervr`, `OpenXR-Simulator`, `VirtualSteamVRDriver`, `SteamVRNoHeadset`
+- Why it matters:
+  this turns no-HMD workflow research into something stronger than null-driver
+  recipes by adding real runtime substitution and fake-hardware bring-up paths.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -237,3 +271,5 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 10. `Runtime adapters and graphics interop`
 11. `Virtual display and repurposed output workflows`
 12. `Validation and workflow micro-utilities`
+13. `Vision-based hand and body tracking bridges`
+14. `Headsetless camera runtimes and fake-hardware QA`

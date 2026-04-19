@@ -150,6 +150,7 @@ external data into `SteamVR/OpenVR devices`, `pose streams`, or `OSC events`.
 | `gpsnmeajp/VirtualMotionTracker` | Partially studied | Likely central project in this family |
 | `John-Dean/OpenVR-Tracker-Websocket-Driver` | Partially studied | Strong WebSocket-native tracker-driver reference |
 | `surplex-io/OpenVR-Driver` | Partially studied | Alternative evolution of the same idea |
+| `ju1ce/Simple-OpenVR-Bridge-Driver` | Not studied deeply | Generic bridge-driver path with external program ingress and locomotion-side comparison value |
 | `3NekoSystem/OpenVR-Tracker-Websocket-Driver` | Not studied deeply | Variant/fork comparison target |
 | `v0xie/OpenVR-Tracker-Websocket-Driver` | Not studied deeply | Variant/fork comparison target |
 | `krazysh01/VirtualDesktop-OpenVR-Trackers` | Partially studied | Body-state bridge from an external ecosystem |
@@ -457,6 +458,41 @@ This family points toward a separate `environment helper` track inside
 - vendor-shell redirects and focused config patchers
 - validation and lint micro-tools
 - backup-safe config patchers
+
+## Family 16: Vision-based tracking, hand-input bridges, and headsetless camera runtimes
+
+This family covers repositories that use cameras, computer vision,
+hand-tracking services, or foreign runtimes to generate SteamVR devices or
+OpenXR substitute inputs without relying on classic lighthouse-tracked
+controller stacks.
+
+| Project | Status | Notes |
+|---|---|---|
+| `ultraleap/driver_ultraleap` | Already studied | Mature hardware-service to SteamVR hand-driver path with optional elbow trackers and a `DebugRequest` external-input hook |
+| `Nordskog/HandOfLesser` | Partially studied | Quest/OpenXR hand-tracking bridge into SteamVR and VRChat with structured packets plus named-pipe and UDP transport |
+| `NovaAshwolfDev/HandCameraDriver` | Partially studied | Archived webcam-hand-tracking WIP with a Python-sidecar plus custom SteamVR driver split |
+| `KinectToVR/KinectToVR` | Partially studied | Legacy multi-process Kinect and PSMove full-body stack with heavy calibration and tracker-orientation math |
+| `KinectToVR/Amethyst` | Partially studied | Plugin-based body-tracking host with device plugins and service-endpoint contracts |
+| `ju1ce/Mediapipe-VR-Fullbody-Tracking` | Partially studied | Single-camera body tracking with switchable SteamVR-driver and VRChat OSC backends plus Quest-friendly WebUI |
+| `Wunder-Wulfe/NVIDIA-BodyTracking` | Partially studied | GPU-assisted camera body-tracking driver with overlay-assisted alignment and dense tracker-role configuration |
+| `chnoblouch/aethervr` | Partially studied | Webcam-driven custom OpenXR runtime with a Python tracker connected over local TCP |
+| `MasonSakai/VR-AI-Full-Body-Tracking` | Not studied deeply | Camera FBT comparison node still partly anchored in an InputEmulator-era transition |
+
+### Consolidation note
+
+This family shows that `vision-driven XR utility design` is now large enough to
+split into several repeatable sub-branches:
+
+- `service-backed hand drivers`
+- `camera CV sidecars with SteamVR or OSC backends`
+- `legacy tracker apps evolving into plugin platforms`
+- `headsetless camera runtimes`
+
+The strongest future product concepts suggested by this family are:
+
+- `vision tracking sandbox`
+- `driver/backend-agnostic tracking bridge`
+- `headsetless camera QA runtime`
 
 ## Recommended synthesis path for `VR-apps-lab`
 
