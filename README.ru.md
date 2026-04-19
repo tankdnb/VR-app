@@ -105,6 +105,7 @@ docs/
 - [Wave 12 research](docs/research/landscape/vr-projects-wave-12-synthetic-devices-input-emulation-and-diy-driver-paths.md)
 - [Wave 13 research](docs/research/landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md)
 - [Wave 14 research](docs/research/landscape/vr-projects-wave-14-tracker-ingress-osc-egress-and-role-binding-utilities.md)
+- [Wave 15 research](docs/research/landscape/vr-projects-wave-15-overlay-hosts-and-scaffolds.md)
 
 ## Главная идея репозитория
 

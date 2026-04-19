@@ -604,6 +604,59 @@ Use this document when designing a new module or utility and ask:
 - Best fit for `VR-apps-lab`:
   direct consumer bridges, avatar utilities, and quick automation prototypes.
 
+## Method 32: Existing UI stack to overlay texture bridge
+
+- What it is:
+  an overlay host reuses a mature UI stack such as `WinForms`, `WPF`, `CEF`,
+  or `ImGui`, rasterizes it into a texture, and translates overlay input back
+  into that UI runtime.
+- Good for:
+  dashboard apps, browser-backed utilities, desktop-parity tools, and
+  productivity overlays that should not be rebuilt from scratch as VR-only UI.
+- Why it matters:
+  this is one of the shortest paths from `desktop-grade UI` to
+  `usable VR overlay`, and it keeps the overlay layer focused on transport,
+  lifecycle, and input translation.
+- Strong references:
+  `SteamVR_HUDCenter`, `SteamVR-WebApps`, `h-view`.
+- Best fit for `VR-apps-lab`:
+  future overlay shells, control surfaces, and diagnostics tools with desktop
+  parity.
+
+## Method 33: Overlay patch micro-tool over an existing runtime surface
+
+- What it is:
+  a tiny helper finds an overlay the runtime already owns and modifies its
+  bounds, placement, or behavior instead of rendering a new overlay host.
+- Good for:
+  desktop-overlay crop tools, workflow patches, corrective helpers, and
+  extremely narrow utilities that should stay small.
+- Why it matters:
+  sometimes the right VR utility is not `new overlay app`; it is
+  `surgical patch over the overlay users already have`.
+- Strong references:
+  `SteamVR-PrimaryDesktopOverlay`.
+- Best fit for `VR-apps-lab`:
+  small corrective helpers and runtime-comfort micro-tools.
+
+## Method 34: Scene-based overlay scaffold with tracked attachments
+
+- What it is:
+  a Unity or engine scene acts as the overlay body, while tracked-device
+  helpers, sensors, or simple interactions drive scene content inside that
+  overlay space.
+- Good for:
+  embodied HUDs, tracker-mounted scenes, experimental utility shells,
+  sensor-enhanced overlays, and rapid spatial UI experiments.
+- Why it matters:
+  not every useful overlay should start as a flat desktop panel; some utility
+  concepts are easier to prototype as a small scene with tracked attachments.
+- Strong references:
+  `VRSceneOverlay`, `VROverlay`, `OVROverlayManager`.
+- Best fit for `VR-apps-lab`:
+  experimental overlay concepts, scene-overlay labs, and tracker-aware utility
+  prototypes.
+
 ## Recommended usage inside `VR-apps-lab`
 
 When a new utility idea appears:

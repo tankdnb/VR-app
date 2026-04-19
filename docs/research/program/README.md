@@ -82,3 +82,11 @@ repeatable way.
 
 - `github-research-wave-14-backlog.md`
   Executed backlog for the Wave 14 pass.
+
+- `github-research-wave-15-plan.md`
+  Wave 15 research plan focused on overlay-first utility hosts, HUD
+  micro-overlays, web or scene overlay scaffolds, and engine-side overlay
+  integration.
+
+- `github-research-wave-15-backlog.md`
+  Executed backlog for the Wave 15 pass.

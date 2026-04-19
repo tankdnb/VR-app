@@ -17,3 +17,4 @@ These documents answer questions such as:
 - `alvr-reuse-plan.md`
 - `openxr-steamvr-passthrough-reuse-plan.md`
 - `openvr-advancedsettings-reuse-plan.md`
+- `h-view-overlay-host-reuse-plan.md`

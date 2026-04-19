@@ -55,13 +55,8 @@ deeply`.
 
 | Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
-| `KainosSoftwareLtd/VRSceneOverlay` | Not studied deeply | Unity scene-overlay implementation sample | Medium | Medium | Overlay bootstrap, scene composition, Unity package layout |
-| `artumino/SteamVR_HUDCenter` | Not studied deeply | HUD-centering micro-tool | Low | Medium | Transform logic and comfort UX |
-| `LapisGit/LapisOverlay` | Not studied deeply | Multi-purpose overlay shell in progress | Medium | Medium | Panel model, settings, interaction approach |
-| `elvissteinjr/SteamVR-PrimaryDesktopOverlay` | Not studied deeply | Focused primary-desktop crop overlay | Medium | Medium | Desktop crop logic, overlay bounds, startup model |
 | `Nexz/turncountervr` | Not studied deeply | Rotation/cable-awareness overlay variant | Low | Medium | Counter logic, world-space placement, comfort framing |
-| `vrkit-platform/vrkit-platform` | Not studied deeply | OpenXR monitor and overlay platform | High | High | Platform boundaries, monitor surfaces, runtime assumptions |
-| `LunarG/OpenXR-Overlays-UE4-Plugin` | Not studied deeply | Engine-side route into OpenXR overlay support | Medium | Medium | Unreal integration boundary and extension assumptions |
+| `vrkit-platform/vrkit-platform` | Not studied deeply | Domain-specific OpenXR overlay platform with plugin-manifest and monitor-surface signals | High | High | Narrow the pass to plugin manifests, overlay component model, and actual OpenXR layer or runtime boundaries |
 | `KaftanOS/SteamVR-Battery-Checker` | Not studied deeply | Charging-state battery micro-helper | Low | Medium | Charging workflow, UX scale, whether it is tray or CLI driven |
 | `DavidRisch/steamvr_utils` | Not studied deeply | Linux-side SteamVR helper collection | Medium | Medium | Which utilities are included and how they are packaged |
 | `mbucchia/_ARCHIVE_OverXR` | Fork / variant only | Archive shell pointing to a once-promising overlay compatibility idea | Low | Medium | Whether useful code exists in releases, tags, or external mirrors |
@@ -76,10 +71,9 @@ kept for the next deeper inspection round.
 | `Ybalrid/OpenXR-Runtime-Manager` | Not studied deeply | Yet another runtime-manager implementation with a likely different UX and detection model | Medium | High | Runtime discovery logic, registry handling, layer-awareness, UX differences versus `xr-picker` and other switchers |
 | `clear-xr/clearxr-server` | Not studied deeply | Runtime-side or service-side XR infrastructure that may broaden the runtime-intelligence family | Medium | Medium | Determine actual scope, runtime/service boundary, and whether it fits doctor/monitor tooling or a different family |
 | `pembem22/etvr-openxr-layer` | Not studied deeply | Niche OpenXR layer candidate that may expose uncommon integration patterns | Medium | Medium | Layer bootstrap, extension assumptions, how it differs from generic OpenXR layer templates |
-| `Martin-Oehler/SteamVR-WebApps` | Not studied deeply | Web-app-centric SteamVR overlay direction | Medium | Medium | Browser/runtime integration model, overlay-host architecture, security and maintenance tradeoffs |
 | `I5UCC/ParameterSaveStates` | Not studied deeply | VRChat or control-surface state management that may complement remote-control overlays | Medium | Medium | State model, persistence approach, OSC or app-integration flow, overlap with `SteaMeeter` |
 | `Denwa/vive-wireless-info-overlay` | Not studied deeply | Micro-overlay focused on wireless headset/link diagnostics | Low | Medium | Data source, polling cadence, narrow-device UX, whether it generalizes into device-health overlays |
-| `hai-vr/h-view` | Not studied deeply | Specialized utility/control surface in the broader remote-control overlay family | Medium | Medium | Feature boundaries, external integration points, whether it is a dashboard or helper service |
+| `hai-vr/h-view` | Partially studied | Overlay-first utility host with desktop parity, ImGui rendering, and broader OSCQuery or hardware-tooling scope | High | High | Inspect the non-overlay boundaries next: OSCQuery, hardware inventory, OCR, external-service integration, and true product scope |
 | `MeroFune/GOpy` | Not studied deeply | Experimental integration helper that may add a new desktop-to-VR bridge angle | Medium | Low | Actual problem scope, packaging model, and whether it contributes reusable bridge patterns |
 | `MuffinTastic/openvr-device-positions` | Not studied deeply | Narrow device-position inspection helper | Medium | Medium | Pose enumeration model, output surface, diagnostic usefulness, overlap with `triad_openvr` and device monitors |
 
@@ -193,11 +187,13 @@ These are larger than a single repo and should guide the next research wave.
 ### 6. `Overlay implementation references and templates`
 
 - Main entries:
-  `VROverlay`, `SteamVR-Webkit`, `OVROverlayManager`, `vr-streaming-overlay`,
-  `steamvr_overlay_vulkan`, `VRSceneOverlay`
+  `VROverlay`, `SteamVR-Webkit`, `SteamVR_HUDCenter`, `SteamVR-WebApps`,
+  `OVROverlayManager`, `LapisOverlay`, `h-view`, `VRSceneOverlay`
 - Why it matters:
-  this is where `VR-apps-lab` can learn concrete overlay construction techniques
-  across Unity, Godot, C#, and modern native C++.
+  this is now one of the clearest places where `VR-apps-lab` can compare
+  `scene-overlay scaffolds`, `desktop UI rasterization bridges`,
+  `overlay-first hosts`, and `micro-overlay patches` as distinct construction
+  strategies instead of one flat overlay bucket.
 
 ### 7. `SteamVR environment helpers and runtime hygiene tools`
 

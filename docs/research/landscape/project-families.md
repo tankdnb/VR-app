@@ -75,7 +75,7 @@ notification behavior.
 | `BOLL7708/OpenVR2WS` | Already studied | Broader runtime I/O and settings bridge |
 | `I5UCC/SteaMeeter` | Already studied | Dashboard bridge into an external audio/control system |
 | `I5UCC/ParameterSaveStates` | Not studied deeply | Related automation/control-surface family node |
-| `hai-vr/h-view` | Not studied deeply | Candidate remote/control utility worth a follow-up pass |
+| `hai-vr/h-view` | Partially studied | Rich control-surface host with desktop parity, OSCQuery tooling, and a strong overlay slice |
 | `MeroFune/GOpy` | Not studied deeply | Additional control/integration utility candidate |
 
 ### Consolidation note
@@ -124,7 +124,7 @@ panel, and logging utility.
 | `Black4Blade/SteamVR-Devices-Battery-Status` | Already studied | Tiny battery micro-tool reference |
 | `rhaamo/OpenVR-Display-Devices` | Already studied | Broader device inventory view |
 | `copperpixel/steamvrbattery` | Already studied | Minimal CLI property-polling battery monitor |
-| `Denwa/vive-wireless-info-overlay` | Not studied deeply | Wireless-link and device-health overlay candidate |
+| `Denwa/vive-wireless-info-overlay` | Not studied deeply | Source-light wireless-temperature micro-overlay whose product framing is stronger than its visible code donor value |
 | `KaftanOS/SteamVR-Battery-Checker` | Not studied deeply | Charging-state micro-tool worth comparison |
 | `jangxx/openvr-battery-monitoring` | Not studied deeply | Likely useful for notifications/logging behavior |
 | `mutr/openvr_battery_monitor` | Not studied deeply | Another narrow monitoring variant worth comparing |
@@ -196,10 +196,11 @@ by runtime or operating system.
 | `Hotrian/OpenVRTwitchChat` | Already studied | Twitch-specific chat overlay with threaded service layer and profile persistence |
 | `CrispyPin/ovr-utils` | Partially studied | GitHub snapshot is stale and moved off-platform |
 | `mittorn/ovr-utils-dashboard` | Already studied | Godot overlay shell with settings-driven overlay instances and reusable add-ons |
-| `artumino/SteamVR_HUDCenter` | Not studied deeply | Centered HUD micro-utility worth a later pass |
-| `LapisGit/LapisOverlay` | Not studied deeply | Multi-purpose overlay shell in progress |
-| `elvissteinjr/SteamVR-PrimaryDesktopOverlay` | Not studied deeply | Focused desktop-overlay sample from a strong maintainer |
+| `artumino/SteamVR_HUDCenter` | Already studied | C# overlay helper and notification library with WinForms or WPF rasterization into VR |
+| `LapisGit/LapisOverlay` | Already studied | In-progress overlay-first host with dashboard, wrist surface, and media sidecar split |
+| `elvissteinjr/SteamVR-PrimaryDesktopOverlay` | Already studied | Micro-tool that patches SteamVR's existing desktop overlay instead of rendering a new one |
 | `Nexz/turncountervr` | Not studied deeply | Rotation counter / cable-awareness overlay node |
+| `Martin-Oehler/SteamVR-WebApps` | Already studied | Thin browser-backed dashboard wrappers built on top of `SteamVR-Webkit` |
 
 ### Consolidation note
 
@@ -210,6 +211,7 @@ individual project entries. The real overlap axes are:
 - `window portal`
 - `wrist/watch controls`
 - `dashboard suite`
+- `overlay patch micro-tool`
 - `Linux vs Windows UX`
 - `OpenVR overlay vs OpenXR layer`
 
@@ -414,10 +416,13 @@ not only how finished utility products behave.
 | `Hotrian/HeadlessOverlayToolkit` | Already studied | Hidden-window and background-host overlay pattern in Unity |
 | `cnlohr/openvr_overlay_model` | Already studied | Experimental stereo-per-eye overlay technique for pseudo-3D content |
 | `JoeLudwig/overlay_experiments` | Already studied | Historical browser-backed OpenVR dashboard experiments |
-| `Martin-Oehler/SteamVR-WebApps` | Not studied deeply | Web-app-driven overlay direction worth comparing later |
-| `KainosSoftwareLtd/VRSceneOverlay` | Not studied deeply | Unity scene-overlay implementation reference |
+| `artumino/SteamVR_HUDCenter` | Already studied | Older but valuable C# overlay library with notification flow and desktop-UI-backed surfaces |
+| `Martin-Oehler/SteamVR-WebApps` | Already studied | Web-app-driven overlay wrappers that demonstrate the thinnest `browser -> dashboard` shell |
+| `LapisGit/LapisOverlay` | Already studied | Unity overlay host with dashboard, wrist-surface, and sidecar-fed media panel pattern |
+| `KainosSoftwareLtd/VRSceneOverlay` | Already studied | Unity scene-overlay scaffold with tracked helpers and Leap-oriented augmentation |
+| `hai-vr/h-view` | Partially studied | Modern overlay-first utility host with ImGui rendering, desktop parity, and action-manifest-driven overlay management |
 | `vrkit-platform/vrkit-platform` | Not studied deeply | OpenXR monitor/overlay platform worth deeper inspection |
-| `LunarG/OpenXR-Overlays-UE4-Plugin` | Not studied deeply | Engine-side overlay integration sample |
+| `LunarG/OpenXR-Overlays-UE4-Plugin` | Already studied | Tiny Unreal-side reference for injecting `XR_EXTX_overlay` session-create info |
 | `mbucchia/_ARCHIVE_OverXR` | Fork / variant only | Current GitHub state is an archive shell with little code to inspect |
 
 ### Consolidation note
@@ -428,6 +433,8 @@ This family should feed `VR-apps-lab` as a methods donor layer:
 - graphics-path references
 - UI stack references
 - host-scene and render-loop scaffolds
+- overlay patch helpers
+- engine-side overlay extension hooks
 
 ## Family 15: SteamVR environment helpers and runtime hygiene tools
 

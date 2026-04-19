@@ -74,7 +74,7 @@ Primary docs:
 - `clear-xr/clearxr-server` - `Not studied deeply`
 - `pembem22/etvr-openxr-layer` - `Not studied deeply`
 - `vrkit-platform/vrkit-platform` - `Not studied deeply`
-- `LunarG/OpenXR-Overlays-UE4-Plugin` - `Not studied deeply`
+- `LunarG/OpenXR-Overlays-UE4-Plugin` - `Already studied`
 - `mbucchia/_ARCHIVE_OverXR` - `Fork / variant only`
 - `mbucchia/Quad-Views-Foveated` - `Partially studied`
 - `mbucchia/OpenXR-Eye-Trackers` - `Partially studied`
@@ -117,11 +117,11 @@ Primary docs:
 - `mittorn/ovr-utils-dashboard` - `Already studied`
 - `benotter/OVRLay` - `Already studied`
 - `SDraw/openvr_widgets` - `Already studied`
-- `artumino/SteamVR_HUDCenter` - `Not studied deeply`
-- `LapisGit/LapisOverlay` - `Not studied deeply`
-- `elvissteinjr/SteamVR-PrimaryDesktopOverlay` - `Not studied deeply`
+- `artumino/SteamVR_HUDCenter` - `Already studied`
+- `LapisGit/LapisOverlay` - `Already studied`
+- `elvissteinjr/SteamVR-PrimaryDesktopOverlay` - `Already studied`
 - `Nexz/turncountervr` - `Not studied deeply`
-- `Martin-Oehler/SteamVR-WebApps` - `Not studied deeply`
+- `Martin-Oehler/SteamVR-WebApps` - `Already studied`
 - `OpenKneeboard/OpenKneeboard` - `Already studied`
 - `dantman/elite-vr-cockpit` - `Already studied`
 - `OVRTools/WhereIsForward` - `Already studied`
@@ -143,7 +143,7 @@ Primary docs:
 - `Raphiiko/OyasumiVR` - `Already studied`
 - `I5UCC/SteaMeeter` - `Already studied`
 - `I5UCC/ParameterSaveStates` - `Not studied deeply`
-- `hai-vr/h-view` - `Not studied deeply`
+- `hai-vr/h-view` - `Partially studied`
 - `MeroFune/GOpy` - `Not studied deeply`
 
 ## 6. Lighthouse managers, room state, and device power control
@@ -374,7 +374,7 @@ Primary docs:
 - `Hotrian/HeadlessOverlayToolkit` - `Already studied`
 - `cnlohr/openvr_overlay_model` - `Already studied`
 - `JoeLudwig/overlay_experiments` - `Already studied`
-- `KainosSoftwareLtd/VRSceneOverlay` - `Not studied deeply`
+- `KainosSoftwareLtd/VRSceneOverlay` - `Already studied`
 
 ## 16. Creator, capture, metrics, and workflow tools
 

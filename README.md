@@ -198,6 +198,8 @@ Start here:
 - `docs/research/program/github-research-wave-13-backlog.md`
 - `docs/research/program/github-research-wave-14-plan.md`
 - `docs/research/program/github-research-wave-14-backlog.md`
+- `docs/research/program/github-research-wave-15-plan.md`
+- `docs/research/program/github-research-wave-15-backlog.md`
 - `docs/research/landscape/vr-projects-master-index.md`
 - `docs/research/landscape/vr-projects-wave-3-utilities.md`
 - `docs/research/landscape/vr-projects-wave-4-gap-fill.md`
@@ -211,6 +213,7 @@ Start here:
 - `docs/research/landscape/vr-projects-wave-12-synthetic-devices-input-emulation-and-diy-driver-paths.md`
 - `docs/research/landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
 - `docs/research/landscape/vr-projects-wave-14-tracker-ingress-osc-egress-and-role-binding-utilities.md`
+- `docs/research/landscape/vr-projects-wave-15-overlay-hosts-and-scaffolds.md`
 
 Original Reality Window and passthrough research:
 
@@ -226,6 +229,7 @@ Landscape and reuse research:
 - `docs/research/reuse/openxr-steamvr-passthrough-reuse-plan.md`
 - `docs/research/reuse/alvr-reuse-plan.md`
 - `docs/research/reuse/openvr-advancedsettings-reuse-plan.md`
+- `docs/research/reuse/h-view-overlay-host-reuse-plan.md`
 - `docs/research/reuse/vrperfkit-reuse-plan.md`
 - `docs/research/reuse/external-repos-reuse-plan.md`
 

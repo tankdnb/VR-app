@@ -55,6 +55,7 @@ implementation patterns.
 - `research/landscape/vr-projects-wave-12-synthetic-devices-input-emulation-and-diy-driver-paths.md`
 - `research/landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
 - `research/landscape/vr-projects-wave-14-tracker-ingress-osc-egress-and-role-binding-utilities.md`
+- `research/landscape/vr-projects-wave-15-overlay-hosts-and-scaffolds.md`
 - `research/landscape/project-families.md`
 - `research/landscape/not-yet-studied-deeply.md`
 
@@ -96,6 +97,8 @@ implementation patterns.
 - `research/program/github-research-wave-13-backlog.md`
 - `research/program/github-research-wave-14-plan.md`
 - `research/program/github-research-wave-14-backlog.md`
+- `research/program/github-research-wave-15-plan.md`
+- `research/program/github-research-wave-15-backlog.md`
 - `research/program/foundational-waves-1-7-retro-normalization-plan.md`
 - `research/program/foundational-waves-1-7-retro-normalization-backlog.md`
 
@@ -107,6 +110,7 @@ implementation patterns.
 - `research/reuse/alvr-reuse-plan.md`
 - `research/reuse/openxr-steamvr-passthrough-reuse-plan.md`
 - `research/reuse/openvr-advancedsettings-reuse-plan.md`
+- `research/reuse/h-view-overlay-host-reuse-plan.md`
 
 ### Templates
 

@@ -49,8 +49,11 @@ bridges, device managers, and experimental XR workflows.
 15. `landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
 16. `program/github-research-wave-14-plan.md`
 17. `landscape/vr-projects-wave-14-tracker-ingress-osc-egress-and-role-binding-utilities.md`
-18. `program/foundational-waves-1-7-retro-normalization-plan.md`
-19. `landscape/vr-projects-foundational-waves-1-7-retro-normalization.md`
-20. `discovery/local-source-cache-workflow.md`
-21. `discovery/intake-pipeline.md`
-22. `landscape/not-yet-studied-deeply.md`
+18. `program/github-research-wave-15-plan.md`
+19. `landscape/vr-projects-wave-15-overlay-hosts-and-scaffolds.md`
+20. `reuse/h-view-overlay-host-reuse-plan.md`
+21. `program/foundational-waves-1-7-retro-normalization-plan.md`
+22. `landscape/vr-projects-foundational-waves-1-7-retro-normalization.md`
+23. `discovery/local-source-cache-workflow.md`
+24. `discovery/intake-pipeline.md`
+25. `landscape/not-yet-studied-deeply.md`

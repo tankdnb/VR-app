@@ -26,6 +26,7 @@ This file complements:
 - `vr-projects-wave-12-synthetic-devices-input-emulation-and-diy-driver-paths.md`
 - `vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
 - `vr-projects-wave-14-tracker-ingress-osc-egress-and-role-binding-utilities.md`
+- `vr-projects-wave-15-overlay-hosts-and-scaffolds.md`
 
 ## How to use this index
 
@@ -77,6 +78,9 @@ This file complements:
 - Use `vr-projects-wave-14-tracker-ingress-osc-egress-and-role-binding-utilities.md`
   for the next wave centered on tracker-ingress drivers, OSC/input export,
   SteamVR role reuse, and direct-to-consumer bridge utilities.
+- Use `vr-projects-wave-15-overlay-hosts-and-scaffolds.md` for the next wave
+  centered on overlay-first utility hosts, HUD micro-overlays, web or scene
+  overlay scaffolds, and engine-side overlay integration.
 - Treat each project as one of:
   - `code donor`
   - `architecture reference`
