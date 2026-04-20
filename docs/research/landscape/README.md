@@ -300,6 +300,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on OpenXR micro-layers, view shaping,
   streamout, debugging capture, and frame-time intervention.
 
+- `vr-projects-wave-76-openxr-capability-injection-layers-input-remappers-and-peripheral-extension-bridges.md`
+  Next GitHub discovery wave focused on OpenXR capability-injection layers,
+  input remappers, and peripheral extension bridges.
+
+- `vr-projects-wave-77-openxr-helper-stacks-layer-toolchains-and-runtime-adaptation-helpers.md`
+  Next GitHub discovery wave focused on OpenXR helper stacks,
+  layer toolchains, and runtime adaptation helpers.
+
+- `vr-projects-wave-78-openxr-passthrough-samples-and-engine-side-extension-integration-references.md`
+  Next GitHub discovery wave focused on OpenXR passthrough samples and
+  engine-side extension integration references.
+
+- `vr-projects-wave-79-desktop-window-overlay-shells-linux-capture-utilities-and-launcher-stubs.md`
+  Next GitHub discovery wave focused on desktop-window overlay shells,
+  Linux capture utilities, and launcher stubs.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

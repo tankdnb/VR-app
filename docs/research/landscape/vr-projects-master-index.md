@@ -84,6 +84,10 @@ This file complements:
 - `vr-projects-wave-73-wayvr-ecosystem-add-ons-linux-dashboard-extensions-and-ipc-backed-overlay-surfaces.md`
 - `vr-projects-wave-74-openvr-capture-replay-and-orchestration-toolchains.md`
 - `vr-projects-wave-75-openxr-micro-layers-for-view-shaping-streamout-debugging-capture-and-frame-time-intervention.md`
+- `vr-projects-wave-76-openxr-capability-injection-layers-input-remappers-and-peripheral-extension-bridges.md`
+- `vr-projects-wave-77-openxr-helper-stacks-layer-toolchains-and-runtime-adaptation-helpers.md`
+- `vr-projects-wave-78-openxr-passthrough-samples-and-engine-side-extension-integration-references.md`
+- `vr-projects-wave-79-desktop-window-overlay-shells-linux-capture-utilities-and-launcher-stubs.md`
 
 ## How to use this index
 

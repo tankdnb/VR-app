@@ -632,12 +632,48 @@ These are larger than a single repo and should guide the next research wave.
   templates or compatibility work; it now includes operator-facing micro-tools,
   stream bridges, developer-tool integration, and advanced frame intervention.
 
+### 41. `OpenXR capability-injection layers, input remappers, and peripheral extension bridges`
+
+- Main entries:
+  `OpenXRHandTracking`, `openxr_remapping_layer`, `OpenXR_ApiLayer_Patstrap`
+- Why it matters:
+  the latest pass made it clear that some of the best OpenXR layers do not
+  inspect or patch rendering at all; they add new capability surfaces or remap
+  semantics before the app sees them.
+
+### 42. `OpenXR helper stacks, layer toolchains, and runtime adaptation helpers`
+
+- Main entries:
+  `quark`, `rayxr`, `openxr-layer-scripts`, `OpenXR-CAS`
+- Why it matters:
+  this branch now spans authoring frameworks, tiny renderer-facing helpers,
+  loader-hygiene micro-tools, and more productized runtime adaptation layers.
+
+### 43. `OpenXR passthrough samples and engine-side extension integration references`
+
+- Main entries:
+  `ue-openxr-passthrough`, `godot_test_passthrough`,
+  `mr-openxr-unity-meta-passthrough-sample`
+- Why it matters:
+  the latest pass made it clear that engine-facing OpenXR integration is a
+  reusable family of its own, especially when a plugin or sample adds one
+  runtime feature cleanly without dragging in a full vendor stack.
+
+### 44. `Desktop-window overlay shells, Linux capture utilities, and launcher stubs`
+
+- Main entries:
+  `DesktopOverlayer`, `ovr-penguin`, `RobloxVRLauncher`
+- Why it matters:
+  this branch now captures a rougher but still useful part of the overlay
+  landscape: native texture bridges, CLI-first capture hosts, and thin launcher
+  product directions that should be tracked honestly.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
 
 1. `Overlay implementation references and overlay-first hosts`
-2. `OpenXR micro-layers and runtime-side intervention tooling`
+2. `OpenXR capability-injection, passthrough extension, and runtime-side intervention tooling`
 3. `Vision-based hand and body tracking bridges`
 4. `Virtual display and repurposed output workflows`
 5. `OpenVR capture, replay, and orchestration toolchains`

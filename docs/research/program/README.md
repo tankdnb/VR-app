@@ -523,3 +523,31 @@ repeatable way.
 
 - `github-research-wave-75-backlog.md`
   Executed backlog for the Wave 75 pass.
+
+- `github-research-wave-76-plan.md`
+  Wave 76 research plan focused on OpenXR capability-injection layers,
+  input remappers, and peripheral extension bridges.
+
+- `github-research-wave-76-backlog.md`
+  Executed backlog for the Wave 76 pass.
+
+- `github-research-wave-77-plan.md`
+  Wave 77 research plan focused on OpenXR helper stacks,
+  layer toolchains, and runtime adaptation helpers.
+
+- `github-research-wave-77-backlog.md`
+  Executed backlog for the Wave 77 pass.
+
+- `github-research-wave-78-plan.md`
+  Wave 78 research plan focused on OpenXR passthrough samples and
+  engine-side extension integration references.
+
+- `github-research-wave-78-backlog.md`
+  Executed backlog for the Wave 78 pass.
+
+- `github-research-wave-79-plan.md`
+  Wave 79 research plan focused on desktop-window overlay shells,
+  Linux capture utilities, and launcher stubs.
+
+- `github-research-wave-79-backlog.md`
+  Executed backlog for the Wave 79 pass.

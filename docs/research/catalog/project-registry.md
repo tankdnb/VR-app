@@ -931,6 +931,51 @@ Primary docs:
 - `RViMLab/vrviz` - `Already studied`
 - `zhouhs88/vrpn-openvr` - `Not studied deeply`
 
+## 47. OpenXR capability-injection layers, input remappers, and peripheral extension bridges
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-76-openxr-capability-injection-layers-input-remappers-and-peripheral-extension-bridges.md`
+- `../landscape/project-families.md`
+
+- `ultraleap/OpenXRHandTracking` - `Partially studied`
+- `Sorenon/openxr_remapping_layer` - `Already studied`
+- `verncat/OpenXR_ApiLayer_Patstrap` - `Already studied`
+
+## 48. OpenXR helper stacks, layer toolchains, and runtime adaptation helpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-77-openxr-helper-stacks-layer-toolchains-and-runtime-adaptation-helpers.md`
+- `../landscape/project-families.md`
+
+- `technobaboo/quark` - `Already studied`
+- `doraibu/rayxr` - `Already studied`
+- `fredemmott/openxr-layer-scripts` - `Already studied`
+- `elliotttate/OpenXR-CAS` - `Already studied`
+
+## 49. OpenXR passthrough samples and engine-side extension integration references
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-78-openxr-passthrough-samples-and-engine-side-extension-integration-references.md`
+- `../landscape/project-families.md`
+
+- `AgileLens/ue-openxr-passthrough` - `Already studied`
+- `BastiaanOlij/godot_test_passthrough` - `Already studied`
+- `olir/mr-openxr-unity-meta-passthrough-sample` - `Partially studied`
+
+## 50. Desktop-window overlay shells, Linux capture utilities, and launcher stubs
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-79-desktop-window-overlay-shells-linux-capture-utilities-and-launcher-stubs.md`
+- `../landscape/project-families.md`
+
+- `ShiraoShotaro/DesktopOverlayer` - `Already studied`
+- `nyxpirientity/ovr-penguin` - `Already studied`
+- `gamenew09/RobloxVRLauncher` - `Not studied deeply`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

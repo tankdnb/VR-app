@@ -3287,6 +3287,183 @@ Use this document when designing a new module or utility and ask:
   developer-tool bridges, output-stream layers, and advanced intervention
   research.
 
+## Method 191: Implicit OpenXR capability-injection layer that surfaces external hardware support through extension emulation or override
+
+- What it is:
+  an API layer advertises or overrides runtime extension support so external
+  hardware can appear as a native OpenXR capability without application changes.
+- Good for:
+  hand-tracking bridges, peripheral support injection, vendor or third-party
+  sensor support, and compatibility surfaces for runtimes that lack a feature.
+- Why it matters:
+  it turns `new capability` into a runtime-layer problem instead of an
+  engine-by-engine integration problem.
+- Strong references:
+  `OpenXRHandTracking`.
+- Best fit for `VR-apps-lab`:
+  capability-injection layers and external-sensor OpenXR experiments.
+
+## Method 192: OpenXR input-remapping layer with external input-runtime ownership and per-handle wrapper registries
+
+- What it is:
+  an API layer intercepts input or action flow, owns an external input runtime,
+  and tracks per-handle state through wrappers or registries.
+- Good for:
+  controller remapping, accessibility input layers, alternative input stacks,
+  and external runtime bridges into OpenXR semantics.
+- Why it matters:
+  it makes input remapping a runtime-layer concern rather than an engine plugin
+  or app-specific patch.
+- Strong references:
+  `openxr_remapping_layer`.
+- Best fit for `VR-apps-lab`:
+  runtime-side input bridges and remapping experiments.
+
+## Method 193: Minimal Rust OpenXR API-layer skeleton with explicit loader negotiation and forwarding hooks
+
+- What it is:
+  a tiny layer starter exports the mandatory negotiation and forwarding entry
+  points without hiding them behind a larger framework.
+- Good for:
+  bring-up experiments, new API-layer prototypes, haptics or extension stubs,
+  and learning the real OpenXR loader contract.
+- Why it matters:
+  it gives a lower-bound starter for capability layers without abstraction fog.
+- Strong references:
+  `OpenXR_ApiLayer_Patstrap`.
+- Best fit for `VR-apps-lab`:
+  small Rust API-layer experiments and learning baselines.
+
+## Method 194: Macro-generated OpenXR API-layer framework with typed per-handle data registries
+
+- What it is:
+  a framework generates the dangerous loader plumbing while layer authors attach
+  typed data to raw XR handles and write normal Rust override functions.
+- Good for:
+  faster layer authoring, cleaner per-handle state management, safer Rust
+  experimentation, and reusable layer toolkits.
+- Why it matters:
+  it lowers the cost of building nontrivial OpenXR layers without forcing each
+  project to hand-roll the same negotiation code.
+- Strong references:
+  `quark`.
+- Best fit for `VR-apps-lab`:
+  Rust OpenXR layer authoring and reusable helper frameworks.
+
+## Method 195: Tiny graphics-facing OpenXR facade that collapses session, frame, and swapchain boilerplate
+
+- What it is:
+  a narrow wrapper owns OpenXR instance, session, spaces, swapchains, and frame
+  lifecycle so the caller can stay mostly inside a rendering-centric API.
+- Good for:
+  graphics-engine bring-up, small demos, renderer integrations, and learning
+  the minimum reusable wrapper boundary.
+- Why it matters:
+  it shows how far OpenXR boilerplate can be compressed before a wrapper starts
+  becoming a full engine framework.
+- Strong references:
+  `rayxr`.
+- Best fit for `VR-apps-lab`:
+  small renderer helpers and graphics-facing XR baselines.
+
+## Method 196: Registry-backed OpenXR layer inspection and reordering micro-tool
+
+- What it is:
+  a tiny operator tool lists installed layers, inspects registry state, and
+  enables, disables, or reorders layers directly.
+- Good for:
+  workflow hygiene, debugging broken layer stacks, lightweight repair actions,
+  and operator-facing diagnostics.
+- Why it matters:
+  it treats loader state as a first-class operational surface rather than only
+  something a full GUI should own.
+- Strong references:
+  `openxr-layer-scripts`.
+- Best fit for `VR-apps-lab`:
+  OpenXR doctor micro-tools and layer-state hygiene utilities.
+
+## Method 197: Configurable runtime post-process OpenXR layer with live reload and staged image effects
+
+- What it is:
+  an API layer applies image-processing or post-process steps at frame end while
+  resolving config from multiple locations and reloading settings live.
+- Good for:
+  sharpening layers, runtime visual adjustments, operator-facing graphics
+  patches, and narrow image-processing utilities.
+- Why it matters:
+  it turns frame-end intervention into a productizable utility pattern rather
+  than a one-off shader experiment.
+- Strong references:
+  `OpenXR-CAS`.
+- Best fit for `VR-apps-lab`:
+  runtime adaptation layers and operator-facing graphics micro-tools.
+
+## Method 198: Engine-native OpenXR extension plugin that injects optional passthrough or composition-layer support without full vendor SDK lock-in
+
+- What it is:
+  an engine plugin hooks into engine lifecycle points, requests optional OpenXR
+  extensions, and inserts extra composition behavior without adopting a whole
+  vendor stack.
+- Good for:
+  vendor-specific feature bridges, one-feature engine plugins, portability-first
+  XR projects, and minimal feature extraction from larger SDKs.
+- Why it matters:
+  it shows how to add one OpenXR capability cleanly while keeping the rest of
+  the project on a smaller, more portable stack.
+- Strong references:
+  `ue-openxr-passthrough`.
+- Best fit for `VR-apps-lab`:
+  engine-side feature plugins and extension-integration references.
+
+## Method 199: Minimal engine passthrough sample that couples transparent scene configuration with runtime extension calls
+
+- What it is:
+  a thin engine sample toggles passthrough through the engine's XR interface and
+  makes transparent background or scene setup an explicit part of the feature.
+- Good for:
+  lower-bound mixed-reality samples, engine bring-up, troubleshooting
+  passthrough support, and educational references.
+- Why it matters:
+  it keeps the real dependency between scene transparency and passthrough
+  visibility obvious instead of burying it in a giant sample.
+- Strong references:
+  `godot_test_passthrough`, `mr-openxr-unity-meta-passthrough-sample`.
+- Best fit for `VR-apps-lab`:
+  engine-level passthrough samples and setup references.
+
+## Method 200: External-texture desktop capture bridge that feeds a managed OpenVR overlay surface
+
+- What it is:
+  a native desktop-capture path writes into a texture that a managed overlay
+  shell reuses directly as an overlay surface.
+- Good for:
+  desktop mirrors, native window capture bridges, Unity or managed overlay
+  experiments, and texture-ownership studies.
+- Why it matters:
+  it makes the capture and overlay boundaries explicit instead of merging them
+  into one opaque app layer.
+- Strong references:
+  `DesktopOverlayer`.
+- Best fit for `VR-apps-lab`:
+  desktop-surface overlays and native-to-managed texture bridge experiments.
+
+## Method 201: CLI-first Linux overlay host that turns portal and PipeWire capture into controllable OpenVR window overlays
+
+- What it is:
+  a command-driven host acquires capture streams through Linux desktop portals
+  and PipeWire, then exposes overlays, transforms, color keys, and saved state
+  through textual commands and macro files.
+- Good for:
+  Linux overlay utilities, automation-friendly VR shells, capture-backed window
+  surfaces, and host designs that should not depend on a GUI.
+- Why it matters:
+  it proves that a usable overlay host can be CLI-first and still own a rich
+  scene and capture model.
+- Strong references:
+  `ovr-penguin`.
+- Best fit for `VR-apps-lab`:
+  command-first overlay hosts and Linux capture-backed utility shells.
+
 ## Recommended usage inside `VR-apps-lab`
 
 When a new utility idea appears:

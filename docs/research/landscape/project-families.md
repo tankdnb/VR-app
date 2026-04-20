@@ -1686,6 +1686,116 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - tool-bridge and transport-bridge API layers
 - advanced frame-intervention research
 
+## Family 55: OpenXR capability-injection layers, input remappers, and peripheral extension bridges
+
+This family covers repositories where the main value is not diagnostics or
+rendering intervention, but injecting new capability surfaces or reshaping
+input semantics before the engine ever sees them.
+
+| Project | Status | Notes |
+|---|---|---|
+| `ultraleap/OpenXRHandTracking` | Partially studied | Archived implicit hand-tracking layer that injects `XR_EXT_hand_tracking` support from external hardware |
+| `Sorenon/openxr_remapping_layer` | Already studied | SuInput-backed remapping layer with runtime detection and per-handle wrapper state |
+| `verncat/OpenXR_ApiLayer_Patstrap` | Already studied | Tiny Rust negotiation-and-forwarding skeleton for new capability-layer experiments |
+
+### Consolidation note
+
+This family matters because `OpenXR layer` work is not only about diagnostics,
+view shaping, or capture. It now clearly includes:
+
+- external hardware capability injection
+- runtime-level input remapping
+- very small capability-layer baselines
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- OpenXR capability injection
+- input-remapping API layers
+- low-ceremony Rust API-layer bootstraps
+
+## Family 56: OpenXR helper stacks, layer toolchains, and runtime adaptation helpers
+
+This family covers repositories whose main value sits between `platform`,
+`binding`, and `sample`: they help author layers, collapse boilerplate, fix
+loader state, or adapt runtime output.
+
+| Project | Status | Notes |
+|---|---|---|
+| `technobaboo/quark` | Already studied | Macro-generated Rust framework for authoring OpenXR API layers with typed handle registries |
+| `doraibu/rayxr` | Already studied | Tiny graphics-facing OpenXR facade for raylib and narrow rendering bring-up |
+| `fredemmott/openxr-layer-scripts` | Already studied | Windows registry-backed micro-tools for listing, enabling, and reordering layers |
+| `elliotttate/OpenXR-CAS` | Already studied | Mature D3D11 post-process OpenXR layer with config precedence and live reload |
+
+### Consolidation note
+
+This family matters because `OpenXR helper` work now splits more cleanly into:
+
+- layer-authoring frameworks
+- tiny renderer-facing wrappers
+- layer-state hygiene micro-tools
+- runtime adaptation layers
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- OpenXR layer authoring toolkits
+- boilerplate-cutting graphics facades
+- operator workflow tools for loader hygiene
+- runtime adaptation micro-utilities
+
+## Family 57: OpenXR passthrough samples and engine-side extension integration references
+
+This family covers repositories where the main value is not a runtime-side API
+layer, but the way an engine plugin or sample requests and integrates
+passthrough-related OpenXR features.
+
+| Project | Status | Notes |
+|---|---|---|
+| `AgileLens/ue-openxr-passthrough` | Already studied | Clean Unreal plugin that injects passthrough support without the full Meta XR stack |
+| `BastiaanOlij/godot_test_passthrough` | Already studied | Lower-bound Godot passthrough toggle with explicit transparent viewport handling |
+| `olir/mr-openxr-unity-meta-passthrough-sample` | Partially studied | Unity sample with runtime manager, diagnostics overlay, and editor bootstrap helpers |
+
+### Consolidation note
+
+This family matters because `OpenXR passthrough` is not only a runtime-side
+patch story. It now clearly includes:
+
+- engine-native extension plugins
+- tiny scene-level toggle samples
+- editor-assisted mixed-reality setup references
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- engine plugin references for one-feature OpenXR extensions
+- thin passthrough setup baselines for major engines
+- editor and diagnostics scaffolding for mixed-reality samples
+
+## Family 58: Desktop-window overlay shells, Linux capture utilities, and launcher stubs
+
+This family covers repositories where the interesting lesson is how desktop or
+window surfaces are captured, routed, and controlled in VR when the shell is
+older, rougher, or thinner than a full desktop-in-VR host.
+
+| Project | Status | Notes |
+|---|---|---|
+| `ShiraoShotaro/DesktopOverlayer` | Already studied | Unity desktop-capture overlay with native texture bridge and manual transform controls |
+| `nyxpirientity/ovr-penguin` | Already studied | CLI-first Linux overlay host over PipeWire, portal capture, and a small scene graph |
+| `gamenew09/RobloxVRLauncher` | Not studied deeply | Public launcher-direction placeholder with no commits yet |
+
+### Consolidation note
+
+This family matters because `desktop surface in VR` now also includes:
+
+- native texture bridges into managed overlay shells
+- command-first capture hosts
+- public launcher or shell placeholders that matter as product-direction nodes
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- capture-backed window surfaces
+- CLI-first overlay hosts
+- launcher-shaped companion shells
+  tracked honestly as follow-up nodes
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

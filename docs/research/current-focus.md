@@ -24,9 +24,10 @@ These are the clearest current product and research lines:
 1. `Overlay implementation references and overlay-first utility hosts`
    small and medium overlay surfaces remain one of the strongest donor areas in
    the whole repo, now including thinner access layers and starter variants.
-2. `OpenXR runtime, layer diagnostics, and micro-layer utilities`
+2. `OpenXR runtime, capability-injection layers, diagnostics, and micro-layer utilities`
    the repository now has enough material to support both an `OpenXR doctor /
-   runtime inspector` branch and smaller operator-facing layer utilities.
+   runtime inspector` branch and smaller capability, passthrough, and
+   operator-facing layer utilities.
 3. `Tracker, OSC, and virtual-device tooling`
    `VMT`, OSC exporters, and synthetic-device hosts form a strong reusable
    implementation family.
@@ -66,6 +67,10 @@ instead of full history:
 - `landscape/vr-projects-wave-73-wayvr-ecosystem-add-ons-linux-dashboard-extensions-and-ipc-backed-overlay-surfaces.md`
 - `landscape/vr-projects-wave-74-openvr-capture-replay-and-orchestration-toolchains.md`
 - `landscape/vr-projects-wave-75-openxr-micro-layers-for-view-shaping-streamout-debugging-capture-and-frame-time-intervention.md`
+- `landscape/vr-projects-wave-76-openxr-capability-injection-layers-input-remappers-and-peripheral-extension-bridges.md`
+- `landscape/vr-projects-wave-77-openxr-helper-stacks-layer-toolchains-and-runtime-adaptation-helpers.md`
+- `landscape/vr-projects-wave-78-openxr-passthrough-samples-and-engine-side-extension-integration-references.md`
+- `landscape/vr-projects-wave-79-desktop-window-overlay-shells-linux-capture-utilities-and-launcher-stubs.md`
 
 ## Strong donor clusters right now
 
@@ -94,6 +99,10 @@ the strongest current clusters:
 - `OpenXR-RecenterOverride`, `OpenXR-Layer-crop-fov`,
   `openxr-renderdoc-layer`, `openxr_streamout_layer`
   for operator-facing and developer-facing OpenXR micro-layers.
+- `OpenXRHandTracking`, `openxr_remapping_layer`, `quark`, `OpenXR-CAS`,
+  `ue-openxr-passthrough`
+  for capability injection, layer authoring, runtime adaptation, and
+  engine-side extension integration.
 
 ## Highest-value next follow-up passes
 
@@ -101,7 +110,7 @@ If a new research wave should start soon, these remain especially strong next
 directions:
 
 1. `Overlay implementation references and overlay-first hosts`
-2. `OpenXR micro-layers and runtime-side intervention tooling`
+2. `OpenXR capability-injection, passthrough extension, and runtime-side intervention tooling`
 3. `Vision-based hand and body tracking bridges`
 4. `Virtual display and repurposed output workflows`
 5. `OpenVR capture, replay, and orchestration toolchains`
