@@ -579,3 +579,31 @@ repeatable way.
 
 - `github-research-wave-83-backlog.md`
   Executed backlog for the Wave 83 pass.
+
+- `github-research-wave-84-plan.md`
+  Wave 84 research plan focused on browser panoramic video players,
+  mobile wrappers, and projection-aware web playback.
+
+- `github-research-wave-84-backlog.md`
+  Executed backlog for the Wave 84 pass.
+
+- `github-research-wave-85-plan.md`
+  Wave 85 research plan focused on engine-side stereo panoramic viewers,
+  vendor player samples, and layout-specific video surfaces.
+
+- `github-research-wave-85-backlog.md`
+  Executed backlog for the Wave 85 pass.
+
+- `github-research-wave-86-plan.md`
+  Wave 86 research plan focused on VRChat synced video player frameworks,
+  queue frontends, and event-optimized media shells.
+
+- `github-research-wave-86-backlog.md`
+  Executed backlog for the Wave 86 pass.
+
+- `github-research-wave-87-plan.md`
+  Wave 87 research plan focused on transformed video viewers,
+  volumetric or VR180 playback, and nonstandard 3D media viewing environments.
+
+- `github-research-wave-87-backlog.md`
+  Executed backlog for the Wave 87 pass.

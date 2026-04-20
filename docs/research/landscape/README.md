@@ -332,6 +332,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on creator-facing audio systems,
   synced player frameworks, and world-side voice management.
 
+- `vr-projects-wave-84-browser-panoramic-video-players-mobile-wrappers-and-projection-aware-web-playback.md`
+  Next GitHub discovery wave focused on browser panoramic video players,
+  mobile wrappers, and projection-aware web playback.
+
+- `vr-projects-wave-85-engine-side-stereo-panoramic-viewers-vendor-player-samples-and-layout-specific-video-surfaces.md`
+  Next GitHub discovery wave focused on engine-side stereo panoramic viewers,
+  vendor player samples, and layout-specific video surfaces.
+
+- `vr-projects-wave-86-vrchat-synced-video-player-frameworks-queue-frontends-and-event-optimized-media-shells.md`
+  Next GitHub discovery wave focused on VRChat synced video player frameworks,
+  queue frontends, and event-optimized media shells.
+
+- `vr-projects-wave-87-transformed-volumetric-and-nonstandard-3d-video-viewers.md`
+  Next GitHub discovery wave focused on transformed video viewers,
+  volumetric or VR180 playback, and nonstandard 3D media viewing environments.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

@@ -3722,3 +3722,231 @@ When a new utility idea appears:
   `AudioManager`.
 - Best fit for `VR-apps-lab`:
   world voice-state tools and social-space audio-control utilities.
+
+## Method 217: Browser panoramic player core with explicit split across media source, stereoscopy, projection, and renderer mode
+
+- What it is:
+  a browser playback framework keeps media loading, stereoscopy detection,
+  projection family, renderer mode, and player shell as separate public
+  concepts instead of one monolithic viewer.
+- Good for:
+  browser immersive playback, 360 and stereo media players, WebXR video tools,
+  and projection-aware media shells.
+- Why it matters:
+  it keeps the playback taxonomy visible and reusable instead of hiding it in
+  one app-specific render path.
+- Strong references:
+  `360WebPlayer`.
+- Best fit for `VR-apps-lab`:
+  browser-backed immersive playback donors and projection-aware media tools.
+
+## Method 218: Existing HTML5 player plugin that swaps rendering or canvas strategy based on projection and media layout
+
+- What it is:
+  an ordinary web video player is upgraded through a plugin that changes the
+  rendering backend according to projection type, media layout, or panoramic
+  mode.
+- Good for:
+  plugin-based immersive playback, upgrading existing media stacks, panoramic
+  video players, and incremental web-player enhancement.
+- Why it matters:
+  it shows how to add VR-aware playback without discarding the broader player
+  ecosystem.
+- Strong references:
+  `videojs-panorama`.
+- Best fit for `VR-apps-lab`:
+  projection-aware upgrades over existing player shells.
+
+## Method 219: Projection-aware Video.js VR plugin over an ordinary player shell
+
+- What it is:
+  a `Video.js` plugin models several immersive layouts explicitly and plugs VR
+  playback into an existing player lifecycle instead of replacing the whole
+  stack.
+- Good for:
+  180 and 360 media, cubemap playback, equi-angular content, and web-player
+  layout taxonomy.
+- Why it matters:
+  it turns projection choice into a clean public contract instead of a hidden
+  implementation detail.
+- Strong references:
+  `videojs-vr`.
+- Best fit for `VR-apps-lab`:
+  player-plugin references and layout-taxonomy donors.
+
+## Method 220: Cross-platform mobile VR-player wrapper built as platform view plus native playback bridge
+
+- What it is:
+  a mobile wrapper keeps a small cross-platform API while delegating actual 360
+  playback to native platform views and SDK integrations.
+- Good for:
+  mobile immersive media shells, Flutter wrappers, thin product surfaces, and
+  cross-platform XR media tools.
+- Why it matters:
+  it makes the platform-view and bridge boundary explicit instead of pretending
+  immersive playback is purely cross-platform UI.
+- Strong references:
+  `VR-Player`.
+- Best fit for `VR-apps-lab`:
+  mobile wrapper references and native-bridge comparison nodes.
+
+## Method 221: Unity panoramic sphere component with image-video parity and shader-backed projection modes
+
+- What it is:
+  one Unity component owns both image and video playback across several
+  panoramic layouts through a reusable sphere plus shader pipeline.
+- Good for:
+  Unity panoramic viewers, immersive media surfaces, projection-mode
+  components, and compact stereo or 360 playback baselines.
+- Why it matters:
+  it keeps the viewing surface reusable even when content type changes from
+  still image to video.
+- Strong references:
+  `Unity_Panorama180View`.
+- Best fit for `VR-apps-lab`:
+  engine-side panoramic surface donors and shader-backed playback references.
+
+## Method 222: Vendor sample matrix for layout-specific immersive video surfaces
+
+- What it is:
+  a vendor sample pack expresses several video layouts through dedicated scenes,
+  materials, and geometry combinations instead of one abstracted player core.
+- Good for:
+  headset-vendor playback references, layout validation, immersive media
+  samples, and engine integration checklists.
+- Why it matters:
+  it shows that some of the clearest reusable value comes from explicit layout
+  matrices rather than from a generalized framework.
+- Strong references:
+  `VideoPlayer-UnityXR`.
+- Best fit for `VR-apps-lab`:
+  vendor layout references and playback-surface comparison work.
+
+## Method 223: High-level panoramic authoring shell paired with a lower-level programmable viewing actor
+
+- What it is:
+  one layer handles cinematic or tour authoring while a lower-level actor or
+  sphere remains available for direct programmer control.
+- Good for:
+  panoramic tour tooling, engine-side authoring workflows, immersive player
+  plugins, and Unreal or Unity media systems.
+- Why it matters:
+  it exposes a cleaner split between quick content assembly and lower-level
+  playback control.
+- Strong references:
+  `ue5-stereo-panoramic-player-demo`.
+- Best fit for `VR-apps-lab`:
+  authoring-surface references and higher-vs-lower-level playback design.
+
+## Method 224: Prefab-level creator-side video system split into video manager, audio manager, and screen manager
+
+- What it is:
+  a creator-facing playback package models video, audio, and display surfaces
+  as separate manager domains under one player shell.
+- Good for:
+  VRChat media systems, creator tools, synced playback shells, and
+  multi-surface video experiences.
+- Why it matters:
+  it keeps the player from collapsing into one script and makes screen or audio
+  integration reusable on its own.
+- Strong references:
+  `VideoTXL`.
+- Best fit for `VR-apps-lab`:
+  creator-side media systems and manager-split playback donors.
+
+## Method 225: Owner-synced Udon video player with backend switching, late-join sync, and re-sync heuristics
+
+- What it is:
+  one Udon player core owns playback state, network time, backend choice, and
+  recovery logic for late joiners or drift.
+- Good for:
+  synchronized social playback, shared media screens, lean creator tools, and
+  Udon-based event spaces.
+- Why it matters:
+  it provides a compact lower bound for `synced video shell` without needing a
+  much larger package ecosystem.
+- Strong references:
+  `UdonVideoplayer`.
+- Best fit for `VR-apps-lab`:
+  sync-core references and compact creator-side media shells.
+
+## Method 226: Modular creator-facing media frontend with playlist, queue, history, and handler extension surfaces
+
+- What it is:
+  a creator-facing player breaks controller logic into partials and exposes
+  handler, playlist, queue, history, and module surfaces as first-class public
+  structure.
+- Good for:
+  event or venue media systems, creator-side playback shells, extension-heavy
+  media packages, and workflow-rich social spaces.
+- Why it matters:
+  it shows how a media frontend can keep growing features without collapsing
+  into one monolithic player script.
+- Strong references:
+  `YamaPlayer`.
+- Best fit for `VR-apps-lab`:
+  modular creator-side video systems and event-oriented playback frontends.
+
+## Method 227: Projection-transform media viewer shell over ordinary playback engines with head-motion logging
+
+- What it is:
+  an ordinary media engine is wrapped in a shell that transforms projection or
+  framing behavior and can log viewer head motion as part of playback.
+- Good for:
+  nonstandard 3D viewers, transformed stereo playback, media reprojection, and
+  experimental framing workflows.
+- Why it matters:
+  it shows how `player plus transform logic` can become its own product shape
+  without a full engine rewrite.
+- Strong references:
+  `VR-reversal`.
+- Best fit for `VR-apps-lab`:
+  transform-driven viewer shells and unconventional media tooling.
+
+## Method 228: Volumetric and VR180 playback substrate that spans WebXR and engine export targets
+
+- What it is:
+  a broad playback substrate supports volumetric or VR180 media across a web
+  player plus export or integration paths for game engines.
+- Good for:
+  volumetric media research, VR180 playback, WebXR viewers, and multi-target
+  immersive media stacks.
+- Why it matters:
+  it keeps the core media substrate reusable across more than one delivery
+  environment.
+- Strong references:
+  `lifecast_public`.
+- Best fit for `VR-apps-lab`:
+  volumetric playback references and cross-target media substrate studies.
+
+## Method 229: Monocular-depth-to-3D media viewer with pluggable inference backends and mesh controls
+
+- What it is:
+  image or video inputs are expanded into a navigable 3D surface through
+  interchangeable inference paths plus viewer-side mesh and playback controls.
+- Good for:
+  depth-expanded media tools, experimental 3D viewers, inference-backed media
+  shells, and nonstandard immersive playback.
+- Why it matters:
+  it turns `2D media to 3D surface` into a reusable viewer architecture rather
+  than a one-off demo.
+- Strong references:
+  `DepthViewer`.
+- Best fit for `VR-apps-lab`:
+  nonstandard media viewers and depth-based playback experimentation.
+
+## Method 230: Immersive dome-viewer environment with local media, NDI, and Spout ingest
+
+- What it is:
+  an immersive viewing environment treats local files and live media feeds as
+  parallel inputs under one dome-style playback shell with XR menu anchoring.
+- Good for:
+  dome or projection environments, live media ingest tools, spatial viewing
+  rooms, and creator-facing media shells.
+- Why it matters:
+  it captures a broader `media environment` product shape where ingest and
+  spatial presentation matter as much as playback controls.
+- Strong references:
+  `DomeTools`.
+- Best fit for `VR-apps-lab`:
+  immersive media environments and source-ingest playback references.

@@ -40,9 +40,10 @@ These are the clearest current product and research lines:
 6. `Accessibility, communication, and companion surfaces`
    small user-value-first tools remain an important public direction, not just
    a side branch.
-7. `VR audio, immersive playback, and creator-facing audio systems`
+7. `VR audio, immersive playback, projection-aware video systems, and creator-facing media tools`
    the repository now has a clearer branch for mic-state tools, media-player
-   shells, spatial-audio substrate, and creator-side audio frameworks.
+   shells, panoramic video donors, nonstandard 3D viewers, spatial-audio
+   substrate, and creator-side media frameworks.
 
 ## Most useful current docs
 
@@ -78,6 +79,10 @@ instead of full history:
 - `landscape/vr-projects-wave-81-immersive-music-players-vr-media-playback-surfaces-and-browser-video-shells.md`
 - `landscape/vr-projects-wave-82-spatial-audio-sdks-renderers-and-object-optimization-toolchains.md`
 - `landscape/vr-projects-wave-83-creator-facing-audio-systems-synced-player-frameworks-and-world-side-voice-management.md`
+- `landscape/vr-projects-wave-84-browser-panoramic-video-players-mobile-wrappers-and-projection-aware-web-playback.md`
+- `landscape/vr-projects-wave-85-engine-side-stereo-panoramic-viewers-vendor-player-samples-and-layout-specific-video-surfaces.md`
+- `landscape/vr-projects-wave-86-vrchat-synced-video-player-frameworks-queue-frontends-and-event-optimized-media-shells.md`
+- `landscape/vr-projects-wave-87-transformed-volumetric-and-nonstandard-3d-video-viewers.md`
 
 ## Strong donor clusters right now
 
@@ -117,6 +122,10 @@ the strongest current clusters:
 - `AudioLink`, `USharpVideo`, `USharpVideoQueue`, `VVMW`, `AudioManager`
   for creator-facing audio infrastructure, synced media systems, and world
   voice-state control.
+- `360WebPlayer`, `videojs-panorama`, `videojs-vr`, `Unity_Panorama180View`,
+  `VideoTXL`, `VR-reversal`, `DomeTools`
+  for projection-aware playback layers, creator-side video systems, and
+  nonstandard 3D viewing environments.
 
 ## Highest-value next follow-up passes
 
@@ -129,10 +138,14 @@ directions:
 4. `Virtual display and repurposed output workflows`
 5. `OpenVR capture, replay, and orchestration toolchains`
 6. `Historical utility-suite recovery`
-7. `Microphone control, voice-input, and audio routing helpers`
-8. `Immersive media playback and browser video shells`
-9. `Spatial audio SDKs, renderers, and audio-object optimization`
-10. `Creator-facing audio systems and world voice management`
+7. `Browser panoramic video players and projection-aware web playback`
+8. `Creator-side synced video player frameworks and queue frontends`
+9. `Engine-side stereo panoramic viewers and vendor playback samples`
+10. `Transformed, volumetric, and nonstandard 3D video viewers`
+11. `Microphone control, voice-input, and audio routing helpers`
+12. `Immersive media playback and browser video shells`
+13. `Spatial audio SDKs, renderers, and audio-object optimization`
+14. `Creator-facing audio systems and world voice management`
 
 ## Current repository-maintenance priorities
 

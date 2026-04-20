@@ -1919,6 +1919,118 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - queue ownership and moderation surfaces
 - world voice-state and social-space audio control
 
+## Family 63: Browser panoramic video players, mobile wrappers, and projection-aware web playback
+
+This family covers repositories where the main value sits in how panoramic or
+immersive video playback is layered over browser players, plugin ecosystems, or
+thin mobile wrappers.
+
+| Project | Status | Notes |
+|---|---|---|
+| `BIVROST/360WebPlayer` | Already studied | Full browser playback framework with explicit split across media type, stereoscopy, projection family, and renderer mode |
+| `yanwsh/videojs-panorama` | Already studied | `Video.js` plugin that swaps rendering path based on panoramic video type and adds hotspots plus VR control surface |
+| `videojs/videojs-vr` | Already studied | Projection-aware `Video.js` VR plugin with several 180, 360, stereo, cubemap, and equi-angular modes |
+| `flutterwtf/VR-Player` | Already studied | Thin Flutter wrapper over native 360 playback SDKs using platform-view bridges |
+
+### Consolidation note
+
+This family matters because `browser video in VR` now splits more clearly into:
+
+- full browser playback frameworks
+- enhancement plugins over existing player stacks
+- projection-enum plugins with reusable layout taxonomy
+- thin cross-platform mobile wrappers over native media surfaces
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- projection-aware browser playback donors
+- existing-player upgrade patterns
+- mobile wrapper references for immersive media shells
+
+## Family 64: Engine-side stereo panoramic viewers, vendor player samples, and layout-specific video surfaces
+
+This family covers repositories where immersive playback is modeled through
+engine components, shader-backed panoramic surfaces, or layout-specific sample
+matrices rather than whole desktop media shells.
+
+| Project | Status | Notes |
+|---|---|---|
+| `ft-lab/Unity_Panorama180View` | Already studied | Compact Unity panoramic surface with image-video parity and explicit projection modes |
+| `picoxr/VideoPlayer-UnityXR` | Already studied | Vendor layout matrix expressed as several playback scenes and materials rather than one reusable player core |
+| `UNAmedia/ue5-stereo-panoramic-player-demo` | Partially studied | Unreal demo client that exposes a strong authoring split, but not the underlying player plugin code |
+
+### Consolidation note
+
+This family matters because `engine-side immersive video` now splits more
+clearly into:
+
+- reusable panoramic surface components
+- vendor scene matrices for layout coverage
+- high-level authoring shells over lower-level panoramic actors
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- Unity panoramic-surface donors
+- vendor sample matrices as layout references
+- engine authoring workflows for immersive playback
+
+## Family 65: VRChat synced video player frameworks, queue frontends, and event-optimized media shells
+
+This family covers repositories where the main value is creator-side video
+system design: sync ownership, screen routing, playlists, queueing, handlers,
+permissions, and multi-module playback flow.
+
+| Project | Status | Notes |
+|---|---|---|
+| `vrctxl/VideoTXL` | Already studied | Strong manager-split package with separate video, audio, and screen layers for creator-side playback |
+| `UdonVR/UdonVideoplayer` | Already studied | Compact owner-synced Udon player with backend switching and resync heuristics |
+| `koorimizuw/YamaPlayer` | Partially studied | Broad modular creator-facing player with playlist, history, handler, and integration surfaces |
+
+### Consolidation note
+
+This family matters because `creator-side video playback` is no longer just one
+sync script. It now clearly includes:
+
+- package-level manager splits
+- lean sync-core baselines
+- broader modular frontends with playlists and extensions
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- creator-side synced video systems
+- queue and playlist control surfaces
+- modular event or venue-oriented media shells
+
+## Family 66: Transformed, volumetric, and nonstandard 3D video viewers
+
+This family covers repositories where the viewing model itself is unusual:
+video is transformed, depth-expanded, volumetric, or embedded in a dome-style
+media environment instead of an ordinary sphere or flat screen.
+
+| Project | Status | Notes |
+|---|---|---|
+| `dfaker/VR-reversal` | Already studied | Transform-driven media shell over `mpv` and `ffmpeg` with head-motion logging |
+| `fbriggs/lifecast_public` | Partially studied | Broad volumetric and VR180 playback substrate spanning WebXR and engine export targets |
+| `parkchamchi/DepthViewer` | Partially studied | Image or video viewer that expands media into a 3D surface through depth inference and mesh controls |
+| `prefrontalcortex/DomeTools` | Partially studied | Dome-style viewing environment with local media, `NDI`, and `Spout` ingest plus XR menu anchoring |
+
+### Consolidation note
+
+This family matters because `3D video viewer` is no longer just a stereo-sphere
+variation. It now clearly includes:
+
+- transform-driven viewers over ordinary media engines
+- volumetric and VR180 playback substrate
+- depth-expanded viewers with inference backends
+- immersive media environments with multi-source ingest
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- nonstandard 3D playback shells
+- volumetric media substrate
+- depth-to-3D viewer references
+- dome and spatial-media environments
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

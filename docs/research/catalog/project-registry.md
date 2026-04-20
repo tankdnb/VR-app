@@ -1026,6 +1026,52 @@ Primary docs:
 - `JLChnToZ/VVMW` - `Partially studied`
 - `SylanTroh/AudioManager` - `Already studied`
 
+## 55. Browser panoramic video players, mobile wrappers, and projection-aware web playback
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-84-browser-panoramic-video-players-mobile-wrappers-and-projection-aware-web-playback.md`
+- `../landscape/project-families.md`
+
+- `BIVROST/360WebPlayer` - `Already studied`
+- `yanwsh/videojs-panorama` - `Already studied`
+- `videojs/videojs-vr` - `Already studied`
+- `flutterwtf/VR-Player` - `Already studied`
+
+## 56. Engine-side stereo panoramic viewers, vendor player samples, and layout-specific video surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-85-engine-side-stereo-panoramic-viewers-vendor-player-samples-and-layout-specific-video-surfaces.md`
+- `../landscape/project-families.md`
+
+- `ft-lab/Unity_Panorama180View` - `Already studied`
+- `picoxr/VideoPlayer-UnityXR` - `Already studied`
+- `UNAmedia/ue5-stereo-panoramic-player-demo` - `Partially studied`
+
+## 57. VRChat synced video player frameworks, queue frontends, and event-optimized media shells
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-86-vrchat-synced-video-player-frameworks-queue-frontends-and-event-optimized-media-shells.md`
+- `../landscape/project-families.md`
+
+- `vrctxl/VideoTXL` - `Already studied`
+- `UdonVR/UdonVideoplayer` - `Already studied`
+- `koorimizuw/YamaPlayer` - `Partially studied`
+
+## 58. Transformed, volumetric, and nonstandard 3D video viewers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-87-transformed-volumetric-and-nonstandard-3d-video-viewers.md`
+- `../landscape/project-families.md`
+
+- `dfaker/VR-reversal` - `Already studied`
+- `fbriggs/lifecast_public` - `Partially studied`
+- `parkchamchi/DepthViewer` - `Partially studied`
+- `prefrontalcortex/DomeTools` - `Partially studied`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

@@ -255,6 +255,21 @@ over-promoted immediately.
 | `llealloo/audiolink` | Partially studied | Audio-reactive ecosystem where `_AudioTexture`, controller surfaces, and creator-side integrations may justify a dedicated donor pass | High | High | Inspect player APIs, mini-player flow, sync semantics, and shader or script integration boundaries more deeply |
 | `JLChnToZ/VVMW` | Partially studied | Large modular creator-facing media frontend whose strongest reusable boundaries may sit between core, playlist, screen, and overlay subsystems | High | High | Narrow the next pass to core partials, frontend or queue boundaries, and which slices are genuinely donor-worthy beyond the full product shell |
 
+## Priority batch U: Waves 84-87 surfaced follow-up candidates
+
+These were surfaced while deepening browser panoramic players, engine-side
+stereo panoramic viewers, creator-side synced video systems, and nonstandard
+3D media viewers, but they were intentionally kept as honest follow-up nodes
+instead of being over-promoted immediately.
+
+| Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `UNAmedia/ue5-stereo-panoramic-player-demo` | Partially studied | Public Unreal demo shell that exposes a strong `authoring surface plus programmable sphere` split even though the core plugin is external | Medium | High | Revisit only if a future pass needs the real plugin boundary, actor model, and asset flow rather than the public demo client |
+| `koorimizuw/YamaPlayer` | Partially studied | Broad modular creator-facing video frontend with playlist, queue, handler, and integration surfaces | High | High | Narrow the next pass to controller partials, handler abstraction, module boundaries, and what is genuinely reusable beyond the full creator package |
+| `fbriggs/lifecast_public` | Partially studied | Volumetric and VR180 playback substrate spanning WebXR player code and engine export targets | High | High | Narrow the next pass to media-format handling, volumetric playback core, and where the reusable web or engine boundaries actually sit |
+| `parkchamchi/DepthViewer` | Partially studied | Depth-expanded 3D viewer that turns image or video input plus several inference backends into a navigable mesh surface | Medium-High | High | Revisit if `VR-apps-lab` needs a deeper `depth-to-3D media viewer` donor pass or clearer backend comparison |
+| `prefrontalcortex/DomeTools` | Partially studied | Dome-style viewing environment where local media, `NDI`, and `Spout` ingest all feed one immersive shell | Medium | High | Revisit when a future pass needs deeper source-ingest flow, creator-viewer split, and dome-space interaction coverage |
+
 ## Family-level gaps that now deserve deeper passes
 
 These are larger than a single repo and should guide the next research wave.
@@ -722,6 +737,43 @@ These are larger than a single repo and should guide the next research wave.
   prefab. It spans audio-reactive substrate, synced media cores, queue
   companions, modular media frontends, and world voice-state control.
 
+### 49. `Browser panoramic video players and projection-aware web playback`
+
+- Main entries:
+  `360WebPlayer`, `videojs-panorama`, `videojs-vr`, `VR-Player`
+- Why it matters:
+  the latest pass made it clear that `immersive browser playback` is not one
+  shell shape; it spans full playback frameworks, plugin upgrades over existing
+  players, projection-enum control surfaces, and thin mobile wrappers.
+
+### 50. `Engine-side stereo panoramic viewers and vendor playback samples`
+
+- Main entries:
+  `Unity_Panorama180View`, `VideoPlayer-UnityXR`,
+  `ue5-stereo-panoramic-player-demo`
+- Why it matters:
+  engine-side playback now has a clearer donor branch of its own around
+  projection-surface components, layout-specific sample matrices, and
+  higher-level panoramic authoring shells.
+
+### 51. `Creator-side synced video player frameworks and queue frontends`
+
+- Main entries:
+  `VideoTXL`, `UdonVideoplayer`, `YamaPlayer`
+- Why it matters:
+  the latest pass made it clear that `creator video system` is broader than one
+  sync script; it spans manager splits, queue and playlist flow, backend
+  abstraction, and extension-heavy frontends for events or shared spaces.
+
+### 52. `Transformed, volumetric, and nonstandard 3D video viewers`
+
+- Main entries:
+  `VR-reversal`, `lifecast_public`, `DepthViewer`, `DomeTools`
+- Why it matters:
+  this branch now captures several unusual but reusable media directions:
+  transform-driven viewers, volumetric and VR180 substrate, depth-expanded
+  media viewers, and immersive dome environments with multi-source ingest.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -733,18 +785,22 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 5. `OpenVR capture, replay, and orchestration toolchains`
 6. `WayVR ecosystem and Linux overlay surfaces`
 7. `PSVR2-specific OpenXR eye-tracking and calibration follow-up`
-8. `Historical utility-suite recovery`
-9. `Validation and workflow micro-utilities`
-10. `Biometric, neurofeedback, and accessory-control bridges`
-11. `VRChat text workflow refinements and TTS follow-up`
-12. `Avatar-facing OSC companion frameworks and automation relays`
-13. `XR glasses workspace shells and head-tracked screen tools`
-14. `Wearable haptics and avatar-driven feedback systems`
-15. `Simulation telemetry overlays and motion-cueing sidecars`
-16. `Microphone control, voice-input, and audio routing helpers`
-17. `Immersive media playback and browser video shells`
-18. `Spatial audio SDKs, renderers, and audio-object optimization`
-19. `Creator-facing audio systems and world voice management`
+8. `Browser panoramic video players and projection-aware web playback`
+9. `Creator-side synced video player frameworks and queue frontends`
+10. `Engine-side stereo panoramic viewers and vendor playback samples`
+11. `Transformed, volumetric, and nonstandard 3D video viewers`
+12. `Historical utility-suite recovery`
+13. `Validation and workflow micro-utilities`
+14. `Biometric, neurofeedback, and accessory-control bridges`
+15. `VRChat text workflow refinements and TTS follow-up`
+16. `Avatar-facing OSC companion frameworks and automation relays`
+17. `XR glasses workspace shells and head-tracked screen tools`
+18. `Wearable haptics and avatar-driven feedback systems`
+19. `Simulation telemetry overlays and motion-cueing sidecars`
+20. `Microphone control, voice-input, and audio routing helpers`
+21. `Immersive media playback and browser video shells`
+22. `Spatial audio SDKs, renderers, and audio-object optimization`
+23. `Creator-facing audio systems and world voice management`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.
