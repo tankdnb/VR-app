@@ -2151,6 +2151,130 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - scoreboard and board infrastructure
 - creator-facing annotation and collaborative marker tools
 
+## Family 71: VRChat world persistence, inventory, save-manager companions, and external-data bridges
+
+This family covers repositories where the main value is how creator worlds keep
+state across sessions or reach outside platform limits through companions,
+helper processes, or encoded in-world persistence carriers.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Nestorboy/NUSaveState` | Already studied | Avatar-backed persistence system that encodes save state through parameter writers, data avatars, and finger-bone readback |
+| `ChrisFeline/ToNSaveManager` | Partially studied | World-specific save companion with log watcher, local history, WebSocket API, OSC or chatbox fan-out, and JS plugin runtime |
+| `TealOrangeCat/InventorySystem` | Already studied | Auto-registered holster inventory with per-item owner arrays, scene-scan setup, and hand-collider access gating |
+| `DarthShader/Udon-MIDI-Web-Helper` | Partially studied | Terms-compliant external helper that extends Udon with HTTP, WebSocket, browser-open, and local-storage operations through logs plus MIDI |
+
+### Consolidation note
+
+This family matters because `creator-world persistence`
+is no longer one lane. It now clearly includes:
+
+- avatar-carried in-platform save state
+- synced inventory ownership and holster state
+- log-driven world save companions
+- helper-process data bridges for web and local storage
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- constrained in-world persistence donors
+- companion-app save managers
+- external sidecars over creator-world transport limits
+- inventory and ownership substrate for reusable world mechanics
+
+## Family 72: VRChat creator diagnostics, editor inspection, profiling, and static-analysis helpers
+
+This family covers repositories where the main value is earlier feedback for
+creators: editor simulation, scene inspection, compile-time instrumentation, or
+IDE and analyzer rules that catch invalid Udon or UdonSharp patterns.
+
+| Project | Status | Notes |
+|---|---|---|
+| `GotoFinal/GotoUdon` | Partially studied | Editor-side Udon rehearsal environment with simulated players, event buttons, and multi-client launch helpers |
+| `Varneon/UdonExplorer` | Already studied | Sortable scene-wide Udon metadata explorer with drill-through into source and serialized program assets |
+| `DeltaNeverUsed/UdonSharpProfiler` | Already studied | Harmony-patched compiler instrumentation that emits Perfetto-friendly trace data from generated UdonSharp |
+| `esnya/UdonRabbit.Analyzer` | Already studied | Roslyn analyzer suite for unsupported UdonSharp patterns, networking rules, and event-contract checks |
+
+### Consolidation note
+
+This family matters because `creator diagnostics`
+now clearly splits into:
+
+- editor-side runtime rehearsal
+- scene metadata inspection
+- compile-time trace instrumentation
+- static-analysis guardrails inside the IDE
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- creator iteration acceleration
+- scene-diagnostics surfaces
+- compiler-adjacent instrumentation
+- ecosystem-specific analyzer authoring
+
+## Family 73: VRChat embodied interaction, custom movement, and physical world mechanics
+
+This family covers repositories where the main value is physical interaction or
+player embodiment inside creator worlds: buttons, switches, grapples, doors,
+movement controllers, and vehicle rigs.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Janooba/immersive-interactions` | Partially studied | Physics-first interaction toolkit built around avatar-bone colliders, sleeping controls, and rich feedback surfaces |
+| `squiddingme/UdonTether` | Already studied | Compact grapple controller with auto-aim, shared property object, and optional rigidbody manipulation |
+| `Nestorboy/NUMovement` | Partially studied | Broad movement framework with abstract controller substrate, stance or platform handling, and extension-oriented design |
+| `esnya/UdonDoor` | Already studied | Narrow but elegant pickup-driven hinge door built around signed-angle targeting and synced audio cues |
+| `kurotori4423/KurotoriUdonKart` | Partially studied | Controller-steered vehicle rig split across seat, handle, throttle, and visual-state companions |
+
+### Consolidation note
+
+This family matters because `embodied world mechanics`
+now clearly includes:
+
+- avatar-bone collider interaction rigs
+- grapple and swing locomotion
+- extensible custom movement frameworks
+- small physical object mechanics like doors
+- vehicle control and seat-state systems
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- physics-first creator interaction donors
+- movement and locomotion frameworks
+- reusable physical control surfaces
+- vehicle and cockpit-style creator mechanics
+
+## Family 74: Udon data-structure libraries, serialization helpers, and creator utility foundations
+
+This family covers repositories where the main value is lower-layer creator
+substance rather than end-user prefabs: shared lifecycle layers, collection
+emulation, serialization helpers, and array-oriented utility foundations.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Guribo/UdonUtils` | Partially studied | Broad creator utility foundation with base behaviour, singleton identity, execution-order validation, and shared helpers |
+| `koyashiro/udon-list` | Already studied | Historical object-backed generic-list emulation for pre-`DataList` UdonSharp |
+| `koyashiro/udon-dictionary` | Already studied | Historical paired-list dictionary emulation that layers dictionary semantics over list substrate |
+| `koyashiro/udon-json` | Already studied | Historical JSON DOM, serializer, and parse-or-error surface for pre-`VRCJSON` creator workflows |
+| `hoke946/UArrayCollections` | Already studied | Array-first list, dictionary, queue, and stack helpers under UdonSharp constraints |
+| `Varneon/VUdon-ArrayExtensions` | Already studied | Array extension layer that adds partial `List<T>` semantics when arrays remain the deliberate runtime choice |
+
+### Consolidation note
+
+This family matters because `creator utility substrate`
+is broader than data containers alone. It now clearly includes:
+
+- shared lifecycle and logging foundations
+- execution-order validation
+- historical collection and JSON emulation
+- modern array-first helper layers
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- creator-world base-framework donors
+- fallback substrate under platform limits
+- array-vs-container design choices
+- serialization and collection helpers for larger world systems
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

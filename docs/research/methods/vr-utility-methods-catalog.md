@@ -4192,3 +4192,280 @@ When a new utility idea appears:
   `UdonRecyclingScrollRect`.
 - Best fit for `VR-apps-lab`:
   creator-world UI infrastructure and list or board systems.
+
+## Method 246: Avatar-parameter persistence through data avatars, parameter writers, and finger-bone readback
+
+- What it is:
+  a creator-world persistence system writes data into avatar parameters or
+  staged data avatars, then reconstructs saved state through controlled avatar
+  slot switching and bone-rotation readback.
+- Good for:
+  in-platform persistence under severe platform limits, portable save state,
+  constrained data carriers, and creator-world save systems that cannot rely on
+  external storage.
+- Why it matters:
+  it captures a clever `pure in-world persistence` pattern instead of assuming
+  all meaningful save state must escape into a companion app.
+- Strong references:
+  `NUSaveState`.
+- Best fit for `VR-apps-lab`:
+  constrained persistence donors and creator-world state encoding research.
+
+## Method 247: World save companion that parses logs and fans state into local history, notifications, OSC, WebSocket, and plugins
+
+- What it is:
+  a desktop sidecar watches VRChat logs, reconstructs world state, persists it
+  locally, and republishes it through several outputs such as notifications,
+  chatbox, OSC, WebSocket, webhook, or script plugins.
+- Good for:
+  world-specific companion apps, save managers, event relays, sidecar
+  automation hosts, and log-driven recovery systems.
+- Why it matters:
+  it turns `log parsing` into a reusable sidecar substrate with multiple output
+  surfaces rather than a one-off parser script.
+- Strong references:
+  `ToNSaveManager`.
+- Best fit for `VR-apps-lab`:
+  companion-app research, event fan-out architectures, and save-manager donors.
+
+## Method 248: Auto-registered holster inventory with per-item owner arrays and hand-collider access control
+
+- What it is:
+  a creator-world inventory scans the scene for valid pickups and holsters,
+  auto-builds ownership arrays, and lets local holsters enforce access and
+  placement through hand-collider gating.
+- Good for:
+  pickup inventories, holster systems, shared equipment, roleplay worlds, and
+  world-side ownership substrate.
+- Why it matters:
+  it shows how to keep `inventory setup` mostly declarative and editor-driven
+  instead of manually wiring every pickup to custom scripts.
+- Strong references:
+  `InventorySystem`.
+- Best fit for `VR-apps-lab`:
+  creator-world inventory donors and reusable pickup-ownership infrastructure.
+
+## Method 249: Terms-compliant external web and local-storage bridge using log commands plus virtual MIDI
+
+- What it is:
+  an external helper process listens to world-emitted log commands, executes
+  HTTP, WebSocket, browser, or local-storage work outside the client, and sends
+  results back into the world through a constrained MIDI channel.
+- Good for:
+  creator-world web access, local persistence, external sidecars, constrained
+  request or response bridges, and platform-safe companion architecture.
+- Why it matters:
+  it captures a reusable way to extend world capabilities without client mods
+  while staying honest about trust boundaries and protocol limits.
+- Strong references:
+  `Udon-MIDI-Web-Helper`.
+- Best fit for `VR-apps-lab`:
+  external sidecar design, creator-world bridge patterns, and constrained
+  transport research.
+
+## Method 250: Unity-editor Udon emulation with simulated players, event injection, and multi-client launch automation
+
+- What it is:
+  an editor toolkit simulates enough of the player and Udon lifecycle to let
+  creators rehearse logic locally, trigger events manually, and speed up
+  multi-client testing flows.
+- Good for:
+  world testing, creator iteration loops, local rehearsal, event debugging, and
+  multiplayer QA acceleration.
+- Why it matters:
+  it shortens the gap between writing creator logic and checking whether it
+  behaves sensibly, without requiring a full live VRChat launch for every edit.
+- Strong references:
+  `GotoUdon`.
+- Best fit for `VR-apps-lab`:
+  creator diagnostics, simulation tools, and editor-side testing donors.
+
+## Method 251: Sortable Udon behaviour explorer with source drill-through and sync metadata inspection
+
+- What it is:
+  an editor window treats scene UdonBehaviours as a sortable searchable table,
+  exposing sync mode, program assets, symbols, source links, and other metadata
+  in one place.
+- Good for:
+  scene audits, creator diagnostics, metadata inspection, source navigation, and
+  world review workflows.
+- Why it matters:
+  it turns Udon scene inspection into a first-class tool instead of forcing
+  creators through slow per-object inspector traversal.
+- Strong references:
+  `UdonExplorer`.
+- Best fit for `VR-apps-lab`:
+  creator-world diagnostics and scene inventory tooling.
+
+## Method 252: Compiler-pipeline instrumentation that emits Perfetto-compatible traces for UdonSharp
+
+- What it is:
+  a Harmony-patched compiler extension injects profiling keys or hooks into
+  generated UdonSharp output and exports runtime trace data into a stronger
+  external visualization tool such as Perfetto.
+- Good for:
+  generated-code profiling, trace capture, compile-time tooling, and creator
+  performance diagnostics.
+- Why it matters:
+  it captures a powerful `instrument the compiler, not every script` strategy
+  for profiling constrained creator environments.
+- Strong references:
+  `UdonSharpProfiler`.
+- Best fit for `VR-apps-lab`:
+  compiler-adjacent tooling and trace-based diagnostics research.
+
+## Method 253: Roslyn analyzer suite for unsupported UdonSharp patterns and network-event contract validation
+
+- What it is:
+  a static-analysis layer encodes Udon or UdonSharp constraints as analyzer
+  rules so unsupported language features and invalid visibility or networking
+  patterns surface before compile or upload time.
+- Good for:
+  creator IDE guardrails, ecosystem-specific linting, code fixes, and
+  compatibility validation.
+- Why it matters:
+  it moves platform knowledge into machine-checkable rules instead of leaving
+  it as tribal knowledge or README warnings.
+- Strong references:
+  `UdonRabbit.Analyzer`.
+- Best fit for `VR-apps-lab`:
+  creator diagnostics and analyzer-authoring patterns.
+
+## Method 254: Local-player bone-collider skeleton driving physics-first buttons and switches with fallback mode
+
+- What it is:
+  a creator interaction stack builds colliders from local-player avatar bones
+  and uses them to drive buttons or switches, while still offering a fallback
+  interaction path when hand bones are unavailable.
+- Good for:
+  embodied buttons, switches, levers, world control surfaces, and physics-first
+  creator interaction.
+- Why it matters:
+  it creates a stronger embodied interaction baseline than generic `Interact`
+  events by giving world mechanics a reusable hand or body representation.
+- Strong references:
+  `immersive-interactions`.
+- Best fit for `VR-apps-lab`:
+  creator-world interaction donors and physical control-surface research.
+
+## Method 255: Sleep-aware manual-sync control surface with collider filtering, cooldowns, ownership transfer, and rich feedback layers
+
+- What it is:
+  a physical control surface stays cheap when idle, wakes on valid interaction,
+  and layers collider filtering, ownership transfer, cooldowns, haptics, tint,
+  textures, and optional manual sync over one reusable prefab pattern.
+- Good for:
+  world buttons, switches, levers, operator panels, and shared physical
+  interaction surfaces.
+- Why it matters:
+  it captures how to make a `physical UI prefab` both rich and practical
+  instead of either too thin or too expensive.
+- Strong references:
+  `immersive-interactions`.
+- Best fit for `VR-apps-lab`:
+  physical creator controls and embodied world-surface donors.
+
+## Method 256: Grapple or tether controller with spherecast auto-aim, spring projection, and optional rigidbody manipulation
+
+- What it is:
+  a locomotion helper uses combined raycast or spherecast detection to acquire a
+  tether target, then applies spring-style movement to the player or manipulates
+  lighter rigidbodies through the same tether abstraction.
+- Good for:
+  grapple mechanics, swing locomotion, tether tools, traversal experiments, and
+  physical object manipulation.
+- Why it matters:
+  it captures a compact but reusable `focused locomotion mechanic` pattern
+  rather than requiring a whole movement framework.
+- Strong references:
+  `UdonTether`.
+- Best fit for `VR-apps-lab`:
+  locomotion experiments and embodied mechanic donors.
+
+## Method 257: Extensible custom movement controller with VRChat-like inputs, platform inheritance, and ground or stance abstraction
+
+- What it is:
+  a movement package separates a broad abstract controller substrate from a
+  concrete implementation so ground handling, gravity, stance, platforms, and
+  VR versus desktop input mapping can evolve without rewriting the whole stack.
+- Good for:
+  custom locomotion, movement frameworks, world-specific traversal, platform
+  inheritance, and embodied control systems.
+- Why it matters:
+  it shows how to keep `movement` extensible and debuggable instead of burying
+  everything in one monolithic behaviour.
+- Strong references:
+  `NUMovement`.
+- Best fit for `VR-apps-lab`:
+  movement-framework references and creator-world locomotion systems.
+
+## Method 258: Pickup-driven hinge door with signed-angle target, spring or drag motion, and synced sound cues
+
+- What it is:
+  a physical hinge object derives target rotation from pickup-handle position,
+  keeps spring or drag motion in a compact controller, and syncs angle plus
+  audio cues instead of full transform state.
+- Good for:
+  doors, lockers, hinged controls, physical handles, and narrow mechanical
+  prefabs.
+- Why it matters:
+  it captures a very reusable lower-bound pattern for small physical mechanics
+  that still feel embodied.
+- Strong references:
+  `UdonDoor`.
+- Best fit for `VR-apps-lab`:
+  compact mechanic donors and pickup-driven interaction research.
+
+## Method 259: Motion-controller steering kart rig with seat, handle, throttle, and visual-state split
+
+- What it is:
+  a creator vehicle system decomposes steering, seating, throttle, and wheel or
+  visual state into cooperating modules, with controller-hand geometry driving
+  the steering surface in VR mode.
+- Good for:
+  vehicles, rideables, cockpit mechanics, racing worlds, and embodied control
+  rigs.
+- Why it matters:
+  it shows a more scalable `vehicle shell` shape than one script that handles
+  every seat, wheel, and state concern at once.
+- Strong references:
+  `KurotoriUdonKart`.
+- Best fit for `VR-apps-lab`:
+  vehicle mechanics and creator-world embodied-control donors.
+
+## Method 260: Creator-world utility foundation with base lifecycle, singleton identity, execution-order validation, and shared common helpers
+
+- What it is:
+  a broad utility substrate standardizes base behaviour lifecycle, logging,
+  dirty-state or sync handling, singleton lookup, execution-order policies, and
+  common helper functions under one creator ecosystem.
+- Good for:
+  large creator packages, shared runtime substrate, package ecosystems, and
+  reusable world foundations.
+- Why it matters:
+  it captures how a `creator framework` can stay coherent across many prefabs
+  and helpers instead of repeating setup and lifecycle logic everywhere.
+- Strong references:
+  `UdonUtils`.
+- Best fit for `VR-apps-lab`:
+  creator-world foundations and reusable utility-layer architecture.
+
+## Method 261: Data-container emulation via object-backed lists, paired arrays, JSON DOM, and array-extension helpers when native containers are insufficient
+
+- What it is:
+  a family of helpers emulates lists, dictionaries, queues, stacks, JSON DOM,
+  and list-like array operations through object records, paired arrays, or
+  extension methods when native container choices are missing or intentionally
+  avoided.
+- Good for:
+  creator substrate, serialization, fallback collections, constrained scripting,
+  and historical platform-workaround studies.
+- Why it matters:
+  it captures several honest strategies for `container ergonomics under
+  platform constraints`, from archived object-backed substrates to modern
+  array-first helper layers.
+- Strong references:
+  `udon-list`, `udon-dictionary`, `udon-json`, `UArrayCollections`,
+  `VUdon-ArrayExtensions`.
+- Best fit for `VR-apps-lab`:
+  creator-world data-structure research and utility-substrate comparisons.

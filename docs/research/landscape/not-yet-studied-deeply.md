@@ -286,6 +286,23 @@ over-promoted immediately.
 | `Miner28/AvatarImageReader` | Partially studied | Unusual dynamic data carrier that encodes text through avatar imagery and runtime pedestal decoding | Medium | High | Re-check the editor encoder, multi-avatar queueing, and what parts still matter after the original string-loading era shifted |
 | `Guribo/UdonLeaderBoard` | Not studied deeply | Possible scoreboard or ranking layer that may pair especially well with recycled-cell list infrastructure | Medium | Medium | Inspect whether it is mostly prefab sugar over `UdonRecyclingScrollRect` or whether it contributes a stronger data-model and sorting layer of its own |
 
+## Priority batch W: Waves 92-95 surfaced follow-up candidates
+
+These were surfaced while deepening VRChat world persistence, creator
+diagnostics, embodied interaction, and creator utility-foundation families, but
+they were intentionally kept as honest follow-up nodes instead of being
+over-promoted immediately.
+
+| Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `ChrisFeline/ToNSaveManager` | Partially studied | World-specific save companion that becomes interesting as a reusable `log parser + event bus + plugin host` even outside its original world | High | High | Narrow the next pass to DB model, JS plugin API, WebSocket event contract, and where the world-specific logic cleanly separates from the generic sidecar substrate |
+| `DarthShader/Udon-MIDI-Web-Helper` | Partially studied | External helper that extends creator worlds through logs, HTTP, WebSocket, local storage, and MIDI return transport without client mods | High | High | Map the exact request framing, trust boundaries, local-storage model, and how much of the transport is reusable outside this specific helper |
+| `GotoFinal/GotoUdon` | Partially studied | Broad editor-side Udon rehearsal stack whose strongest value may be the split between emulation, event injection, and multi-client test workflow | High | High | Inspect the client-launch automation, ownership or networking shims, and how much of the simulation core is reusable independently of the Unity editor chrome |
+| `Janooba/immersive-interactions` | Partially studied | Package-shaped physical interaction toolkit where the strongest donor value may sit in collider rig generation, switch variants, and prefab decomposition | High | High | Split the next pass across buttons, switches, levers, and skeleton-generation helpers instead of treating the package as one surface |
+| `Nestorboy/NUMovement` | Partially studied | Extensible movement framework that may hide several reusable sub-patterns under one broad controller package | High | High | Inspect the extension seams, debug helpers, moving-platform model, and which slices are best kept as framework substrate versus narrow movement donors |
+| `kurotori4423/KurotoriUdonKart` | Partially studied | Broad creator vehicle rig whose most reusable value may be in seat-state, handle logic, and time-attack or race-side companions rather than the base kart loop alone | Medium-High | High | Map the seat, ranking, and state-side modules and compare the VR steering surface more directly against other embodied-control donors |
+| `Guribo/UdonUtils` | Partially studied | Broad creator utility foundation where lifecycle, singleton identity, and execution-order validation are only the first layer of a larger subsystem tree | High | High | Peel off network-time, task, event, or helper subsystems and decide whether `UdonUtils` should become a multi-pass foundation donor rather than one registry node |
+
 ## Family-level gaps that now deserve deeper passes
 
 These are larger than a single repo and should guide the next research wave.
@@ -828,6 +845,47 @@ These are larger than a single repo and should guide the next research wave.
   interaction surfaces: access-control prefabs, annotation tools, dynamic data
   carriers, and lower-layer list or board infrastructure.
 
+### 57. `VRChat world persistence, inventory, and external-data bridges`
+
+- Main entries:
+  `NUSaveState`, `ToNSaveManager`, `InventorySystem`,
+  `Udon-MIDI-Web-Helper`
+- Why it matters:
+  this family now shows that `creator-world persistence` splits across pure
+  in-world encoding, synced inventory ownership, world-specific save
+  companions, and external helper bridges for data the platform does not expose
+  directly.
+
+### 58. `VRChat creator diagnostics, editor inspection, profiling, and static analysis`
+
+- Main entries:
+  `GotoUdon`, `UdonExplorer`, `UdonSharpProfiler`,
+  `UdonRabbit.Analyzer`
+- Why it matters:
+  this family now makes `creator diagnostics` a concrete branch of its own,
+  spanning simulation, inspection, compiler instrumentation, and analyzer-based
+  guardrails.
+
+### 59. `VRChat embodied interaction, custom movement, and physical world mechanics`
+
+- Main entries:
+  `immersive-interactions`, `UdonTether`, `NUMovement`, `UdonDoor`,
+  `KurotoriUdonKart`
+- Why it matters:
+  this family now captures a strong creator-world mechanics branch where the
+  key donor value sits in collider rigs, locomotion controllers, narrow
+  physical prefabs, and vehicle-state splits rather than in generic UI.
+
+### 60. `Udon data-structure libraries, serialization helpers, and creator utility foundations`
+
+- Main entries:
+  `UdonUtils`, `udon-list`, `udon-dictionary`, `udon-json`,
+  `UArrayCollections`, `VUdon-ArrayExtensions`
+- Why it matters:
+  this family now makes `creator substrate` explicit, from lifecycle and
+  execution-order foundations to historical collection emulation and modern
+  array-first helper layers.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -859,6 +917,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 25. `Immersive media playback and browser video shells`
 26. `Spatial audio SDKs, renderers, and audio-object optimization`
 27. `Creator-facing audio systems and world voice management`
+28. `VRChat world persistence, inventory, and external-data bridges`
+29. `VRChat creator diagnostics, editor inspection, profiling, and static analysis`
+30. `VRChat embodied interaction, custom movement, and physical world mechanics`
+31. `Udon data-structure libraries, serialization helpers, and creator utility foundations`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

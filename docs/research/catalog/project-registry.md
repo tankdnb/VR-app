@@ -1121,6 +1121,57 @@ Primary docs:
 - `Guribo/UdonRecyclingScrollRect` - `Already studied`
 - `Guribo/UdonLeaderBoard` - `Not studied deeply`
 
+## 63. VRChat world persistence, inventory, save-manager companions, and external-data bridges
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-92-vrchat-world-persistence-inventory-save-manager-companions-and-external-data-bridges.md`
+- `../landscape/project-families.md`
+
+- `Nestorboy/NUSaveState` - `Already studied`
+- `ChrisFeline/ToNSaveManager` - `Partially studied`
+- `TealOrangeCat/InventorySystem` - `Already studied`
+- `DarthShader/Udon-MIDI-Web-Helper` - `Partially studied`
+
+## 64. VRChat creator diagnostics, editor inspection, profiling, and static-analysis helpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-93-vrchat-creator-diagnostics-editor-inspection-profiling-and-static-analysis-helpers.md`
+- `../landscape/project-families.md`
+
+- `GotoFinal/GotoUdon` - `Partially studied`
+- `Varneon/UdonExplorer` - `Already studied`
+- `DeltaNeverUsed/UdonSharpProfiler` - `Already studied`
+- `esnya/UdonRabbit.Analyzer` - `Already studied`
+
+## 65. VRChat embodied interaction, custom movement, and physical world mechanics
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-94-vrchat-embodied-interaction-custom-movement-and-physical-world-mechanics.md`
+- `../landscape/project-families.md`
+
+- `Janooba/immersive-interactions` - `Partially studied`
+- `squiddingme/UdonTether` - `Already studied`
+- `Nestorboy/NUMovement` - `Partially studied`
+- `esnya/UdonDoor` - `Already studied`
+- `kurotori4423/KurotoriUdonKart` - `Partially studied`
+
+## 66. Udon data-structure libraries, serialization helpers, and creator utility foundations
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-95-udon-data-structure-libraries-serialization-helpers-and-creator-utility-foundations.md`
+- `../landscape/project-families.md`
+
+- `Guribo/UdonUtils` - `Partially studied`
+- `koyashiro/udon-list` - `Already studied`
+- `koyashiro/udon-dictionary` - `Already studied`
+- `koyashiro/udon-json` - `Already studied`
+- `hoke946/UArrayCollections` - `Already studied`
+- `Varneon/VUdon-ArrayExtensions` - `Already studied`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

@@ -44,10 +44,11 @@ These are the clearest current product and research lines:
    the repository now has a clearer branch for mic-state tools, media-player
    shells, panoramic video donors, nonstandard 3D viewers, spatial-audio
    substrate, and creator-side media frameworks.
-8. `VRChat creator-world tooling, runtime infrastructure, and utility prefabs`
+8. `VRChat creator-world tooling, runtime substrate, persistence, diagnostics, and physical mechanics`
    the repository now has a much clearer branch for world-authoring helpers,
-   creator runtime substrate, event-camera systems, and reusable world utility
-   surfaces.
+   creator runtime substrate, persistence and external-data bridges,
+   diagnostics, event-camera systems, reusable utility surfaces, and embodied
+   interaction donors.
 
 ## Most useful current docs
 
@@ -91,6 +92,10 @@ instead of full history:
 - `landscape/vr-projects-wave-89-vrchat-world-runtime-infrastructure-voice-networking-and-player-state-helpers.md`
 - `landscape/vr-projects-wave-90-vrchat-camera-staging-and-admin-control-systems-for-world-events.md`
 - `landscape/vr-projects-wave-91-vrchat-interaction-ui-and-information-surface-prefabs.md`
+- `landscape/vr-projects-wave-92-vrchat-world-persistence-inventory-save-manager-companions-and-external-data-bridges.md`
+- `landscape/vr-projects-wave-93-vrchat-creator-diagnostics-editor-inspection-profiling-and-static-analysis-helpers.md`
+- `landscape/vr-projects-wave-94-vrchat-embodied-interaction-custom-movement-and-physical-world-mechanics.md`
+- `landscape/vr-projects-wave-95-udon-data-structure-libraries-serialization-helpers-and-creator-utility-foundations.md`
 
 ## Strong donor clusters right now
 
@@ -141,6 +146,22 @@ the strongest current clusters:
   `CameraSystem`, `GMMenu`, `U-Key`, `VRCMarker`, `UdonRecyclingScrollRect`
   for creator-world runtime substrate, staging systems, admin surfaces, and
   utility-prefab infrastructure.
+- `NUSaveState`, `InventorySystem`, `ToNSaveManager`,
+  `Udon-MIDI-Web-Helper`
+  for creator-world persistence, companion save managers, and external-data
+  bridge architecture.
+- `GotoUdon`, `UdonExplorer`, `UdonSharpProfiler`,
+  `UdonRabbit.Analyzer`
+  for creator diagnostics, editor inspection, compiler instrumentation, and
+  static guardrails.
+- `immersive-interactions`, `UdonTether`, `NUMovement`, `UdonDoor`,
+  `KurotoriUdonKart`
+  for embodied interaction, locomotion mechanics, and physical world-control
+  donors.
+- `UdonUtils`, `udon-list`, `udon-dictionary`, `udon-json`,
+  `UArrayCollections`, `VUdon-ArrayExtensions`
+  for creator-world substrate, lifecycle foundations, and constrained
+  data-structure design.
 
 ## Highest-value next follow-up passes
 
@@ -165,6 +186,10 @@ directions:
 16. `VRChat world runtime infrastructure and per-player state helpers`
 17. `VRChat camera, staging, and admin-control systems`
 18. `VRChat interaction prefabs and utility UI`
+19. `VRChat world persistence, inventory, and external-data bridges`
+20. `VRChat creator diagnostics, editor inspection, profiling, and static analysis`
+21. `VRChat embodied interaction, custom movement, and physical world mechanics`
+22. `Udon data-structure libraries, serialization helpers, and creator utility foundations`
 
 ## Current repository-maintenance priorities
 

@@ -364,6 +364,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on VRChat interaction prefabs,
   utility UI, and dynamic information-surface tools.
 
+- `vr-projects-wave-92-vrchat-world-persistence-inventory-save-manager-companions-and-external-data-bridges.md`
+  Next GitHub discovery wave focused on VRChat world persistence,
+  inventory helpers, save-manager companions, and external-data bridges.
+
+- `vr-projects-wave-93-vrchat-creator-diagnostics-editor-inspection-profiling-and-static-analysis-helpers.md`
+  Next GitHub discovery wave focused on VRChat creator diagnostics,
+  editor inspection, profiling, and static-analysis helpers.
+
+- `vr-projects-wave-94-vrchat-embodied-interaction-custom-movement-and-physical-world-mechanics.md`
+  Next GitHub discovery wave focused on VRChat embodied interaction,
+  custom movement, and physical world mechanics.
+
+- `vr-projects-wave-95-udon-data-structure-libraries-serialization-helpers-and-creator-utility-foundations.md`
+  Next GitHub discovery wave focused on Udon data-structure libraries,
+  serialization helpers, and creator utility foundations.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.
