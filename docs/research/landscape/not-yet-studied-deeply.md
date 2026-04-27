@@ -886,6 +886,43 @@ These are larger than a single repo and should guide the next research wave.
   execution-order foundations to historical collection emulation and modern
   array-first helper layers.
 
+### 61. `VRChat creator starter baselines, test harnesses, and language-boundary experiments`
+
+- Main entries:
+  `template-world`, `template-udonsharp`, `udon-test`, `wasm2usharp`
+- Why it matters:
+  this family now makes the `very first creator-world layer` explicit, spanning
+  official bootstrap lineage, in-world assertion helpers, and unusual
+  alternative-language experiments that still target UdonSharp.
+
+### 62. `Udon encoding, token, query, and structured-data micro-libraries`
+
+- Main entries:
+  `udon-encoding`, `udon-jwt`, `ULinq`, `UdonXMLParser`
+- Why it matters:
+  this family now captures a strong constrained-runtime micro-library branch:
+  manual encoding fallback, frame-sliced cryptography, compile-time query DSL
+  lowering, and structured-data parsing over `DataDictionary` or `DataList`.
+
+### 63. `Udon sync, events, runtime logging, and shared helper micro-frameworks`
+
+- Main entries:
+  `VUdon-Events`, `UdonSharpNetworkingLib`, `LightSync`, `VUdon-Logger`
+- Why it matters:
+  this family now makes `creator runtime helper frameworks` much clearer,
+  spanning serialized event routing, typed RPC surfaces, stateful sync lineage,
+  and in-world diagnostics.
+
+### 64. `VRChat world control gadgets, environmental systems, and specialized operator surfaces`
+
+- Main entries:
+  `VUdon-DepthBufferToolkit`, `VR-Stage-Lighting`,
+  `UdonSharpDayNightController`, `VRChat_Keypad`, `UdonKeypad`
+- Why it matters:
+  this family now captures a coherent control-surface branch across narrow
+  render fixups, shared environmental clocks, larger operator ecosystems, and
+  reusable access-control gadgets.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -921,6 +958,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 29. `VRChat creator diagnostics, editor inspection, profiling, and static analysis`
 30. `VRChat embodied interaction, custom movement, and physical world mechanics`
 31. `Udon data-structure libraries, serialization helpers, and creator utility foundations`
+32. `VRChat creator starter baselines, test harnesses, and language-boundary experiments`
+33. `Udon encoding, token, query, and structured-data micro-libraries`
+34. `Udon sync, events, runtime logging, and shared helper micro-frameworks`
+35. `VRChat world control gadgets, environmental systems, and specialized operator surfaces`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

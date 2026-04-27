@@ -1,6 +1,6 @@
 # VR Projects Master Index
 
-- Date: `2026-04-21`
+- Date: `2026-04-27`
 - Goal: maintain a single index of VR-related GitHub projects that are useful as
   references, code donors, or product inspiration for `VR-apps-lab`.
 
@@ -104,6 +104,10 @@ This file complements:
 - `vr-projects-wave-93-vrchat-creator-diagnostics-editor-inspection-profiling-and-static-analysis-helpers.md`
 - `vr-projects-wave-94-vrchat-embodied-interaction-custom-movement-and-physical-world-mechanics.md`
 - `vr-projects-wave-95-udon-data-structure-libraries-serialization-helpers-and-creator-utility-foundations.md`
+- `vr-projects-wave-96-vrchat-creator-starter-baselines-test-harnesses-and-language-boundary-experiments.md`
+- `vr-projects-wave-97-udon-encoding-token-query-and-structured-data-micro-libraries.md`
+- `vr-projects-wave-98-udon-sync-events-runtime-logging-and-shared-helper-micro-frameworks.md`
+- `vr-projects-wave-99-vrchat-world-control-gadgets-environmental-systems-and-specialized-operator-surfaces.md`
 
 ## How to use this index
 

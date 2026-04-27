@@ -2275,6 +2275,128 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - array-vs-container design choices
 - serialization and collection helpers for larger world systems
 
+## Family 75: VRChat creator starter baselines, test harnesses, and language-boundary experiments
+
+This family covers repositories where the main value appears before the creator
+world is even fully "running": official project bootstrap, in-world unit-style
+testing, and experimental code-generation paths that still target UdonSharp.
+
+| Project | Status | Notes |
+|---|---|---|
+| `vrchat-community/template-world` | Already studied | Official bootstrap baseline with editor-time resolver restoration through remote config and unitypackage import |
+| `vrchat-community/template-udonsharp` | Fork / variant only | Deprecated official template whose strongest value is migration and template-lineage context |
+| `koyashiro/udon-test` | Already studied | Tiny assertion substrate with recursive equality for arrays and Udon data containers |
+| `raii-x/wasm2usharp` | Already studied | Rust-based Wasm-to-UdonSharp translator with explicit generated runtime substrate and test-mode output |
+
+### Consolidation note
+
+This family matters because `creator-world bootstrap substrate`
+is broader than project scaffolding alone. It now clearly includes:
+
+- official template bootstrap and package restoration
+- historical template-variant lineage
+- small in-world testing helpers
+- language-boundary experiments that still land as UdonSharp
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- creator bootstrap and template lineage
+- creator-world test harnesses
+- code generation into UdonSharp
+- early-phase authoring and bring-up patterns
+
+## Family 76: Udon encoding, token, query, and structured-data micro-libraries
+
+This family covers repositories where the main value is narrow but highly
+reusable constrained-runtime helpers: manual encoding, cryptographic token
+verification, query ergonomics, and structured-data parsing.
+
+| Project | Status | Notes |
+|---|---|---|
+| `koyashiro/udon-encoding` | Already studied | Historical UTF encoding fallback for earlier creator-runtime limits |
+| `koyashiro/udon-jwt` | Already studied | Frame-sliced RS256 verifier with PEM parsing and Montgomery-style modular arithmetic |
+| `aiczk/ULinq` | Already studied | Source-generator and Harmony compile-hook DSL for LINQ-like authoring over arrays |
+| `m-hayabusa/UdonXMLParser` | Already studied | `DataDictionary` or `DataList` XML DOM and path-query helper with async callback mode |
+
+### Consolidation note
+
+This family matters because `micro-libraries`
+often expose the most honest constrained-runtime engineering decisions. It now
+clearly includes:
+
+- manual protocol and encoding fallback
+- cryptographic verification under frame budgets
+- compile-time DSL lowering for better author ergonomics
+- structured-data parsing over creator-native containers
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- narrow constrained-runtime donors
+- protocol and parsing helpers
+- compile-hook and authoring-surface experiments
+- structured-data micro-utilities
+
+## Family 77: Udon sync, events, runtime logging, and shared helper micro-frameworks
+
+This family covers repositories where the main value is reusable creator-world
+runtime framework substrate: serialized event routing, typed networking,
+stateful sync helpers, and in-world diagnostics.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Varneon/VUdon-Events` | Already studied | Build-time event resolver plus singleton runtime dispatcher for UnityEvent-like authoring |
+| `DeltaNeverUsed/UdonSharpNetworkingLib` | Already studied | Compiler-patched RPC framework over synced byte arrays with target-routing semantics |
+| `MMMaellon/LightSync` | Partially studied | Ambitious but currently unstable object-sync substrate with custom state components and auto-setup helpers |
+| `Varneon/VUdon-Logger` | Already studied | Abstract logger plus in-world console surface with filters, timestamps, and sizing controls |
+
+### Consolidation note
+
+This family matters because `creator runtime helper frameworks`
+are now clearly more than one generic utility bucket. They split into:
+
+- serialized event-routing substrate
+- typed parameterized networking
+- stateful object-sync lineage
+- runtime diagnostics surfaces
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- creator-world runtime framework donors
+- compile-time and build-time helper layers
+- event and network routing comparisons
+- in-world diagnostics and debug surfaces
+
+## Family 78: VRChat world control gadgets, environmental systems, and specialized operator surfaces
+
+This family covers repositories where creators or operators need focused
+control surfaces inside the world itself: render fixups, environmental clocks,
+lighting panels, and access-control gadgets.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Varneon/VUdon-DepthBufferToolkit` | Already studied | Narrow render-fixup toolkit for scene cameras and mirror depth activation |
+| `AcChosen/VR-Stage-Lighting` | Partially studied | Broad operator-facing lighting ecosystem with DMX grids, patch export, camera setup, and runtime controls |
+| `tommaier123/UdonSharpDayNightController` | Already studied | Compact synchronized environment controller with local preview override |
+| `MolotovCherry/VRChat_Keypad` | Already studied | Component-split keypad with multi-code routing, object toggles, and Udon callbacks |
+| `KitKat4191/UdonKeypad` | Already studied | Compact all-in-one keypad with allow or deny lists, audio cues, and per-code door routing |
+
+### Consolidation note
+
+This family matters because `world control surface`
+is not one thing. It now clearly includes:
+
+- tiny render-fixup helpers
+- shared environment-state controllers
+- large operator ecosystems for stage control
+- reusable access-control prefabs
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- world-embedded operator surfaces
+- environment and lighting controllers
+- render-fixup micro-tools
+- keypad and access-gating gadget donors
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

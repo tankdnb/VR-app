@@ -380,6 +380,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on Udon data-structure libraries,
   serialization helpers, and creator utility foundations.
 
+- `vr-projects-wave-96-vrchat-creator-starter-baselines-test-harnesses-and-language-boundary-experiments.md`
+  Next GitHub discovery wave focused on VRChat creator starter baselines,
+  test harnesses, and language-boundary experiments.
+
+- `vr-projects-wave-97-udon-encoding-token-query-and-structured-data-micro-libraries.md`
+  Next GitHub discovery wave focused on Udon encoding, token verification,
+  query helpers, and structured-data micro-libraries.
+
+- `vr-projects-wave-98-udon-sync-events-runtime-logging-and-shared-helper-micro-frameworks.md`
+  Next GitHub discovery wave focused on Udon sync, event dispatch,
+  runtime logging, and shared helper micro-frameworks.
+
+- `vr-projects-wave-99-vrchat-world-control-gadgets-environmental-systems-and-specialized-operator-surfaces.md`
+  Next GitHub discovery wave focused on VRChat world control gadgets,
+  environmental systems, and specialized operator surfaces.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

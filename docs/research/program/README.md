@@ -663,3 +663,31 @@ repeatable way.
 
 - `github-research-wave-95-backlog.md`
   Executed backlog for the Wave 95 pass.
+
+- `github-research-wave-96-plan.md`
+  Wave 96 research plan focused on VRChat creator starter baselines,
+  test harnesses, and language-boundary experiments.
+
+- `github-research-wave-96-backlog.md`
+  Executed backlog for the Wave 96 pass.
+
+- `github-research-wave-97-plan.md`
+  Wave 97 research plan focused on Udon encoding, token verification,
+  query helpers, and structured-data micro-libraries.
+
+- `github-research-wave-97-backlog.md`
+  Executed backlog for the Wave 97 pass.
+
+- `github-research-wave-98-plan.md`
+  Wave 98 research plan focused on Udon sync, event dispatch,
+  runtime logging, and shared helper micro-frameworks.
+
+- `github-research-wave-98-backlog.md`
+  Executed backlog for the Wave 98 pass.
+
+- `github-research-wave-99-plan.md`
+  Wave 99 research plan focused on VRChat world control gadgets,
+  environmental systems, and specialized operator surfaces.
+
+- `github-research-wave-99-backlog.md`
+  Executed backlog for the Wave 99 pass.

@@ -1172,6 +1172,55 @@ Primary docs:
 - `hoke946/UArrayCollections` - `Already studied`
 - `Varneon/VUdon-ArrayExtensions` - `Already studied`
 
+## 67. VRChat creator starter baselines, test harnesses, and language-boundary experiments
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-96-vrchat-creator-starter-baselines-test-harnesses-and-language-boundary-experiments.md`
+- `../landscape/project-families.md`
+
+- `vrchat-community/template-world` - `Already studied`
+- `vrchat-community/template-udonsharp` - `Fork / variant only`
+- `koyashiro/udon-test` - `Already studied`
+- `raii-x/wasm2usharp` - `Already studied`
+
+## 68. Udon encoding, token, query, and structured-data micro-libraries
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-97-udon-encoding-token-query-and-structured-data-micro-libraries.md`
+- `../landscape/project-families.md`
+
+- `koyashiro/udon-encoding` - `Already studied`
+- `koyashiro/udon-jwt` - `Already studied`
+- `aiczk/ULinq` - `Already studied`
+- `m-hayabusa/UdonXMLParser` - `Already studied`
+
+## 69. Udon sync, events, runtime logging, and shared helper micro-frameworks
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-98-udon-sync-events-runtime-logging-and-shared-helper-micro-frameworks.md`
+- `../landscape/project-families.md`
+
+- `Varneon/VUdon-Events` - `Already studied`
+- `DeltaNeverUsed/UdonSharpNetworkingLib` - `Already studied`
+- `MMMaellon/LightSync` - `Partially studied`
+- `Varneon/VUdon-Logger` - `Already studied`
+
+## 70. VRChat world control gadgets, environmental systems, and specialized operator surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-99-vrchat-world-control-gadgets-environmental-systems-and-specialized-operator-surfaces.md`
+- `../landscape/project-families.md`
+
+- `Varneon/VUdon-DepthBufferToolkit` - `Already studied`
+- `AcChosen/VR-Stage-Lighting` - `Partially studied`
+- `tommaier123/UdonSharpDayNightController` - `Already studied`
+- `MolotovCherry/VRChat_Keypad` - `Already studied`
+- `KitKat4191/UdonKeypad` - `Already studied`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

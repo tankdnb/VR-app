@@ -4469,3 +4469,265 @@ When a new utility idea appears:
   `VUdon-ArrayExtensions`.
 - Best fit for `VR-apps-lab`:
   creator-world data-structure research and utility-substrate comparisons.
+
+## Method 262: Self-restoring creator bootstrap on editor open through remote config and unitypackage import
+
+- What it is:
+  an editor bootstrap checks whether a required package resolver is present,
+  fetches the current bootstrap URL from remote config, downloads the package
+  into temp storage, and imports it automatically.
+- Good for:
+  official templates, self-healing starter projects, editor bring-up flows, and
+  package bootstrap recovery.
+- Why it matters:
+  it captures a strong `healthy project on first open`
+  pattern instead of assuming every contributor already has the right resolver
+  or package substrate.
+- Strong references:
+  `template-world`, `template-udonsharp`.
+- Best fit for `VR-apps-lab`:
+  creator bootstrap lineage and setup-pattern research.
+
+## Method 263: In-world assertion library with recursive equality over arrays and Udon data containers
+
+- What it is:
+  a small creator-world testing layer exposes basic assertions and compares
+  nested arrays, `DataToken`, `DataList`, and `DataDictionary`
+  values recursively.
+- Good for:
+  creator-world test helpers, validation harnesses, local logic checks, and
+  data-structure verification.
+- Why it matters:
+  it shows how much testing leverage creators can get without a heavy runtime
+  or editor framework.
+- Strong references:
+  `udon-test`.
+- Best fit for `VR-apps-lab`:
+  creator diagnostics and world-side test-harness research.
+
+## Method 264: Language-boundary code generation from Wasm into an explicit UdonSharp runtime substrate
+
+- What it is:
+  a translator validates WebAssembly input, lowers it into a custom
+  intermediate representation, and emits UdonSharp classes that expose memory,
+  globals, imports, and exports explicitly.
+- Good for:
+  alternative-language experiments, code generation, constrained-runtime
+  compilation targets, and explicit runtime substrate design.
+- Why it matters:
+  it shows that `UdonSharp`
+  can be treated as a target language for generated code rather than only as
+  the author-facing source language.
+- Strong references:
+  `wasm2usharp`.
+- Best fit for `VR-apps-lab`:
+  creator-world codegen research and alternative-language architecture studies.
+
+## Method 265: Manual encoding fallback layer for constrained Udon runtimes
+
+- What it is:
+  a helper library implements UTF encoding and decoding manually, including
+  surrogate-pair handling and `TryGet*`
+  surfaces suited to constrained runtimes.
+- Good for:
+  text protocols, older creator-runtime support, fallback parsing, and narrow
+  string-processing helpers.
+- Why it matters:
+  it captures an honest strategy for text handling when newer native platform
+  APIs are missing or insufficient.
+- Strong references:
+  `udon-encoding`.
+- Best fit for `VR-apps-lab`:
+  constrained-runtime protocol research and historical creator-workaround
+  studies.
+
+## Method 266: Frame-sliced JWT verifier with predecoded key material and progress callbacks
+
+- What it is:
+  a token verifier decodes PEM-backed RSA public keys into serialized arrays,
+  validates `RS256`
+  signatures, and advances heavy modular arithmetic across delayed frames while
+  reporting progress.
+- Good for:
+  cryptographic verification under frame budgets, token helpers, constrained
+  runtime security research, and progress-aware long tasks.
+- Why it matters:
+  it shows how to keep mathematically heavy work inside a world-friendly
+  runtime model without blocking everything else.
+- Strong references:
+  `udon-jwt`.
+- Best fit for `VR-apps-lab`:
+  creator-world protocol helpers and frame-sliced computation patterns.
+
+## Method 267: Source-generator plus Harmony compile-hook DSL that lowers into plain loops for UdonSharp
+
+- What it is:
+  an author-friendly query surface uses source generators and a compiler hook
+  so the source a creator writes is more expressive than the low-level loop code
+  the compiler ultimately sees.
+- Good for:
+  creator tooling, DSL design, compile-pipeline intervention, author ergonomics,
+  and generated loop helpers.
+- Why it matters:
+  it captures a strong `ergonomic source, plain emitted code`
+  strategy for constrained scripting environments.
+- Strong references:
+  `ULinq`.
+- Best fit for `VR-apps-lab`:
+  creator-tooling research and compile-hook donor patterns.
+
+## Method 268: Structured-data parser over DataDictionary or DataList with async callback parsing and path queries
+
+- What it is:
+  a parser turns structured text into `DataDictionary` or `DataList`
+  objects, exposes path queries over the result, and offers callback-driven
+  asynchronous parsing when frame cost matters.
+- Good for:
+  creator-world data ingestion, document parsing, config helpers, structured
+  payload processing, and async runtime utilities.
+- Why it matters:
+  it shows how to build a usable structured-data surface on top of the
+  platform's native data containers instead of inventing a whole new model.
+- Strong references:
+  `UdonXMLParser`.
+- Best fit for `VR-apps-lab`:
+  creator-world parsing research and native-container data tooling.
+
+## Method 269: Build-time event resolver with serialized DataList call graph and singleton runtime dispatcher
+
+- What it is:
+  an editor or build pipeline resolves Udon event addresses ahead of time,
+  serializes persistent event calls into `DataList`, and dispatches them
+  through one singleton runtime handler.
+- Good for:
+  UnityEvent-like authoring, creator callback routing, prefab-level events, and
+  serialized call-graph tooling.
+- Why it matters:
+  it turns event wiring into a first-class creator surface instead of leaving it
+  as ad hoc `SendCustomEvent`
+  strings everywhere.
+- Strong references:
+  `VUdon-Events`.
+- Best fit for `VR-apps-lab`:
+  creator-world event-surface research and serialized callback architecture.
+
+## Method 270: Compile-time generated RPC surface over synced byte arrays with target-routing semantics
+
+- What it is:
+  a networking layer annotates methods with target metadata, generates the
+  dispatch surface during compilation, serializes parameters into a synced byte
+  buffer, and routes calls according to target mode.
+- Good for:
+  parameterized creator networking, typed RPC experiments, sync abstraction
+  layers, and target-aware call routing.
+- Why it matters:
+  it captures how to build higher-level networking semantics on top of very
+  simple transport primitives.
+- Strong references:
+  `UdonSharpNetworkingLib`.
+- Best fit for `VR-apps-lab`:
+  creator-world networking patterns and compile-generated transport surfaces.
+
+## Method 271: In-world runtime console with abstract logger base, log-type filters, timestamps, and font controls
+
+- What it is:
+  a runtime logger separates a generic logging surface from one concrete
+  console window that stores entries, filters them by type, toggles timestamps,
+  and exposes in-world sizing controls.
+- Good for:
+  creator diagnostics, runtime debug panels, admin consoles, and world-side
+  observation surfaces.
+- Why it matters:
+  it shows how to turn `logging`
+  into a reusable world-facing tool rather than a stream of isolated debug
+  lines.
+- Strong references:
+  `VUdon-Logger`.
+- Best fit for `VR-apps-lab`:
+  creator-world diagnostics and in-world debug-surface donors.
+
+## Method 272: Editor-plus-build-postprocess depth-buffer activation for scene cameras and mirrors
+
+- What it is:
+  a small toolkit exposes editor menu actions for scene cameras, adds a runtime
+  activator prefab, and patches mirror cameras through a build-time postprocess
+  plus a tiny one-shot runtime component.
+- Good for:
+  render fixups, depth-dependent effects, mirror compatibility helpers, and
+  narrow world-authoring utilities.
+- Why it matters:
+  it captures a very reusable `tiny fix with editor help and runtime cleanup`
+  pattern for creator-world rendering problems.
+- Strong references:
+  `VUdon-DepthBufferToolkit`.
+- Best fit for `VR-apps-lab`:
+  render-fixup utilities and creator-world world-setup helpers.
+
+## Method 273: Shader-grid and custom-render-texture stage-lighting system with local operator panel and patch export workflow
+
+- What it is:
+  a world-side lighting system drives fixtures through DMX-like textures or
+  grids, exposes a local operator panel for quality and intensity control, and
+  supports patch export or authoring tools in the editor.
+- Good for:
+  stage lighting, world operator panels, DMX-style systems, shader-driven
+  control surfaces, and creator event production tools.
+- Why it matters:
+  it shows how a broad operator ecosystem can still stay coherent across
+  runtime control, transport buffers, camera layout, and export tooling.
+- Strong references:
+  `VR-Stage-Lighting`.
+- Best fit for `VR-apps-lab`:
+  creator-world operator-surface research and complex control-system donors.
+
+## Method 274: Shared environment controller with synced global clock and optional local override
+
+- What it is:
+  a compact controller keeps one normalized time or speed state synced for the
+  whole world while optionally allowing a local preview override for the user
+  adjusting it.
+- Good for:
+  day-night systems, ambience controllers, shared weather baselines, and simple
+  world-state managers.
+- Why it matters:
+  it captures how a very small synced state can still drive a wide set of world
+  outputs cleanly.
+- Strong references:
+  `UdonSharpDayNightController`.
+- Best fit for `VR-apps-lab`:
+  creator-world environment controllers and small shared-state donors.
+
+## Method 275: Multi-code keypad surface with object toggles and Udon callback routing
+
+- What it is:
+  a keypad system splits input, display, settings, and validation into
+  cooperating components, supports multiple codes, toggles mapped objects, and
+  dispatches granted, denied, or closed callbacks into Udon programs.
+- Good for:
+  access control, puzzle gates, operator panels, world permissions, and
+  reusable control gadgets.
+- Why it matters:
+  it shows a strong `component split plus declarative config`
+  pattern for creator-world access surfaces.
+- Strong references:
+  `VRChat_Keypad`.
+- Best fit for `VR-apps-lab`:
+  creator-world control surfaces and access-gating donors.
+
+## Method 276: Compact drag-and-drop keypad with allow or deny gating and per-code door separation
+
+- What it is:
+  a monolithic but configurable keypad normalizes primary and additional codes,
+  applies allow or deny lists, plays optional audio cues, and can route
+  different codes to different door objects.
+- Good for:
+  quick prefab integration, access gating, multi-door routing, small admin
+  surfaces, and creator-world puzzle mechanics.
+- Why it matters:
+  it captures the other side of keypad design:
+  `fast setup and compact ownership`
+  rather than a more explicit multi-script split.
+- Strong references:
+  `UdonKeypad`.
+- Best fit for `VR-apps-lab`:
+  creator-world gadget research and compact prefab utility donors.

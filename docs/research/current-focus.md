@@ -1,6 +1,6 @@
 # Current Focus
 
-- Date: `2026-04-21`
+- Date: `2026-04-27`
 - Purpose: give a short `what matters now` view of `VR-apps-lab` without
   forcing a new session or visitor through the full wave archive.
 
@@ -44,11 +44,12 @@ These are the clearest current product and research lines:
    the repository now has a clearer branch for mic-state tools, media-player
    shells, panoramic video donors, nonstandard 3D viewers, spatial-audio
    substrate, and creator-side media frameworks.
-8. `VRChat creator-world tooling, runtime substrate, persistence, diagnostics, and physical mechanics`
+8. `VRChat creator-world tooling, bootstrap baselines, runtime substrate, micro-libraries, and physical or world-control mechanics`
    the repository now has a much clearer branch for world-authoring helpers,
-   creator runtime substrate, persistence and external-data bridges,
-   diagnostics, event-camera systems, reusable utility surfaces, and embodied
-   interaction donors.
+   creator bootstrap lineage, runtime substrate, persistence and external-data
+   bridges, diagnostics, event-camera systems, reusable utility surfaces, Udon
+   protocol micro-libraries, runtime helper frameworks, world-control gadgets,
+   and embodied interaction donors.
 
 ## Most useful current docs
 
@@ -96,6 +97,10 @@ instead of full history:
 - `landscape/vr-projects-wave-93-vrchat-creator-diagnostics-editor-inspection-profiling-and-static-analysis-helpers.md`
 - `landscape/vr-projects-wave-94-vrchat-embodied-interaction-custom-movement-and-physical-world-mechanics.md`
 - `landscape/vr-projects-wave-95-udon-data-structure-libraries-serialization-helpers-and-creator-utility-foundations.md`
+- `landscape/vr-projects-wave-96-vrchat-creator-starter-baselines-test-harnesses-and-language-boundary-experiments.md`
+- `landscape/vr-projects-wave-97-udon-encoding-token-query-and-structured-data-micro-libraries.md`
+- `landscape/vr-projects-wave-98-udon-sync-events-runtime-logging-and-shared-helper-micro-frameworks.md`
+- `landscape/vr-projects-wave-99-vrchat-world-control-gadgets-environmental-systems-and-specialized-operator-surfaces.md`
 
 ## Strong donor clusters right now
 
@@ -162,6 +167,17 @@ the strongest current clusters:
   `UArrayCollections`, `VUdon-ArrayExtensions`
   for creator-world substrate, lifecycle foundations, and constrained
   data-structure design.
+- `template-world`, `udon-test`, `wasm2usharp`, `udon-encoding`, `udon-jwt`,
+  `ULinq`, `UdonXMLParser`
+  for creator bootstrap lineage, testing substrate, alternative-language
+  pipelines, and constrained-runtime protocol or parsing helpers.
+- `VUdon-Events`, `UdonSharpNetworkingLib`, `LightSync`, `VUdon-Logger`
+  for creator runtime helper frameworks, serialized event routing, typed
+  networking, sync lineage, and in-world diagnostics.
+- `VUdon-DepthBufferToolkit`, `VR-Stage-Lighting`,
+  `UdonSharpDayNightController`, `VRChat_Keypad`, `UdonKeypad`
+  for render-fixup micro-tools, operator surfaces, shared environment control,
+  and access-control gadgets.
 
 ## Highest-value next follow-up passes
 
@@ -190,6 +206,10 @@ directions:
 20. `VRChat creator diagnostics, editor inspection, profiling, and static analysis`
 21. `VRChat embodied interaction, custom movement, and physical world mechanics`
 22. `Udon data-structure libraries, serialization helpers, and creator utility foundations`
+23. `VRChat creator starter baselines, test harnesses, and language-boundary experiments`
+24. `Udon encoding, token, query, and structured-data micro-libraries`
+25. `Udon sync, events, runtime logging, and shared helper micro-frameworks`
+26. `VRChat world control gadgets, environmental systems, and specialized operator surfaces`
 
 ## Current repository-maintenance priorities
 
