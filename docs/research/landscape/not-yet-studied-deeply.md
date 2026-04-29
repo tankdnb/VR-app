@@ -923,6 +923,44 @@ These are larger than a single repo and should guide the next research wave.
   render fixups, shared environmental clocks, larger operator ecosystems, and
   reusable access-control gadgets.
 
+### 65. `VRChat avatar setup, optimization, and Quest portability`
+
+- Main entries:
+  `PumkinsAvatarTools`, `VRCQuestTools`, `d4rkAvatarOptimizer`,
+  `immersive_scaler`
+- Why it matters:
+  this family now makes the avatar bring-up pipeline explicit across editor
+  workbenches, validator-driven mobile conversion, upload-time optimization,
+  and DCC-side proportional scaling.
+
+### 66. `VRChat avatar composition, packaging, and install automation`
+
+- Main entries:
+  `modular-avatar`, `modular-avatar-as-code`, `vrc-get`,
+  `Avatars-3.0-Manager`
+- Why it matters:
+  this family now captures a strong creator integration branch where
+  composition substrate, package management, and install-safe helper shells all
+  matter together.
+
+### 67. `VRChat avatar emulation, gesture preview, repair, and OSC-assisted posing`
+
+- Main entries:
+  `Av3Emulator`, `VRC-Gesture-Manager`, `avautils`, `LexisPosingSystem`
+- Why it matters:
+  this family now makes `avatar rehearsal and intervention`
+  explicit, spanning full emulators, preview harnesses, repair suites, and
+  pose-session OSC companions.
+
+### 68. `VRChat avatar text, speech, translation, and viseme sidecars`
+
+- Main entries:
+  `TTS-Voice-Wizard`, `kikitan-translator`, `HeadTTS`, `Billboard`
+- Why it matters:
+  this family now captures the avatar-facing speech stack more honestly across
+  operator speech hubs, overlay-backed translation shells, viseme-aware engines,
+  and avatar-visible speech surfaces.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -962,6 +1000,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 33. `Udon encoding, token, query, and structured-data micro-libraries`
 34. `Udon sync, events, runtime logging, and shared helper micro-frameworks`
 35. `VRChat world control gadgets, environmental systems, and specialized operator surfaces`
+36. `VRChat avatar setup, optimization, and Quest portability`
+37. `VRChat avatar composition, packaging, and install automation`
+38. `VRChat avatar emulation, gesture preview, repair, and OSC-assisted posing`
+39. `VRChat avatar text, speech, translation, and viseme sidecars`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

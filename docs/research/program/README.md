@@ -691,3 +691,31 @@ repeatable way.
 
 - `github-research-wave-99-backlog.md`
   Executed backlog for the Wave 99 pass.
+
+- `github-research-wave-100-plan.md`
+  Wave 100 research plan focused on VRChat avatar setup,
+  optimization, and Quest portability.
+
+- `github-research-wave-100-backlog.md`
+  Executed backlog for the Wave 100 pass.
+
+- `github-research-wave-101-plan.md`
+  Wave 101 research plan focused on VRChat avatar composition,
+  packaging, and install automation.
+
+- `github-research-wave-101-backlog.md`
+  Executed backlog for the Wave 101 pass.
+
+- `github-research-wave-102-plan.md`
+  Wave 102 research plan focused on VRChat avatar emulation,
+  gesture preview, repair, and OSC-assisted posing.
+
+- `github-research-wave-102-backlog.md`
+  Executed backlog for the Wave 102 pass.
+
+- `github-research-wave-103-plan.md`
+  Wave 103 research plan focused on VRChat avatar text,
+  speech, translation, and viseme sidecars.
+
+- `github-research-wave-103-backlog.md`
+  Executed backlog for the Wave 103 pass.

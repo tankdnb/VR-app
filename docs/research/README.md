@@ -92,6 +92,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-97-udon-encoding-token-query-and-structured-data-micro-libraries.md`
 - `landscape/vr-projects-wave-98-udon-sync-events-runtime-logging-and-shared-helper-micro-frameworks.md`
 - `landscape/vr-projects-wave-99-vrchat-world-control-gadgets-environmental-systems-and-specialized-operator-surfaces.md`
+- `landscape/vr-projects-wave-100-vrchat-avatar-setup-optimization-and-quest-portability.md`
+- `landscape/vr-projects-wave-101-vrchat-avatar-composition-packaging-and-install-automation.md`
+- `landscape/vr-projects-wave-102-vrchat-avatar-emulation-gesture-preview-repair-and-osc-assisted-posing.md`
+- `landscape/vr-projects-wave-103-vrchat-avatar-text-speech-translation-and-viseme-sidecars.md`
 
 ## Archive Navigation
 

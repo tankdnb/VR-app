@@ -396,6 +396,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on VRChat world control gadgets,
   environmental systems, and specialized operator surfaces.
 
+- `vr-projects-wave-100-vrchat-avatar-setup-optimization-and-quest-portability.md`
+  Next GitHub discovery wave focused on VRChat avatar setup,
+  optimization, and Quest portability.
+
+- `vr-projects-wave-101-vrchat-avatar-composition-packaging-and-install-automation.md`
+  Next GitHub discovery wave focused on VRChat avatar composition,
+  packaging, and install automation.
+
+- `vr-projects-wave-102-vrchat-avatar-emulation-gesture-preview-repair-and-osc-assisted-posing.md`
+  Next GitHub discovery wave focused on VRChat avatar emulation,
+  gesture preview, repair, and OSC-assisted posing.
+
+- `vr-projects-wave-103-vrchat-avatar-text-speech-translation-and-viseme-sidecars.md`
+  Next GitHub discovery wave focused on VRChat avatar text,
+  speech, translation, and viseme sidecars.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

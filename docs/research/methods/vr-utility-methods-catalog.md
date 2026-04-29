@@ -4731,3 +4731,258 @@ When a new utility idea appears:
   `UdonKeypad`.
 - Best fit for `VR-apps-lab`:
   creator-world gadget research and compact prefab utility donors.
+
+## Method 277: Editor workbench with project-scoped Unity prefs and dedicated pose editing for avatar setup
+
+- What it is:
+  a broad editor shell centralizes avatar setup operations while storing its
+  own state under project-scoped preference keys and exposing a dedicated pose
+  editing surface rather than relying only on scattered menu items.
+- Good for:
+  creator workbenches, project-local editor state, pose-authoring helpers, and
+  reusable avatar setup shells.
+- Why it matters:
+  it captures how a large creator utility can stay coherent across projects
+  instead of becoming one global stateful editor blob.
+- Strong references:
+  `PumkinsAvatarTools`.
+- Best fit for `VR-apps-lab`:
+  avatar authoring workbench research and project-scoped editor-tool design.
+
+## Method 278: Generic avatar copier pipeline with ignored-transform mapping and migration-oriented copy bookkeeping
+
+- What it is:
+  a copier layer tracks from or to objects, ignored transforms, and copy-state
+  bookkeeping explicitly so avatar migration tasks can be repeated and debugged
+  more safely.
+- Good for:
+  avatar migration, partial setup cloning, tool-driven component copying, and
+  editor-side remap helpers.
+- Why it matters:
+  it turns copying into a real pipeline surface instead of a one-shot editor
+  trick.
+- Strong references:
+  `PumkinsAvatarTools`.
+- Best fit for `VR-apps-lab`:
+  avatar setup tooling and migration-helper architecture.
+
+## Method 279: Non-destructive avatar converter that injects validator automators and tracks asset replacements through NDMF passes
+
+- What it is:
+  a conversion pipeline validates avatars while creators edit, then performs
+  non-destructive build passes while tracking which objects, materials, clips,
+  or controllers were replaced.
+- Good for:
+  mobile-target conversion, validator-driven build tooling, asset replacement
+  registries, and build-pipeline authoring.
+- Why it matters:
+  it captures a strong way to keep heavy avatar mutation inspectable instead of
+  opaque.
+- Strong references:
+  `VRCQuestTools`.
+- Best fit for `VR-apps-lab`:
+  Quest portability, validator surfaces, and non-destructive conversion
+  research.
+
+## Method 280: Upload-triggered avatar optimizer with shader-merge analysis and animator-controller rewrite stages
+
+- What it is:
+  an upload-time optimizer can inject itself into the build path, then stage
+  cleanup across shader analysis, material merge, mesh transforms, and animator
+  graph rewrites instead of stopping at geometry-only optimization.
+- Good for:
+  build-time optimization, shader-aware merging, animator cleanup, and staged
+  performance tooling.
+- Why it matters:
+  it shows how optimization becomes much stronger once controller and shader
+  structure are treated as first-class inputs.
+- Strong references:
+  `d4rkAvatarOptimizer`.
+- Best fit for `VR-apps-lab`:
+  avatar optimization research and staged build-mutation architecture.
+
+## Method 281: Code-first facade over avatar composition components with dummy authoring and retargetable root binding
+
+- What it is:
+  a thin code layer emits or edits creator components directly, supports dummy
+  or no-op mode, and can retarget the same authoring logic to another root.
+- Good for:
+  code-driven authoring, component-graph generation, reusable setup scripts, and
+  composition automation.
+- Why it matters:
+  it captures a strong
+  `code-first authoring over inspector-native ecosystem`
+  pattern.
+- Strong references:
+  `modular-avatar-as-code`.
+- Best fit for `VR-apps-lab`:
+  creator automation and code-first component authoring research.
+
+## Method 282: Project-manager split with core resolver library, CLI shell, and GUI background metadata sync
+
+- What it is:
+  one system keeps package resolution and project metadata logic in a core
+  library while thin CLI and GUI shells reuse it and background-sync the real
+  project state from disk.
+- Good for:
+  package managers, environment repair tools, cross-platform creator tooling,
+  and library-plus-shell product design.
+- Why it matters:
+  it shows how project health tooling can stay both scriptable and user-facing
+  without duplicating its core logic.
+- Strong references:
+  `vrc-get`.
+- Best fit for `VR-apps-lab`:
+  project-manager architecture and creator-environment tooling.
+
+## Method 283: Attribute-discovered multi-tab avatar manager with safe per-run asset output directories
+
+- What it is:
+  an avatar helper shell discovers tool tabs dynamically and generates copied
+  or merged assets into unique output directories so repeated runs stay safer.
+- Good for:
+  multi-tool editor shells, safe asset generation, reusable helper APIs, and
+  scripted creator workflows.
+- Why it matters:
+  it captures how tool aggregation can stay organized without writing one giant
+  hard-coded window.
+- Strong references:
+  `Avatars-3.0-Manager`.
+- Best fit for `VR-apps-lab`:
+  editor-shell design and asset-copy workflow research.
+
+## Method 284: Clone-based playable avatar emulator with expression-menu stack and OSC loopback
+
+- What it is:
+  an emulator creates preview clones, keeps an expression-menu stack, and can
+  send or receive OSC so creators can rehearse more of the live avatar
+  experience inside the editor.
+- Good for:
+  avatar preview, live-menu emulation, rehearsal tooling, and OSC loopback
+  testing.
+- Why it matters:
+  it captures a deeper kind of creator preview than a simple animation player.
+- Strong references:
+  `Av3Emulator`.
+- Best fit for `VR-apps-lab`:
+  avatar rehearsal environments and preview-substrate design.
+
+## Method 285: Radial-menu preview harness with avatar-state modules, tracking dummies, and OSC debugging
+
+- What it is:
+  a preview harness organizes avatar testing through radial surfaces and
+  modular subsystems for state, tools, dummies, OSC, and debug windows.
+- Good for:
+  gesture preview, editor rehearsal, debug-heavy tool design, and modular
+  preview environments.
+- Why it matters:
+  it shows how a preview tool can stay operable even when it covers many
+  independent avatar subsystems.
+- Strong references:
+  `VRC-Gesture-Manager`.
+- Best fit for `VR-apps-lab`:
+  preview-harness UX and modular debug-surface research.
+
+## Method 286: Avatar repair toolkit with bone remapping, skinned-mesh combine, fitting-room, and hierarchy surgery utilities
+
+- What it is:
+  a repair suite groups several narrow intervention tools together so creators
+  can remap bones, combine meshes, fit outfits, normalize armatures, and clean
+  hierarchy problems without one monolithic pipeline.
+- Good for:
+  manual repair, fitting-room tooling, pre-upload cleanup, and narrow
+  intervention surfaces.
+- Why it matters:
+  it captures how
+  `manual avatar surgery`
+  can remain reusable without pretending every fix belongs in an optimizer.
+- Strong references:
+  `avautils`.
+- Best fit for `VR-apps-lab`:
+  manual-repair donors and creator intervention toolkit research.
+
+## Method 287: OSC sidecar with autosave, undo-history, and puppet-scene pose orchestration
+
+- What it is:
+  a pose sidecar manages save, load, autosave, scene snapshots, and undo or
+  redo state across OSC messages instead of sending isolated stateless pose
+  commands.
+- Good for:
+  external pose companions, puppet-session tools, history-aware OSC helpers,
+  and pose-workflow automation.
+- Why it matters:
+  it shows how a sidecar can own session state and history rather than acting
+  as a thin transport bridge.
+- Strong references:
+  `LexisPosingSystem`.
+- Best fit for `VR-apps-lab`:
+  avatar pose companion research and OSC-session architecture.
+
+## Method 288: Queue-based multi-engine speech hub with VRChat listener triggers and OSC or chatbox or avatar-text fan-out
+
+- What it is:
+  a speech hub queues utterances, listens to VRChat-side triggers, and fans
+  results out through OSC, chatbox, avatar text, or other integrations while
+  keeping recognition and synthesis engines swappable.
+- Good for:
+  speech sidecars, accessibility tools, translation hubs, and multi-output
+  communication utilities.
+- Why it matters:
+  it captures how speech tooling becomes more reusable once it is built as an
+  orchestrator instead of one speech engine.
+- Strong references:
+  `TTS-Voice-Wizard`.
+- Best fit for `VR-apps-lab`:
+  speech-sidecar architecture and avatar-facing communication tooling.
+
+## Method 289: Browser-or-server TTS pipeline with phoneme timestamps, viseme outputs, and WebSocket or WebWorker backends
+
+- What it is:
+  one TTS substrate exposes the same client contract whether inference happens
+  in-browser or on a server, while returning both audio and timing data suited
+  to lip-sync.
+- Good for:
+  viseme-aware TTS, browser speech tools, local inference fallback, and
+  lip-sync-capable speech engines.
+- Why it matters:
+  it captures a strong way to separate deployment choice from the speech client
+  API itself.
+- Strong references:
+  `HeadTTS`.
+- Best fit for `VR-apps-lab`:
+  speech-engine substrate and viseme-timing research.
+
+## Method 290: Translator shell that combines desktop UI, OSC output, and timed OpenVR image overlays
+
+- What it is:
+  a translation helper splits operator UI, OSC data-out, and VR-visible overlay
+  presentation into separate cooperating layers rather than forcing one runtime
+  process to own everything.
+- Good for:
+  translator sidecars, caption surfaces, desktop-plus-VR helpers, and hybrid
+  utility shells.
+- Why it matters:
+  it captures a reusable
+  `desktop shell plus VR surface`
+  architecture for language and text helpers.
+- Strong references:
+  `kikitan-translator`.
+- Best fit for `VR-apps-lab`:
+  translation sidecars and overlay-backed communication surfaces.
+
+## Method 291: World-droppable speech billboard prefab built on avatar-text parameter budgets and fallback visual states
+
+- What it is:
+  an avatar-visible speech surface treats parameter space, write-default
+  compatibility, world pickup or drop behavior, and fallback visibility as core
+  product constraints instead of afterthoughts.
+- Good for:
+  avatar speech surfaces, accessibility-prefab design, product-reference
+  studies, and parameter-budget-aware UX.
+- Why it matters:
+  it shows how an avatar-facing communication tool can deliver value even when
+  the deeper speech engines live elsewhere.
+- Strong references:
+  `Billboard`.
+- Best fit for `VR-apps-lab`:
+  avatar-visible communication UX and prefab-surface research.

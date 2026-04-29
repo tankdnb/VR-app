@@ -2397,6 +2397,126 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - render-fixup micro-tools
 - keypad and access-gating gadget donors
 
+## Family 79: VRChat avatar setup, optimization, and Quest portability
+
+This family covers repositories where the main value sits in the avatar
+pipeline before composition is even "done": editor workbenches, conversion
+passes, upload optimizers, and DCC-side preparation for portable shipping.
+
+| Project | Status | Notes |
+|---|---|---|
+| `rurre/PumkinsAvatarTools` | Already studied | Broad avatar workbench with project-scoped prefs, copier infrastructure, pose editing, and setup helpers |
+| `kurotu/VRCQuestTools` | Already studied | Non-destructive Quest conversion toolchain with validator automators, NDMF passes, and guided setup windows |
+| `d4rkc0d3r/d4rkAvatarOptimizer` | Already studied | Upload-time optimizer with shader analysis, material merge decisions, animator rewrites, and staged cleanup |
+| `triazo/immersive_scaler` | Already studied | Blender-side scaler and proportional alignment tool built around avatar body metrics and armature reconciliation |
+
+### Consolidation note
+
+This family matters because `avatar setup pipeline`
+is broader than one converter or one optimizer. It now clearly includes:
+
+- editor workbench shells
+- validator-driven Quest portability
+- graph-aware upload optimization
+- DCC-side pre-import scaling and alignment
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- avatar bring-up workbenches
+- mobile-target validation and conversion
+- upload-time cleanup and optimization
+- DCC-to-Unity bridge patterns for avatar preparation
+
+## Family 80: VRChat avatar composition, packaging, and install automation
+
+This family covers repositories where the main value is assembling avatar parts,
+merging authoring components, moving packages into projects, or keeping creator
+projects healthy as install surfaces evolve.
+
+| Project | Status | Notes |
+|---|---|---|
+| `bdunderscore/modular-avatar` | Already studied | Major non-destructive avatar composition system with merge-armature, merge-animator, and retargeted mesh passes |
+| `hai-vr/modular-avatar-as-code` | Already studied | Code-first facade that emits Modular Avatar component graphs from source instead of from inspector-only setup |
+| `vrc-get/vrc-get` | Already studied | Cross-platform project and package manager with core resolver library, CLI shell, and GUI environment sync |
+| `VRLabs/Avatars-3.0-Manager` | Already studied | GUI-first avatar helper shell with reusable asset-copy APIs, controller merging, and safe unique output directories |
+
+### Consolidation note
+
+This family matters because `avatar composition`
+is now clearly more than one merge plugin. It includes:
+
+- non-destructive build-pipeline composition
+- code-generated composition facades
+- project-package management and repair
+- helper-shell install and asset-copy surfaces
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- avatar composition substrate
+- project-health tooling for creator ecosystems
+- install-safe asset generation patterns
+- package and component orchestration for reusable avatar stacks
+
+## Family 81: VRChat avatar emulation, gesture preview, repair, and OSC-assisted posing
+
+This family covers repositories where the main value is avatar rehearsal or
+intervention after assembly: playable emulation, gesture preview, manual repair,
+and pose-session sidecars.
+
+| Project | Status | Notes |
+|---|---|---|
+| `lyuma/Av3Emulator` | Already studied | Full playable avatar emulator with clone variants, expression-menu stack, and OSC loopback |
+| `BlackStartx/VRC-Gesture-Manager` | Already studied | Broad preview harness with radial menus, debug tools, OSC module, and dummy-avatar modes |
+| `JLChnToZ/avautils` | Already studied | Manual avatar surgery suite with mesh combine, bone remap, fitting-room, and hierarchy repair helpers |
+| `IlexisTheMadcat/LexisPosingSystem` | Partially studied | Paid product with a publicly visible OSC sidecar that exposes pose history, autosave, and scene orchestration |
+
+### Consolidation note
+
+This family matters because `avatar rehearsal and intervention`
+is not one generic preview bucket. It now clearly includes:
+
+- full playable emulation
+- tool-driven gesture and expression preview
+- manual repair and fitting-room workflows
+- OSC-assisted pose-session companions
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- avatar rehearsal environments
+- preview harnesses and debug shells
+- manual repair donors
+- pose-session automation and sidecar orchestration
+
+## Family 82: VRChat avatar text, speech, translation, and viseme sidecars
+
+This family covers repositories where the main value is turning speech,
+translation, or text into avatar-visible or avatar-driven output, whether
+through OSC, overlays, viseme timing, or prefab speech surfaces.
+
+| Project | Status | Notes |
+|---|---|---|
+| `VRCWizard/TTS-Voice-Wizard` | Already studied | Broad speech hub with queue-based TTS, VRChat listeners, translation, and OSC plus chatbox plus avatar-text fan-out |
+| `YusufOzmen01/kikitan-translator` | Already studied | Hybrid translator sidecar that splits React or Tauri UI, Rust OSC egress, and OpenVR overlay output |
+| `met4citizen/HeadTTS` | Already studied | Reusable TTS substrate with browser or server backends, phoneme timestamps, and viseme output |
+| `Frosty704/Billboard` | Partially studied | Strong product reference for a world-droppable avatar speech surface built over avatar-text substrate and parameter budgets |
+
+### Consolidation note
+
+This family matters because `avatar-facing speech tooling`
+is broader than one chatbox app. It now clearly includes:
+
+- sidecar speech hubs
+- translation plus overlay shells
+- viseme-aware TTS substrate
+- avatar-visible speech surfaces and prefab UX
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- avatar speech and translation companions
+- viseme and lip-sync donor engines
+- overlay-backed language or subtitle surfaces
+- speech-bubble and avatar-text UX references
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

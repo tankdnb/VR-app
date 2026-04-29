@@ -1221,6 +1221,54 @@ Primary docs:
 - `MolotovCherry/VRChat_Keypad` - `Already studied`
 - `KitKat4191/UdonKeypad` - `Already studied`
 
+## 71. VRChat avatar setup, optimization, and Quest portability
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-100-vrchat-avatar-setup-optimization-and-quest-portability.md`
+- `../landscape/project-families.md`
+
+- `rurre/PumkinsAvatarTools` - `Already studied`
+- `kurotu/VRCQuestTools` - `Already studied`
+- `d4rkc0d3r/d4rkAvatarOptimizer` - `Already studied`
+- `triazo/immersive_scaler` - `Already studied`
+
+## 72. VRChat avatar composition, packaging, and install automation
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-101-vrchat-avatar-composition-packaging-and-install-automation.md`
+- `../landscape/project-families.md`
+
+- `bdunderscore/modular-avatar` - `Already studied`
+- `hai-vr/modular-avatar-as-code` - `Already studied`
+- `vrc-get/vrc-get` - `Already studied`
+- `VRLabs/Avatars-3.0-Manager` - `Already studied`
+
+## 73. VRChat avatar emulation, gesture preview, repair, and OSC-assisted posing
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-102-vrchat-avatar-emulation-gesture-preview-repair-and-osc-assisted-posing.md`
+- `../landscape/project-families.md`
+
+- `lyuma/Av3Emulator` - `Already studied`
+- `BlackStartx/VRC-Gesture-Manager` - `Already studied`
+- `JLChnToZ/avautils` - `Already studied`
+- `IlexisTheMadcat/LexisPosingSystem` - `Partially studied`
+
+## 74. VRChat avatar text, speech, translation, and viseme sidecars
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-103-vrchat-avatar-text-speech-translation-and-viseme-sidecars.md`
+- `../landscape/project-families.md`
+
+- `VRCWizard/TTS-Voice-Wizard` - `Already studied`
+- `YusufOzmen01/kikitan-translator` - `Already studied`
+- `met4citizen/HeadTTS` - `Already studied`
+- `Frosty704/Billboard` - `Partially studied`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

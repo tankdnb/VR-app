@@ -1,6 +1,6 @@
 # Current Focus
 
-- Date: `2026-04-27`
+- Date: `2026-04-30`
 - Purpose: give a short `what matters now` view of `VR-apps-lab` without
   forcing a new session or visitor through the full wave archive.
 
@@ -50,6 +50,10 @@ These are the clearest current product and research lines:
    bridges, diagnostics, event-camera systems, reusable utility surfaces, Udon
    protocol micro-libraries, runtime helper frameworks, world-control gadgets,
    and embodied interaction donors.
+9. `VRChat avatar toolchains, preview environments, and avatar-facing speech surfaces`
+   the repository now has stronger coverage of avatar setup workbenches, Quest
+   portability, composition and packaging, preview or repair tools, pose
+   companions, and avatar-facing speech or translation sidecars.
 
 ## Most useful current docs
 
@@ -101,6 +105,10 @@ instead of full history:
 - `landscape/vr-projects-wave-97-udon-encoding-token-query-and-structured-data-micro-libraries.md`
 - `landscape/vr-projects-wave-98-udon-sync-events-runtime-logging-and-shared-helper-micro-frameworks.md`
 - `landscape/vr-projects-wave-99-vrchat-world-control-gadgets-environmental-systems-and-specialized-operator-surfaces.md`
+- `landscape/vr-projects-wave-100-vrchat-avatar-setup-optimization-and-quest-portability.md`
+- `landscape/vr-projects-wave-101-vrchat-avatar-composition-packaging-and-install-automation.md`
+- `landscape/vr-projects-wave-102-vrchat-avatar-emulation-gesture-preview-repair-and-osc-assisted-posing.md`
+- `landscape/vr-projects-wave-103-vrchat-avatar-text-speech-translation-and-viseme-sidecars.md`
 
 ## Strong donor clusters right now
 
@@ -178,6 +186,14 @@ the strongest current clusters:
   `UdonSharpDayNightController`, `VRChat_Keypad`, `UdonKeypad`
   for render-fixup micro-tools, operator surfaces, shared environment control,
   and access-control gadgets.
+- `PumkinsAvatarTools`, `VRCQuestTools`, `d4rkAvatarOptimizer`,
+  `immersive_scaler`, `modular-avatar`, `vrc-get`, `Avatars-3.0-Manager`
+  for avatar bring-up workbenches, Quest portability, upload-time optimization,
+  non-destructive composition, and creator project-package management.
+- `Av3Emulator`, `VRC-Gesture-Manager`, `avautils`, `LexisPosingSystem`,
+  `TTS-Voice-Wizard`, `kikitan-translator`, `HeadTTS`, `Billboard`
+  for avatar rehearsal, repair, pose-session sidecars, speech-hub design,
+  viseme-aware TTS substrate, and avatar-visible communication surfaces.
 
 ## Highest-value next follow-up passes
 
@@ -210,6 +226,10 @@ directions:
 24. `Udon encoding, token, query, and structured-data micro-libraries`
 25. `Udon sync, events, runtime logging, and shared helper micro-frameworks`
 26. `VRChat world control gadgets, environmental systems, and specialized operator surfaces`
+27. `VRChat avatar setup, optimization, and Quest portability`
+28. `VRChat avatar composition, packaging, and install automation`
+29. `VRChat avatar emulation, gesture preview, repair, and OSC-assisted posing`
+30. `VRChat avatar text, speech, translation, and viseme sidecars`
 
 ## Current repository-maintenance priorities
 
